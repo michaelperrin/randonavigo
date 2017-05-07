@@ -1,0 +1,27 @@
+version: '2'
+services:
+  php:
+    build: ./docker/php/
+    environment:
+      TIMEZONE: Europe/Paris
+    volumes:
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini:ro
+      - ./app:/var/www/randonavigo
+    working_dir: /var/www/randonavigo
+
+  webserver:
+    image: nginx:1.12-alpine
+    depends_on:
+      - php
+    volumes_from:
+      - php
+    volumes:
+      - ./docker/nginx/randonavigo.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+      - 8080:80
+
+  composer:
+    image: composer:1.4
+    volumes_from:
+      - php
+    working_dir: /var/www/randonavigo
