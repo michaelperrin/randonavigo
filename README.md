@@ -3,6 +3,6 @@ Rando Navigo
 
 Run project:
 
-    docker-compose up -d
+    make start
 
 Visit [http://localhost:8080](http://localhost:8080).
