@@ -36,7 +36,7 @@ class Hike
     protected $slug;
 
     /**
-     * @MongoDB\Field(type="date")
+     * @MongoDB\Field(type="date", name="publication_date")
      */
     protected $publicationDate;
 
@@ -56,7 +56,7 @@ class Hike
     protected $pictures;
 
     /**
-     * @MongoDB\Field(type="string")
+     * @MongoDB\Field(type="string", name="main_picture")
      */
     protected $mainPicture;
 
@@ -68,17 +68,17 @@ class Hike
     protected $distance;
 
     /**
-     * @MongoDB\Field(type="string")
+     * @MongoDB\Field(type="string", name="gpx_file")
      */
     protected $gpxFile;
 
     /**
-     * @MongoDB\EmbedOne(targetDocument="RandoNavigo\Document\Hike\Point")
+     * @MongoDB\EmbedOne(targetDocument="RandoNavigo\Document\Hike\Point", name="starting_point")
      */
     protected $startingPoint;
 
     /**
-     * @MongoDB\EmbedOne(targetDocument="RandoNavigo\Document\Hike\Point")
+     * @MongoDB\EmbedOne(targetDocument="RandoNavigo\Document\Hike\Point", name="ending_point")
      */
     protected $endingPoint;
 
