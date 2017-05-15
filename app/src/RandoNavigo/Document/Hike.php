@@ -6,7 +6,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 use RandoNavigo\Document\Hike\Point as HikePoint;
 
 /**
- * @MongoDB\Document
+ * @MongoDB\Document(collection="hike")
  */
 class Hike
 {
