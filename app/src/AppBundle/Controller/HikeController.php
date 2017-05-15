@@ -18,6 +18,20 @@ class HikeController extends Controller
         $hikes = $dm->getRepository(Hike::class)->findAll();
 
         // replace this example code with whatever you need
-        return $this->render('hike/list.html.twig', ['posts' => $hikes]);
+        return $this->render('hike/list.html.twig', ['hikes' => $hikes]);
+    }
+
+    /**
+     * @Route(
+     *     "/{date}/{slug}",
+     *     name="hike_show",
+     *     requirements={
+     *         "date": "\d{4}/\d{2}/\d{2}"
+     *     }
+     * )
+     */
+    public function showAction(Hike $hike)
+    {
+        return $this->render('hike/show.html.twig', ['hike' => $hike]);
     }
 }

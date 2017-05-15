@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% import _self as hike_utils %}
+
+{% macro display_point(point) %}
+    {{ point.line }} {{ point.station }}
+
+    {% if point.comment is not empty %}
+        – {{ point.comment }}
+    {% endif %}
+{% endmacro %}
+
+{% block body %}
+    <div class="container">
+        <article>
+            <time class="publication-date" datetime="{{ hike.publicationDate|date('Y-m-d') }}">
+                {{ hike.publicationDate|date('d/m/Y') }}
+            </time>
+
+            <h1>{{ hike.title }}</h1>
+
+            {% if hike.categories is not empty %}
+                <div class="category">
+                    {# Only display first category #}
+                    {{ hike.categories|first }}
+                </div>
+            {% endif %}
+
+            <img src="{{ asset('images/hike/%s/%s'|format(hike.slug, hike.mainPicture)) }}" alt="">
+
+            <div class="hike-information">
+                {% if hike.endingPoint is not empty %}
+                    Départ : {{ hike_utils.display_point(hike.startingPoint) }}<br>
+                    Arrivée : {{ hike_utils.display_point(hike.endingPoint) }}<br>
+                    Type : de gare à gare.<br>
+                {% else %}
+                    Départ / arrivée : {{ hike_utils.display_point(hike.startingPoint) }}<br>
+                    Type : boucle.<br>
+                {% endif %}
+
+                Distance : {{ hike.distance}}km.
+            </div>
+
+            <div class="summary">
+                {{ hike.summary }}
+            </div>
+
+            <div class="description">
+                {{ hike.description }}
+            </div>
+        </article>
+    </div>
+{% endblock %}

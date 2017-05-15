@@ -28,7 +28,7 @@ class Hike
     /**
      * @MongoDB\Field(type="string")
      */
-    protected $content;
+    protected $description;
 
     /**
      * @MongoDB\Field(type="string")
@@ -142,25 +142,25 @@ class Hike
     }
 
     /**
-     * Set content
+     * Set description
      *
-     * @param string $content
+     * @param string $description
      * @return $this
      */
-    public function setContent($content)
+    public function setDescription($description)
     {
-        $this->content = $content;
+        $this->description = $description;
         return $this;
     }
 
     /**
-     * Get content
+     * Get description
      *
-     * @return string $content
+     * @return string $description
      */
-    public function getContent()
+    public function getDescription()
     {
-        return $this->content;
+        return $this->description;
     }
 
     /**

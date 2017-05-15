@@ -1,0 +1,24 @@
+<article class="hike">
+    <time class="publication-date" datetime="{{ hike.publicationDate|date('Y-m-d') }}">
+        {{ hike.publicationDate|date('d/m/Y') }}
+    </time>
+
+    <h2>
+        <a href="{{ path('hike_show', {'date': hike.publicationDate|date('Y/m/d'), 'slug': hike.slug}) }}">
+            {{ hike.title }}
+        </a>
+    </h2>
+
+    {% if hike.categories is not empty %}
+        <div class="category">
+            {# Only display first category #}
+            {{ hike.categories|first }}
+        </div>
+    {% endif %}
+
+    <img src="{{ asset('images/hike/%s/%s'|format(hike.slug, hike.mainPicture)) }}" alt="">
+
+    <div class="summary">
+        {{ hike.summary }}
+    </div>
+</article>
