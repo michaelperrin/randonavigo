@@ -1,14 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% import _self as hike_utils %}
-
-{% macro display_point(point) %}
-    {{ point.line }} {{ point.station }}
-
-    {% if point.comment is not empty %}
-        – {{ point.comment }}
-    {% endif %}
-{% endmacro %}
+{% import "hike/utils.html.twig" as hike_utils %}
 
 {% block body %}
     <div class="container">

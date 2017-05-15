@@ -1,0 +1,19 @@
+{% macro display_point(point) %}
+    {{ _self.display_transport_icon(point.line) }} {{ point.station }}
+
+    {% if point.comment is not empty %}
+        – {{ point.comment }}
+    {% endif %}
+{% endmacro %}
+
+{% macro display_transport_icon(line) %}
+    <div class="transport-line">
+        {% if line in ['A', 'B', 'C', 'D', 'E'] %}
+            <img src="{{ asset('images/transport/RER.svg') }}" alt="Transilien">
+        {% elseif line in ['H', 'J', 'K', 'L', 'N', 'P', 'R', 'U'] %}
+            <img src="{{ asset('images/transport/Transilien.svg') }}" alt="Transilien">
+        {% endif %}
+
+        <img src="{{ asset('images/transport/%s.svg'|format(line)) }}" alt="Ligne {{ line }}">
+    </div>
+{% endmacro %}

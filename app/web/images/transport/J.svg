@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+
+<rect x="0" y="0" width="200" height="200" rx="35" fill="#CDCD00"/>
+<rect x="15" y="15" width="170" height="170" rx="20" fill="#ffffff"/>
+
+<path id="J" fill="#CDCD00" d="M100,100 m 3.2 10.99 c -0.05 7.03 -1.32 11.86 -3.82 14.51 c -2.5 2.64 -5.95 3.9 -10.36 3.77 c -2.05 -0.01 -3.98 -0.16 -5.78 -0.46 c -1.8 -0.3 -3.42 -0.69 -4.86 -1.18 l -2.32 16.77 c 2.12 0.69 4.56 1.22 7.31 1.6 c 2.75 0.38 5.36 0.57 7.82 0.58 c 10.19 0.16 18.17 -2.45 23.93 -7.84 c 5.76 -5.39 8.69 -14.55 8.8 -27.48 l 0 -58.09 l -20.73 0 l 0 57.82"/>
+
+</svg>

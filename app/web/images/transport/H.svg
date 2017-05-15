@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+
+<rect x="0" y="0" width="200" height="200" rx="35" fill="#7B4339"/>
+<rect x="15" y="15" width="170" height="170" rx="20" fill="#ffffff"/>
+
+<path id="H" fill="#7B4339" d="M100,100 m -37.91 -45.95 l 0 91.91 l 20.86 0 l 0 -38.45 l 34.23 0 l 0 38.45 l 20.73 0 l 0 -91.91 l -20.73 0 l 0 35.32 l -34.23 0 l 0 -35.32 l -20.86 0"/>
+
+</svg>
+
+
