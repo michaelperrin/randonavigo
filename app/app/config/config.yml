@@ -47,7 +47,13 @@ doctrine_mongodb:
     default_database: randonavigo
     document_managers:
         default:
-            auto_mapping: true
+            mappings:
+                RandoNavigo:
+                    type: annotation
+                    dir: '%kernel.root_dir%/../src/RandoNavigo/Document'
+                    is_bundle: false
+                    prefix: RandoNavigo\Document
+                    alias: RandoNavigo
 
 # Swiftmailer Configuration
 swiftmailer:
