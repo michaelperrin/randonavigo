@@ -11,9 +11,19 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="{{ asset('dist/css/front.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+            <header>
+                <h1>Rando Navigo</h1>
+                <p>Randonnées en Ile-de-France accessibles en transport en commun.</p>
+            </header>
+
+            <main class="content">
+                {% block content %}{% endblock %}
+            </main>
+        {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>

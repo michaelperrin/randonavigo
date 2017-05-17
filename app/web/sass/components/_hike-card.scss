@@ -1,0 +1,56 @@
+.hike-card {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+
+    .main-picture {
+        position: relative;
+
+        h2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0 12px 12px 12px;
+            color: white;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+            font-size: 1.2rem;
+            font-weight: 900;
+
+            a {
+                color: inherit;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .details {
+        background: #f4f4f4;
+        padding: 8px 12px;
+
+        .transport {
+            font-size: 0.9rem;
+            font-weight: bold;
+
+            .line {
+                display: inline-block;
+
+                img {
+                    width: 24px;
+                }
+            }
+        }
+
+        .distance {
+            .hike-icon {
+                height: 16px;
+            }
+        }
+    }
+
+    .content {
+        padding: 12px;
+
+        font-size: 0.9rem;
+    }
+}

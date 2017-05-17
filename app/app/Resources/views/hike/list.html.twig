@@ -1,14 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <div class="container">
-        <h1>Rando Navigo</h1>
-        <p>Randonnées en Ile-de-France accessibles en transport en commun.</p>
+{% block page_class %}hike-list{% endblock %}
 
-        <main class="hikes">
-            {% for hike in hikes %}
-                {{ include('hike/list/hike.html.twig', {'hike': hike}) }}
-            {% endfor %}
-        </main>
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                {% for hike in hikes %}
+                    {{ include('hike/list/hike-card.html.twig', {'hike': hike}) }}
+                {% endfor %}
+            </div>
+        </div>
     </div>
 {% endblock %}

@@ -1,0 +1,42 @@
+{% import "hike/utils.html.twig" as hike_utils %}
+
+<article class="hike-card">
+    <div class="main-picture">
+        <h2>
+            <a href="{{ path('hike_show', {'date': hike.publicationDate|date('Y/m/d'), 'slug': hike.slug}) }}">
+                {{ hike.title }}
+            </a>
+        </h2>
+
+        {{ hike_utils.display_main_picture(hike) }}
+    </div>
+
+    <div class="content">
+        {% if hike.categories is not empty %}
+            <div class="category">
+                {# Only display first category #}
+                {{ hike.categories|first }}
+            </div>
+        {% endif %}
+
+        <div class="summary">
+            {{ hike.summary }}
+        </div>
+    </div>
+
+    <div class="details">
+        <i class="fa fa-map-marker" aria-hidden="true"></i> Coucou
+
+        <div class="transport">
+            <div class="starting-point">
+                {{ hike_utils.display_transport_icon(hike.startingPoint.line) }}
+                {{ hike.startingPoint.station }}
+            </div>
+        </div>
+
+        <div class="distance">
+            <img src="{{ asset('images/hike-icon.svg') }}" alt="Distance de marche" class="hike-icon">
+            {{ hike.distance}}km
+        </div>
+    </div>
+</article>

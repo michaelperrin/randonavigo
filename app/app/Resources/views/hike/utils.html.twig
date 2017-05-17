@@ -7,7 +7,7 @@
 {% endmacro %}
 
 {% macro display_transport_icon(line) %}
-    <div class="transport-line">
+    <div class="line">
         {% if line in ['A', 'B', 'C', 'D', 'E'] %}
             <img src="{{ asset('images/transport/RER.svg') }}" alt="Transilien">
         {% elseif line in ['H', 'J', 'K', 'L', 'N', 'P', 'R', 'U'] %}
