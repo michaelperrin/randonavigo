@@ -35,3 +35,7 @@
 {%- macro hike_url(hike) -%}
     {{ path('hike_show', {'date': hike.publicationDate|date('Y/m/d'), 'slug': hike.slug}) }}
 {%- endmacro -%}
+
+{%- macro gpx_file_path(hike) -%}
+    /uploads/gpx/{{ hike.gpxFile }}
+{%- endmacro -%}

@@ -1,5 +1,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+@import "../../node_modules/leaflet/dist/leaflet";
+
 @import "helpers/_variables";
 @import "layout/_footer";
 @import "components/_hike-card";

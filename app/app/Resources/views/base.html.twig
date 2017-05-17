@@ -25,6 +25,10 @@
             {% endblock %}
         {% endblock %}
 
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('dist/js/front.js') }}"></script>
+        {% endblock %}
+
+        {% block scripts %}{% endblock %}
     </body>
 </html>

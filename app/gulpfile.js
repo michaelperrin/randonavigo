@@ -8,8 +8,27 @@ var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 
 var paths = {
-  styles: './web/sass/**/*.scss'
+  styles: './web/sass/**/*.scss',
+  scripts: './web/js/**/*.js'
 };
+
+gulp.task('scripts', function() {
+  gulp.src([
+      // Libraries
+      './node_modules/leaflet/dist/leaflet.js',
+      './web/lib/leaflet-gpx-1.3.1/gpx.js',
+
+      // App files
+      './web/js/hike/show.js'
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(uglify().on('error', function(e){
+        console.log(e);
+     }))
+    .pipe(concat('front.js'))
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('./web/dist/js'));
+});
 
 gulp.task('styles', function() {
   return gulp.src(paths.styles)
@@ -22,6 +41,7 @@ gulp.task('styles', function() {
 // Rerun the task when a file changes
 gulp.task('watch', function() {
   gulp.watch(paths.styles, ['styles']);
+  gulp.watch(paths.scripts, ['scripts']);
 });
 
-gulp.task('default', [ 'styles' ]);
+gulp.task('default', [ 'styles', 'scripts' ]);

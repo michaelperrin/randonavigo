@@ -18,6 +18,8 @@
                 </div>
             {% endif %}
 
+            <div id="hike-map" style="height: 600px;"></div>
+
             <div class="main-picture">
                 <img src="{{ hike_utils.main_picture_url(hike) }}" alt="">
             </div>
@@ -44,4 +46,10 @@
             </div>
         </article>
     </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+    HikeShow.init('{{ hike_utils.gpx_file_path(hike) }}');
+    </script>
 {% endblock %}
