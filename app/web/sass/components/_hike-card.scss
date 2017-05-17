@@ -14,36 +14,45 @@
 
     .details {
         background: #f8f8f7;
-        padding: 12px 12px;
-        display: table;
-        width: 100%;
+        padding: 6px 12px 12px 12px;
 
-        .transport {
-            font-size: 0.9rem;
-            font-weight: normal;
-            color: $light-text-color;
+        .category {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+        }
 
-            .line {
-                display: table-cell;
-                padding-right: 4px;
-                word-spacing: nowrap;
+        .access {
+            display: table;
+            width: 100%;
 
-                img {
-                    width: 24px;
+            .transport {
+                font-size: 0.9rem;
+                font-weight: normal;
+                color: $light-text-color;
+
+                .line {
+                    display: table-cell;
+                    padding-right: 4px;
+                    word-spacing: nowrap;
+
+                    img {
+                        width: 24px;
+                    }
+                }
+
+                .station {
+                    display: table-cell;
                 }
             }
 
-            .station {
+            .distance {
                 display: table-cell;
-            }
-        }
+                text-align: right;
 
-        .distance {
-            display: table-cell;
-            text-align: right;
-
-            .hike-icon {
-                height: 16px;
+                .hike-icon {
+                    height: 16px;
+                }
             }
         }
     }

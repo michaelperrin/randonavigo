@@ -6,16 +6,25 @@
     </div>
 
     <div class="details">
-        <div class="transport">
-            <div class="starting-point">
-                {{ hike_utils.display_transport_icon(hike.startingPoint.line) }}
-                <span class="station">{{ hike.startingPoint.station }}</span>
+        {% if hike.categories is not empty %}
+            <div class="category">
+                {# Only display first category #}
+                {{ hike.categories|first }}
             </div>
-        </div>
+        {% endif %}
 
-        <div class="distance">
-            <img src="{{ asset('images/hike-icon.svg') }}" alt="Distance de marche" class="hike-icon">
-            {{ hike.distance}}km
+        <div class="access">
+            <div class="transport">
+                <div class="starting-point">
+                    {{ hike_utils.display_transport_icon(hike.startingPoint.line) }}
+                    <span class="station">{{ hike.startingPoint.station }}</span>
+                </div>
+            </div>
+
+            <div class="distance">
+                <img src="{{ asset('images/hike-icon.svg') }}" alt="Distance de marche" class="hike-icon">
+                {{ hike.distance}}km
+            </div>
         </div>
     </div>
 
