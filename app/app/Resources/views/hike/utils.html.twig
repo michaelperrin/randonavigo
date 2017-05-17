@@ -17,3 +17,15 @@
         <img src="{{ asset('images/transport/%s.svg'|format(line)) }}" alt="Ligne {{ line }}">
     </div>
 {% endmacro %}
+
+{% macro display_main_picture(hike) %}
+    {%
+        set picturePath = 'uploads/pictures/hike/%d/%d/%s/%s'|format(
+            hike.publicationDate|date('Y'),
+            hike.publicationDate|date('m'),
+            hike.slug,
+            hike.mainPicture
+        )
+    %}
+    <img src="{{ asset(picturePath) }}" alt="">
+{% endmacro %}

@@ -1,3 +1,5 @@
+{% import "hike/utils.html.twig" as hike_utils %}
+
 <article class="hike">
     <time class="publication-date" datetime="{{ hike.publicationDate|date('Y-m-d') }}">
         {{ hike.publicationDate|date('d/m/Y') }}
@@ -16,7 +18,9 @@
         </div>
     {% endif %}
 
-    <img src="{{ asset('images/hike/%s/%s'|format(hike.slug, hike.mainPicture)) }}" alt="">
+    <div class="main-picture">
+        {{ hike_utils.display_main_picture(hike) }}
+    </div>
 
     <div class="summary">
         {{ hike.summary }}

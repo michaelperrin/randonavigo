@@ -18,7 +18,9 @@
                 </div>
             {% endif %}
 
-            <img src="{{ asset('images/hike/%s/%s'|format(hike.slug, hike.mainPicture)) }}" alt="">
+            <div class="main-picture">
+                {{ hike_utils.display_main_picture(hike) }}
+            </div>
 
             <div class="hike-information">
                 {% if hike.endingPoint is not empty %}
