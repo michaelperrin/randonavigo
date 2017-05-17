@@ -19,6 +19,10 @@
             <main class="content">
                 {% block content %}{% endblock %}
             </main>
+
+            {% block footer %}
+                {{ include('layout/footer.html.twig') }}
+            {% endblock %}
         {% endblock %}
 
         {% block javascripts %}{% endblock %}
