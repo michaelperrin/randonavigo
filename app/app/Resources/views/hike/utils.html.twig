@@ -18,14 +18,14 @@
     </div>
 {% endmacro %}
 
-{% macro display_main_picture(hike) %}
+{%- macro main_picture_url(hike) -%}
     {%
-        set picturePath = 'uploads/pictures/hike/%d/%d/%s/%s'|format(
+        set picturePath = 'uploads/pictures/hike/%d/%s/%s/%s'|format(
             hike.publicationDate|date('Y'),
             hike.publicationDate|date('m'),
             hike.slug,
             hike.mainPicture
         )
     %}
-    <img src="{{ asset(picturePath) }}" alt="">
-{% endmacro %}
+    {{ asset(picturePath) }}
+{%- endmacro -%}
