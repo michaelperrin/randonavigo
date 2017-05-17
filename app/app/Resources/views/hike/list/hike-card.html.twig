@@ -3,11 +3,6 @@
 <article class="hike-card">
 
     <div class="main-picture" style="background-image: url('{{ hike_utils.main_picture_url(hike) }}')">
-        <h2>
-            <a href="{{ path('hike_show', {'date': hike.publicationDate|date('Y/m/d'), 'slug': hike.slug}) }}">
-                {{ hike.title }}
-            </a>
-        </h2>
     </div>
 
     <div class="details">
@@ -25,6 +20,12 @@
     </div>
 
     <div class="content">
+        <h2>
+            <a href="{{ hike_utils.hike_url(hike) }}">
+                {{ hike.title }}
+            </a>
+        </h2>
+
         <div class="summary">
             {{ hike.summary }}
         </div>

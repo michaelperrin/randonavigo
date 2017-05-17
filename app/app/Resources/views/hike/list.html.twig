@@ -1,15 +1,55 @@
 {% extends 'base.html.twig' %}
 
-{% block page_class %}hike-list{% endblock %}
-
 {% block content %}
-    <div class="container">
-        <div class="row">
-            {% for hike in hikes %}
-                <div class="col-md-4">
-                    {{ include('hike/list/hike-card.html.twig', {'hike': hike}) }}
-                </div>
-            {% endfor %}
+    <div class="page-home">
+        <div class="banner">
+            <h1>Rando Navigo</h1>
+            <p>Randonnées en Ile-de-France accessibles en transport en commun.</p>
         </div>
+
+        <section class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <aside class="gpx-info">
+                            <h3>Traces GPX</h3>
+
+                            <p>
+                                Toutes les randonnées sont proposées au format GPX. Une fois la randonnée téléchargée sur votre smartphone, impossible de se tromper.
+                                Il n'y a plus qu'à suivre la trace !
+                            </p>
+
+                            <a href="" class="btn btn-info">En savoir plus</a>
+                        </aside>
+                    </div>
+
+                    <div class="col-md-8 offset-md-1">
+                        <div class="content">
+                            <h2>Randonnées en Ile-de-France</h2>
+
+                            <p>Rando Navigo vous propose de nombreuses randonnées en Ile-de-France, toujours accessibles en transport en commun !</p>
+
+                            <p>Il est en effet possible de s’évader en pleine nature près de chez soi et rapidement grâce aux transports en commun en Ile-de-France. Votre carte Navigo est désormais complètement dézonée, alors quittez la grisaille parisienne le temps d’une journée et profitez-en !</p>
+
+                            <p>Vous serez étonné du nombre de randonnées possibles partout en Ile-de-France facilement accessibles sans voiture.</p>
+
+                            <p>Je vous en propose quelques unes sur ce site web qui s’enrichira au fur et à mesure de nouvelles découvertes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hike-list">
+            <div class="container">
+                <div class="row">
+                    {% for hike in hikes %}
+                        <div class="col-md-6">
+                            {{ include('hike/list/hike-card.html.twig', {'hike': hike}) }}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
     </div>
 {% endblock %}
