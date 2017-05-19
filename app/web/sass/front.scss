@@ -3,6 +3,7 @@
 @import "../../node_modules/leaflet/dist/leaflet";
 
 @import "helpers/_variables";
+@import "base/_typography";
 @import "layout/_footer";
 @import "components/_hike-card";
 @import "pages/_home";
@@ -10,5 +11,4 @@
 
 body {
     background: url('../../images/light-texture.png');
-    font-family: 'Open Sans', sans-serif;
 }
