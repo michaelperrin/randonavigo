@@ -16,9 +16,11 @@
         padding: 6px 12px 12px 12px;
 
         .category {
-            font-weight: 600;
-            font-size: 1rem;
-            margin-bottom: 0.2rem;
+            font-weight: 700;
+            font-size: 0.7rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
         }
 
         .access {
@@ -73,10 +75,6 @@
             font-size: 1.2rem;
             line-height: 1.5rem;
             letter-spacing: -0.025rem;
-
-            a {
-                color: inherit;
-            }
         }
     }
 }
