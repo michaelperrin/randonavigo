@@ -73,20 +73,11 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-md-5 offset-md-1">
-
                         <div id="hike-map" style="height: 400px;"></div>
-
-
                     </div>
 
                     <div class="col-md-4 offset-md-1" style="line-height: 2rem">
-                        {#{ hike.description }#}
-                        <p style="margin-top: 3rem">En provenance de Paris, vous commencerez par traverser les voies de train par le souterrain avant de les longer. Vous gagnerez rapidement les bois où vous attend une bonne petite grimpette. Elle vous fera rejoindre le plateau à partir duquel vous profiterez d’un joli panorama.</p>
-
-                        <p>Les clairières qui parsèment le parcours vous permettront de pique-niquer agréablement. Après un passage sur l’ancienne voie royale, vous rejoindrez le GR1 qui vous mènera au petit village de Lardy traversé par sa rivière (La Juine). Vous poursuivrez son parcours à travers champs et zones boisées jusqu’à La Ferté-Alais.</p>
-
-                        <p>Possibilité de visiter le Domaine de Chamarande au point de départ.</p>
-
+                        {{ hike.description|markdown }}
                     </div>
                 </div>
             </div>
