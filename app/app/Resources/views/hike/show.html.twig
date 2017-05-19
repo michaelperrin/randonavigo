@@ -6,7 +6,7 @@
     <article class="hike-show">
         <header>
             <div class="container-fluid">
-                <div class="row align-items-center" style="background: rgba(80,80,80,0.07)">
+                <div class="row align-items-center">
                     <div class="col-md-4 offset-md-1">
                         {% if hike.categories is not empty %}
                             <div class="category">
@@ -47,18 +47,25 @@
                                     {% endif %}
                                 </div>
                             </div>
-
-                            <img src="{{ asset('images/hike-icon.svg') }}" alt="Distance de marche" class="hike-icon"> {{ hike.distance}}km.
                         </div>
 
-                        {% if hike.endingPoint is not empty %}
-                            Type : de gare à gare.<br>
-                        {% else %}
-                            Type : boucle.<br>
-                        {% endif %}
+                        <div class="distance">
+                            <img src="{{ asset('images/hike-icon.svg') }}" alt="Distance de marche" class="hike-icon"> {{ hike.distance}}km
 
-                        <div style="text-align: center; width: 100%">
-                            <a href="" class="btn btn-info">Télécharger la trace GPS</a>
+                            <span class="hike-type">
+                                {% if hike.endingPoint is not empty %}
+                                    (gare à gare).
+                                {% else %}
+                                    (boucle).
+                                {% endif %}
+                            </span>
+                        </div>
+
+                        <div class="gpx-download">
+                            <a href="{{ hike_utils.gpx_file_path(hike) }}" class="btn btn-info">
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                                Télécharger la trace GPS
+                            </a>
                         </div>
                     </div>
 
@@ -72,12 +79,12 @@
         <div class="details">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-md-5 offset-md-1">
-                        <div id="hike-map" style="height: 400px;"></div>
+                    <div class="col-md-6 offset-md-1">
+                        <div class="description">{{ hike.description|markdown }}</div>
                     </div>
 
-                    <div class="col-md-4 offset-md-1" style="line-height: 2rem">
-                        {{ hike.description|markdown }}
+                    <div class="col-md-5">
+                        <div id="hike-map" class="map"></div>
                     </div>
                 </div>
             </div>

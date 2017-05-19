@@ -1,5 +1,7 @@
 .hike-show {
     header {
+        background: rgba(80, 80, 80, 0.07);
+
         .main-picture {
             height: 600px;
             background-position: top left;
@@ -17,11 +19,13 @@
             line-height: 2rem;
         }
 
-        // TODO
-        .access {
-            display: table;
+        .gpx-download {
             width: 100%;
+            margin-top: 2rem;
+            text-align: center;
+        }
 
+        .access {
             .transport {
                 font-size: 0.9rem;
                 font-weight: normal;
@@ -65,26 +69,27 @@
                         vertical-align: middle;
                     }
                 }
-
-                // .line {
-                //     display: inline-block;
-                //     padding-right: 4px;
-                //     word-spacing: nowrap;
-
-                //     img {
-                //         width: 24px;
-                //     }
-                // }
-
-                // .station {
-                //     display: inline-block;
-                // }
             }
+        }
 
+        .distance {
+            .hike-icon {
+                height: 32px;
+                margin-right: 10px;
+            }
+        }
+    }
 
-                .hike-icon {
-                    height: 32px;
-                }
+    .details {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        .map {
+            height: 400px;
+        }
+
+        .description {
+            line-height: 2rem;
         }
     }
 }
