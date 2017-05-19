@@ -2,49 +2,109 @@
 
 {% import "hike/utils.html.twig" as hike_utils %}
 
-{% block body %}
-    <div class="container">
-        <article>
-            <time class="publication-date" datetime="{{ hike.publicationDate|date('Y-m-d') }}">
-                {{ hike.publicationDate|date('d/m/Y') }}
-            </time>
+{% block content %}
+    <article class="hike-show">
+        <header>
+            <div class="container-fluid">
+                <div class="row align-items-center" style="background: rgba(80,80,80,0.07)">
+                    <div class="col-md-4 offset-md-1">
+                        {% if hike.categories is not empty %}
+                            <div class="category">
+                                {# Only display first category #}
+                                {{ hike.categories|first }}
+                            </div>
+                        {% endif %}
 
-            <h1>{{ hike.title }}</h1>
+                        <time class="publication-date" datetime="{{ hike.publicationDate|date('Y-m-d') }}">
+                            {{ hike.publicationDate|date('d/m/Y') }}
+                        </time>
 
-            {% if hike.categories is not empty %}
-                <div class="category">
-                    {# Only display first category #}
-                    {{ hike.categories|first }}
+                        <h1>{{ hike.title }}</h1>
+
+                        <div class="summary">
+                            {{ hike.summary }}
+                        </div>
+
+                        <div class="access">
+                            <div class="transport">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="point starting-point">
+                                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                            {{ hike_utils.display_transport_icon(hike.startingPoint.line) }}
+                                            <span class="station">{{ hike.startingPoint.station }}</span>
+                                        </div>
+                                    </div>
+
+                                    {% if hike.endingPoint is not empty %}
+                                        <div class="col-md-6">
+                                            <div class="point ending-point">
+                                                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                                {{ hike_utils.display_transport_icon(hike.endingPoint.line) }}
+                                                <span class="station">{{ hike.endingPoint.station }}</span>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <img src="{{ asset('images/hike-icon.svg') }}" alt="Distance de marche" class="hike-icon"> {{ hike.distance}}km.
+                        </div>
+
+                        {% if hike.endingPoint is not empty %}
+                            Type : de gare à gare.<br>
+                        {% else %}
+                            Type : boucle.<br>
+                        {% endif %}
+
+                        <div style="text-align: center; width: 100%">
+                            <a href="" class="btn btn-info">Télécharger la trace GPS</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 offset-md-1">
+                        <div class="main-picture" style="background-image: url('{{ hike_utils.main_picture_url(hike) }}')"></div>
+                    </div>
                 </div>
-            {% endif %}
-
-            <div id="hike-map" style="height: 600px;"></div>
-
-            <div class="main-picture">
-                <img src="{{ hike_utils.main_picture_url(hike) }}" alt="">
             </div>
+        </header>
 
-            <div class="hike-information">
-                {% if hike.endingPoint is not empty %}
-                    Départ : {{ hike_utils.display_point(hike.startingPoint) }}<br>
-                    Arrivée : {{ hike_utils.display_point(hike.endingPoint) }}<br>
-                    Type : de gare à gare.<br>
-                {% else %}
-                    Départ / arrivée : {{ hike_utils.display_point(hike.startingPoint) }}<br>
-                    Type : boucle.<br>
-                {% endif %}
+        <div class="details">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-5 offset-md-1">
 
-                Distance : {{ hike.distance}}km.
+                        <div id="hike-map" style="height: 400px;"></div>
+
+
+                    </div>
+
+                    <div class="col-md-4 offset-md-1" style="line-height: 2rem">
+                        {#{ hike.description }#}
+                        <p style="margin-top: 3rem">En provenance de Paris, vous commencerez par traverser les voies de train par le souterrain avant de les longer. Vous gagnerez rapidement les bois où vous attend une bonne petite grimpette. Elle vous fera rejoindre le plateau à partir duquel vous profiterez d’un joli panorama.</p>
+
+                        <p>Les clairières qui parsèment le parcours vous permettront de pique-niquer agréablement. Après un passage sur l’ancienne voie royale, vous rejoindrez le GR1 qui vous mènera au petit village de Lardy traversé par sa rivière (La Juine). Vous poursuivrez son parcours à travers champs et zones boisées jusqu’à La Ferté-Alais.</p>
+
+                        <p>Possibilité de visiter le Domaine de Chamarande au point de départ.</p>
+
+                    </div>
+                </div>
             </div>
+        </div>
+    </article>
 
-            <div class="summary">
-                {{ hike.summary }}
-            </div>
+    <div class="container">
+        <div style="text-align: center">
+            <h2>Ce que vous pourrez voir</h2>
+        </div>
 
-            <div class="description">
-                {{ hike.description }}
-            </div>
-        </article>
+        <div class="row">
+            {% for picture in hike.pictures %}
+                <div class="col-md-4">
+                    <img src="{{ hike_utils.picture_url(hike, picture) }}" alt="" style="max-width: 100%">
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
 

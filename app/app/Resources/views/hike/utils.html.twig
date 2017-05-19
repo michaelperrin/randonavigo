@@ -1,9 +1,6 @@
 {% macro display_point(point) %}
-    {{ _self.display_transport_icon(point.line) }} {{ point.station }}
-
-    {% if point.comment is not empty %}
-        – {{ point.comment }}
-    {% endif %}
+    {{ _self.display_transport_icon(point.line) }}
+    <span class="station">{{ point.station }}</span>
 {% endmacro %}
 
 {% macro display_transport_icon(line) %}
@@ -19,13 +16,17 @@
 {% endmacro %}
 
 {%- macro main_picture_url(hike) -%}
+    {{ _self.picture_url(hike, hike.mainPicture) }}
+{%- endmacro -%}
+
+{%- macro picture_url(hike, picture) -%}
     {% spaceless %}
         {%
             set picturePath = 'uploads/pictures/hike/%d/%s/%s/%s'|format(
                 hike.publicationDate|date('Y'),
                 hike.publicationDate|date('m'),
                 hike.slug,
-                hike.mainPicture
+                picture
             )
         %}
         {{ asset(picturePath) }}
