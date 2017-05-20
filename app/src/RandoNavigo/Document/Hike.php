@@ -340,6 +340,22 @@ class Hike
     }
 
     /**
+     * Get gpxFile
+     *
+     * @return string $gpxFile
+     */
+    public function getGpxFilePath()
+    {
+        return sprintf(
+            'uploads/hike/%d/%02d/%s/gpx/%s',
+            $this->getPublicationDate()->format('Y'),
+            $this->getPublicationDate()->format('m'),
+            $this->getSlug(),
+            $this->getGpxFile()
+        );
+    }
+
+    /**
      * Set startingPoint
      *
      * @param HikePoint $startingPoint

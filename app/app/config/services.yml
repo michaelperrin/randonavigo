@@ -5,3 +5,6 @@ services:
         arguments: ['@doctrine_mongodb']
         tags:
             - { name: 'request.param_converter', converter: 'doctrine.odm' }
+
+    app.gpx.segment_merger_transformer:
+        class: 'RandoNavigo\Gpx\SegmentMergerTransformer'

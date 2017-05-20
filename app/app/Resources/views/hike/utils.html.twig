@@ -39,14 +39,6 @@
 
 {%- macro gpx_file_path(hike) -%}
     {% spaceless %}
-        {%
-            set gxpFilePath = 'uploads/hike/%d/%02d/%s/gpx/%s'|format(
-                hike.publicationDate|date('Y'),
-                hike.publicationDate|date('m'),
-                hike.slug,
-                hike.gpxFile
-            )
-        %}
-        {{ asset(gxpFilePath) }}
+        {{ path('hike_gpx_file', {slug: hike.slug}) }}
     {% endspaceless %}
 {%- endmacro -%}
