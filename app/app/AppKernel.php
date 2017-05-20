@@ -9,6 +9,7 @@ class AppKernel extends Kernel
     {
         $bundles = [
             new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+            new Liip\ImagineBundle\LiipImagineBundle(),
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),

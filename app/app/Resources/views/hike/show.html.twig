@@ -99,7 +99,7 @@
         <div class="row">
             {% for picture in hike.pictures %}
                 <div class="col-md-4">
-                    <img src="{{ hike_utils.picture_url(hike, picture) }}" alt="" style="max-width: 100%">
+                    <img src="{{ hike_utils.picture_url(hike, picture)|imagine_filter('hike_thumbnail') }}" alt="" style="max-width: 100%">
                 </div>
             {% endfor %}
         </div>

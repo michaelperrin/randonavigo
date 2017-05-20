@@ -27,6 +27,7 @@
         "doctrine/mongodb-odm-bundle": "^3.3",
         "incenteev/composer-parameter-handler": "^2.0",
         "knplabs/knp-markdown-bundle": "^1.5",
+        "liip/imagine-bundle": "^1.8",
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "symfony/monolog-bundle": "^3.0.2",

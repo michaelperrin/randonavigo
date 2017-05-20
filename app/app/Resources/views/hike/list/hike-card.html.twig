@@ -1,8 +1,11 @@
 {% import "hike/utils.html.twig" as hike_utils %}
 
-<article class="hike-card">
+<article class="hike-card {{ hike.favorite ? 'favorite'}}">
+    {% if hike.favorite %}
+        <div class="fav"><span><i class="fa fa-heart" aria-hidden="true"></i></span></div>
+    {% endif %}
 
-    <div class="main-picture" style="background-image: url('{{ hike_utils.main_picture_url(hike) }}')">
+    <div class="main-picture" style="background-image: url('{{ hike_utils.main_picture_url(hike)|imagine_filter('hike_thumbnail') }}')">
     </div>
 
     <div class="details">
