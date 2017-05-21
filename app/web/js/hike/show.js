@@ -3,6 +3,7 @@ var HikeShow = (function () {
 
     function init(gpxFile) {
         initMap(gpxFile);
+        initGalleries();
     }
 
     function initMap(gpxFile) {
@@ -17,6 +18,10 @@ var HikeShow = (function () {
         new L.GPX(gpxFile, {async: true}).on('loaded', function(e) {
           map.fitBounds(e.target.getBounds());
         }).addTo(map);
+    }
+
+    function initGalleries() {
+        RandoNavigoGallery.init();
     }
 
     return {
