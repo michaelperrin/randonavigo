@@ -21,7 +21,7 @@ var HikeShow = (function () {
     }
 
     function initGalleries() {
-        RandoNavigoGallery.init();
+        RandoNavigoGallery.init('.picture');
     }
 
     return {
