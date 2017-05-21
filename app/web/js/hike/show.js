@@ -15,7 +15,17 @@ var HikeShow = (function () {
             }
         ).addTo(map);
 
-        new L.GPX(gpxFile, {async: true}).on('loaded', function(e) {
+        new L.GPX(
+            gpxFile,
+            {
+                async: true,
+                parseElements: ['track'],
+                marker_options: {
+                    startIconUrl: '/images/map/starting-point-pin.png',
+                    endIconUrl: '/images/map/ending-point-pin.png'
+                }
+            }
+        ).on('loaded', function(e) {
             map.fitBounds(e.target.getBounds());
         }).addTo(map);
     }
