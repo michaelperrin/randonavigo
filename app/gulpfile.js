@@ -15,7 +15,6 @@ var paths = {
 gulp.task('scripts', function() {
   gulp.src([
       // Libraries
-      './node_modules/jquery/dist/jquery.js',
       './node_modules/leaflet/dist/leaflet.js',
       './web/lib/leaflet-gpx-1.3.1/gpx.js',
       './node_modules/photoswipe/dist/photoswipe.js',
