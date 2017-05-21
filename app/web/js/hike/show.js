@@ -3,6 +3,7 @@ var HikeShow = (function () {
 
     function init(gpxFile) {
         initMap(gpxFile);
+        initGallery();
     }
 
     function initMap(gpxFile) {
@@ -15,8 +16,19 @@ var HikeShow = (function () {
         ).addTo(map);
 
         new L.GPX(gpxFile, {async: true}).on('loaded', function(e) {
-          map.fitBounds(e.target.getBounds());
+            map.fitBounds(e.target.getBounds());
         }).addTo(map);
+    }
+
+    function initGallery() {
+        $('.picture').magnificPopup({
+            delegate: 'a', // child items selector, by clicking on it popup will open
+            type: 'image',
+            gallery: {
+                // options for gallery
+                enabled: true
+            }
+        });
     }
 
     return {
