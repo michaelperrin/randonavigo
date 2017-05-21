@@ -5,7 +5,9 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
-    "leaflet": "^1.0.3"
+    "jquery": "^3.2.1",
+    "leaflet": "^1.0.3",
+    "magnific-popup": "^1.1.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
