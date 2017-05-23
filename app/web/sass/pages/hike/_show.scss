@@ -1,38 +1,4 @@
 .hike-show {
-    .banner {
-        background: #383c3d;
-        color: white;
-        padding: 1.5em 0 1.5em 0;
-
-        h1 {
-            font-weight: 700;
-            font-size: 2rem;
-        }
-
-        .brand {
-            display: table-row;
-
-            .logo {
-                display: table-cell;
-                vertical-align: middle;
-                padding-right: 30px;
-
-                img {
-                    height: 50px;
-                }
-            }
-
-            .brand-name {
-                vertical-align: middle;
-                display: table-cell;
-
-                p {
-                    margin: 0;
-                }
-            }
-        }
-    }
-
     header {
         background: rgba(80, 80, 80, 0.07);
 
