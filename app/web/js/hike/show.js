@@ -15,6 +15,8 @@ var HikeShow = (function () {
             }
         ).addTo(map);
 
+        map.scrollWheelZoom.disable();
+
         new L.GPX(
             gpxFile,
             {
@@ -22,7 +24,8 @@ var HikeShow = (function () {
                 parseElements: ['track'],
                 marker_options: {
                     startIconUrl: '/images/map/starting-point-pin.png',
-                    endIconUrl: '/images/map/ending-point-pin.png'
+                    endIconUrl: '/images/map/ending-point-pin.png',
+                    shadowUrl: null
                 }
             }
         ).on('loaded', function(e) {
