@@ -17,7 +17,7 @@ class HikeController extends Controller
     public function indexAction(Request $request)
     {
         $dm = $this->get('doctrine_mongodb')->getManager();
-        $hikes = $dm->getRepository(Hike::class)->findAll();
+        $hikes = $dm->getRepository(Hike::class)->findBy([], ['publicationDate' => 'DESC']);
 
         // replace this example code with whatever you need
         return $this->render('hike/list.html.twig', ['hikes' => $hikes]);
