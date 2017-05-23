@@ -4,10 +4,28 @@
 
 {% block content %}
     <article class="hike-show">
+        <div class="banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <div class="brand">
+                            <div class="logo">
+                                <img src="{{ asset('images/logo.svg') }}" alt="">
+                            </div>
+                            <div class="brand-name">
+                                <h1>Rando Navigo</h1>
+                                <p>Randonnées en Ile-de-France accessibles en transport en commun.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <header>
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-md-4 offset-md-1">
+                    <div class="col-md-5 col-lg-4 offset-lg-1">
                         {% if hike.categories is not empty %}
                             <div class="category">
                                 {# Only display first category #}
@@ -28,7 +46,7 @@
                         <div class="access">
                             <div class="transport">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="{{ hike.endingPoint is not empty ? 'col-xl-6' : 'col-xl-12' }}">
                                         <div class="point starting-point">
                                             <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                                             {{ hike_utils.display_transport_icon(hike.startingPoint.line) }}
@@ -37,7 +55,7 @@
                                     </div>
 
                                     {% if hike.endingPoint is not empty %}
-                                        <div class="col-md-6">
+                                        <div class="col-xl-6">
                                             <div class="point ending-point">
                                                 <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                                                 {{ hike_utils.display_transport_icon(hike.endingPoint.line) }}
@@ -69,7 +87,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 offset-md-1">
+                    <div class="col-md-7 col-lg-6 offset-lg-1">
                         <div class="main-picture" style="background-image: url('{{ hike_utils.main_picture_url(hike) }}')"></div>
                     </div>
                 </div>
@@ -79,25 +97,29 @@
         <div class="details">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-md-6 offset-md-1">
+                    <div class="col-md-6 col-lg-6 offset-lg-1">
                         <div class="description">{{ hike.description|markdown }}</div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-6 col-lg-5">
                         <div id="hike-map" class="map"></div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section class="gallery">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9 offset-lg-1"><h2>Photos en chemin</h2></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-9 offset-lg-1">{{ include('hike/show/gallery.html.twig', {hike: hike}) }}</div>
+                </div>
+            </div>
+        </section>
     </article>
-
-    <div class="container">
-        <div style="text-align: center">
-            <h2>Ce que vous pourrez voir</h2>
-        </div>
-
-        {{ include('hike/show/gallery.html.twig', {hike: hike}) }}
-    </div>
 {% endblock %}
 
 {% block scripts %}
