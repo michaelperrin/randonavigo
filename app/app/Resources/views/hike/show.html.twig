@@ -62,7 +62,7 @@
                         </div>
 
                         <div class="gpx-download">
-                            <a href="{{ hike_utils.gpx_file_path(hike) }}" class="btn btn-info">
+                            <a href="{{ path('hike_download_gpx_file', {slug: hike.slug}) }}" class="btn btn-info">
                                 <i class="fa fa-download" aria-hidden="true"></i>
                                 Télécharger la trace GPS
                             </a>
@@ -106,6 +106,6 @@
 
 {% block scripts %}
     <script>
-    HikeShow.init('{{ hike_utils.gpx_file_path(hike) }}');
+    HikeShow.init('{{ path('hike_gpx_file', {slug: hike.slug}) }}');
     </script>
 {% endblock %}

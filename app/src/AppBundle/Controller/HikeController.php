@@ -7,6 +7,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 
 class HikeController extends Controller
 {
@@ -37,15 +38,43 @@ class HikeController extends Controller
     }
 
     /**
+     * @Route("/download/{slug}.gpx", name="hike_download_gpx_file")
+     *
+     * @param  Hike   $hike
+     */
+    public function downloadGpxAction(Hike $hike)
+    {
+        $gpxContent = $this->getGpxFileContent($hike);
+
+        $response = new Response($gpxContent);
+
+        $disposition = $response->headers->makeDisposition(
+            ResponseHeaderBag::DISPOSITION_ATTACHMENT,
+            $hike->getGpxFile()
+        );
+
+        $response->headers->set('Content-Disposition', $disposition);
+
+        return $response;
+    }
+
+    /**
      * @Route("{slug}.gpx", name="hike_gpx_file", defaults={"_format": "xml"})
      *
-     * @param  Hike   $hike [description]
+     * @param  Hike   $hike
      */
     public function gpxAction(Hike $hike)
+    {
+        $gpxContent = $this->getGpxFileContent($hike);
+
+        return new Response($gpxContent);
+    }
+
+    protected function getGpxFileContent(Hike $hike)
     {
         $filePath = $hike->getGpxFilePath();
         $xml = $this->get('app.gpx.segment_merger_transformer')->transform($filePath);
 
-        return new Response($xml);
+        return $xml;
     }
 }
