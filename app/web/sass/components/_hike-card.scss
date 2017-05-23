@@ -3,12 +3,22 @@
     border-radius: 5px;
     box-shadow: 0 2px 0 0 #e5e5e5;
     background: white;
+    position: relative;
 
     .main-picture {
         height: 220px;
         background-position: top left;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .favorite {
+        img {
+            width: 48px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     }
 
     .details {
