@@ -37,5 +37,9 @@
         {% endblock %}
 
         {% block scripts %}{% endblock %}
+
+        {% block google_analytics %}
+            {{ include('layout/google-analytics.html.twig') }}
+        {% endblock %}
     </body>
 </html>
