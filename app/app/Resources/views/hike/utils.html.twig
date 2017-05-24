@@ -15,11 +15,11 @@
     </div>
 {% endmacro %}
 
-{%- macro main_picture_url(hike) -%}
-    {{ _self.picture_url(hike, hike.mainPicture) }}
+{%- macro main_picture_url(hike, absolute_path) -%}
+    {{ _self.picture_url(hike, hike.mainPicture, absolute_path) }}
 {%- endmacro -%}
 
-{%- macro picture_url(hike, picture) -%}
+{%- macro picture_url(hike, picture, absolute_path = false) -%}
     {% spaceless %}
         {%
             set picturePath = 'uploads/hike/%d/%02d/%s/pictures/%s'|format(
@@ -29,7 +29,8 @@
                 picture
             )
         %}
-        {{ asset(picturePath) }}
+
+        {{ absolute_path ? absolute_url(asset(picturePath)) : asset(picturePath) }}
     {% endspaceless %}
 {%- endmacro -%}
 
