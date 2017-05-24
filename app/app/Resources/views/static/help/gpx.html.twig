@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <article class="help gpx-help">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1">
+                    <p class="intro">
+                        Toutes les randonnées sur le site sont proposées au format GPX. Une fois la randonnée téléchargée sur votre smartphone, impossible de se tromper. Il n'y a plus qu'à suivre la trace ! Mais comment les utiliser ?
+                    </p>
+
+                    <p>Toutes les randonnées sur le site se présentent sous la forme d’une trace GPS à télécharger sur son smartphone.</p>
+
+                    <p>Lorsque ces fichiers au format GPX sont ouverts avec une application dédiée, une carte présentant dessus le tracé de la randonnée permet de se repérer à tout moment de la randonnée. Aucun risque de se tromper, il suffit de suivre la trace par rapport à votre position actuelle.</p>
+
+                    <p>Il existe un certain nombre d’applications iOS et Android qui permettent d’ouvrir ce type de fichier. Je recommande l’application ViewRanger malgré son ergonomie déroutante, mais qui a l’avantage d’être gratuite et de présenter une carte très détaillée des routes et chemins. Vous pourrez ainsi improviser des détours ou des raccourcis à tout moment.</p>
+
+                    <p>Pour transférer un fichier GPX sur ViewRanger sur iPhone, c’est un peu compliqué. Le plus « simple » est d’utiliser Dropbox de la manière suivante :</p>
+
+                    <ol>
+                        <li>Placez le fichier téléchargé sur votre ordinateur dans un dossier de votre Dropbox</li>
+                        <li>Ouvrir le fichier avec l’application Dropbox sur l’iPhone</li>
+                        <li>Cliquez sur le menu contextuel (l’icône avec 3 points en haut à droite)</li>
+                        <li>Choisir « Exporter »</li>
+                        <li>Choisir « Ouvrir dans »</li>
+                        <li>Puis choisissez « Copier dans View Ranger »</li>
+                    </ol>
+
+                    <div class="screenshots">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="{{ asset('images/help/gpx/transfer-1.png') }}" alt="">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="{{ asset('images/help/gpx/transfer-2.png') }}" alt="">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="{{ asset('images/help/gpx/transfer-3.png') }}" alt="">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="{{ asset('images/help/gpx/transfer-4.png') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+{% endblock %}

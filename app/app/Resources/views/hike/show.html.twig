@@ -30,7 +30,7 @@
                                 <div class="row">
                                     <div class="{{ hike.endingPoint is not empty ? 'col-xl-6' : 'col-xl-12' }}">
                                         <div class="point starting-point">
-                                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true" aria-label="Point de départ"></i></span>
                                             {{ hike_utils.display_transport_icon(hike.startingPoint.line) }}
                                             <span class="station">{{ hike.startingPoint.station }}</span>
                                         </div>
@@ -39,7 +39,7 @@
                                     {% if hike.endingPoint is not empty %}
                                         <div class="col-xl-6">
                                             <div class="point ending-point">
-                                                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true" aria-label="Point d'arrivée"></i></span>
                                                 {{ hike_utils.display_transport_icon(hike.endingPoint.line) }}
                                                 <span class="station">{{ hike.endingPoint.station }}</span>
                                             </div>
@@ -65,6 +65,11 @@
                             <a href="{{ path('hike_download_gpx_file', {slug: hike.slug}) }}" class="btn btn-info">
                                 <i class="fa fa-download" aria-hidden="true"></i>
                                 Télécharger la trace GPS
+                            </a>
+
+                            <a href="{{ path('help_gpx') }}" class="gpx-help">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                <span>Aide</span>
                             </a>
                         </div>
                     </div>
