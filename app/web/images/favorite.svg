@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="246px" height="246px" viewBox="0 0 246 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>favorite</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="favorite">
+            <polygon id="Rectangle" fill="#FFFFFF" points="0 0 246 0 246 246"></polygon>
+            <text id="" font-family="FontAwesome" font-size="72" font-weight="normal" fill="#B66654">
+                <tspan x="141" y="106"></tspan>
+            </text>
+        </g>
+    </g>
+</svg>
