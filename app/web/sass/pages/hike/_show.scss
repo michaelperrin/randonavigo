@@ -16,6 +16,14 @@
             margin-bottom: 2rem;
         }
 
+        .category {
+            font-weight: 700;
+            font-size: 0.7rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
         .summary {
             font-size: 1.25rem;
             font-weight: 300;
@@ -26,6 +34,12 @@
             width: 100%;
             margin-top: 2rem;
             text-align: center;
+
+            .gpx-help {
+                span {
+                    font-size: 0.8rem;
+                }
+            }
         }
 
         .access {
