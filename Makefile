@@ -1,12 +1,12 @@
 COMPOSE=docker-compose
-APP=$(COMPOSE) exec php
+APP=$(COMPOSE) exec -T php
 COMPOSER=$(APP) composer
 
 help:           ## Show this help
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
-install:        ## Setup the project using Docker and docker-compose
-install_dev: build install_php_deps
+install:        ## Setup the project
+install: build install_php_deps install_front_deps compile_assets
 
 start:          ## Start Docker containers
 	docker-compose up -d
@@ -19,3 +19,9 @@ stop:           ## Stop Docker containers
 
 install_php_deps:
 	$(COMPOSER) install
+
+install_front_deps:
+	$(COMPOSE) run --rm web yarn install
+
+compile_assets:
+	$(COMPOSE) run --rm web gulp
