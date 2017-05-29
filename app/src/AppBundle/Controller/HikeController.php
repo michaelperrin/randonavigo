@@ -72,9 +72,6 @@ class HikeController extends Controller
 
     protected function getGpxFileContent(Hike $hike)
     {
-        $filePath = $hike->getGpxFilePath();
-        $xml = $this->get('app.gpx.segment_merger_transformer')->transform($filePath);
-
-        return $xml;
+        return $this->get('app.hike_manager')->getGpxFileContent($hike);
     }
 }

@@ -8,3 +8,9 @@ services:
 
     app.gpx.segment_merger_transformer:
         class: 'RandoNavigo\Gpx\SegmentMergerTransformer'
+
+    app.hike_manager:
+        class: RandoNavigo\Manager\HikeManager
+        arguments:
+            - '@app.gpx.segment_merger_transformer'
+            - '@cache.app'
