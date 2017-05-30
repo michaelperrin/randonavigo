@@ -1,5 +1,7 @@
 {% macro display_point(point) %}
-    {{ _self.display_transport_icon(point.line) }}
+    {% import _self as hike_utils %}
+
+    {{ hike_utils.display_transport_icon(point.line) }}
     <span class="station">{{ point.station }}</span>
 {% endmacro %}
 
@@ -16,7 +18,9 @@
 {% endmacro %}
 
 {%- macro main_picture_url(hike, absolute_path) -%}
-    {{ _self.picture_url(hike, hike.mainPicture, absolute_path) }}
+    {% import _self as hike_utils %}
+
+    {{- hike_utils.picture_url(hike, hike.mainPicture, absolute_path) -}}
 {%- endmacro -%}
 
 {%- macro picture_url(hike, picture, absolute_path = false) -%}
