@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use RandoNavigo\Document\Hike;
+use RandoNavigo\Manager\HikeManager;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -42,9 +43,9 @@ class HikeController extends Controller
      *
      * @param  Hike   $hike
      */
-    public function downloadGpxAction(Hike $hike)
+    public function downloadGpxAction(Hike $hike, HikeManager $hikeManager)
     {
-        $gpxContent = $this->getGpxFileContent($hike);
+        $gpxContent = $hikeManager->getGpxFileContent($hike);
 
         $response = new Response($gpxContent);
 
@@ -63,15 +64,10 @@ class HikeController extends Controller
      *
      * @param  Hike   $hike
      */
-    public function gpxAction(Hike $hike)
+    public function gpxAction(Hike $hike, HikeManager $hikeManager)
     {
-        $gpxContent = $this->getGpxFileContent($hike);
+        $gpxContent = $hikeManager->getGpxFileContent($hike);
 
         return new Response($gpxContent);
-    }
-
-    protected function getGpxFileContent(Hike $hike)
-    {
-        return $this->get('app.hike_manager')->getGpxFileContent($hike);
     }
 }

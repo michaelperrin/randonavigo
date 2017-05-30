@@ -2,16 +2,16 @@
 
 namespace RandoNavigo\Manager;
 
+use Psr\Cache\CacheItemPoolInterface;
 use RandoNavigo\Document\Hike;
 use RandoNavigo\Gpx\SegmentMergerTransformer;
-use Symfony\Component\Cache\Adapter\AdapterInterface;
 
 class HikeManager
 {
     private $segmentMergerTransformer;
     private $cache;
 
-    public function __construct(SegmentMergerTransformer $segmentMergerTransformer, AdapterInterface $cache)
+    public function __construct(SegmentMergerTransformer $segmentMergerTransformer, CacheItemPoolInterface $cache)
     {
         $this->segmentMergerTransformer = $segmentMergerTransformer;
         $this->cache = $cache;
@@ -24,7 +24,7 @@ class HikeManager
         $cachedXmlContent = $this->cache->getItem('categories');
 
         if (!$cachedXmlContent->isHit()) {
-            $xmlContent = $this->get('app.gpx.segment_merger_transformer')->transform($filePath);
+            $xmlContent = $this->segmentMergerTransformer->transform($filePath);
             $cachedXmlContent->set($xmlContent);
             $this->cache->save($cachedXmlContent);
         } else {
