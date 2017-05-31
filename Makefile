@@ -25,3 +25,6 @@ install_front_deps:
 
 compile_assets:
 	$(COMPOSE) run --rm web gulp
+
+tests:
+	$(COMPOSE) exec php phpunit
