@@ -2,6 +2,8 @@
 
 namespace RandoNavigo\Gpx;
 
+use \DOMDocument;
+
 /**
  * Takes a GPX file and merge all segments into one.
  *
@@ -34,17 +36,24 @@ namespace RandoNavigo\Gpx;
  */
 class SegmentMergerTransformer
 {
-    public function transform($filePath)
+    public function transform(string $filePath)
     {
-        $document = new \DOMDocument();
-        $document->load($filePath);
+        $document = $this->getDocument($filePath);
+        $document = $this->transformDocument($document);
 
+        return $document->saveXML();
+    }
+
+    public function transformDocument(DOMDocument $document) : DOMDocument
+    {
         $segments = $document->getElementsByTagName('trkseg');
 
+        if ($segments->length === 0) {
+            return $document;
+        }
+
         $trk = $document->getElementsByTagName('trk')->item(0);
-
         $firstSegment = $segments->item(0);
-
         $segmentsToRemove = [];
 
         for ($i = 1; $i < $segments->length; $i++) {
@@ -54,7 +63,7 @@ class SegmentMergerTransformer
 
             for ($j = 0; $j < $points->length; $j++) {
                 $point = $points->item($j);
-                $firstSegment->appendChild($point->cloneNode());
+                $firstSegment->appendChild($point->cloneNode(true));
             }
 
             $segmentsToRemove[] = $segment;
@@ -64,6 +73,20 @@ class SegmentMergerTransformer
             $trk->removeChild($segment);
         }
 
-        return $document->saveXML();
+        return $document;
+    }
+
+    /**
+     * Gets DOMDocument from file path
+     *
+     * @param  string $filePath
+     * @return DOMDocument
+     */
+    protected function getDocument(string $filePath) : DOMDocument
+    {
+        $document = new DOMDocument();
+        $document->load($filePath);
+
+        return $document;
     }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/0" version="1.0" creator="ViewRanger - http://www.viewranger.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <trk>
+    <name><![CDATA[Étangs de Hollande]]></name>
+    <trkseg>
+      <trkpt lat="48.722263" lon="1.890299">
+        <ele>178.0</ele>
+        <time>2016-03-13T11:34:40Z</time>
+      </trkpt>
+      <trkpt lat="48.727716" lon="1.858349">
+        <ele>211.0</ele>
+        <time>2016-03-13T12:48:30Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
