@@ -21,7 +21,7 @@ class HikeManager
     {
         $filePath = $hike->getGpxFilePath();
 
-        $cachedXmlContent = $this->cache->getItem('categories');
+        $cachedXmlContent = $this->cache->getItem(sprintf('hike-gpx-file-%s', $hike->getSlug()));
 
         if (!$cachedXmlContent->isHit()) {
             $xmlContent = $this->segmentMergerTransformer->transform($filePath);
