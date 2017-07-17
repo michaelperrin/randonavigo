@@ -59,16 +59,4 @@ class HikeController extends Controller
 
         return $response;
     }
-
-    /**
-     * @Route("{slug}.gpx", name="hike_gpx_file", defaults={"_format": "xml"})
-     *
-     * @param  Hike   $hike
-     */
-    public function gpxAction(Hike $hike, HikeManager $hikeManager)
-    {
-        $gpxContent = $hikeManager->getGpxFileContent($hike);
-
-        return new Response($gpxContent);
-    }
 }

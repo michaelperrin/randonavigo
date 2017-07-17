@@ -115,6 +115,6 @@
 
 {% block scripts %}
     <script>
-    HikeShow.init('{{ path('hike_gpx_file', {slug: hike.slug}) }}');
+    HikeShow.init('{{ path('hike_download_gpx_file', {slug: hike.slug}) }}');
     </script>
 {% endblock %}
