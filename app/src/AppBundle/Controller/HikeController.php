@@ -54,6 +54,7 @@ class HikeController extends Controller
             $hike->getGpxFile()
         );
 
+        $response->headers->set('Content-Type', 'application/gpx+xml');
         $response->headers->set('Content-Disposition', $disposition);
 
         return $response;
