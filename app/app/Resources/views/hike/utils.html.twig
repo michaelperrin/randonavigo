@@ -26,7 +26,7 @@
 {%- macro picture_url(hike, picture, absolute_path = false) -%}
     {% spaceless %}
         {%
-            set picturePath = 'uploads/hike/%d/%02d/%s/pictures/%s'|format(
+            set picturePath = '/uploads/hike/%d/%02d/%s/pictures/%s'|format(
                 hike.publicationDate|date('Y'),
                 hike.publicationDate|date('m'),
                 hike.slug,
@@ -34,7 +34,7 @@
             )
         %}
 
-        {{ absolute_path ? absolute_url(asset(picturePath)) : asset(picturePath) }}
+        {{ absolute_path ? absolute_url(picturePath) : picturePath }}
     {% endspaceless %}
 {%- endmacro -%}
 
