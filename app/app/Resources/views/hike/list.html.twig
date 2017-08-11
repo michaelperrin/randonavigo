@@ -7,8 +7,20 @@
 {% block content %}
     <div class="page-home">
         <div class="banner">
-            <h1>Rando Navigo</h1>
-            <p>Randonnées en Ile-de-France accessibles en transport en commun.</p>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-1 col-md-2 col-sm-2 col-4 offset-lg-2 offset-md-2 offset-sm-1 offset-4">
+                        <img src="{{ asset('images/logo.svg') }}" class="logo" alt="" />
+                    </div>
+
+                    <div class="col-lg-7 col-md-6 col-sm-8 col-12">
+                        <div class="text">
+                            <h1>Rando Navigo</h1>
+                            <p>Randonnées en Ile-de-France accessibles en transport en commun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <section class="intro">
