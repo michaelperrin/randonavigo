@@ -3,7 +3,7 @@
 <div class="picture" itemscope itemtype="http://schema.org/ImageGallery">
     <div class="row">
         {% for picture in hike.pictures %}
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="{{ hike_utils.picture_url(hike, picture) }}" itemprop="contentUrl">
                       <img src="{{ hike_utils.picture_url(hike, picture)|imagine_filter('hike_thumbnail') }}" itemprop="thumbnail" alt="" style="max-width: 100%">

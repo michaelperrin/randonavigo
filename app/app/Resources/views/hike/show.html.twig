@@ -11,7 +11,9 @@
         <header>
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-md-5 col-lg-4 offset-lg-1">
+                    <div class="col-lg-1"></div>
+
+                    <div class="col-md-5 col-lg-4">
                         {% if hike.categories is not empty %}
                             <div class="category">
                                 {# Only display first category #}
@@ -78,7 +80,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-7 col-lg-6 offset-lg-1">
+                    <div class="col-md-7 col-lg-6 ml-lg-auto">
                         <div class="main-picture" style="background-image: url('{{ hike_utils.main_picture_url(hike) }}')"></div>
                     </div>
                 </div>
@@ -88,7 +90,7 @@
         <div class="details">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-md-6 col-lg-6 offset-lg-1">
+                    <div class="col-md-6 col-lg-6 ml-lg-auto">
                         <div class="description">{{ hike.description|markdown }}</div>
                     </div>
 
@@ -102,11 +104,13 @@
         <section class="gallery">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-9 offset-lg-1"><h2>Photos en chemin</h2></div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-9"><h2>Photos en chemin</h2></div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-9 offset-lg-1">{{ include('hike/show/gallery.html.twig', {hike: hike}) }}</div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-9">{{ include('hike/show/gallery.html.twig', {hike: hike}) }}</div>
                 </div>
             </div>
         </section>

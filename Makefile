@@ -23,6 +23,9 @@ install_php_deps:
 install_front_deps:
 	$(COMPOSE) run --rm web yarn install
 
+update_front_deps:
+	$(COMPOSE) run --rm web yarn upgrade
+
 compile_assets:
 	$(COMPOSE) run --rm web gulp
 
