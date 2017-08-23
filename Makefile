@@ -20,6 +20,9 @@ stop:           ## Stop Docker containers
 install_php_deps:
 	$(COMPOSER) install
 
+update_php_deps:
+	$(COMPOSER) update
+
 install_front_deps:
 	$(COMPOSE) run --rm web yarn install
 
