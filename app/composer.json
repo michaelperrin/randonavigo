@@ -5,10 +5,11 @@
     "minimum-stability": "beta",
     "require": {
         "php": "^7.0.8",
-        "symfony/flex": "^1.0",
         "symfony/console": "^4.0",
+        "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
         "symfony/lts": "^4@dev",
+        "symfony/twig-bundle": "^4.0@beta",
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
