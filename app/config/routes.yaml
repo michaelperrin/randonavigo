@@ -1,8 +1,12 @@
-#index:
-#    path: /
-#    defaults: { _controller: 'App\Controller\DefaultController::index' }
+controllers:
+    resource: ../src/Controller/
+    type: annotation
 
-# first, run composer req annotations
-#controllers:
-#    resource: ../src/Controller/
-#    type: annotation
+help_gpx:
+    path: /help/gpx
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/help/gpx.html.twig
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.yaml"
