@@ -1,6 +1,6 @@
 <?php
 
-namespace RandoNavigo\Gpx;
+namespace App\RandoNavigo\Gpx;
 
 use \DOMDocument;
 

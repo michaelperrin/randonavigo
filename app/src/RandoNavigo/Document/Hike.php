@@ -1,9 +1,9 @@
 <?php
 
-namespace RandoNavigo\Document;
+namespace App\RandoNavigo\Document;
 
 use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
-use RandoNavigo\Document\Hike\Point as HikePoint;
+use App\RandoNavigo\Document\Hike\Point as HikePoint;
 
 /**
  * @MongoDB\Document(collection="hike")

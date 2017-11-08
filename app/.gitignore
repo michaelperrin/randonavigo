@@ -18,3 +18,10 @@
 /node_modules
 /web/dist
 /web/uploads
+
+###> symfony/framework-bundle ###
+.env
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
