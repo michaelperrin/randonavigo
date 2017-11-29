@@ -14,10 +14,9 @@
 !var/sessions/.gitkeep
 !var/SymfonyRequirements.php
 /vendor/
-/web/bundles/
 /node_modules
-/web/dist
-/web/uploads
+/public/dist
+/public/uploads
 
 ###> symfony/framework-bundle ###
 .env

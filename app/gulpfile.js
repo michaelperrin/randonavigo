@@ -8,20 +8,20 @@ var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 
 var paths = {
-  styles: './web/sass/**/*.scss',
-  scripts: './web/js/**/*.js'
+  styles: './public/sass/**/*.scss',
+  scripts: './public/js/**/*.js'
 };
 
 gulp.task('scripts', function() {
   gulp.src([
       // Libraries
       './node_modules/leaflet/dist/leaflet.js',
-      './web/lib/leaflet-gpx-1.3.1/gpx.js',
+      './public/lib/leaflet-gpx-1.3.1/gpx.js',
       './node_modules/jquery/dist/jquery.js',
       './node_modules/magnific-popup/dist/jquery.magnific-popup.js',
 
       // App files
-      './web/js/hike/show.js'
+      './public/js/hike/show.js'
     ])
     .pipe(sourcemaps.init())
     .pipe(uglify().on('error', function(e){
@@ -29,7 +29,7 @@ gulp.task('scripts', function() {
      }))
     .pipe(concat('front.js'))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./web/dist/js'));
+    .pipe(gulp.dest('./public/dist/js'));
 });
 
 gulp.task('styles', function() {
@@ -37,7 +37,7 @@ gulp.task('styles', function() {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./web/dist/css'));
+    .pipe(gulp.dest('./public/dist/css'));
 });
 
 // Rerun the task when a file changes
