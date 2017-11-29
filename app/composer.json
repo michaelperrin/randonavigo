@@ -10,9 +10,11 @@
         "sensio/framework-extra-bundle": "^5.0",
         "symfony/asset": "^4.0@RC",
         "symfony/console": "^4.0",
+        "symfony/debug-bundle": "^4.0@RC",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
         "symfony/lts": "^4@dev",
+        "symfony/profiler-pack": "^1.0",
         "symfony/twig-bundle": "^4.0@beta",
         "symfony/yaml": "^4.0"
     },
