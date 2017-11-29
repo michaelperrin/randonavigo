@@ -5,7 +5,10 @@
     "minimum-stability": "beta",
     "require": {
         "php": "^7.0.8",
+        "alcaeus/mongo-php-adapter": "^1.1",
+        "doctrine/mongodb-odm-bundle": "^3.4",
         "sensio/framework-extra-bundle": "^5.0",
+        "symfony/asset": "^4.0@RC",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
@@ -24,13 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/",
             "RandoNavigo\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "RandoNavigo\\Tests\\": "tests/"
         }
     },
     "scripts": {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace RandoNavigo\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

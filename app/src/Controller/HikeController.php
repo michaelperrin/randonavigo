@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Controller;
+namespace RandoNavigo\Controller;
 
-use App\RandoNavigo\Document\Hike;
-use App\RandoNavigo\Manager\HikeManager;
+use Doctrine\ODM\MongoDB\DocumentManager;
+use RandoNavigo\Document\Hike;
+use RandoNavigo\Manager\HikeManager;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,12 +16,10 @@ class HikeController extends Controller
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction(Request $request, DocumentManager $om)
     {
-        $dm = $this->get('doctrine_mongodb')->getManager();
-        $hikes = $dm->getRepository(Hike::class)->findBy([], ['publicationDate' => 'DESC']);
+        $hikes = $om->getRepository(Hike::class)->findBy([], ['publicationDate' => 'DESC']);
 
-        // replace this example code with whatever you need
         return $this->render('hike/list.html.twig', ['hikes' => $hikes]);
     }
 

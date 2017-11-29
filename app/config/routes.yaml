@@ -7,6 +7,3 @@ help_gpx:
     defaults:
         _controller: FrameworkBundle:Template:template
         template:    static/help/gpx.html.twig
-
-_liip_imagine:
-    resource: "@LiipImagineBundle/Resources/config/routing.yaml"

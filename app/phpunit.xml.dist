@@ -16,6 +16,11 @@
         <env name="APP_DEBUG" value="1"/>
         <env name="APP_SECRET" value="a5dd1ecd58c0438521575957c8654245"/>
         <!-- ###- symfony/framework-bundle ### -->
+
+        <!-- ###+ doctrine/mongodb-odm-bundle ### -->
+        <env name="MONGODB_URL" value="mongodb://mongodb:27017"/>
+        <env name="MONGODB_DB" value="symfony"/>
+        <!-- ###- doctrine/mongodb-odm-bundle ### -->
     </php>
 
     <testsuites>

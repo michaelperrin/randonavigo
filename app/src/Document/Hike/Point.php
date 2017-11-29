@@ -1,6 +1,6 @@
 <?php
 
-namespace App\RandoNavigo\Document\Hike;
+namespace RandoNavigo\Document\Hike;
 
 use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 

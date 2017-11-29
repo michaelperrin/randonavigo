@@ -1,10 +1,10 @@
 <?php
 
-namespace App\RandoNavigo\Manager;
+namespace RandoNavigo\Manager;
 
 use Psr\Cache\CacheItemPoolInterface;
-use App\RandoNavigo\Document\Hike;
-use App\RandoNavigo\Gpx\SegmentMergerTransformer;
+use RandoNavigo\Document\Hike;
+use RandoNavigo\Gpx\SegmentMergerTransformer;
 
 class HikeManager
 {
