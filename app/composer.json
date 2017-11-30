@@ -7,6 +7,7 @@
         "php": "^7.0.8",
         "alcaeus/mongo-php-adapter": "^1.1",
         "doctrine/mongodb-odm-bundle": "^3.4",
+        "liip/imagine-bundle": "2.0.x-dev",
         "sensio/framework-extra-bundle": "^5.0",
         "symfony/asset": "^4.0@RC",
         "symfony/console": "^4.0",

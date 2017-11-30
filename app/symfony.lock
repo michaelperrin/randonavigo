@@ -190,5 +190,32 @@
     },
     "symfony/profiler-pack": {
         "version": "v1.0.2"
+    },
+    "symfony/translation": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "124be9a2b7cc035fd8c56f4fd2e19c907c1f3fb8"
+        }
+    },
+    "symfony/templating": {
+        "version": "v4.0.0-rc2"
+    },
+    "symfony/process": {
+        "version": "v4.0.0-rc2"
+    },
+    "imagine/imagine": {
+        "version": "v0.6.3"
+    },
+    "liip/imagine-bundle": {
+        "version": "1.8",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.8",
+            "ref": "d2a601ea5ccad81de2a131ed68481d012ed4667c"
+        }
     }
 }

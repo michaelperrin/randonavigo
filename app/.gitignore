@@ -17,6 +17,7 @@
 /node_modules
 /public/dist
 /public/uploads
+/public/media
 
 ###> symfony/framework-bundle ###
 .env
