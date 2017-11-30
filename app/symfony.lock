@@ -217,5 +217,11 @@
             "version": "1.8",
             "ref": "d2a601ea5ccad81de2a131ed68481d012ed4667c"
         }
+    },
+    "michelf/php-markdown": {
+        "version": "1.7.0"
+    },
+    "knplabs/knp-markdown-bundle": {
+        "version": "1.6.0"
     }
 }
