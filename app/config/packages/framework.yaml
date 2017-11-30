@@ -12,3 +12,5 @@ framework:
     #fragments: ~
     php_errors:
         log: true
+    assets:
+        version: 'v3'
