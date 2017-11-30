@@ -1,0 +1,9 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+help_gpx:
+    path: /help/gpx
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/help/gpx.html.twig
