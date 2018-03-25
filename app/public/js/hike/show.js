@@ -7,10 +7,12 @@ var HikeShow = (function () {
     }
 
     function initMap(gpxFile) {
-        var map = L.map('hike-map');
+        var map = L.map('hike-map', {
+            detectRetina: true
+        });
 
         L.tileLayer(
-            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            'http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}{r}.png?apikey=ba4e2765f7d347dea164a2fb97d8b4c1' , {
                 attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
             }
         ).addTo(map);
