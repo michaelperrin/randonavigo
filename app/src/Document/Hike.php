@@ -88,6 +88,11 @@ class Hike
     protected $favorite;
 
     /**
+     * @MongoDB\Field(type="boolean")
+     */
+    protected $hidden;
+
+    /**
      * Get id
      *
      * @return id $id
@@ -419,5 +424,24 @@ class Hike
     public function getFavorite()
     {
         return $this->favorite;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getHidden(): bool
+    {
+        return $this->hidden;
+    }
+
+    /**
+     * @param boolean $hidden
+     *
+     * @return $this
+     */
+    public function setHidden(bool $hidden)
+    {
+        $this->hidden = $hidden;
+        return $this;
     }
 }

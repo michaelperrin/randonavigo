@@ -19,7 +19,10 @@ class HikeController extends Controller
     {
         $dm = $this->get('doctrine_mongodb')->getManager();
 
-        $hikes = $dm->getRepository(Hike::class)->findBy([], ['publicationDate' => 'DESC']);
+        $hikes = $dm->getRepository(Hike::class)->findBy(
+            ['hidden' => false],
+            ['publicationDate' => 'DESC']
+        );
 
         return $this->render('hike/list.html.twig', ['hikes' => $hikes]);
     }
