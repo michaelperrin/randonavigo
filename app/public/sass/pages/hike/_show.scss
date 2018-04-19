@@ -3,10 +3,7 @@
         background: rgba(80, 80, 80, 0.07);
 
         .main-picture {
-            height: 600px;
-            background-position: top left;
-            background-size: cover;
-            background-repeat: no-repeat;
+            max-width: 100%;
         }
 
         h1 {
