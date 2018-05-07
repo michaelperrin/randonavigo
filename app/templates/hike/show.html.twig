@@ -9,6 +9,9 @@
 {% block content %}
     <article class="hike-show">
         <header>
+            <div class="main-picture" style="background-image: url('{{ hike_utils.main_picture_url(hike) }}');">
+
+            </div>
             <div class="row align-items-center no-gutters">
                 <div class="col-md-5 col-lg-4 offset-lg-1 px-2">
                     {% if hike.categories is not empty %}
@@ -78,7 +81,7 @@
                 </div>
 
                 <div class="col-md-7 col-lg-6 ml-lg-auto">
-                    <img src="{{ hike_utils.main_picture_url(hike) }}" alt="" class="main-picture">
+                    <div id="hike-map" class="map"></div>
                 </div>
             </div>
         </header>
@@ -91,7 +94,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-5">
-                        <div id="hike-map" class="map"></div>
+
                     </div>
                 </div>
             </div>
