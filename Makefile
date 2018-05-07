@@ -6,7 +6,7 @@ help:           ## Show this help
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
 install:        ## Setup the project
-install: build install_php_deps install_front_deps compile_assets
+install: build start install_php_deps install_front_deps compile_assets
 
 start:          ## Start Docker containers
 	docker-compose up -d
