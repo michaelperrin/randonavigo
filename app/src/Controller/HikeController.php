@@ -2,23 +2,23 @@
 
 namespace RandoNavigo\Controller;
 
+use Doctrine\ODM\MongoDB\DocumentManager;
 use RandoNavigo\Document\Hike;
 use RandoNavigo\Manager\HikeManager;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Routing\Annotation\Route;
 
-class HikeController extends Controller
+class HikeController extends AbstractController
 {
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction(Request $request, DocumentManager $dm)
     {
-        $dm = $this->get('doctrine_mongodb')->getManager();
-
         $hikes = $dm->getRepository(Hike::class)->findBy(
             ['hidden' => false],
             ['publicationDate' => 'DESC']
@@ -36,18 +36,26 @@ class HikeController extends Controller
      *     }
      * )
      */
-    public function showAction(Hike $hike)
+    public function showAction(DocumentManager $dm, string $slug)
     {
+        $hike = $dm->getRepository(Hike::class)->findOneBy(['slug' => $slug]);
+
+        if (!$hike) {
+            throw new NotFoundHttpException(
+                sprintf('Hike of slug "%s" was not found', $slug)
+            );
+        }
+
         return $this->render('hike/show.html.twig', ['hike' => $hike]);
     }
 
     /**
      * @Route("/download/{slug}.gpx", name="hike_download_gpx_file")
-     *
-     * @param  Hike   $hike
      */
-    public function downloadGpxAction(Hike $hike, HikeManager $hikeManager)
+    public function downloadGpxAction(DocumentManager $dm, HikeManager $hikeManager, string $slug)
     {
+        $hike = $dm->getRepository(Hike::class)->findOneBy(['slug' => $slug]);
+
         $gpxContent = $hikeManager->getGpxFileContent($hike);
 
         $response = new Response($gpxContent);
