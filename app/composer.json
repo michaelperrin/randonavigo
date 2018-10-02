@@ -12,7 +12,6 @@
         "liip/imagine-bundle": "2.0.x-dev",
         "symfony/asset": "*",
         "symfony/console": "*",
-        "symfony/debug-pack": "^1.0",
         "symfony/flex": "^1.1",
         "symfony/framework-bundle": "*",
         "symfony/profiler-pack": "^1.0",
