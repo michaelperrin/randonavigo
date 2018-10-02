@@ -1,6 +1,8 @@
 Rando Navigo
 ============
 
+[![SymfonyInsight](https://insight.symfony.com/projects/b0d0d4da-bbb6-45db-a1ac-5767daa74cc6/big.png)](https://insight.symfony.com/projects/b0d0d4da-bbb6-45db-a1ac-5767daa74cc6/big.png)
+
 Run project:
 
     make start
