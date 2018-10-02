@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8a7977dd731636dc537a743b178317f",
+    "content-hash": "8ba2c73b9c1e503adf396be0239570c4",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -1125,16 +1125,16 @@
         },
         {
             "name": "liip/imagine-bundle",
-            "version": "2.0.x-dev",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liip/LiipImagineBundle.git",
-                "reference": "f6b9b3ac04e3c01530d5915345fea9d19701313f"
+                "reference": "1acae6ac066e431c3c55c4d39971827a02cbe4d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liip/LiipImagineBundle/zipball/f6b9b3ac04e3c01530d5915345fea9d19701313f",
-                "reference": "f6b9b3ac04e3c01530d5915345fea9d19701313f",
+                "url": "https://api.github.com/repos/liip/LiipImagineBundle/zipball/1acae6ac066e431c3c55c4d39971827a02cbe4d5",
+                "reference": "1acae6ac066e431c3c55c4d39971827a02cbe4d5",
                 "shasum": ""
             },
             "require": {
@@ -1221,7 +1221,7 @@
                 "symfony",
                 "transformation"
             ],
-            "time": "2018-06-25T14:32:48+00:00"
+            "time": "2018-07-10T12:53:54+00:00"
         },
         {
             "name": "michelf/php-markdown",
@@ -3443,9 +3443,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "liip/imagine-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

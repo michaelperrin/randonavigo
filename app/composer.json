@@ -9,7 +9,7 @@
         "alcaeus/mongo-php-adapter": "^1.1",
         "doctrine/mongodb-odm-bundle": "^3.4",
         "knplabs/knp-markdown-bundle": "^1.6",
-        "liip/imagine-bundle": "2.0.x-dev",
+        "liip/imagine-bundle": "^2.1",
         "symfony/asset": "*",
         "symfony/console": "*",
         "symfony/flex": "^1.1",
