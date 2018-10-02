@@ -10,7 +10,6 @@
         "doctrine/mongodb-odm-bundle": "^3.4",
         "knplabs/knp-markdown-bundle": "^1.6",
         "liip/imagine-bundle": "2.0.x-dev",
-        "sensio/framework-extra-bundle": "^5.0",
         "symfony/asset": "*",
         "symfony/console": "*",
         "symfony/debug-pack": "^1.0",
