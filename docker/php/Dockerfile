@@ -1,7 +1,5 @@
-FROM composer:1.6 as composer
-
+FROM composer:1.7 as composer
 FROM php:7.2-fpm-alpine
-MAINTAINER Michaël Perrin <contact@michaelperrin.fr>
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
 ENV APCU_VERSION 5.1.8
