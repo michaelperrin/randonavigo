@@ -14,6 +14,9 @@
     "doctrine/common": {
         "version": "v2.8.1"
     },
+    "doctrine/event-manager": {
+        "version": "v1.0.0"
+    },
     "doctrine/inflector": {
         "version": "v1.2.0"
     },
@@ -37,6 +40,12 @@
             "version": "3.3",
             "ref": "e1ee362a520ff9e3e7c38fb5399499427ed91314"
         }
+    },
+    "doctrine/persistence": {
+        "version": "v1.0.1"
+    },
+    "doctrine/reflection": {
+        "version": "v1.0.0"
     },
     "imagine/imagine": {
         "version": "v0.6.3"
@@ -71,15 +80,6 @@
     "psr/simple-cache": {
         "version": "1.0.0"
     },
-    "sensio/framework-extra-bundle": {
-        "version": "4.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "4.0",
-            "ref": "aaddfdf43cdecd4cf91f992052d76c2cadc04543"
-        }
-    },
     "symfony/asset": {
         "version": "v4.0.0-rc2"
     },
@@ -100,15 +100,6 @@
     },
     "symfony/debug": {
         "version": "v4.0.0-beta3"
-    },
-    "symfony/debug-bundle": {
-        "version": "3.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "3.3",
-            "ref": "de31e687f3964939abd1f66817bd96ed34bc2eee"
-        }
     },
     "symfony/dependency-injection": {
         "version": "v4.0.0-beta3"

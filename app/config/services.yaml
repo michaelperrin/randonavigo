@@ -27,8 +27,3 @@ services:
     RandoNavigo\Controller\:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
-
-    # This service is necessary to make the ParamConverter available for MongoDB documents
-    doctrine_mongo_db_param_converter:
-        class: 'Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter'
-        arguments: ['@doctrine_mongodb']
