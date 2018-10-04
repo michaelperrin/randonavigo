@@ -1,7 +1,12 @@
-var HikeShow = (function () {
-    "use strict";
+import $ from 'jquery';
+import 'leaflet/dist/leaflet.js';
+import '../lib/leaflet-gpx-1.3.1/gpx.js';
+import 'magnific-popup/dist/jquery.magnific-popup.js';
 
-    function init(gpxFile) {
+var HikeShow = (function () {
+    function init() {
+        var gpxFile = document.getElementById('hike').dataset.gpxFile;
+
         initMap(gpxFile);
         initGallery();
     }
@@ -50,3 +55,5 @@ var HikeShow = (function () {
         init: init
     };
 })();
+
+HikeShow.init();

@@ -11,7 +11,7 @@
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="{{ asset('dist/css/front.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
 
@@ -32,9 +32,7 @@
             {% endblock %}
         {% endblock %}
 
-        {% block javascripts %}
-            <script type="text/javascript" src="{{ asset('dist/js/front.js') }}"></script>
-        {% endblock %}
+        {% block javascripts %}{% endblock %}
 
         {% block scripts %}{% endblock %}
 

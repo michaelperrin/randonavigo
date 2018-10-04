@@ -24,13 +24,16 @@ update_php_deps:
 	$(COMPOSER) update
 
 install_front_deps:
-	$(COMPOSE) run --rm web yarn install
+	$(COMPOSE) run --rm yarn install
 
 update_front_deps:
-	$(COMPOSE) run --rm web yarn upgrade
+	$(COMPOSE) run --rm yarn upgrade
 
 compile_assets:
-	$(COMPOSE) run --rm web gulp
+	$(COMPOSE) run --rm yarn encore production
+
+compile_assets_dev:
+	$(COMPOSE) run --rm yarn encore dev
 
 tests:
 	$(COMPOSE) exec php phpunit
