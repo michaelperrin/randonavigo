@@ -15,7 +15,6 @@
 !var/SymfonyRequirements.php
 /vendor/
 /node_modules
-/public/dist
 /public/uploads
 /public/media
 
@@ -25,3 +24,10 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+###> symfony/webpack-encore-pack ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-pack ###

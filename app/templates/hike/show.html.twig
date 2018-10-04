@@ -6,8 +6,12 @@
 
 {% block meta %}{{ include('hike/show/meta.html.twig') }}{% endblock %}
 
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('build/hikeShow.js') }}"></script>
+{% endblock %}
+
 {% block content %}
-    <article class="hike-show">
+    <article id="hike" class="hike-show" data-gpx-file="{{ path('hike_download_gpx_file', {slug: hike.slug}) }}">
         <header>
             <div class="main-picture" style="background-image: url('{{ hike_utils.main_picture_url(hike) }}');">
 
@@ -114,10 +118,4 @@
             </div>
         </section>
     </article>
-{% endblock %}
-
-{% block scripts %}
-    <script>
-    HikeShow.init('{{ path('hike_download_gpx_file', {slug: hike.slug}) }}');
-    </script>
 {% endblock %}

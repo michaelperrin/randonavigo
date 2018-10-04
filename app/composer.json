@@ -10,12 +10,12 @@
         "doctrine/mongodb-odm-bundle": "^3.4",
         "knplabs/knp-markdown-bundle": "^1.7",
         "liip/imagine-bundle": "^2.1",
-        "symfony/asset": "*",
         "symfony/console": "*",
         "symfony/flex": "^1.1",
         "symfony/framework-bundle": "*",
         "symfony/profiler-pack": "^1.0",
         "symfony/twig-bundle": "*",
+        "symfony/webpack-encore-pack": "^1.0",
         "symfony/yaml": "*"
     },
     "require-dev": {

@@ -1,6 +1,6 @@
 version: '2'
 services:
-  web:
+  yarn:
     build: docker/web
     working_dir: /var/www/randonavigo
     volumes_from:
