@@ -7,3 +7,9 @@ help_gpx:
     defaults:
         _controller: FrameworkBundle:Template:template
         template:    static/help/gpx.html.twig
+
+about:
+    path: /a-propos
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/about.html.twig
