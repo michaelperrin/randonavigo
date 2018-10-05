@@ -1,0 +1,22 @@
+.about {
+    section {
+        margin-bottom: 2rem;
+    }
+
+    .intro {
+        margin-top: 3rem;
+
+        .profile-picture {
+            width: 100%;
+            border-radius: 500px;
+        }
+    }
+
+    a {
+        color: #618C0D;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
