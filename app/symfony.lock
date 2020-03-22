@@ -53,6 +53,15 @@
     "knplabs/knp-markdown-bundle": {
         "version": "1.6.0"
     },
+    "laminas/laminas-code": {
+        "version": "3.4.1"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.2.1"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.0.1"
+    },
     "liip/imagine-bundle": {
         "version": "1.8",
         "recipe": {
@@ -68,10 +77,19 @@
     "mongodb/mongodb": {
         "version": "1.1.2"
     },
+    "ocramius/proxy-manager": {
+        "version": "2.7.0"
+    },
+    "php": {
+        "version": "7.4"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
     "psr/container": {
+        "version": "1.0.0"
+    },
+    "psr/event-dispatcher": {
         "version": "1.0.0"
     },
     "psr/log": {
@@ -85,6 +103,9 @@
     },
     "symfony/cache": {
         "version": "v4.0.0-beta3"
+    },
+    "symfony/cache-contracts": {
+        "version": "v2.0.1"
     },
     "symfony/config": {
         "version": "v4.0.0-beta3"
@@ -110,8 +131,14 @@
     "symfony/dotenv": {
         "version": "v4.0.0-beta3"
     },
+    "symfony/error-handler": {
+        "version": "v5.0.5"
+    },
     "symfony/event-dispatcher": {
         "version": "v4.0.0-beta3"
+    },
+    "symfony/event-dispatcher-contracts": {
+        "version": "v2.0.1"
     },
     "symfony/filesystem": {
         "version": "v4.0.0-beta3"
@@ -146,14 +173,23 @@
     "symfony/lts": {
         "version": "4-dev"
     },
+    "symfony/mime": {
+        "version": "v5.0.5"
+    },
     "symfony/options-resolver": {
         "version": "v4.0.0-rc2"
+    },
+    "symfony/polyfill-intl-idn": {
+        "version": "v1.14.0"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.6.0"
     },
     "symfony/polyfill-php72": {
         "version": "v1.6.0"
+    },
+    "symfony/polyfill-php73": {
+        "version": "v1.14.0"
     },
     "symfony/process": {
         "version": "v4.0.0-rc2"
@@ -170,6 +206,9 @@
             "ref": "5b2f0ee78c90d671860ac6450e37dec10fbc0719"
         }
     },
+    "symfony/service-contracts": {
+        "version": "v2.0.1"
+    },
     "symfony/stopwatch": {
         "version": "v4.0.0-rc2"
     },
@@ -185,6 +224,9 @@
             "ref": "124be9a2b7cc035fd8c56f4fd2e19c907c1f3fb8"
         }
     },
+    "symfony/translation-contracts": {
+        "version": "v2.0.1"
+    },
     "symfony/twig-bridge": {
         "version": "v4.0.0-beta3"
     },
@@ -199,6 +241,9 @@
     },
     "symfony/var-dumper": {
         "version": "v4.0.0-rc2"
+    },
+    "symfony/var-exporter": {
+        "version": "v5.0.5"
     },
     "symfony/web-profiler-bundle": {
         "version": "3.3",
@@ -223,5 +268,8 @@
     },
     "twig/twig": {
         "version": "v2.4.4"
+    },
+    "webimpress/safe-writer": {
+        "version": "2.0.1"
     }
 }
