@@ -17,7 +17,7 @@ services:
     working_dir: /var/www/randonavigo
 
   webserver:
-    image: nginx:1.12-alpine
+    image: nginx:1.16-alpine
     depends_on:
       - php
     volumes:
