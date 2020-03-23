@@ -3890,6 +3890,11 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
+leaflet-gpx@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/leaflet-gpx/-/leaflet-gpx-1.5.0.tgz#33b22b1f9e218335d66cface6d82558ceb972790"
+  integrity sha512-x6bubTA3/ySOF8K6VOGONWEED5/yOtRBkb2zJUp4rhdN4HIEKW9S+AWMAj626VxjwrqJY2kq/wn2Ev6ifu3RVA==
+
 leaflet@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.6.0.tgz#aecbb044b949ec29469eeb31c77a88e2f448f308"
