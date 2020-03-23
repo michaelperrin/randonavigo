@@ -1,43 +1,39 @@
-FROM composer:1.7 as composer
-FROM php:7.2-fpm-alpine
+FROM composer:1.9 as composer
+FROM php:7.4-fpm-alpine
 
 ENV COMPOSER_ALLOW_SUPERUSER=1
-ENV APCU_VERSION 5.1.8
+ENV APCU_VERSION 5.1.18
 
 # Add Composer to PHP container
 COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
 RUN apk add --no-cache \
-        ca-certificates \
-        icu-libs \
-        git \
-        unzip \
-        zlib-dev && \
-    apk add --no-cache --virtual .build-deps \
-        $PHPIZE_DEPS \
-        icu-dev && \
-    docker-php-ext-install \
-        intl \
-        zip && \
-    pecl install apcu-${APCU_VERSION} && \
-    docker-php-ext-enable apcu && \
-    docker-php-ext-enable opcache
+  ca-certificates \
+  icu-libs \
+  git \
+  unzip \
+  libzip && \
+  apk add --no-cache --virtual .build-deps \
+  $PHPIZE_DEPS \
+  icu-dev
 
+RUN apk add --no-cache libzip-dev
+RUN docker-php-ext-install \
+  intl \
+  zip
+
+RUN pecl install apcu-${APCU_VERSION} && \
+  docker-php-ext-enable apcu && \
+  docker-php-ext-enable opcache
 
 # GD
 RUN apk add --no-cache freetype libpng libjpeg-turbo freetype-dev libpng-dev libjpeg-turbo-dev && \
-  docker-php-ext-configure gd \
-    --with-gd \
-    --with-freetype-dir=/usr/include/ \
-    --with-png-dir=/usr/include/ \
-    --with-jpeg-dir=/usr/include/ && \
-  NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) && \
-  docker-php-ext-install -j${NPROC} gd && \
+  docker-php-ext-configure gd --with-freetype --with-jpeg && \
+  docker-php-ext-install -j$(nproc) gd && \
   apk del --no-cache freetype-dev libpng-dev libjpeg-turbo-dev
 
 # MongoDB
 RUN pecl install mongodb \
     && docker-php-ext-enable mongodb
 
-
-# ADD php.ini /usr/local/etc/php/php.ini
+ADD php.ini /usr/local/etc/php/php.ini
