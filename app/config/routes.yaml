@@ -4,12 +4,12 @@ controllers:
 
 help_gpx:
     path: /help/gpx
+    controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
     defaults:
-        _controller: FrameworkBundle:Template:template
-        template:    static/help/gpx.html.twig
+        template: static/help/gpx.html.twig
 
 about:
     path: /a-propos
+    controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
     defaults:
-        _controller: FrameworkBundle:Template:template
-        template:    static/about.html.twig
+        template: static/about.html.twig
