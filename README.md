@@ -8,11 +8,11 @@ Run project:
     make start
     make install
 
-Visit [http://localhost:8080](http://localhost:8080).
+Visit [http://localhost:8082](http://localhost:8082).
 
 ## Development
 
-Compile assets (SASS, JavaScript) using Gulp:
+Compile assets (SASS, JavaScript) using Webpack:
 
     make compile_assets
 
