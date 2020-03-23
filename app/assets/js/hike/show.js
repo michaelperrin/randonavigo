@@ -1,9 +1,9 @@
 import $ from 'jquery';
-import 'leaflet/dist/leaflet.js';
-import '../lib/leaflet-gpx-1.3.1/gpx.js';
-import 'magnific-popup/dist/jquery.magnific-popup.js';
+import 'leaflet';
+import 'leaflet-gpx';
+import 'magnific-popup';
 
-var HikeShow = (function () {
+window.HikeShow = (function () {
     function init() {
         var gpxFile = document.getElementById('hike').dataset.gpxFile;
 
@@ -55,5 +55,3 @@ var HikeShow = (function () {
         init: init
     };
 })();
-
-HikeShow.init();

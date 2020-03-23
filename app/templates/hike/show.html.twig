@@ -7,7 +7,7 @@
 {% block meta %}{{ include('hike/show/meta.html.twig') }}{% endblock %}
 
 {% block javascripts %}
-    <script type="text/javascript" src="{{ asset('build/hikeShow.js') }}"></script>
+    {{ encore_entry_script_tags('app') }}
 {% endblock %}
 
 {% block content %}
@@ -118,4 +118,10 @@
             </div>
         </section>
     </article>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        HikeShow.init();
+    </script>
 {% endblock %}

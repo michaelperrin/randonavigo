@@ -7,8 +7,7 @@
 
 // any CSS you require will output into a single css file (app.css in this case)
 import '../css/front.scss';
+import './hike/show';
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // var $ = require('jquery');
-
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
