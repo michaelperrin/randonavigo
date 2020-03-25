@@ -9,7 +9,7 @@ install:        ## Setup the project
 install: build start install_php_deps install_front_deps compile_assets
 
 start:          ## Start Docker containers
-	docker-compose up -d
+	docker-compose up -d --remove-orphans
 
 build:          ## Build Docker containers
 	docker-compose build
