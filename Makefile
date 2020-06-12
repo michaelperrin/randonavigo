@@ -35,5 +35,5 @@ compile_assets:
 compile_assets_dev:
 	$(COMPOSE) run --rm yarn encore dev
 
-tests:
-	$(COMPOSE) exec php phpunit
+test:
+	$(COMPOSE) exec php ./bin/phpunit

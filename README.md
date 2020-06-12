@@ -18,4 +18,4 @@ Compile assets (SASS, JavaScript) using Webpack:
 
 Run unit tests:
 
-    make tests
+    make test
