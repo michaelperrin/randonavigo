@@ -17,7 +17,7 @@ window.HikeShow = (function () {
         });
 
         L.tileLayer(
-            'http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}{r}.png?apikey=ba4e2765f7d347dea164a2fb97d8b4c1' , {
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' , {
                 attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
             }
         ).addTo(map);
