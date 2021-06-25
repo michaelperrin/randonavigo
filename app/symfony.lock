@@ -179,6 +179,9 @@
     "symfony/lts": {
         "version": "4-dev"
     },
+    "symfony/mime": {
+        "version": "v5.1.11"
+    },
     "symfony/options-resolver": {
         "version": "v4.0.0-rc2"
     },
@@ -199,6 +202,9 @@
     },
     "symfony/polyfill-intl-grapheme": {
         "version": "v1.17.0"
+    },
+    "symfony/polyfill-intl-idn": {
+        "version": "v1.23.0"
     },
     "symfony/polyfill-intl-normalizer": {
         "version": "v1.17.0"
