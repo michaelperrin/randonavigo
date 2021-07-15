@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import List from '../components/hike/List'
+import { getHikes } from '../lib/hike'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({ hikes }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +15,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Rando Navigo</h1>
+
+        <List hikes={hikes} />
       </main>
 
       <footer className={styles.footer}>
@@ -20,4 +24,12 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      hikes: getHikes()
+    }
+  }
 }

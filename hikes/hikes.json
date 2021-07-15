@@ -1,0 +1,830 @@
+[
+  {
+    "title": "Bois Domanial des Cinq-Cents Arpents – Rambouillet",
+    "summary": "Une boucle entièrement en forêt depuis et jusqu’à la gare de Le Perray en Yvelines, facilement accessible en Transilien depuis Paris. De nombreux étangs agrémentent cette très belle randonnée.",
+    "description": "De quoi se ressourcer en pleine nature et de s’éloigner de la grisaille parisienne !",
+    "slug": "bois-domanial-cinq-cents-arpents-rambouillet",
+    "publication_date": "2012-03-08T12:17:24:12+0100",
+    "categories": [
+      "Yvelines"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_6336.jpg",
+      "IMG_6352.jpg",
+      "IMG_6363.jpg",
+      "IMG_6365.jpg",
+      "IMG_6370.jpg",
+      "IMG_6377.jpg",
+      "IMG_6379.jpg",
+      "IMG_6383.jpg",
+      "IMG_6392.jpg",
+      "IMG_6409.jpg",
+      "IMG_6410.jpg",
+      "IMG_6422.jpg",
+      "IMG_6438.jpg"
+    ],
+    "main_picture": "IMG_6409.jpg",
+    "distance": 19,
+    "gpx_file": "bois-domanial-cinq-cents-arpents-rambouillet.gpx",
+    "starting_point": {
+      "station": "Le Perray-en-Yvelines",
+      "line": "N",
+      "comment": "depuis Gare Montparnasse : 57 minutes"
+    },
+    "favorite": true,
+    "hidden": false
+  },
+  {
+    "title": "De Chamarande à La Ferté-Alais dans le Gâtinais",
+    "summary": "Cette randonnée de gare à gare dans le Parc naturel régional du Gâtinais vous ravira par la diversité de ses paysages. Bois, champs vallonnés, point de vue et petits villages agrémentent la randonnée.",
+    "description": "En provenance de Paris, vous commencerez par traverser les voies de train par le souterrain avant de les longer. Vous gagnerez rapidement les bois où vous attend une bonne petite grimpette. Elle vous fera rejoindre le plateau à partir duquel vous profiterez d’un joli panorama. Les clairières qui parsèment le parcours vous permettront de pique-niquer agréablement.\n\nAprès un passage sur l’ancienne voie royale, vous rejoindrez le GR1 qui vous mènera au petit village de Lardy traversé par sa rivière (La Juine). Vous poursuivrez son parcours à travers champs et zones boisées jusqu’à La Ferté-Alais.\n\nPossibilité de visiter le [Domaine de Chamarande](http://chamarande.essonne.fr/) au point de départ.",
+    "slug": "de-chamarande-a-ferte-alais-gatinais",
+    "publication_date": "2017-05-14T17:46:19:12+0100",
+    "categories": [
+      "Essonne"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_7246.jpg",
+      "IMG_7247.jpg",
+      "IMG_7251.jpg",
+      "IMG_7252.jpg",
+      "IMG_7254.jpg",
+      "IMG_7255.jpg",
+      "IMG_7257.jpg",
+      "IMG_7261.jpg",
+      "IMG_7263.jpg",
+      "IMG_7264.jpg",
+      "IMG_7265.jpg",
+      "IMG_7268.jpg",
+      "IMG_7269.jpg",
+      "IMG_7271.jpg",
+      "IMG_7272.jpg",
+      "IMG_9203.jpg",
+      "IMG_9205.jpg",
+      "IMG_9207.jpg",
+      "IMG_9209.jpg",
+      "IMG_9210.jpg",
+      "IMG_9211.jpg",
+      "IMG_9214.jpg",
+      "IMG_9215.jpg",
+      "IMG_9216.jpg",
+      "IMG_9217.jpg",
+      "IMG_9218.jpg",
+      "IMG_9219.jpg",
+      "IMG_9220.jpg",
+      "IMG_9223.jpg"
+    ],
+    "main_picture": "IMG_9211.jpg",
+    "distance": 14.5,
+    "gpx_file": "de-chamarande-a-ferte-alais-gatinais.gpx",
+    "starting_point": {
+      "station": "Chamarande",
+      "line": "C",
+      "comment": "53 minutes depuis Saint-Michel – Notre-Dame"
+    },
+    "ending_point": {
+      "station": "La Ferté-Alais",
+      "line": "D",
+      "comment": "1h10 jusqu’à Châtelet"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "Etangs de Hollande",
+    "summary": "Une randonnée de gare à gare qui vous mènera le long des étangs de Hollande.",
+    "description": "Les premières centaines de mètres sont peu agréables le long de la route, mais vous bifurquerez rapidement vers des chemins à travers champs et rejoindrez ensuite la forêt. Vous longerez ensuite les étangs de Hollande, vous offrant des vues très agréables.",
+    "slug": "etangs-de-hollande",
+    "publication_date": "2016-03-13T17:46:19:12+0100",
+    "categories": [
+      "Yvelines"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_4133.jpg",
+      "IMG_4134.jpg",
+      "IMG_4136.jpg",
+      "IMG_4138.jpg",
+      "IMG_4139.jpg"
+    ],
+    "main_picture": "IMG_4138.jpg",
+    "distance": 15,
+    "gpx_file": "etangs-de-hollande.gpx",
+    "starting_point": {
+      "station": "Les-Essarts-le-Roi",
+      "line": "N",
+      "comment": "55 minutes de Gare Montparnasse"
+    },
+    "ending_point": {
+      "station": "Le Perray-en-Yvelines",
+      "line": "N",
+      "comment": "57 minutes de Gare Montparnasse"
+    },
+    "favorite": true,
+    "hidden": false
+  },
+  {
+    "title": "Forêt de Montceaux / La Marne",
+    "summary": "Belle randonnée à travers champs, en forêt de Montceaux et le long de la Marne.",
+    "description": "",
+    "slug": "isles-congis-montceaux-marne",
+    "publication_date": "2016-04-10T17:46:19:12+0100",
+    "categories": [
+      "Seine et Marne"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_4301.jpg",
+      "IMG_4303.jpg",
+      "IMG_4304.jpg",
+      "IMG_4305.jpg",
+      "IMG_20160410_135220.jpg"
+    ],
+    "main_picture": "IMG_4305.jpg",
+    "distance": 12,
+    "gpx_file": "isles-congis-montceaux-marne.gpx",
+    "starting_point": {
+      "station": "Isles - Armentière - Congis",
+      "line": "P",
+      "comment": "42 minutes depuis Gare de l'Est"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "Vallée de Chevreuse",
+    "summary": "Cette randonnée vous fera découvrir le joli petit village de Chevreuse avec ses canaux agrémentés de ponts, puis vous emmènera en forêt avant de vous faire découvrir le château fort de la Madeleine dominant la vallée.",
+    "description": "*Astuce !* Le château dispose d'un point d'information qui vend la [Volcelest](http://www.brasseriechevreuse.com/), bière de la vallée de Chevreuse (blonde, ambrée, brune, triple), que je recommande sans hésitation.",
+    "slug": "vallee-de-chevreuse",
+    "publication_date": "2016-07-28T17:46:19:12+0100",
+    "categories": [
+      "Yvelines",
+      "Essonne"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_5012.jpg",
+      "IMG_5013-1.jpg",
+      "IMG_5015-1.jpg",
+      "IMG_5016-1.jpg",
+      "IMG_5017-1.jpg",
+      "IMG_5018-1.jpg",
+      "IMG_5019-1.jpg",
+      "IMG_5020-1.jpg",
+      "IMG_5021-1.jpg",
+      "IMG_5023-1.jpg",
+      "IMG_5024.jpg",
+      "IMG_5025.jpg",
+      "IMG_5026.jpg",
+      "IMG_5027.jpg",
+      "IMG_5028.jpg",
+      "IMG_5033.jpg",
+      "IMG_5034.jpg",
+      "IMG_5036.jpg",
+      "IMG_5037.jpg",
+      "IMG_5038.jpg",
+      "IMG_5039.jpg",
+      "IMG_5041.jpg",
+      "IMG_5042.jpg",
+      "IMG_5043.jpg"
+    ],
+    "main_picture": "IMG_5041.jpg",
+    "distance": 12,
+    "gpx_file": "vallee-de-chevreuse.gpx",
+    "starting_point": {
+      "station": "Saint-Rémy-lès-Chevreuse",
+      "line": "B"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "Dourdan / Forêt de Saint-Arnoud",
+    "summary": "Une randonnée au départ de la gare de RER C Dourdan qui vous fera longer l'Orge puis vous emmènera en forêt de Saint-Arnoud.",
+    "description": "*Possibilité de moduler à la baisse ou à la hausse sur la dernière partie de la randonnée, en forêt de Saint-Arnoud.",
+    "slug": "dourdan-foret-de-saint-arnoud",
+    "publication_date": "2016-08-17T17:46:19:12+0100",
+    "categories": [
+      "Essonne"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_5130.jpg",
+      "IMG_5131.jpg",
+      "IMG_5133.jpg",
+      "IMG_5134.jpg",
+      "IMG_5135.jpg",
+      "IMG_5136.jpg",
+      "IMG_5137.jpg"
+    ],
+    "main_picture": "IMG_5137.jpg",
+    "distance": 13,
+    "gpx_file": "dourdan-foret-de-saint-arnoud.gpx",
+    "starting_point": {
+      "station": "Dourdan",
+      "line": "C",
+      "comment": "depuis Gare d'Austerlitz : 33 minutes si vous visez les TER directs (compatibles Navigo), 1h02 en RER C omnibus"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "De Coignières à Saint-Rémy-Lès-Chevreuse",
+    "summary": "Cette randonnée vous fera partir de Coignières où vous rejoindrez rapidement des chemins le long des champs et traversant de petits villages, avant de rejoindre la forêt.",
+    "description": "La balade se poursuivra en forêt, le long d'un cours d'eau avec des caillebotis aménagés avec des explications sur la faune et la flore locales. Vous arriverez ensuite au petit village de Chevreuse où vous arpenterez le long de ses petits canaux avant de rejoindre la gare de Saint-Rémy-Lès-Chevreuse.",
+    "slug": "de-coignieres-a-saint-remy-chevreuse",
+    "publication_date": "2016-12-16T17:46:19:12+0100",
+    "categories": [
+      "Yvelines"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_6310.jpg",
+      "IMG_6311.jpg",
+      "IMG_6312.jpg",
+      "IMG_6313.jpg",
+      "IMG_6315.jpg",
+      "IMG_6316.jpg",
+      "IMG_6317.jpg",
+      "IMG_6321.jpg",
+      "IMG_6322.jpg",
+      "IMG_6323.jpg",
+      "IMG_6324.jpg",
+      "IMG_6326.jpg",
+      "IMG_6327.jpg",
+      "IMG_6328.jpg",
+      "IMG_6330.jpg",
+      "IMG_6331.jpg",
+      "IMG_6334.jpg",
+      "IMG_6336.jpg",
+      "IMG_6338.jpg",
+      "IMG_6340.jpg"
+    ],
+    "main_picture": "IMG_6310.jpg",
+    "distance": 14,
+    "gpx_file": "de-coignieres-a-saint-remy-chevreuse.gpx",
+    "starting_point": {
+      "station": "Coignières",
+      "line": "N",
+      "comment": "50 minutes depuis Gare Montparnasse"
+    },
+    "ending_point": {
+      "station": "Saint-Rémy-Lès-Chevreuse",
+      "line": "B",
+      "comment": "50 minutes jusqu'à Châtelet"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "Houdan à Orgerus par les champs",
+    "summary": "Une balade dans les Yvelines à travers champs de Houdan à Orgerus.",
+    "description": "Avec un peu de chance, vous pourrez y croiser des cerfs se déplaçant de bosquet en bosquet. Si vous n'aimez pas les côtes, n'ayez aucune crainte, toute la randonnée se fait sur du plat !",
+    "slug": "houdan-a-orgerus-champs",
+    "publication_date": "2017-02-18T17:46:19:12+0100",
+    "categories": [
+      "Yvelines"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_6746.jpg",
+      "IMG_6748.jpg",
+      "IMG_6757.jpg",
+      "IMG_6759.jpg",
+      "IMG_6760.jpg",
+      "IMG_6764.jpg",
+      "IMG_6768.jpg",
+      "IMG_6771.jpg",
+      "IMG_6772.jpg"
+    ],
+    "main_picture": "IMG_6759.jpg",
+    "distance": 15,
+    "gpx_file": "houdan-a-orgerus-champs.gpx",
+    "starting_point": {
+      "station": "Houdan",
+      "line": "N",
+      "comment": "58 minutes depuis Gare Montparnasse"
+    },
+    "ending_point": {
+      "station": "Orgerus Behoust",
+      "line": "N",
+      "comment": "49 minutes depuis Gare Montparnasse"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "L'abbaye de Royaumont par la forêt",
+    "summary": "Cette randonnée en forêt vous mènera à l'Abbaye de Royaumont. Des passages vallonnés et une belle variété d'espèces d'arbre donnent du charme à cette randonnée en pleine nature.",
+    "description": "Cette randonnée principalement en forêt emprunte en partie l'ancien chemin vers l'abbaye de Royaumont.\n\nQuelques passages vallonnés et une belle variété d'espèces d'arbres donnent du charme à cette randonnée en pleine nature.\n\nIl serait dommage de ne pas profiter de cette randonnée pour visiter la superbe abbaye de Royaumont (je vous conseille la visite guidée d'une heure environ). Vous pourrez y prendre une petite collation avant de repartir vers Viarmes où le train vous ramènera à Paris.\n\nPlusieurs possibilités de départ possibles :\n\n* Survilliers Fosses (RER D), qui est la dernière station en Île-de-France (et donc en avec accès gratuit avec Navigo). Randonnée de 20km.\n* La Borne Blanche (RER D) qui vous permet de raccourcir la randonnée de 2km avec un accès direct en forêt mais qui est hors tarification Île-de-France (il vous faudra acheter un complément de parcours sur votre passe Navigo). Randonnée de 18km.\n* et également Orry-la-Ville accessible en TER (départ Gare du Nord), hors tarification Navigo.",
+    "slug": "abbaye-de-royaumont-foret",
+    "publication_date": "2017-03-26T17:46:19:12+0100",
+    "categories": [
+      "Val d'Oise"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_6921.jpg",
+      "IMG_6922.jpg",
+      "IMG_6926.jpg",
+      "IMG_6927.jpg",
+      "IMG_6932.jpg",
+      "IMG_6933.jpg",
+      "IMG_6934.jpg",
+      "IMG_6935.jpg",
+      "IMG_6936.jpg",
+      "IMG_6938.jpg",
+      "IMG_6940.jpg",
+      "IMG_6943.jpg",
+      "IMG_6949.jpg",
+      "IMG_6957.jpg",
+      "IMG_6958.jpg",
+      "IMG_6961.jpg",
+      "IMG_6962.jpg",
+      "IMG_6967.jpg",
+      "IMG_6968.jpg",
+      "IMG_6975.jpg",
+      "IMG_6976.jpg"
+    ],
+    "main_picture": "IMG_6967.jpg",
+    "distance": 20,
+    "gpx_file": "abbaye-de-royaumont-foret.gpx",
+    "starting_point": {
+      "station": "Survilliers Fosses",
+      "line": "D",
+      "comment": "41 minutes depuis Châtelet-les-Halles"
+    },
+    "ending_point": {
+      "station": "Viarnes",
+      "line": "H",
+      "comment": "42 minutes jusqu'à Gare du Nord"
+    },
+    "favorite": true,
+    "hidden": false
+  },
+  {
+    "title": "Randonnée dans le Vexin autour de Juziers",
+    "summary": "Une randonnée dans le Vexin autour de Juziers (Yvelines) à travers champs et en sous-bois.",
+    "description": "Vous démarrerez dans le village de Juziers en empruntant les petites sentes de la ville avant de rejoindre les chemins dans les champs (attention, certains passages boueux même par beau temps). Vous longerez le village de Oinville-sur-Montcient avant de repasser par les champs et les bois. \n\nQuelques vallons agréables avec de jolies vues. Attention également à ne pas faire la randonnée en plein été (passages sans arbres). \n\nNombreuses possibilités de variations pour faire la boucle.",
+    "slug": "randonnee-vexin-autour-de-juziers",
+    "publication_date": "2017-04-08T17:46:19:12+0100",
+    "categories": [
+      "Yvelines"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_7031.jpg",
+      "IMG_7032.jpg",
+      "IMG_7033.jpg",
+      "IMG_7034.jpg",
+      "IMG_7036.jpg",
+      "IMG_7037.jpg",
+      "IMG_7038.jpg",
+      "IMG_7039.jpg",
+      "IMG_7040.jpg",
+      "IMG_7041.jpg",
+      "IMG_7042.jpg",
+      "IMG_7044.jpg",
+      "IMG_7045.jpg",
+      "IMG_7046.jpg"
+    ],
+    "main_picture": "IMG_7041.jpg",
+    "distance": 12,
+    "gpx_file": "randonnee-vexin-autour-de-juziers.gpx",
+    "starting_point": {
+      "station": "Juziers",
+      "line": "J",
+      "comment": "1h de Saint-Lazare"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "À travers les vignes dans la Vallée de la Marne",
+    "summary": "Découvrez les vignobles de la Champagne dans la Vallée de la Marne, aux abords de l'Île-de-France.",
+    "description": "En quittant la gare par les chemins à travers champs, vous atteindrez rapidement le chemin de l'aqueduc de la Dhuis (balisage GR 14A).\n\nAprès le village de Pavant, vous rejoindrez la Marne que vous longerez pendant un petit kilomètre. Guettez bien les accès permettant de rejoindre les bords de la rivière, vous pourrez même y tenter une petite baignade !\n\nPuis vous rejoindrez l'autre versant de la Marne où les chemins vallonnés (balisage GR 11A) qui passent à travers les vignes dominent la vallée.\n\n Vous redescendrez ensuite sur le petit village de Nanteuil. Sur le chemin de la gare, si une (bonne) petite faim se fait pour le dîner, l'Auberge du Lion d'Or semble toute indiquée (vérifiez bien les horaires d'ouverture, nous n'avons pas pu tester de notre côté).",
+    "slug": "a-travers-les-vignes-dans-la-vallee-de-la-marne",
+    "publication_date": "2017-06-26T00:34:12+0200",
+    "categories": [
+      "Seine-et-Marne"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_7477.jpg",
+      "IMG_7478.jpg",
+      "IMG_7484.jpg",
+      "IMG_7490.jpg",
+      "IMG_7498.jpg",
+      "IMG_7500.jpg",
+      "IMG_7503.jpg",
+      "IMG_7505.jpg",
+      "IMG_7507.jpg",
+      "IMG_7511.jpg",
+      "IMG_7513.jpg",
+      "IMG_7517.jpg",
+      "IMG_7524.jpg",
+      "IMG_7527.jpg",
+      "IMG_7533.jpg",
+      "IMG_7534.jpg"
+    ],
+    "main_picture": "IMG_7534.jpg",
+    "distance": 18,
+    "gpx_file": "a-travers-les-vignes-dans-la-vallee-de-la-marne.gpx",
+    "starting_point": {
+      "station": "Nanteuil - Saâcy",
+      "line": "P",
+      "comment": "depuis Gare de l'Est : 48 minutes"
+    },
+    "favorite": true,
+    "hidden": false
+  },
+  {
+    "title": "Le Vexin au départ de Parmain",
+    "summary": "Une petite randonnée dans le Parc Naturel du Vexin au départ de la gare de Parmain.",
+    "description": "*Merci au Parc Naturel du Vexin de m'avoir proposé des randonnées accessibles en transport parmi lesquelles celle-ci est inspirée.*\n\nL'un des trains confortables de la ligne H vous mènera à la gare de L'Isle Adam – Parmain, là où la randonnée démarre. L'office de tourisme se trouve juste en face de la gare et pourra vous fournir des documents sur des idées de randonnées dans la parc naturel du Vexin.\n\nVous monterez ensuite les escaliers du petit jardin de la ville avant de rapidement rejoindre les chemins à travers champs. Le parcours vous mènera ensuite dans le village de Nesles-la-Vallée (boulangerie si vous avez oublié un en-cas).\n\nVous rejoindrez enfin des chemins en forêt et d'autres sentiers à travers champs, avant de rejoindre la gare de départ.",
+    "slug": "le-vexin-au-de-part-de-parmain",
+    "publication_date": "2017-09-24T22:34:12+0200",
+    "categories": [
+      "Val d'Oise"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_8302.jpg",
+      "IMG_8303.jpg",
+      "IMG_8304.jpg",
+      "IMG_8306.jpg",
+      "IMG_8311.jpg",
+      "IMG_8312.jpg",
+      "IMG_8313.jpg",
+      "IMG_8314.jpg",
+      "IMG_8315.jpg",
+      "IMG_8316.jpg",
+      "IMG_8319.jpg",
+      "IMG_8320.jpg",
+      "IMG_8322.jpg",
+      "IMG_8325.jpg"
+    ],
+    "main_picture": "IMG_8313.jpg",
+    "distance": 11.5,
+    "gpx_file": "le-vexin-au-de-part-de-parmain.gpx",
+    "starting_point": {
+      "station": "L'Isle Adam – Parmain",
+      "line": "H",
+      "comment": "depuis Gare du Nord : 55 minutes"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "Le Vexin autour de Santeuil",
+    "summary": "Découvrez l’étang de Vallière et le tracé de l’ancienne voie romaine Jules César traversant le parc national du Vexin.",
+    "description": "Le départ de la randonnée se fait en gare de Santeuil - Le Perchay, sur une branche peu connue de la ligne J (au départ de Saint Lazare), au point que la desserte de la gare de Santeuil est actuellement menacée ([une pétition](https://www.change.org/p/j-aime-ma-gare-je-veux-la-garder) à ce sujet a été lancée pour préserver la station).\n\nPour aider à préserver la gare et donc cette randonnée accessible en transports, **n’oubliez pas de valider votre pass Navigo dans la gare !**\n\nA la sortie du village de Santeuil, vous serez très rapidement amené en pleine nature jusqu’à l’étang de Vallière. Un bel endroit à pique-nique (ou à sieste le cas échéant !).\nVous poursuivrez ensuite à travers bois. Ne manquez pas sur le chemin un magnifique lavoir restauré dont l’eau de couleur émeraude nous a fasciné. Pratique, le lieu est également entouré de tables de pique-nique.\n\nVous passerez ensuite par le petit village de Commery, avant de rejoindre (avec un petit passage obligé sur la départementale) la Chaussée Jules César, une voie romaine (sous forme de chemin aujourd’hui) qui rejoignait Paris à Rouen en son temps.\n\nLa fin du parcours passe par le village Le Perchay puis rejoint Santeuil par les bois.\n\nVérifiez bien les horaires de train pour votre retour sur Paris, la gare de Santeuil - Le Perchay étant assez peu desservie (jusqu’à 2 / 3 heures entre deux trains).\n\nSi l’attente se fait en soirée, nous avons tout prévu avec ces deux conseils pour votre attente !\n\nVous pouvez profiter du petit Bistrot de Santeuil juste à côté de la gare avant de reprendre un train plus tard le soir. Nous avons testé et approuvé ce petit restaurant familial dans lequel vous pourrez y déguster une bière locale, la bière du Vexin 🍻\n\nSi le bistrot est fermé, un petit camion à pizza peut également faire son apparition en face de la mairie.",
+    "slug": "vexin-santeuil",
+    "publication_date": "2018-03-24T20:34:12+0100",
+    "categories": [
+      "Val d'Oise"
+    ],
+    "tags": [
+      "vexin"
+    ],
+    "pictures": [
+      "IMG_9528.jpg",
+      "IMG_9529.jpg",
+      "IMG_9530.jpg",
+      "IMG_9532.jpg",
+      "IMG_9533.jpg",
+      "IMG_9534.jpg",
+      "IMG_9535.jpg",
+      "IMG_9537.jpg",
+      "IMG_9542.jpg",
+      "IMG_9544.jpg",
+      "IMG_9550.jpg",
+      "IMG_9553.jpg",
+      "IMG_9565.jpg",
+      "IMG_9566.jpg",
+      "IMG_9568.jpg",
+      "IMG_9573.jpg",
+      "IMG_9577.jpg",
+      "IMG_9581.jpg"
+    ],
+    "main_picture": "IMG_9568.jpg",
+    "distance": 13.400000000000000355,
+    "gpx_file": "vexin-santeuil.gpx",
+    "starting_point": {
+      "station": "Santeuil - Le Perchay",
+      "line": "J",
+      "comment": "depuis Gare Saint Lazare : 59 minutes"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "Forêt d'Humulus",
+    "summary": "Une petite randonnée facile, qui vous permettra de découvrir cette forêt méconnue.",
+    "description": "Vous partirez de la station Humulus sur la ligne Z du Transilien. La randonnée démarrera en forêt puis rejoindra rapidement un chemin de crête.\n\nUn beau panorama sur l’Ile-de-France s’offrira à vous au sommet de la colline, avec une vue dégagée sur la mer. Un lieu idéal pour votre pique nique.\n",
+    "slug": "humulus",
+    "publication_date": "2018-04-01T21:34:12+0200",
+    "categories": [
+      "Seine et Oise"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_0044.jpg",
+      "IMG_8149.jpg",
+      "IMG_8152.jpg",
+      "IMG_8154.jpg",
+      "IMG_8180.jpg",
+      "IMG_8184.jpg"
+    ],
+    "main_picture": "IMG_0044.jpg",
+    "distance": 34,
+    "gpx_file": "humulus.gpx",
+    "starting_point": {
+      "station": "Humulus",
+      "line": "Z",
+      "comment": ""
+    },
+    "favorite": false,
+    "hidden": true
+  },
+  {
+    "title": "La vallée de la Mauldre",
+    "summary": "Une belle rando à travers champs et bois… avec un peu de dénivelé !",
+    "description": "Le départ de la randonnée se fait à Beynes. Après avoir traversé les voies, vous monterez une petite route et bifurquerez rapidement à travers champs, avec une jolie vue sur la vallée.\n\nLa suite de la randonnée se fera majoritairement à travers bois, avant de redescendre enfin vers la gare de Mareil-sur-Mauldre.",
+    "slug": "beynes",
+    "publication_date": "2014-10-19T21:34:12+0200",
+    "categories": [
+      "Yvelines"
+    ],
+    "tags": [],
+    "pictures": [
+      "IMG_3000.jpg",
+      "IMG_3001.jpg",
+      "IMG_3159.jpg",
+      "IMG_3162.jpg",
+      "IMG_3168.jpg",
+      "IMG_3175.jpg",
+      "IMG_3185.jpg",
+      "IMG_3187.jpg",
+      "IMG_3193.jpg"
+    ],
+    "main_picture": "IMG_3001.jpg",
+    "distance": 14.900000000000000355,
+    "gpx_file": "beynes.gpx",
+    "starting_point": {
+      "station": "Beynes",
+      "line": "N",
+      "comment": "depuis Gare Montparnasse : 51 minutes"
+    },
+    "ending_point": {
+      "station": "Mareil-sur-Mauldre",
+      "line": "N",
+      "comment": "depuis Gare Montparnasse : 55 minutes"
+    },
+    "favorite": false,
+    "enabled": true,
+    "hidden": false
+  },
+  {
+    "title": "De Mortcerf à Faremoutiers dans la Brie",
+    "summary": "Une agréable randonnée champêtre dans la Brie qui vous dépaysera bien !",
+    "description": "Le départ de la randonnée se fait en gare de Mortcerf, sur la branche de Coulommiers de la ligne P du Transilien.\n\nVous traverserez de nombreux champs (coin pique-nique très agréable en lisière de forêt dans une clairière après les premiers kilomètres de la randonnée). Vous traverserez ensuite la forêt domaniale de Malvoisine.\n\nAvec un peu de chance, quelques vaches agrémenteront votre parcours décidément bien loin de Paris !\n\nVous rejoindrez ensuite la gare de Faremoutiers Pommeuse pour reprendre le train, une gare qui a bien porté son nom pour nous car nous avons trouvé sur le parcours quelques pommes à faire en compote !",
+    "slug": "mortcerf-faremoutiers",
+    "publication_date": "2014-08-24T21:34:12+0200",
+    "categories": [
+      "Seine-et-Marne"
+    ],
+    "tags": [
+      "vaches",
+      "campagne",
+      "brie"
+    ],
+    "pictures": [
+      "IMG_20140824_120634.jpg",
+      "IMG_20140824_120640.jpg",
+      "IMG_20140824_121545.jpg",
+      "IMG_20140824_121552.jpg",
+      "IMG_20140824_141329.jpg",
+      "IMG_20140824_143521.jpg",
+      "IMG_20140824_152416.jpg",
+      "IMG_20140824_152807.jpg",
+      "IMG_20140824_153229.jpg",
+      "IMG_20140824_160704.jpg",
+      "IMG_20140824_162943.jpg",
+      "IMG_20140824_163002.jpg",
+      "IMG_20140824_170020.jpg",
+      "IMG_20140825_192003.jpg"
+    ],
+    "main_picture": "IMG_20140824_152807.jpg",
+    "distance": 20,
+    "gpx_file": "mortcerf-faremoutiers.gpx",
+    "starting_point": {
+      "station": "Mortcerf",
+      "line": "P",
+      "comment": "depuis Gare de l'Est : 41 minutes"
+    },
+    "ending_point": {
+      "station": "Faremoutiers Pommeuse",
+      "line": "P",
+      "comment": "vers Gare de l'Est : 52 minutes"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "De Coignières à Montfort par l’Etang de la Mauldre",
+    "summary": "Une belle randonnée dans les Yvelines en forêt et à travers champs.",
+    "description": "Nous partons cette fois-ci du côté ouest de Coignières, à l’opposé de la [randonnée en direction de Saint-Rémy](http://www.randonavigo.fr/2016/12/16/de-coignieres-a-saint-remy-chevreuse) déjà publiée.\n\nVous suivrez très majoritairement le GR11 qui vous fera rapidement quitter la zone (trop) urbaine de Coignières pour rejoindre le Grand Étang de la Mauldre en pleine forêt. Un coin idyllique pour un pique-nique grâce aux rondins placés face à l’étang.\n\nVous passerez sur les chemins à travers champs pour le dernier tiers de la randonnée. La fin du trajet rejoignant la gare de Montfort-l’Amaury-Méré se fera le long d’une route sur 500 mètres environ, mais ne gâchera pas pour autant votre sortie !",
+    "slug": "coignieres-montfort",
+    "publication_date": "2018-04-22T21:34:12+0200",
+    "categories": [
+      "Yvelines"
+    ],
+    "tags": [
+      "etang"
+    ],
+    "pictures": [
+      "IMG_9739.jpg",
+      "IMG_9740.jpg",
+      "IMG_9741.jpg",
+      "IMG_9743.jpg",
+      "IMG_9744.jpg",
+      "IMG_9747.jpg",
+      "IMG_9748.jpg",
+      "IMG_9749.jpg",
+      "IMG_9750.jpg",
+      "IMG_9751.jpg",
+      "IMG_9752.jpg",
+      "IMG_9754.jpg",
+      "IMG_9755.jpg"
+    ],
+    "main_picture": "IMG_9743.jpg",
+    "distance": 15,
+    "gpx_file": "coignieres-montfort.gpx",
+    "starting_point": {
+      "station": "Coignières",
+      "line": "N",
+      "comment": "depuis Gare Montparnasse : 59 minutes"
+    },
+    "ending_point": {
+      "station": "Montfort-l'Amaury-Méré",
+      "line": "N",
+      "comment": "vers Gare Montparnasse : 66 minutes"
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "Les 3 étangs et la ferme en forêt de Rambouillet",
+    "summary": "Allier plaisir de la nature, repos au bord des étangs et pause gourmande, tout cela est possible avec cette randonnée !",
+    "description": "Dès la sortie de la gare du Perray-en-Yvelines, vous vous retrouverez au bord de l'**Etang du Perray**, un lieu idéal pour pique-niquer sur la pelouse.\n\nLe chemin vous mènera rapidement en forêt où vous rejoindrez le grand **Étang de la Tour** un peu plus prisé mais où vous pourrez également trouver des coins pour une bonne pause.\n\nVous poursuivrez par le GR1 faisant partie du Parc Régional de la Haute Vallée de Chevreuse pour rejoindre la **[Ferme des 4 étoiles](http://les4etoiles.free.fr/)**, qui propose dans une petite boutique d’excellents **produits de la ferme et de la région** (fruits et légumes, viande, charcuterie, bières – dont l’excellente Volceleist – jus de fruit, … que de bonnes choses !). Vous y apercevrez les animaux de la ferme, et une petite terrasse se prête pour un café ou même une formule avec assiette fermière si vous n’avez pas pris de quoi manger. La ferme est ouverte les week-ends, mais vérifiez tout de même les horaires.\n\nLa randonnée se poursuivra en **forêt de Rambouillet** sur des chemins très agréables et aux espèces de plante variées.\n\nVous rejoindrez ensuite à nouveau le GR1 et découvrirez le bel **Étang d’Or**. Encore un lieu propice au repos ! Le GR 655 vous permettra de vous rendre à la ville de Rambouillet où le train vous attendra pour un retour en direction de Paris Montparnasse en 42 minutes ou 1h05 selon les horaires.",
+    "slug": "rambouillet-etangs-ferme",
+    "publication_date": "2018-05-06T21:34:12+0200",
+    "categories": [
+      "Yvelines"
+    ],
+    "tags": [
+      "etang",
+      "chevreuse",
+      "ferme"
+    ],
+    "pictures": [
+      "IMG_9827.jpg",
+      "IMG_9828.jpg",
+      "IMG_9829.jpg",
+      "IMG_9831.jpg",
+      "IMG_9834.jpg",
+      "IMG_9837.jpg",
+      "IMG_9839.jpg",
+      "IMG_9843.jpg",
+      "IMG_9844.jpg",
+      "IMG_9845.jpg",
+      "IMG_9846.jpg",
+      "IMG_9851.jpg",
+      "IMG_9855.jpg",
+      "IMG_9859.jpg",
+      "IMG_9864.jpg",
+      "IMG_9866.jpg",
+      "IMG_9867.jpg",
+      "IMG_9869.jpg"
+    ],
+    "main_picture": "IMG_9867.jpg",
+    "distance": 17.5,
+    "gpx_file": "rambouillet-etangs-ferme.gpx",
+    "starting_point": {
+      "station": "Le Perray",
+      "line": "N",
+      "comment": "depuis Gare Montparnasse : 60 minutes"
+    },
+    "ending_point": {
+      "station": "Rambouillet",
+      "line": "N",
+      "comment": "vers Gare Montparnasse : 42 minutes à 1h05"
+    },
+    "favorite": true,
+    "hidden": false
+  },
+  {
+    "title": "Etangs de Mennecy",
+    "summary": "Observez les oiseaux autour des étangs de Mennecy !",
+    "description": "Le départ se fait en gare de Mennecy sur la ligne D du RER (environ 1h depuis Châtelet).\n\nLa randonnée commence par la très belle allée de séquoias du parc de Villeroy et vous emmènera ensuite vers les étangs de Mennecy à travers les bois. Ne manquez pas les observatoires que le conseil département a aménagés le long des chemin, ils vous permettront d'observer les multiples espèces d'oiseaux !",
+    "slug": "mennecy",
+    "publication_date": "2014-07-28T05:34:12+0200",
+    "categories": [
+      "essonne"
+    ],
+    "tags": [
+      "oiseaux",
+      "nature",
+      "observatoire",
+      "étang"
+    ],
+    "pictures": [
+      "IMG_2982.jpg",
+      "IMG_2966.jpg",
+      "IMG_2968.jpg",
+      "IMG_2971.jpg",
+      "IMG_2973.jpg",
+      "IMG_2974.jpg",
+      "IMG_2976.jpg",
+      "IMG_2977.jpg",
+      "IMG_2979.jpg",
+      "IMG_2986.jpg",
+      "IMG_2989.jpg",
+      "IMG_2990.jpg",
+      "IMG_2991.jpg",
+      "IMG_2998.jpg",
+      "IMG_3001.jpg"
+    ],
+    "main_picture": "IMG_2990.jpg",
+    "distance": 16.5,
+    "gpx_file": "mennecy.gpx",
+    "starting_point": {
+      "station": "Mennecy",
+      "line": "D",
+      "comment": ""
+    },
+    "favorite": false,
+    "hidden": false
+  },
+  {
+    "title": "La Haute Vallée de la Bièvre par les étangs",
+    "summary": "Une randonnée au bord de l’eau qui vous fera découvrir la Haute Vallée de la Bièvre !",
+    "description": "Vous partirez de la gare de Saint-Cyr très bien desservie, avec le RER C et les lignes N et U du Transilien, partant respectivement de la Gare Montparnasse et de La Défense.\n\nAprès une dizaine de minutes de marche dans les petites rues de Saint-Cyr-l’Ecole, vous voici en pleine nature et rejoindrez le premier étang de la Forêt Domaniale de Versailles (l’Etang du Moulin Renard et Etang Braque). Vous en ferez le tour sur une bonne partie et une agréable aire de pique-nique est proposée lorsque vous serez proche de la partie Sud-Est.\n\nPlutôt que de poursuivre sur la petite route, je vous conseille de bifurquer à droite pour emprunter le petit chemin en forêt qui lui est parallèle. Vous le redescendrez pour rejoindre l’Etang du Val d’or.\n\nUne fois la D91 traversée, le chemin est un chouïa moins bucolique sur un petit kilomètre, mais vous rejoindrez rapidement un agréable petit sentier qui longe la Bièvre. Attention il peut être assez boueux et glissant, et il est un peu plus difficile sur certaines zones. Mais ce petit chemin peu emprunté est vraiment superbe !\n\nIl vous fera rejoindre l’Etang de la Geneste, peut-être le plus sauvage des trois étangs de cette randonnée. Soyez attentifs, car la faune y est abondante : foulques, hérons, biches, et même quelques écureils de Corée (chipmunks).\n\nLe Chemin du Pré Saint-Jean poursuivra le long de la Bièvre en vous faisant traverser le petit village de Buc. Vous rejoindrez ensuite l’Aqueduc de Buc, construit au XVIIème siècle pour alimenter les fontaines du Château de Versailles. Encore quelques kilomètres en forêt, et la gare du Petit Jouy surgira au bout du chemin parmi les arbres.\n\nIl s’agit d’une minuscule gare du RER C, avec ses quais en bois (!) dont on pourrait presque douter de la solidité. Attention de bien vérifier les horaires et si des travaux ne sont pas en cours, afin d’emprunter le bus de remplacement qui circule sur la Rue Charles de Gaulles (D 446).",
+    "slug": "la-haute-hallee-de-la-bievre-par-les-etangs",
+    "publication_date": "2021-06-20T21:34:12+0200",
+    "categories": [
+      "yvelines"
+    ],
+    "tags": [
+      "oiseaux",
+      "nature",
+      "étang",
+      "Bièvre"
+    ],
+    "pictures": [
+      "IMG_1391.jpg",
+      "IMG_1385.jpg",
+      "IMG_1386.jpg",
+      "IMG_1389.jpg",
+      "IMG_1392.jpg",
+      "IMG_1393.jpg",
+      "IMG_1395.jpg",
+      "IMG_1396.jpg",
+      "IMG_1397.jpg",
+      "IMG_1399.jpg",
+      "IMG_1401.jpg",
+      "IMG_1403.jpg",
+      "IMG_1405.jpg",
+      "IMG_1406.jpg",
+      "IMG_1414.jpg",
+      "IMG_1417.jpg",
+      "IMG_1419.jpg",
+      "IMG_1423.jpg",
+      "IMG_1428.jpg",
+      "IMG_1430.jpg",
+      "IMG_1432.jpg",
+      "IMG_1434.jpg",
+      "IMG_1436.jpg",
+      "IMG_1439.jpg",
+      "IMG_1444.jpg"
+    ],
+    "main_picture": "IMG_1417.jpg",
+    "distance": 14,
+    "gpx_file": "la-haute-hallee-de-la-bievre-par-les-etangs.gpx",
+    "starting_point": {
+      "station": "Saint-Cyr",
+      "line": "C",
+      "comment": ""
+    },
+    "ending_point": {
+      "station": "Petit Jouy - Les loges",
+      "line": "C",
+      "comment": ""
+    },
+    "favorite": false,
+    "hidden": false
+  }
+]
