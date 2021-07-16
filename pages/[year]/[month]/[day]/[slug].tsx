@@ -1,5 +1,3 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
-import { ParsedUrlQuery } from 'querystring'
 import { getAllHikePaths, getHikeData } from '../../../../lib/hike'
 import { Hike as HikeType } from '../../../../lib/types'
 
@@ -7,8 +5,10 @@ type HikeProps = {
   hike: HikeType,
 }
 
-interface IParams extends ParsedUrlQuery {
-  slug: string
+type Params = {
+  params: {
+    slug: string
+  }
 }
 
 const Hike = ({ hike }: HikeProps) => (
@@ -17,17 +17,15 @@ const Hike = ({ hike }: HikeProps) => (
   </div>
 )
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const { slug } = context.params as IParams
-
+export const getStaticProps = async ({ params }: Params) => {
   return {
     props: {
-      hike: getHikeData(slug),
+      hike: getHikeData(params.slug),
     }
   }
 }
 
-export const getStaticPaths: GetStaticPaths = async function () {
+export const getStaticPaths = async function () {
   const paths = getAllHikePaths()
 
   return {
