@@ -1,15 +1,16 @@
 import fs from 'fs'
 import path from 'path'
 import { format } from 'date-fns'
+import { Hike } from './types'
 
-export const getHikes = () => {
+export const getHikes = (): Hike[] => {
   const hikesPath = path.join(process.cwd(), 'hikes')
   const hikesFile = path.join(hikesPath, 'hikes.json')
 
   return JSON.parse(fs.readFileSync(hikesFile, 'utf8'));
 }
 
-const getHikePathParams = (hike) => {
+const getHikePathParams = (hike: Hike) => {
   const date = new Date(hike.publication_date)
 
   return {
@@ -25,6 +26,6 @@ export const getAllHikePaths = () => {
     .map(hike => ({ params: getHikePathParams(hike) }))
 }
 
-export const getHikeData = (slug: string) => {
-  return getHikes().find(hike => hike.slug === slug)
+export const getHikeData = (slug: string): Hike | undefined => {
+  return getHikes().find(hike => hike.slug === slug);
 }

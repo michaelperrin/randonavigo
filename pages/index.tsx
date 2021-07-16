@@ -3,8 +3,13 @@ import Image from 'next/image'
 import List from '../components/hike/List'
 import Layout from '../components/layout'
 import { getHikes } from '../lib/hike'
+import { Hike } from '../lib/types'
 
-export default function Home({ hikes }) {
+type HomeProps = {
+  hikes: Hike[],
+}
+
+export default function Home({ hikes }: HomeProps) {
   return (
     <Layout>
       <Head>

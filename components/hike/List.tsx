@@ -1,7 +1,12 @@
 import Link from 'next/link'
+import { Hike } from '../../lib/types'
 import getHikeUrl from '../../lib/getHikeUrl'
 
-const List = ({ hikes }) => (
+type ListProps = {
+  hikes: Hike[],
+}
+
+const List = ({ hikes }: ListProps) => (
   <div>
     {hikes.map(hike => (
       <li key={hike.slug}>

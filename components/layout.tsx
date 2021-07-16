@@ -1,7 +1,11 @@
 import Head from 'next/head';
 import styles from './layout.module.css'
 
-const Layout = ({ children }) => (
+type LayoutProps = {
+  children: JSX.Element | JSX.Element[],
+}
+
+const Layout = ({ children }: LayoutProps) => (
   <div className={styles.container}>
     <Head>
       <title>Rando Navigo</title>

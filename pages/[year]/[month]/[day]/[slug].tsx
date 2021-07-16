@@ -1,21 +1,33 @@
-import Head from 'next/head'
-import { getAllHikePaths, getHikeData } from '../../../../lib/hike';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { ParsedUrlQuery } from 'querystring'
+import { getAllHikePaths, getHikeData } from '../../../../lib/hike'
+import { Hike as HikeType } from '../../../../lib/types'
 
-const Hike = ({ hike }) => (
+type HikeProps = {
+  hike: HikeType,
+}
+
+interface IParams extends ParsedUrlQuery {
+  slug: string
+}
+
+const Hike = ({ hike }: HikeProps) => (
   <div>
     {hike.title}
   </div>
 )
 
-export async function getStaticProps({ params }) {
+export const getStaticProps: GetStaticProps = async (context) => {
+  const { slug } = context.params as IParams
+
   return {
     props: {
-      hike: getHikeData(params.slug),
+      hike: getHikeData(slug),
     }
   }
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async function () {
   const paths = getAllHikePaths()
 
   return {
