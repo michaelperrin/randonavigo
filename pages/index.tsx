@@ -13,7 +13,7 @@ export default function Home({ hikes }: HomeProps) {
   return (
     <Layout>
       <Head>
-        <title>Create Next App</title>
+        <title>Rando Navigo</title>
         <meta name="description" content="Rando Navigo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -30,7 +30,7 @@ export default function Home({ hikes }: HomeProps) {
 export async function getStaticProps() {
   return {
     props: {
-      hikes: getHikes()
+      hikes: await getHikes()
     }
   }
 }

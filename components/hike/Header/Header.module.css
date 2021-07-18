@@ -1,0 +1,68 @@
+.hike-header {
+  background: rgba(80, 80, 80, 0.07);
+}
+
+.main-picture {
+  max-width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 576px) {
+  .main-picture {
+    height: 280px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .main-picture {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-picture {
+    height: 480px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main-picture {
+    height: 600px;
+  }
+}
+
+.title {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.category {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.summary {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.gpx-download {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.gpx-download .gpx-help span {
+  font-size: 0.8rem;
+}

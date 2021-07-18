@@ -1,0 +1,10 @@
+.line {
+  display: table-cell;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+.line img {
+  width: 24px;
+}

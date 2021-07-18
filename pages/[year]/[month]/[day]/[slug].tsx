@@ -1,6 +1,8 @@
 import { getAllHikePaths, getHikeData } from '../../../../lib/hike'
 import { Hike as HikeType } from '../../../../lib/types'
 import HikeHeader from '../../../../components/hike/Header/index'
+import HikeDescription from '../../../../components/hike/Description'
+import styles from './[slug].module.css'
 
 type HikeProps = {
   hike: HikeType,
@@ -16,11 +18,11 @@ const Hike = ({ hike }: HikeProps) => (
   <article id="hike" className="hike-show" data-gpx-file="{{ path('hike_download_gpx_file', {slug: hike.slug}) }}">
     <HikeHeader hike={hike} />
 
-    <div className="details">
+    <div className={styles.details}>
       <div className="container-fluid">
         <div className="row align-items-center">
           <div className="col-md-6 col-lg-6 ml-lg-auto">
-            <div className="description" dangerouslySetInnerHTML={{ __html: hike.description }} />
+            <HikeDescription hike={hike} />
           </div>
 
           <div className="col-md-6 col-lg-5" />

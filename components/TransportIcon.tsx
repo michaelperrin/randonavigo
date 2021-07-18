@@ -1,4 +1,5 @@
-import Image from "next/image"
+import Image from 'next/image'
+import styles from './TransportIcon.module.css'
 
 const RER_LINES = ['A', 'B', 'C', 'D', 'E']
 const TRANSILIEN_LINES = ['H', 'J', 'K', 'L', 'N', 'P', 'R', 'U']
@@ -11,7 +12,7 @@ type TransportIconProps = {
 }
 
 const TransportIcon = ({ line }: TransportIconProps) => (
-  <div className="line">
+  <div className={styles.line}>
     {isRER(line) && (
       <Image
         src="/images/transport/RER.svg"
