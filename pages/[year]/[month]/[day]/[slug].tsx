@@ -1,5 +1,6 @@
 import { getAllHikePaths, getHikeData } from '../../../../lib/hike'
 import { Hike as HikeType } from '../../../../lib/types'
+import HikeHeader from '../../../../components/hike/Header/index'
 
 type HikeProps = {
   hike: HikeType,
@@ -12,21 +13,33 @@ type Params = {
 }
 
 const Hike = ({ hike }: HikeProps) => (
-  <div>
-    {hike.title}
-  </div>
+  <article id="hike" className="hike-show" data-gpx-file="{{ path('hike_download_gpx_file', {slug: hike.slug}) }}">
+    <HikeHeader hike={hike} />
+
+    <div className="details">
+      <div className="container-fluid">
+        <div className="row align-items-center">
+          <div className="col-md-6 col-lg-6 ml-lg-auto">
+            <div className="description" dangerouslySetInnerHTML={{ __html: hike.description }} />
+          </div>
+
+          <div className="col-md-6 col-lg-5" />
+        </div>
+      </div>
+    </div>
+  </article>
 )
 
 export const getStaticProps = async ({ params }: Params) => {
   return {
     props: {
-      hike: getHikeData(params.slug),
+      hike: await getHikeData(params.slug),
     }
   }
 }
 
 export const getStaticPaths = async function () {
-  const paths = getAllHikePaths()
+  const paths = await getAllHikePaths()
 
   return {
     paths,

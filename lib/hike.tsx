@@ -1,13 +1,33 @@
 import fs from 'fs'
 import path from 'path'
+import remark from 'remark'
+import html from 'remark-html'
 import { format } from 'date-fns'
 import { Hike } from './types'
 
-export const getHikes = (): Hike[] => {
+const getHtmlContent = async (content: string): Promise<string> => {
+  const processedContent = await remark()
+    .use(html)
+    .process(content)
+
+  return processedContent.toString()
+}
+
+const mapHike = async (hikeData): Promise<Hike> => {
+  return {
+    ...hikeData,
+    description: await getHtmlContent(hikeData.description),
+  }
+}
+
+export const getHikes = async (): Promise<Hike[]> => {
   const hikesPath = path.join(process.cwd(), 'hikes')
   const hikesFile = path.join(hikesPath, 'hikes.json')
+  const hikesData = JSON.parse(fs.readFileSync(hikesFile, 'utf8'))
 
-  return JSON.parse(fs.readFileSync(hikesFile, 'utf8'));
+  const mappedHikes = hikesData.map(async (hikeData) => await mapHike(hikeData))
+
+  return Promise.all(mappedHikes)
 }
 
 const getHikePathParams = (hike: Hike) => {
@@ -21,11 +41,15 @@ const getHikePathParams = (hike: Hike) => {
   };
 }
 
-export const getAllHikePaths = () => {
-  return getHikes()
+export const getAllHikePaths = async () => {
+  const hikes = await getHikes();
+
+  return hikes
     .map(hike => ({ params: getHikePathParams(hike) }))
 }
 
-export const getHikeData = (slug: string): Hike | undefined => {
-  return getHikes().find(hike => hike.slug === slug);
+export const getHikeData = async (slug: string): Promise<Hike | undefined> => {
+  const hikes = await getHikes()
+
+  return hikes.find(hike => hike.slug === slug)
 }
