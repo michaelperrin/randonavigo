@@ -1,0 +1,30 @@
+section.intro {
+    background: white;
+    padding: 50px 0;
+
+    .content {
+        font-weight: 300;
+        line-height: 1.8rem;
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+    }
+
+    aside.gpx-info {
+        margin-top: 1rem;
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+
+        p {
+            color: $light-text-color;
+            line-height: 1.5rem;
+            font-size: 0.9rem;
+        }
+    }
+}

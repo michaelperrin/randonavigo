@@ -1,20 +1,19 @@
-import Link from 'next/link'
 import { Hike } from '../../lib/types'
-import getHikeUrl from '../../lib/getHikeUrl'
+import HikeCard from './Card'
 
 type ListProps = {
   hikes: Hike[],
 }
 
 const List = ({ hikes }: ListProps) => (
-  <div>
-    {hikes.map(hike => (
-      <li key={hike.slug}>
-        <Link href={`/${getHikeUrl(hike)}`}>
-          <a>{hike.title}</a>
-        </Link>
-      </li>
-    ))}
+  <div className="container">
+    <div className="row">
+      {hikes.map(hike => (
+        <div key={hike.slug} className="col-md-6 col-lg-4 hike-card-column">
+          <HikeCard hike={hike} />
+        </div>
+      ))}
+    </div>
   </div>
 );
 

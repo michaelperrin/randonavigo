@@ -1,8 +1,10 @@
+import Image from 'next/image'
 import { format } from 'date-fns'
 import { Hike } from '../../../lib/types'
 import Access from './Access'
 import Distance from './Distance'
-import styles from './Header.module.css'
+import getHikePicturePath from '../../../lib/getHikePicturePath'
+// import styles from './Header.module.css' // TODO
 
 type HikeHeaderProps = {
   hike: Hike,
@@ -10,19 +12,26 @@ type HikeHeaderProps = {
 
 const HikeHeader = ({ hike }: HikeHeaderProps) => (
   <header className="hike-header">
-    <div className={styles['main-picture']} />
+    <div className="main-picture" style={{ position: 'relative' }}>
+      <Image
+        src={getHikePicturePath(hike, hike.main_picture)}
+        layout="fill"
+        objectFit="cover"
+        alt=""
+      />
+    </div>
 
     <div className="row align-items-center no-gutters">
       <div className="col-md-5 col-lg-4 offset-lg-1 px-2">
         {hike.categories && (
-          <div className={styles['category']}>
+          <div className="category">
             {/* Only display first category */}
             {hike.categories[0]}
           </div>
         )}
 
         <time
-          className={styles['publication-date']}
+          className="publication-date"
           dateTime={format(new Date(hike.publication_date), 'yyyy-MM-dd')}
         >
           {format(new Date(hike.publication_date), 'dd/MM/yyyy')}
@@ -30,15 +39,15 @@ const HikeHeader = ({ hike }: HikeHeaderProps) => (
 
         <h1 className="title">{hike.title}</h1>
 
-        <div className={styles['summary']}>
+        <div className="summary">
           {hike.summary}
         </div>
 
-        <div className={styles['access']}>
+        <div className="access">
           <Access hike={hike} />
         </div>
 
-        <div className={styles['distance']}>
+        <div className="distance">
           <Distance hike={hike} />
         </div>
       </div>

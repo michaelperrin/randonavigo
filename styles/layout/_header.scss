@@ -1,0 +1,65 @@
+body > header {
+    .banner {
+        background: #383c3d;
+        color: white;
+        padding: 1.5em 0 1.5em 0;
+
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        .brand {
+            display: table-row;
+
+            .logo {
+                display: table-cell;
+                vertical-align: middle;
+                padding-right: 30px;
+
+                img {
+                    height: 50px;
+                }
+            }
+
+            .brand-name {
+                vertical-align: middle;
+                display: table-cell;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        text-align: right;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                padding-left: 1rem;
+                font-size: 1.6rem;
+
+                &.about {
+                    font-size: 1rem;
+                }
+
+                a {
+                    color: rgba(255, 255, 255, 0.8);
+                    transition: color 0.4s;
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 1);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

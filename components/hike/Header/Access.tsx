@@ -10,21 +10,19 @@ const Access = ({ hike }: AccessProps) => (
     <div className="transport">
       <div className="row no-gutters">
         <div className={ hike.ending_point ? 'col-xl-6' : 'col-xl-12' }>
+          {/* TODO: "Point de départ" label */}
           <TransportPoint
-            className="starting-point"
             line={hike.starting_point.line}
             station={hike.starting_point.station}
-            label="Point de départ"
           />
         </div>
 
         { hike.ending_point && (
           <div className="col-xl-6">
+            {/* TODO: "Point d'arrivée" label */}
             <TransportPoint
-              className="ending-point"
               line={hike.ending_point.line}
               station={hike.ending_point.station}
-              label="Point d'arrivée"
             />
           </div>
         )}
