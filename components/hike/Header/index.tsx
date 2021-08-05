@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import { format } from 'date-fns'
 import { Hike } from '../../../lib/types'
@@ -5,6 +6,11 @@ import Access from './Access'
 import Distance from './Distance'
 import getHikePicturePath from '../../../lib/getHikePicturePath'
 // import styles from './Header.module.css' // TODO
+
+const MapWithNoSSR = dynamic(
+  () => import('../Map'),
+  { ssr: false }
+)
 
 type HikeHeaderProps = {
   hike: Hike,
@@ -50,6 +56,10 @@ const HikeHeader = ({ hike }: HikeHeaderProps) => (
         <div className="distance">
           <Distance hike={hike} />
         </div>
+      </div>
+
+      <div className="col-md-7 col-lg-6 ml-lg-auto">
+        <MapWithNoSSR hike={hike} />
       </div>
     </div>
   </header>

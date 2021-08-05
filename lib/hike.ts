@@ -13,7 +13,7 @@ const getHtmlContent = async (content: string): Promise<string> => {
   return processedContent.toString()
 }
 
-const mapHike = async (hikeData): Promise<Hike> => {
+const mapHike = async (hikeData: Hike): Promise<Hike> => {
   return {
     ...hikeData,
     description: await getHtmlContent(hikeData.description),
@@ -25,7 +25,7 @@ export const getHikes = async (): Promise<Hike[]> => {
   const hikesFile = path.join(hikesPath, 'hikes.json')
   const hikesData = JSON.parse(fs.readFileSync(hikesFile, 'utf8'))
 
-  const mappedHikes = hikesData.map(async (hikeData) => await mapHike(hikeData))
+  const mappedHikes = hikesData.map(async (hikeData: Hike): Promise<Hike> => await mapHike(hikeData))
 
   return Promise.all(mappedHikes)
 }
