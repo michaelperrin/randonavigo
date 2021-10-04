@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link';
 import getHikeUrl from '../../../lib/getHikeUrl';
 import { Hike } from '../../../lib/types';
@@ -12,7 +13,12 @@ const HikeCard = ({ hike }: HikeCardProps) => (
   <article className="card">
     { hike.favorite && (
       <div className="favorite">
-        <img src="/images/favorite.svg" alt="Randonnée favorite" />
+        <Image
+          src="/images/favorite.svg"
+          alt="Randonnée favorite"
+          width={48}
+          height={48}
+        />
       </div>
     )}
 
@@ -39,7 +45,13 @@ const HikeCard = ({ hike }: HikeCardProps) => (
         </div>
 
         <div className="distance">
-          <img src="/images/hike-icon.svg" alt="Distance de marche" className="hike-icon" />
+          <Image
+            src="/images/hike-icon.svg"
+            alt="Distance de marche"
+            className="hike-icon"
+            width={16}
+            height={16}
+          />
           { hike.distance }
           km
         </div>

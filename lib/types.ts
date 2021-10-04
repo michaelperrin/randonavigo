@@ -12,7 +12,7 @@ export type Hike = {
   publication_date: string,
   categories: string[],
   tags: string[],
-  pictures: string,
+  pictures: string[],
   main_picture: string,
   distance: string,
   gpx_file: string,

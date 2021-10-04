@@ -3,6 +3,7 @@ import { Hike as HikeType } from '../../../../lib/types'
 import HikeHeader from '../../../../components/hike/Header/index'
 import HikeDescription from '../../../../components/hike/Description'
 import styles from './[slug].module.css'
+import Gallery from '../../../../components/hike/Gallery'
 
 type HikeProps = {
   hike: HikeType,
@@ -29,6 +30,22 @@ const Hike = ({ hike }: HikeProps) => (
         </div>
       </div>
     </div>
+
+    <section>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-lg-1"></div>
+          <div className="col-lg-9"><h2>Photos en chemin</h2></div>
+        </div>
+
+        <div className="row">
+          <div className="col-lg-1"></div>
+          <div className="col-lg-9">
+            <Gallery hike={hike} />
+          </div>
+        </div>
+      </div>
+    </section>
   </article>
 )
 

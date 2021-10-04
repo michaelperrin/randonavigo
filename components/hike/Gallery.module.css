@@ -1,0 +1,11 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.thumbnailContainer {
+  padding: 1px;
+  height: 300px;
+  width: 300px;
+}
