@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import List from '../components/hike/List'
+import Intro from '../components/home/Intro'
+import TopBanner from '../components/home/TopBanner'
 import Layout from '../components/layout'
 import { getHikes } from '../lib/hike'
 import { Hike } from '../lib/types'
@@ -18,10 +19,15 @@ export default function Home({ hikes }: HomeProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        <h1>Rando Navigo</h1>
+      <div className="page-home">
+        <TopBanner />
+        <Intro />
 
-        <List hikes={hikes} />
+        <section className="hike-list">
+          <div className="container">
+            <List hikes={hikes} />
+          </div>
+        </section>
       </div>
     </Layout>
   )

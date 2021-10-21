@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link';
+import getHikePicturePath from '../../../lib/getHikePicturePath';
 import getHikeUrl from '../../../lib/getHikeUrl';
 import { Hike } from '../../../lib/types';
 import TransportPoint from '../../TransportPoint';
@@ -10,24 +11,31 @@ type HikeCardProps = {
 }
 
 const HikeCard = ({ hike }: HikeCardProps) => (
-  <article className="card">
-    { hike.favorite && (
-      <div className="favorite">
-        <Image
-          src="/images/favorite.svg"
-          alt="Randonnée favorite"
-          width={48}
-          height={48}
-        />
-      </div>
-    )}
-
+  <article className="hike-card">
     <Link href={getHikeUrl(hike)}>
       <a>
-        {/* <div className="main-picture">
+        <div className="main-picture">
+          {hike.favorite && (
+            <div className="favorite">
+              <Image
+                src="/images/favorite.svg"
+                alt="Randonnée favorite"
+                layout="fixed"
+                width={48}
+                height={48}
+              />
+            </div>
+          )}
+
           <Image
-            src={`/hikes/`}
-        </div> */}
+            src={getHikePicturePath(hike, hike.main_picture)}
+            layout="fill"
+            objectFit="cover"
+            sizes="350px"
+            quality={60}
+            alt=""
+          />
+        </div>
       </a>
     </Link>
 
