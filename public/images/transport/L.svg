@@ -1,11 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
-
-<rect x="0" y="0" width="200" height="200" rx="35" fill="#7584BC"/>
-<rect x="15" y="15" width="170" height="170" rx="20" fill="#ffffff"/>
-
-<path id="L" fill="#7584BC" d="M100,100 m -28.7 45.95 l 57.41 0 l 0 -17.45 l -36.54 0 l 0 -74.45 l -20.86 0 l 0 91.91"/>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="250px" height="250px" viewBox="0 0 283.46 283.46">
+	<title>Paris transit icons - Train L</title>
+	<rect fill="#CEADD2" width="283.46" height="283.46" rx="63.78"/>
+	<path fill="#25303B" d="M94.74,216.67V66.54h33.17v123.12h60.82v27z"/>
 </svg>

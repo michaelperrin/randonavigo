@@ -1,12 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
-
-<circle cx="100" cy="100" r="100" fill="#BD76A1"/>
-<circle cx="100" cy="100" r="87.5" fill="#FFFFFF"/>
-
-<path id="E" fill="#BD76A1" d="M 71.91 146.86 l 0 -95.03 l 58.87 -0.02 l 0 17.1 l -37.74 0 l 0 19.51 l  36.4 0 l 0 16.41 l -36.4 0.03 l 0 24.92 l 39.69 -0.05 l 0 17.13 l -60.82 0"/>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="250px" height="250px" viewBox="0 0 283.46 283.46">
+	<title>Paris transit icons - RER E</title>
+	<rect fill="#C04191" width="283.46" height="283.46" rx="63.78"/>
+	<path fill="#FFF" d="M93.67,216.67V66.54h92.94v27h-59.76v30.84h57.62v25.94h-57.62v39.34h62.94v27z"/>
 </svg>
-

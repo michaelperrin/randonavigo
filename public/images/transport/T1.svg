@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="250px" height="250px" viewBox="0 0 283.46 283.46">
+	<title>Paris transit icons - Tram T1</title>
+	<rect fill="#0064B0" width="283.46" height="42.52" rx="14.17"/>
+	<rect fill="#0064B0" width="283.46" height="42.52" rx="14.17" y="240.94"/>
+	<path fill="#25303B" d="M115,107.41V197H90.87V107.41H57.3V87.77h91.25v19.64ZM203,197V111.12c-6.65,5.26-17.17,10.37-24.44,13.61L171.1,108c11.45-4.8,25.22-12.06,36-20.26h19V197Z"/>
+</svg>

@@ -1,11 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
-
-<rect x="0" y="0" width="200" height="200" rx="35" fill="#C7B300"/>
-<rect x="15" y="15" width="170" height="170" rx="20" fill="#ffffff"/>
-
-<path id="K" fill="#C7B300" d="M100,100 m -37.64 45.95 l 20.59 0 l 0 -30 l 7.91 -9.68 l 22.5 39.68 l 24.27 0 l -32.05 -52.77 l 30.41 -39.14 l -25.5 0 l -20.86 30.55 c -1.03 1.63 -2.07 3.28 -3.14 4.94 c -1.06 1.66 -2.11 3.38 -3.14 5.15 l -0.41 0 l 0 -40.64 l -20.59 0 l 0 91.91"/>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="250px" height="250px" viewBox="0 0 283.46 283.46">
+	<title>Paris transit icons - Train K</title>
+	<rect fill="#9F9825" width="283.46" height="283.46" rx="63.78"/>
+	<path fill="#FFF" d="M162.47 216.67l-39.35-63.58-10.84 12.55v51H79.1V66.54h33.18v67l53.16-67h38.92l-57 67 56.56 83.15z"/>
 </svg>
