@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Intro = () => (
   <section className="intro">
     <div className="container">
@@ -11,7 +13,9 @@ const Intro = () => (
               Il n&apos;y a plus qu&apos;à suivre la trace !
             </p>
 
-            <a href="{{ path('help_gpx') }}" className="btn btn-info">En savoir plus</a>
+            <Link href="/aide/gpx">
+              <a className="btn btn-info">En savoir plus</a>
+            </Link>
           </aside>
         </div>
 
