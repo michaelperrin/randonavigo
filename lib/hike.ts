@@ -27,7 +27,7 @@ export const getHikePathParams = (hike: Hike): HikePathParams => {
 
 const hikesDirectory = path.join(process.cwd(), 'hikes')
 
-export const getSortedHikesData = (): Promise<Hike[]> => {
+export const getSortedHikesData = (): Hike[] => {
   const fileNames = glob.sync('*.md', { cwd: hikesDirectory })
 
   const allHikesData = fileNames.map((fileName: string): Hike => {
@@ -62,7 +62,7 @@ export const getSortedHikesData = (): Promise<Hike[]> => {
     }
   })
 
-  return Promise.all(sortedHikes)
+  return sortedHikes.filter((hike: Hike) => hike.hidden !== true)
 }
 
 export const getAllHikePaths = async () => {

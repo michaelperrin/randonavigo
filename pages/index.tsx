@@ -33,10 +33,10 @@ export default function Home({ hikes }: HomeProps) {
   )
 }
 
-export async function getStaticProps() {
+export function getStaticProps() {
   return {
     props: {
-      hikes: await getSortedHikesData(),
+      hikes: getSortedHikesData(),
     }
   }
 }
