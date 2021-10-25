@@ -3,7 +3,7 @@ import List from '../components/hike/List'
 import Intro from '../components/home/Intro'
 import TopBanner from '../components/home/TopBanner'
 import Layout from '../components/layout'
-import { getHikes } from '../lib/hike'
+import { getSortedHikesData } from '../lib/hike'
 import { Hike } from '../lib/types'
 
 type HomeProps = {
@@ -36,7 +36,7 @@ export default function Home({ hikes }: HomeProps) {
 export async function getStaticProps() {
   return {
     props: {
-      hikes: await getHikes()
+      hikes: await getSortedHikesData(),
     }
   }
 }

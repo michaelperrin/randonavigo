@@ -1,9 +1,9 @@
-import { getAllHikePaths, getHikeData } from '../../../../lib/hike'
 import { Hike as HikeType } from '../../../../lib/types'
 import HikeHeader from '../../../../components/hike/Header/index'
-import HikeDescription from '../../../../components/hike/Description'
 import styles from './[slug].module.css'
 import Gallery from '../../../../components/hike/Gallery'
+import { getHikeData } from '../../../../lib/hike'
+import { getAllHikePaths } from '../../../../lib/hike'
 
 type HikeProps = {
   hike: HikeType,
@@ -23,7 +23,7 @@ const Hike = ({ hike }: HikeProps) => (
       <div className="container-fluid">
         <div className="row align-items-center">
           <div className="col-md-6 col-lg-6 ml-lg-auto">
-            <HikeDescription hike={hike} />
+            <div className={styles.description} dangerouslySetInnerHTML={{ __html: hike.content }} />
           </div>
 
           <div className="col-md-6 col-lg-5" />
@@ -57,7 +57,7 @@ export const getStaticProps = async ({ params }: Params) => {
   }
 }
 
-export const getStaticPaths = async function () {
+export const getStaticPaths = async () => {
   const paths = await getAllHikePaths()
 
   return {

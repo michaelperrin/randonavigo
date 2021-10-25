@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from './layout/header';
 // import styles from './layout.module.css'  // TODO
 
 type LayoutProps = {
@@ -6,21 +7,24 @@ type LayoutProps = {
 }
 
 const Layout = ({ children }: LayoutProps) => (
-  <div className="container">
+  <>
     <Head>
       <title>Rando Navigo</title>
       <meta name="description" content="Rando Navigo" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main className="main">
-      {children}
-    </main>
+    <Header />
 
-    <footer className="footer">
-      Rando Navigo
-    </footer>
-  </div>
+    <div className="container">
+      <main className="main">
+        {children}
+      </main>
+      <footer className="footer">
+        Rando Navigo
+      </footer>
+    </div>
+  </>
 );
 
 export default Layout;

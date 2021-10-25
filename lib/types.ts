@@ -7,7 +7,7 @@ type Point = {
 export type Hike = {
   title: string,
   summary: string,
-  description: string,
+  content: string,
   slug: string,
   publication_date: string,
   categories: string[],

@@ -2,3 +2,11 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+.description {
+  line-height: 2rem;
+}
+
+.description a {
+  text-decoration: underline;
+}
