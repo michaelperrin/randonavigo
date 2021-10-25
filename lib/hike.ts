@@ -25,18 +25,12 @@ export const getHikePathParams = (hike: Hike): HikePathParams => {
   };
 }
 
-// export const getHikeData = async (slug: string): Promise<Hike | undefined> => {
-//   const hikes = await getSortedHikesData()
-
-//   return hikes.find(hike => hike.slug === slug)
-// }
-
 const hikesDirectory = path.join(process.cwd(), 'hikes')
 
 export const getSortedHikesData = (): Promise<Hike[]> => {
   const fileNames = glob.sync('*.md', { cwd: hikesDirectory })
 
-  const allHikesData = fileNames.map(async (fileName: string): Promise<Hike> => {
+  const allHikesData = fileNames.map((fileName: string): Hike => {
     // Remove ".md" from file name to get id
     const slug = fileName.replace(/\.md$/, '')
 
@@ -56,9 +50,12 @@ export const getSortedHikesData = (): Promise<Hike[]> => {
 
   // Sort hikes by date
   const sortedHikes = allHikesData.sort(({ publication_date: a }, { publication_date: b }) => {
-    if (a < b) {
+    const dateA = new Date(a)
+    const dateB = new Date(b)
+
+    if (dateA < dateB) {
       return 1
-    } else if (a > b) {
+    } else if (dateA > dateB) {
       return -1
     } else {
       return 0
