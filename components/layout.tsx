@@ -4,9 +4,10 @@ import Header from './layout/header';
 
 type LayoutProps = {
   children: JSX.Element | JSX.Element[],
+  home?: boolean,
 }
 
-const Layout = ({ children }: LayoutProps) => (
+const Layout = ({ children, home }: LayoutProps) => (
   <>
     <Head>
       <title>Rando Navigo</title>
@@ -14,16 +15,23 @@ const Layout = ({ children }: LayoutProps) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Header />
+    {home !== true && (
+      <Header />
+    )}
 
-    <div className="container">
-      <main className="main">
-        {children}
-      </main>
-      <footer className="footer">
-        Rando Navigo
-      </footer>
-    </div>
+    <main className="main">
+      {children}
+    </main>
+
+    <footer className="main-footer">
+      <div className="container">
+        ©
+        {' '}
+        <a href="http://www.michaelperrin.fr" target="_blank" rel="noreferrer">
+          Michaël Perrin
+        </a>
+      </div>
+    </footer>
   </>
 );
 

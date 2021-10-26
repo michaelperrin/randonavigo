@@ -1,94 +1,78 @@
 .hike-card {
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: 0 2px 0 0 #e5e5e5;
-    background: white;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 0 #e5e5e5;
+  background: white;
+  position: relative;
+
+  .main-picture {
     position: relative;
+    width: 100%;
+    height: 220px;
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    .main-picture {
-        position: relative;
-        width: 100%;
-        height: 220px;
-        background-position: top left;
-        background-size: cover;
-        background-repeat: no-repeat;
+    .favorite {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 100;
 
-        .favorite {
-          position: absolute;
-          top: 0;
-          right: 0;
-          z-index: 100;
+      img {
+        width: 48px;
+      }
+    }
+  }
 
-          img {
-            width: 48px;
-          }
-        }
+  .details {
+    background: #f8f8f7;
+    padding: 6px 12px 12px 12px;
+
+    .category {
+      font-weight: 700;
+      font-size: 0.7rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
 
-    .details {
-        background: #f8f8f7;
-        padding: 6px 12px 12px 12px;
+    .access {
+      display: flex;
+      width: 100%;
 
-        .category {
-            font-weight: 700;
-            font-size: 0.7rem;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .access {
-            display: table;
-            width: 100%;
-
-            .transport {
-                font-size: 0.9rem;
-                font-weight: normal;
-                color: $light-text-color;
-
-                .line {
-                    display: table-cell;
-                    padding-right: 4px;
-                    word-spacing: nowrap;
-
-                    img {
-                        width: 24px;
-                    }
-                }
-
-                .station {
-                    display: table-cell;
-                }
-            }
-
-            .distance {
-                display: table-cell;
-                text-align: right;
-
-                .hike-icon {
-                    height: 16px;
-                }
-            }
-        }
-    }
-
-    .content {
-        background-color: white;
+      .transport {
+        flex-grow: 1;
         font-size: 0.9rem;
-
-        padding: 32px 32px;
-        background-color: white;
-        font-size: 0.9rem;
-        line-height: 1.8;
+        font-weight: 600;
         color: $light-text-color;
+      }
 
-        h2 {
-            font-weight: 700;
-            color: #32383e;
-            margin: 0 0 0.5em 0;
-            font-size: 1.2rem;
-            line-height: 1.5rem;
-            letter-spacing: -0.025rem;
+      .distance {
+        .hike-icon {
+          height: 16px;
         }
+      }
     }
+  }
+
+  .content {
+    background-color: white;
+    font-size: 0.9rem;
+
+    padding: 32px 32px;
+    background-color: white;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: $light-text-color;
+
+    h2 {
+      font-weight: 700;
+      color: #32383e;
+      margin: 0 0 0.5em 0;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      letter-spacing: -0.025rem;
+    }
+  }
 }

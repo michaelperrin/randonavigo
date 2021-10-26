@@ -1,9 +1,9 @@
 .point {
-  display: table;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
-  display: table-cell;
   font-size: 3rem;
   text-shadow: 1px 1px 0px rgba(100, 100, 100, 0.8);
   padding-right: 10px;
@@ -15,9 +15,4 @@
 
 .ending-point .icon {
   color: #b66654;
-}
-
-.station {
-  display: table-cell;
-  vertical-align: middle;
 }

@@ -1,10 +1,20 @@
 .line {
-  display: table-cell;
-  vertical-align: middle;
-  white-space: nowrap;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
   padding-right: 10px;
 }
 
 .line img {
   width: 24px;
+}
+
+.network {
+  display: inline-block;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.lineName {
+  height: 24px;
 }

@@ -38,9 +38,10 @@ const HikeHeader = ({ hike }: HikeHeaderProps) => (
 
         <time
           className="publication-date"
-          dateTime={format(hike.publication_date, 'yyyy-MM-dd')}
+          dateTime={format
+            (new Date(hike.publication_date), 'yyyy-MM-dd')}
         >
-          {format(hike.publication_date, 'dd/MM/yyyy')}
+          {format(new Date(hike.publication_date), 'dd/MM/yyyy')}
         </time>
 
         <h1 className="title">{hike.title}</h1>

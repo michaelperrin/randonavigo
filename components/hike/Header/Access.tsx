@@ -8,7 +8,7 @@ type AccessProps = {
 const Access = ({ hike }: AccessProps) => (
   <div>
     <div className="transport">
-      <div className="row no-gutters">
+      <div className="row align-items-center no-gutters">
         <div className={ hike.ending_point ? 'col-xl-6' : 'col-xl-12' }>
           {/* TODO: "Point de départ" label */}
           <TransportPoint

@@ -12,7 +12,7 @@ type HomeProps = {
 
 export default function Home({ hikes }: HomeProps) {
   return (
-    <Layout>
+    <Layout home>
       <Head>
         <title>Rando Navigo</title>
         <meta name="description" content="Rando Navigo" />

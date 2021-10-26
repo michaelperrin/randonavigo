@@ -42,34 +42,6 @@
   height: 16px;
 }
 
-/* .access {
-            display: table;
-            width: 100%;
-
-            .transport {
-                font-size: 0.9rem;
-                font-weight: normal;
-                color: $light-text-color;
-
-                .line {
-                    display: table-cell;
-                    padding-right: 4px;
-                    word-spacing: nowrap;
-
-                    img {
-                        width: 24px;
-                    }
-                }
-
-                .station {
-                    display: table-cell;
-                }
-            }
-
-
-        }
-    } */
-
 .content {
   background-color: white;
   font-size: 0.9rem;

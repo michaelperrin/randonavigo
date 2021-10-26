@@ -1,18 +1,34 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import Image from 'next/image'
+import Link from 'next/link';
+
 const Header = () => (
-  <header>
+  <header className="main-header">
     <div className="banner">
       <div className="container-fluid">
         <div className="row no-gutters align-items-center">
           <div className="col-xl-8 col-lg-8 col-md-8 col-sm-6 offset-sm-1">
             <div className="brand">
               <div className="logo">
-                <a href="{{ path('homepage') }}">
-                  <img src="{{ asset('images/logo.svg') }}" alt="" />
-                </a>
+                <Link href="/">
+                  <a>
+                    <Image
+                      src="/images/logo.svg"
+                      width={400}
+                      height={300}
+                      alt=""
+                    />
+                  </a>
+                </Link>
               </div>
               <div className="brand-name">
                 <h1>
-                  <a href="{{ path('homepage') }}">Rando Navigo</a>
+                  <Link href="/">
+                    <a>
+                      Rando Navigo
+                    </a>
+                  </Link>
                 </h1>
 
                 <p className="hidden-xs-down">
@@ -26,23 +42,25 @@ const Header = () => (
             <div className="social-links">
               <ul>
                 <li className="about">
-                  <a href="{{ path('about') }}">
-                    A propos
+                  <Link href="/a-propos">
+                    <a>
+                      A propos
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/randonavigo" title="Rando Navigo sur Instagram" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faInstagram} size="sm" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/randonavigo" title="Rando Navigo sur Instagram" target="_blank">
-                    <i className="fa fa-instagram" aria-hidden="true"></i>
+                  <a href="https://www.facebook.com/randonavigo/" title="Rando Navigo sur Facebook" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faFacebook} size="sm" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/randonavigo/" title="Rando Navigo sur Facebook" target="_blank">
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/randonavigo" title="Rando Navigo sur Twitter" target="_blank">
-                    <i className="fa fa-twitter" aria-hidden="true"></i>
+                  <a href="https://twitter.com/randonavigo" title="Rando Navigo sur Twitter" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faTwitter} size="sm" />
                   </a>
                 </li>
               </ul>

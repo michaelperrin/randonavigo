@@ -1,3 +1,9 @@
-.hike-icon {
+.distance {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.hikeIcon {
   margin-right: 10px;
 }
