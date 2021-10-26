@@ -5,6 +5,7 @@ import { Hike } from '../../../lib/types'
 import Access from './Access'
 import Distance from './Distance'
 import getHikePicturePath from '../../../lib/getHikePicturePath'
+import DownloadButton from './DownloadButton'
 // import styles from './Header.module.css' // TODO
 
 const MapWithNoSSR = dynamic(
@@ -57,6 +58,8 @@ const HikeHeader = ({ hike }: HikeHeaderProps) => (
         <div className="distance">
           <Distance hike={hike} />
         </div>
+
+        <DownloadButton hike={hike} />
       </div>
 
       <div className="col-md-7 col-lg-6 ml-lg-auto">
