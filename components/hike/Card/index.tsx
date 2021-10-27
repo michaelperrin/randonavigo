@@ -32,7 +32,7 @@ const HikeCard = ({ hike }: HikeCardProps) => (
             layout="fill"
             objectFit="cover"
             sizes="350px"
-            quality={60}
+            quality={40}
             alt=""
           />
         </div>

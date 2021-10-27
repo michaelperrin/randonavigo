@@ -59,7 +59,7 @@ const Hike = ({ hike }: HikeProps) => (
           </div>
           <div className="row">
             <div className="col-lg-1"></div>
-            <div className="col-lg-11">
+            <div className="col-lg-10">
               <Gallery hike={hike} />
             </div>
           </div>

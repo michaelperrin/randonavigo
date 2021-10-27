@@ -37,6 +37,7 @@ const Gallery = ({ hike }: GalleryProps) => {
               layout="fill"
               objectFit="cover"
               sizes="400px"
+              quality={40}
               alt=""
             />
           </div>
