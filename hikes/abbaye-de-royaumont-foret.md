@@ -38,7 +38,7 @@ starting_point:
   line: D
   comment: 41 minutes depuis Châtelet-les-Halles
 ending_point:
-  station: Viarnes
+  station: Viarmes
   line: H
   comment: 42 minutes jusqu'à Gare du Nord
 favorite: true

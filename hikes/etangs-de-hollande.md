@@ -7,11 +7,15 @@ categories:
 - Yvelines
 tags: []
 pictures:
+- etangs-de-hollande - 1.jpeg
+- etangs-de-hollande - 2.jpeg
+- etangs-de-hollande - 3.jpeg
 - IMG_4133.jpg
 - IMG_4134.jpg
 - IMG_4136.jpg
 - IMG_4138.jpg
 - IMG_4139.jpg
+- etangs-de-hollande - 4.jpeg
 main_picture: IMG_4138.jpg
 distance: 15
 gpx_file: etangs-de-hollande.gpx
