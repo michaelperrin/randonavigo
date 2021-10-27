@@ -14,16 +14,16 @@ const AideGpx = () => (
 
             <p>Lorsque ces fichiers sont ouverts avec une application dédiée sur votre smartphone, une carte présentant dessus le tracé de la randonnée permet de se repérer à tout moment de la randonnée. Aucun risque de se tromper, il suffit de suivre la trace par rapport à votre position actuelle.</p>
 
-            <p>Il existe un certain nombre d’applications iOS et Android qui permettent d’ouvrir ce type de fichier. Je recommande l’application <strong>ViewRanger</strong> qui malgré son ergonomie déroutante a l’avantage d’être gratuite et de présenter une carte très détaillée des routes et chemins. Vous pourrez ainsi improviser des détours ou des raccourcis à tout moment. L'application <strong>VisoRando</strong> est également une bonne alternative.</p>
+            <p>Il existe un certain nombre d’applications iOS et Android qui permettent d’ouvrir ce type de fichier. Je recommande l’application <strong>ViewRanger</strong> qui malgré son ergonomie déroutante a l’avantage d’être gratuite et de présenter une carte très détaillée des routes et chemins. Vous pourrez ainsi improviser des détours ou des raccourcis à tout moment. L&apos;application <strong>VisoRando</strong> est également une bonne alternative.</p>
 
             <p>Voici la procédure pour charger un fichier GPX dans ViewRanger sur iPhone. Les étapes sont similaires sur Android.</p>
 
             <ol>
-              <li>Rendez-vous sur la page d'une des randonnées de Rando Navigo.</li>
+              <li>Rendez-vous sur la page d&apos;une des randonnées de Rando Navigo.</li>
               <li>Appuyez sur « Télécharger la trace GPS ».</li>
               <li>Choisir « Options… ».</li>
               <li>Choisissez « Copier dans View Ranger » ou « Copier dans VisoRando »</li>
-              <li>Rendez-vous dans l'onglet « Profil » de ViewRanger et sélectionnez la randonnée.</li>
+              <li>Rendez-vous dans l&apos;onglet « Profil » de ViewRanger et sélectionnez la randonnée.</li>
               <li>Choisissez « Voir ce tracé sur la carte ».</li>
             </ol>
 

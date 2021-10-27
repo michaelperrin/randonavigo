@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const TopBanner = () => (
   <div className="banner">
     <div className="container-fluid">
@@ -5,7 +7,13 @@ const TopBanner = () => (
         <div className="col-lg-2 col-md-2 col-sm-1 col-4"></div>
 
         <div className="col-lg-1 col-md-2 col-sm-2 col-4">
-          <img src="{{ asset('images/logo.svg') }}" className="logo" alt="" />
+          <Image
+            src="/images/logo.svg"
+            alt="RandoNavigo"
+            className="logo"
+            width={100}
+            height={100}
+          />
         </div>
 
         <div className="col-lg-7 col-md-6 col-sm-8 col-12">
