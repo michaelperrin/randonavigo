@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/0" version="1.0" creator="ViewRanger - http://www.viewranger.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <rte>
+    <name><![CDATA[Le Vexin autour de Santeuil]]></name>
+    <rtept lat="49.124135" lon="1.948883"></rtept>
+    <rtept lat="49.123144" lon="1.947992"></rtept>
+    <rtept lat="49.12434" lon="1.94628"></rtept>
+    <rtept lat="49.123698" lon="1.942842"></rtept>
+    <rtept lat="49.127528" lon="1.93767"></rtept>
+    <rtept lat="49.130592" lon="1.93724"></rtept>
+    <rtept lat="49.132464" lon="1.933091"></rtept>
+    <rtept lat="49.132513" lon="1.931763"></rtept>
+    <rtept lat="49.134328" lon="1.929694"></rtept>
+    <rtept lat="49.133227" lon="1.927567"></rtept>
+    <rtept lat="49.133068" lon="1.928176"></rtept>
+    <rtept lat="49.131389" lon="1.928666"></rtept>
+    <rtept lat="49.130393" lon="1.92973"></rtept>
+    <rtept lat="49.128616" lon="1.923638"></rtept>
+    <rtept lat="49.127758" lon="1.917645"></rtept>
+    <rtept lat="49.126658" lon="1.914621"></rtept>
+    <rtept lat="49.126321" lon="1.911723"></rtept>
+    <rtept lat="49.127951" lon="1.907699"></rtept>
+    <rtept lat="49.128004" lon="1.903786"></rtept>
+    <rtept lat="49.12854" lon="1.901079"></rtept>
+    <rtept lat="49.126456" lon="1.891247"></rtept>
+    <rtept lat="49.123155" lon="1.891975"></rtept>
+    <rtept lat="49.119742" lon="1.89105"></rtept>
+    <rtept lat="49.118188" lon="1.889379"></rtept>
+    <rtept lat="49.102748" lon="1.926062"></rtept>
+    <rtept lat="49.107103" lon="1.927029"></rtept>
+    <rtept lat="49.107" lon="1.928563"></rtept>
+    <rtept lat="49.108612" lon="1.932881"></rtept>
+    <rtept lat="49.110048" lon="1.934316"></rtept>
+    <rtept lat="49.110887" lon="1.936707"></rtept>
+    <rtept lat="49.113584" lon="1.940148"></rtept>
+    <rtept lat="49.11443" lon="1.943892"></rtept>
+    <rtept lat="49.115567" lon="1.945895"></rtept>
+    <rtept lat="49.118905" lon="1.948527"></rtept>
+    <rtept lat="49.119453362715" lon="1.9484458494263"></rtept>
+    <rtept lat="49.12022576054" lon="1.9455705213623"></rtept>
+    <rtept lat="49.120647063375" lon="1.9468150663453"></rtept>
+    <rtept lat="49.12111049236" lon="1.9477162885743"></rtept>
+    <rtept lat="49.122136" lon="1.949062"></rtept>
+    <rtept lat="49.123545" lon="1.948387"></rtept>
+    <rtept lat="49.124159" lon="1.948941"></rtept>
+  </rte>
+</gpx>

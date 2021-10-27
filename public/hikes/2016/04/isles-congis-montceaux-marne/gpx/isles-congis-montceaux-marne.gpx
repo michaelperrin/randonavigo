@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/0" version="1.0" creator="ViewRanger - http://www.viewranger.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <rte>
+    <name><![CDATA[Circuit de Rando Isles Armentier Congis]]></name>
+    <rtept lat="48.998299" lon="3.00738">
+      <name>WP0001</name>
+    </rtept>
+    <rtept lat="48.998348" lon="3.00708">
+      <name>WP0002</name>
+    </rtept>
+    <rtept lat="48.998192" lon="3.00669">
+      <name>WP0003</name>
+    </rtept>
+    <rtept lat="48.99712" lon="3.00763">
+      <name>WP0004</name>
+    </rtept>
+    <rtept lat="48.99535" lon="3.00824">
+      <name>WP0005</name>
+    </rtept>
+    <rtept lat="48.993401" lon="3.00876">
+      <name>WP0006</name>
+    </rtept>
+    <rtept lat="48.991192" lon="3.0087">
+      <name>WP0007</name>
+    </rtept>
+    <rtept lat="48.99036" lon="3.00822">
+      <name>WP0008</name>
+    </rtept>
+    <rtept lat="48.98914" lon="3.00709">
+      <name>WP0009</name>
+    </rtept>
+    <rtept lat="48.98716" lon="3.00467">
+      <name>WP0010</name>
+    </rtept>
+    <rtept lat="48.985538" lon="3.00389">
+      <name>WP0011</name>
+    </rtept>
+    <rtept lat="48.984482" lon="3.00275">
+      <name>WP0012</name>
+    </rtept>
+    <rtept lat="48.984409" lon="3.00291">
+      <name>WP0013</name>
+    </rtept>
+    <rtept lat="48.985229" lon="3.00442">
+      <name>WP0014</name>
+    </rtept>
+    <rtept lat="48.986408" lon="3.00844">
+      <name>WP0015</name>
+    </rtept>
+    <rtept lat="48.987122" lon="3.01014">
+      <name>WP0016</name>
+    </rtept>
+    <rtept lat="48.988029" lon="3.01368">
+      <name>WP0017</name>
+    </rtept>
+    <rtept lat="48.988911" lon="3.01517">
+      <name>WP0018</name>
+    </rtept>
+    <rtept lat="48.990379" lon="3.02037">
+      <name>WP0019</name>
+    </rtept>
+    <rtept lat="48.99276" lon="3.02648">
+      <name>WP0020</name>
+    </rtept>
+    <rtept lat="48.988411" lon="3.02466">
+      <name>WP0021</name>
+    </rtept>
+    <rtept lat="48.983551" lon="3.02227">
+      <name>WP0022</name>
+    </rtept>
+    <rtept lat="48.981831" lon="3.02231">
+      <name>WP0023</name>
+    </rtept>
+    <rtept lat="48.98119" lon="3.02295">
+      <name>WP0024</name>
+    </rtept>
+    <rtept lat="48.980099" lon="3.02332">
+      <name>WP0025</name>
+    </rtept>
+    <rtept lat="48.979259" lon="3.02161">
+      <name>WP0026</name>
+    </rtept>
+    <rtept lat="48.977951" lon="3.02137">
+      <name>WP0027</name>
+    </rtept>
+    <rtept lat="48.97797" lon="3.02082">
+      <name>WP0028</name>
+    </rtept>
+    <rtept lat="48.977699" lon="3.02066">
+      <name>WP0029</name>
+    </rtept>
+    <rtept lat="48.977539" lon="3.01981">
+      <name>WP0030</name>
+    </rtept>
+    <rtept lat="48.977131" lon="3.01959">
+      <name>WP0031</name>
+    </rtept>
+    <rtept lat="48.97699" lon="3.01828">
+      <name>WP0032</name>
+    </rtept>
+    <rtept lat="48.97686" lon="3.01789">
+      <name>WP0033</name>
+    </rtept>
+    <rtept lat="48.97657" lon="3.01772">
+      <name>WP0034</name>
+    </rtept>
+    <rtept lat="48.976742" lon="3.0163">
+      <name>WP0035</name>
+    </rtept>
+    <rtept lat="48.978298" lon="3.01092">
+      <name>WP0036</name>
+    </rtept>
+    <rtept lat="48.97855" lon="3.00825">
+      <name>WP0037</name>
+    </rtept>
+    <rtept lat="48.9785" lon="3.00728">
+      <name>WP0038</name>
+    </rtept>
+    <rtept lat="48.97823" lon="3.006">
+      <name>WP0039</name>
+    </rtept>
+    <rtept lat="48.977539" lon="3.00446">
+      <name>WP0040</name>
+    </rtept>
+    <rtept lat="48.976479" lon="3.0031">
+      <name>WP0041</name>
+    </rtept>
+    <rtept lat="48.975559" lon="3.00137">
+      <name>WP0042</name>
+    </rtept>
+    <rtept lat="48.97411" lon="3.00007">
+      <name>WP0043</name>
+    </rtept>
+    <rtept lat="48.975239" lon="2.99909">
+      <name>WP0044</name>
+    </rtept>
+    <rtept lat="48.97517" lon="2.99862">
+      <name>WP0045</name>
+    </rtept>
+    <rtept lat="48.975361" lon="2.9983">
+      <name>WP0046</name>
+    </rtept>
+    <rtept lat="48.97575" lon="2.99848">
+      <name>WP0047</name>
+    </rtept>
+    <rtept lat="48.97607" lon="2.99813">
+      <name>WP0048</name>
+    </rtept>
+    <rtept lat="48.977581" lon="2.99176">
+      <name>WP0049</name>
+    </rtept>
+    <rtept lat="48.97879" lon="2.99036">
+      <name>WP0050</name>
+    </rtept>
+    <rtept lat="48.979641" lon="2.98709">
+      <name>WP0051</name>
+    </rtept>
+    <rtept lat="48.979679" lon="2.98223">
+      <name>WP0052</name>
+    </rtept>
+    <rtept lat="48.98" lon="2.98109">
+      <name>WP0053</name>
+    </rtept>
+    <rtept lat="48.98085" lon="2.98117">
+      <name>WP0054</name>
+    </rtept>
+    <rtept lat="48.981869" lon="2.98543">
+      <name>WP0055</name>
+    </rtept>
+    <rtept lat="48.98349" lon="2.98869">
+      <name>WP0056</name>
+    </rtept>
+    <rtept lat="48.98695" lon="2.99293">
+      <name>WP0057</name>
+    </rtept>
+    <rtept lat="48.98727" lon="2.99267">
+      <name>WP0058</name>
+    </rtept>
+    <rtept lat="48.987919" lon="2.99414">
+      <name>WP0059</name>
+    </rtept>
+    <rtept lat="48.99036" lon="2.99719">
+      <name>WP0060</name>
+    </rtept>
+    <rtept lat="48.991329" lon="2.99901">
+      <name>WP0061</name>
+    </rtept>
+    <rtept lat="48.992062" lon="3.00105">
+      <name>WP0062</name>
+    </rtept>
+    <rtept lat="48.992908" lon="3.00247">
+      <name>WP0063</name>
+    </rtept>
+    <rtept lat="48.993801" lon="3.0049">
+      <name>WP0064</name>
+    </rtept>
+    <rtept lat="48.99514" lon="3.00611">
+      <name>WP0065</name>
+    </rtept>
+    <rtept lat="48.996422" lon="3.00781">
+      <name>WP0066</name>
+    </rtept>
+    <rtept lat="48.99712" lon="3.00763">
+      <name>WP0067</name>
+    </rtept>
+    <rtept lat="48.99815" lon="3.00673">
+      <name>WP0068</name>
+    </rtept>
+    <rtept lat="48.998341" lon="3.00701">
+      <name>WP0069</name>
+    </rtept>
+    <rtept lat="48.998299" lon="3.00738">
+      <name>WP0070</name>
+    </rtept>
+  </rte>
+</gpx>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" 
+creator="ViewRanger/6.3.2 http://www.viewranger.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/1"
+xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1"
+xmlns:viewranger="http://www.viewranger.com/xmlschemas/GpxExtensions/v3"
+xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_style/0/2
+http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd http://www.viewranger.com/xmlschemas/GpxExtensions/v3 http://www.viewranger.com/xmlschemas/GpxExtensions/v3/GpxExtensionsV3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd">
+<rte>
+<name><![CDATA[Vallée De Chevreuse - Madeleine]]></name>
+<cmt><![CDATA[Vous partirez de la gare de Saint-Rémy-les-Chevreuse (RER B) pour vous rendre sur la piste pour atteindre le village de Chevreuse, le long des canaux.<br><br>Puis vous poursuiverez votre chemin en forêt, et rejoindrez le château de la Madeleine avant de rejoindre Chevreuse et revenir à la gare RER.]]></cmt>
+<type><![CDATA[Route]]></type>
+<rtept lat="48.702942" lon="2.071086">
+<name><![CDATA[1]]></name>
+</rtept>
+<rtept lat="48.703239" lon="2.069370">
+<name><![CDATA[2]]></name>
+</rtept>
+<rtept lat="48.702488" lon="2.066473">
+<name><![CDATA[3]]></name>
+</rtept>
+<rtept lat="48.702278" lon="2.063362">
+<name><![CDATA[4]]></name>
+</rtept>
+<rtept lat="48.702671" lon="2.059224">
+<name><![CDATA[5]]></name>
+</rtept>
+<rtept lat="48.702644" lon="2.057568">
+<name><![CDATA[6]]></name>
+</rtept>
+<rtept lat="48.702286" lon="2.055966">
+<name><![CDATA[7]]></name>
+</rtept>
+<rtept lat="48.704346" lon="2.055573">
+<name><![CDATA[8]]></name>
+</rtept>
+<rtept lat="48.704346" lon="2.055208">
+<name><![CDATA[9]]></name>
+</rtept>
+<rtept lat="48.704472" lon="2.054736">
+<name><![CDATA[10]]></name>
+</rtept>
+<rtept lat="48.704697" lon="2.054285">
+<name><![CDATA[11]]></name>
+</rtept>
+<rtept lat="48.705082" lon="2.053320">
+<name><![CDATA[12]]></name>
+</rtept>
+<rtept lat="48.705135" lon="2.052740">
+<name><![CDATA[13]]></name>
+</rtept>
+<rtept lat="48.705391" lon="2.052397">
+<name><![CDATA[14]]></name>
+</rtept>
+<rtept lat="48.705654" lon="2.051962">
+<name><![CDATA[15]]></name>
+</rtept>
+<rtept lat="48.706158" lon="2.050552">
+<name><![CDATA[16]]></name>
+</rtept>
+<rtept lat="48.706440" lon="2.048879">
+<name><![CDATA[17]]></name>
+</rtept>
+<rtept lat="48.706631" lon="2.044354">
+<name><![CDATA[18]]></name>
+</rtept>
+<rtept lat="48.706963" lon="2.043943">
+<name><![CDATA[19]]></name>
+</rtept>
+<rtept lat="48.706707" lon="2.039951">
+<name><![CDATA[20]]></name>
+</rtept>
+<rtept lat="48.708054" lon="2.040274">
+<name><![CDATA[21]]></name>
+</rtept>
+<rtept lat="48.709846" lon="2.037322">
+<name><![CDATA[22]]></name>
+</rtept>
+<rtept lat="48.710449" lon="2.034998">
+<name><![CDATA[23]]></name>
+</rtept>
+<rtept lat="48.712410" lon="2.033755">
+<name><![CDATA[24]]></name>
+</rtept>
+<rtept lat="48.713589" lon="2.031261">
+<name><![CDATA[25]]></name>
+</rtept>
+<rtept lat="48.715771" lon="2.030274">
+<name><![CDATA[26]]></name>
+</rtept>
+<rtept lat="48.722263" lon="2.029462">
+<name><![CDATA[27]]></name>
+</rtept>
+<rtept lat="48.723015" lon="2.031330">
+<name><![CDATA[28]]></name>
+</rtept>
+<rtept lat="48.722893" lon="2.032742">
+<name><![CDATA[29]]></name>
+</rtept>
+<rtept lat="48.723316" lon="2.034222">
+<name><![CDATA[30]]></name>
+</rtept>
+<rtept lat="48.723225" lon="2.035536">
+<name><![CDATA[31]]></name>
+</rtept>
+<rtept lat="48.723656" lon="2.037463">
+<name><![CDATA[32]]></name>
+</rtept>
+<rtept lat="48.723572" lon="2.038471">
+<name><![CDATA[33]]></name>
+</rtept>
+<rtept lat="48.722797" lon="2.039995">
+<name><![CDATA[34]]></name>
+</rtept>
+<rtept lat="48.721016" lon="2.042312">
+<name><![CDATA[35]]></name>
+</rtept>
+<rtept lat="48.720497" lon="2.045277">
+<name><![CDATA[36]]></name>
+</rtept>
+<rtept lat="48.721493" lon="2.053267">
+<name><![CDATA[37]]></name>
+</rtept>
+<rtept lat="48.717152" lon="2.052278">
+<name><![CDATA[38]]></name>
+</rtept>
+<rtept lat="48.715385" lon="2.053608">
+<name><![CDATA[39]]></name>
+</rtept>
+<rtept lat="48.713593" lon="2.053512">
+<name><![CDATA[40]]></name>
+</rtept>
+<rtept lat="48.713547" lon="2.052983">
+<name><![CDATA[41]]></name>
+</rtept>
+<rtept lat="48.713123" lon="2.053784">
+<name><![CDATA[42]]></name>
+</rtept>
+<rtept lat="48.710167" lon="2.048835">
+<name><![CDATA[43]]></name>
+</rtept>
+<rtept lat="48.711563" lon="2.047126">
+<name><![CDATA[44]]></name>
+</rtept>
+<rtept lat="48.711277" lon="2.041424">
+<name><![CDATA[45]]></name>
+</rtept>
+<rtept lat="48.710701" lon="2.041543">
+<name><![CDATA[46]]></name>
+</rtept>
+<rtept lat="48.710121" lon="2.041475">
+<name><![CDATA[47]]></name>
+</rtept>
+<rtept lat="48.709999" lon="2.041438">
+<name><![CDATA[48]]></name>
+</rtept>
+<rtept lat="48.710144" lon="2.041939">
+<name><![CDATA[49]]></name>
+</rtept>
+<rtept lat="48.709778" lon="2.042097">
+<name><![CDATA[50]]></name>
+</rtept>
+<rtept lat="48.710159" lon="2.041717">
+<name><![CDATA[51]]></name>
+</rtept>
+<rtept lat="48.709236" lon="2.042323">
+<name><![CDATA[52]]></name>
+</rtept>
+<rtept lat="48.708691" lon="2.039881">
+<name><![CDATA[53]]></name>
+</rtept>
+<rtept lat="48.708271" lon="2.040496">
+<name><![CDATA[54]]></name>
+</rtept>
+<rtept lat="48.707420" lon="2.039459">
+<name><![CDATA[55]]></name>
+</rtept>
+<rtept lat="48.706799" lon="2.039714">
+<name><![CDATA[56]]></name>
+</rtept>
+<rtept lat="48.706600" lon="2.047918">
+<name><![CDATA[57]]></name>
+</rtept>
+<rtept lat="48.706066" lon="2.051374">
+<name><![CDATA[58]]></name>
+</rtept>
+<rtept lat="48.704269" lon="2.055405">
+<name><![CDATA[59]]></name>
+</rtept>
+<rtept lat="48.702328" lon="2.055839">
+<name><![CDATA[60]]></name>
+</rtept>
+<rtept lat="48.702702" lon="2.058062">
+<name><![CDATA[61]]></name>
+</rtept>
+<rtept lat="48.702263" lon="2.065428">
+<name><![CDATA[62]]></name>
+</rtept>
+<rtept lat="48.703194" lon="2.069518">
+<name><![CDATA[63]]></name>
+</rtept>
+<rtept lat="48.702980" lon="2.071148">
+<name><![CDATA[64]]></name>
+</rtept>
+</rte>
+</gpx>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/0" version="1.0" creator="ViewRanger - http://www.viewranger.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <rte>
+    <name><![CDATA[Route 31 mars 2018 à 19:30]]></name>
+    <rtept lat="48.732644" lon="2.17804">
+      <name>WP0001</name>
+    </rtept>
+    <rtept lat="48.604312" lon="2.173233">
+      <name>WP0002</name>
+    </rtept>
+    <rtept lat="48.663757" lon="2.263184">
+      <name>WP0003</name>
+    </rtept>
+    <rtept lat="48.640849" lon="2.296486">
+      <name>WP0004</name>
+    </rtept>
+    <rtept lat="48.621789" lon="2.341118">
+      <name>WP0005</name>
+    </rtept>
+    <rtept lat="48.608625" lon="2.394676">
+      <name>WP0006</name>
+    </rtept>
+    <rtept lat="48.607717" lon="2.442741">
+      <name>WP0007</name>
+    </rtept>
+    <rtept lat="48.620428" lon="2.492867">
+      <name>WP0008</name>
+    </rtept>
+    <rtept lat="48.640849" lon="2.534065">
+      <name>WP0009</name>
+    </rtept>
+    <rtept lat="48.65582" lon="2.544365">
+      <name>WP0010</name>
+    </rtept>
+    <rtept lat="48.675774" lon="2.540245">
+      <name>WP0011</name>
+    </rtept>
+    <rtept lat="48.693453" lon="2.526512">
+      <name>WP0012</name>
+    </rtept>
+    <rtept lat="48.709768" lon="2.499733">
+      <name>WP0013</name>
+    </rtept>
+    <rtept lat="48.719735" lon="2.464027">
+      <name>WP0014</name>
+    </rtept>
+    <rtept lat="48.726982" lon="2.432442">
+      <name>WP0015</name>
+    </rtept>
+    <rtept lat="48.729247" lon="2.388496">
+      <name>WP0016</name>
+    </rtept>
+    <rtept lat="48.723359" lon="2.340431">
+      <name>WP0017</name>
+    </rtept>
+    <rtept lat="48.707955" lon="2.302666">
+      <name>WP0018</name>
+    </rtept>
+    <rtept lat="48.695266" lon="2.277946">
+      <name>WP0019</name>
+    </rtept>
+    <rtept lat="48.680307" lon="2.261467">
+      <name>WP0020</name>
+    </rtept>
+    <rtept lat="48.7297" lon="2.179756">
+      <name>WP0021</name>
+    </rtept>
+  </rte>
+</gpx>

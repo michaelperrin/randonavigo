@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/0" version="1.0" creator="ViewRanger - http://www.viewranger.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+  <rte>
+    <name><![CDATA[Hourdan - Orgerus]]></name>
+    <rtept lat="48.795799" lon="1.602338"></rtept>
+    <rtept lat="48.796124" lon="1.602632"></rtept>
+    <rtept lat="48.796539" lon="1.601483"></rtept>
+    <rtept lat="48.797184" lon="1.60146"></rtept>
+    <rtept lat="48.803989" lon="1.606668"></rtept>
+    <rtept lat="48.809872" lon="1.609443"></rtept>
+    <rtept lat="48.820934" lon="1.616353"></rtept>
+    <rtept lat="48.821636" lon="1.619503"></rtept>
+    <rtept lat="48.824192" lon="1.624004"></rtept>
+    <rtept lat="48.821896" lon="1.62976"></rtept>
+    <rtept lat="48.822365" lon="1.630958"></rtept>
+    <rtept lat="48.823414" lon="1.631595"></rtept>
+    <rtept lat="48.822807" lon="1.638593"></rtept>
+    <rtept lat="48.824299" lon="1.642444"></rtept>
+    <rtept lat="48.828602" lon="1.646067"></rtept>
+    <rtept lat="48.828899" lon="1.646684"></rtept>
+    <rtept lat="48.828129" lon="1.647385"></rtept>
+    <rtept lat="48.828339" lon="1.647717"></rtept>
+    <rtept lat="48.829357" lon="1.64702"></rtept>
+    <rtept lat="48.832775" lon="1.650999"></rtept>
+    <rtept lat="48.833546" lon="1.652785"></rtept>
+    <rtept lat="48.835979" lon="1.650945"></rtept>
+    <rtept lat="48.836784" lon="1.65137"></rtept>
+    <rtept lat="48.839066" lon="1.649107"></rtept>
+    <rtept lat="48.845116" lon="1.65222"></rtept>
+    <rtept lat="48.844734" lon="1.653776"></rtept>
+    <rtept lat="48.842793" lon="1.656063"></rtept>
+    <rtept lat="48.841709" lon="1.658979"></rtept>
+    <rtept lat="48.842972" lon="1.659263"></rtept>
+    <rtept lat="48.842922" lon="1.659945"></rtept>
+    <rtept lat="48.840782" lon="1.663027"></rtept>
+    <rtept lat="48.844433" lon="1.670194"></rtept>
+    <rtept lat="48.842556" lon="1.673133"></rtept>
+    <rtept lat="48.844238" lon="1.678732"></rtept>
+    <rtept lat="48.842289" lon="1.682735"></rtept>
+    <rtept lat="48.84164" lon="1.686193"></rtept>
+    <rtept lat="48.840374" lon="1.688128"></rtept>
+    <rtept lat="48.83947" lon="1.68862"></rtept>
+    <rtept lat="48.839581" lon="1.69014"></rtept>
+    <rtept lat="48.837631" lon="1.690128"></rtept>
+    <rtept lat="48.83276" lon="1.694086"></rtept>
+    <rtept lat="48.831833" lon="1.696051"></rtept>
+    <rtept lat="48.832146" lon="1.699821"></rtept>
+    <rtept lat="48.830227" lon="1.70226"></rtept>
+    <rtept lat="48.828754" lon="1.70241"></rtept>
+    <rtept lat="48.8284" lon="1.703545"></rtept>
+    <rtept lat="48.826767" lon="1.702775"></rtept>
+  </rte>
+</gpx>
