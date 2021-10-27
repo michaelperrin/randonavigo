@@ -1,8 +1,12 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/layout'
 
-const AideGpx = () => (
+const About = () => (
   <Layout>
+    <Head>
+      <title>A propos de RandoNavigo</title>
+    </Head>
     <article className="about">
       <div className="container">
         <section className="intro">
@@ -80,6 +84,4 @@ const AideGpx = () => (
       </div>
     </article>
   </Layout>
-)
-
-export default AideGpx
+)AboutAideGpx

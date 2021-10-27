@@ -21,21 +21,21 @@ type Params = {
 const Hike = ({ hike }: HikeProps) => (
   <Layout>
     <Head>
+      <title>{hike.title} – RandoNavigo</title>
       <link rel="canonical" href="" />
       <meta property="og:locale" content="fr_FR" />
       <meta property="og:type" content="article" />
-      <meta property="og:title" content={hike.title } />
-      <meta property="og:description" content={hike.summary } />
-      {/* <meta property="og:url" content="" /> */}
+      <meta property="og:title" content={hike.title} />
+      <meta property="og:description" content={hike.summary} />
       <meta property="og:site_name" content="Rando Navigo" />
-      <meta property="article:section" content={hike.categories[0] } />
+      <meta property="article:section" content={hike.categories[0]} />
       <meta property="article:published_time" content={hike.publication_date} />
       <meta property="article:modified_time" content={hike.publication_date} />
       <meta property="og:updated_time" content={hike.publication_date} />
       <meta property="og:image" content={getHikePicturePath(hike, hike.main_picture)} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:description" content={hike.summary } />
-      <meta name="twitter:title" content={hike.title } />
+      <meta name="twitter:description" content={hike.summary} />
+      <meta name="twitter:title" content={hike.title} />
       <meta name="twitter:image" content={getHikePicturePath(hike, hike.main_picture)} />
     </Head>
 

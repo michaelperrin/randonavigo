@@ -14,9 +14,8 @@ export default function Home({ hikes }: HomeProps) {
   return (
     <Layout home>
       <Head>
-        <title>Rando Navigo</title>
-        <meta name="description" content="Rando Navigo" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>RandoNavigo</title>
+        <meta name="description" content="Randonnées en Ile-de-France accessibles en transport en commun." />
       </Head>
 
       <div className="page-home">

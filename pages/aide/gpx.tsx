@@ -1,8 +1,13 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../../components/layout'
 
 const AideGpx = () => (
   <Layout>
+    <Head>
+      <title>Aide sur les fichiers GPX — RandoNavigo</title>
+    </Head>
+
     <article className="help gpx-help">
       <div className="container-fluid">
         <div className="row">
