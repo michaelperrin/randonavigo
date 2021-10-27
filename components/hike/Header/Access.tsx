@@ -1,31 +1,40 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { Hike } from '../../../lib/types'
 import TransportPoint from '../../TransportPoint'
+import styles from './Access.module.css'
 
 type AccessProps = {
   hike: Hike,
 }
 
 const Access = ({ hike }: AccessProps) => (
-  <div className="transport">
-    <div className="row align-items-center no-gutters">
-      <div className={ hike.ending_point ? 'col-xl-6' : 'col-xl-12' }>
-        {/* TODO: "Point de départ" label */}
+  <div className={styles.access}>
+    <div className={styles.transportPoint}>
+      <div className={styles.startPointIcon}>
+        <FontAwesomeIcon icon={faMapMarkerAlt} size="3x" aria-label="Gare de départ" />
+      </div>
+      <div>
         <TransportPoint
           line={hike.starting_point.line}
           station={hike.starting_point.station}
         />
       </div>
+    </div>
 
-      { hike.ending_point && (
-        <div className="col-xl-6">
-          {/* TODO: "Point d'arrivée" label */}
+    { hike.ending_point && (
+      <div className={styles.transportPoint} style={{ paddingLeft: '1rem' }}>
+        <div className={styles.endPointIcon}>
+          <FontAwesomeIcon icon={faMapMarkerAlt} size="3x" aria-label="Gare d'arrivée" />
+        </div>
+        <div>
           <TransportPoint
             line={hike.ending_point.line}
             station={hike.ending_point.station}
           />
         </div>
-      )}
-    </div>
+      </div>
+    )}
   </div>
 )
 
