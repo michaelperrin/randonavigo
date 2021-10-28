@@ -18,7 +18,7 @@ const TopBanner = () => (
 
         <div className="col-lg-7 col-md-6 col-sm-8 col-12">
           <div className="text">
-            <h1>Rando Navigo</h1>
+            <h1>RandoNavigo</h1>
             <p>Randonnées en Ile-de-France accessibles en transport en commun.</p>
           </div>
         </div>

@@ -24,7 +24,7 @@ const AideGpx = () => (
             <p>Voici la procédure pour charger un fichier GPX dans ViewRanger sur iPhone. Les étapes sont similaires sur Android.</p>
 
             <ol>
-              <li>Rendez-vous sur la page d&apos;une des randonnées de Rando Navigo.</li>
+              <li>Rendez-vous sur la page d&apos;une des randonnées de RandoNavigo.</li>
               <li>Appuyez sur « Télécharger la trace GPS ».</li>
               <li>Choisir « Options… ».</li>
               <li>Choisissez « Copier dans View Ranger » ou « Copier dans VisoRando »</li>

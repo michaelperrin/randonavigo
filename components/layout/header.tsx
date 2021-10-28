@@ -26,7 +26,7 @@ const Header = () => (
                 <h1>
                   <Link href="/">
                     <a>
-                      Rando Navigo
+                      RandoNavigo
                     </a>
                   </Link>
                 </h1>
@@ -49,17 +49,17 @@ const Header = () => (
                   </Link>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/randonavigo" title="Rando Navigo sur Instagram" target="_blank" rel="noreferrer">
+                  <a href="https://www.instagram.com/randonavigo" title="RandoNavigo sur Instagram" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} size="sm" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/randonavigo/" title="Rando Navigo sur Facebook" target="_blank" rel="noreferrer">
+                  <a href="https://www.facebook.com/randonavigo/" title="RandoNavigo sur Facebook" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faFacebook} size="sm" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/randonavigo" title="Rando Navigo sur Twitter" target="_blank" rel="noreferrer">
+                  <a href="https://twitter.com/randonavigo" title="RandoNavigo sur Twitter" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faTwitter} size="sm" />
                   </a>
                 </li>

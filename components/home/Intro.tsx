@@ -23,7 +23,7 @@ const Intro = () => (
           <div className="content">
             <h2>Randonnées en Ile-de-France</h2>
 
-            <p>Rando Navigo vous propose de nombreuses <strong>randonnées</strong> en Ile-de-France, toujours <strong>accessibles en transport en commun</strong> !</p>
+            <p>RandoNavigo vous propose de nombreuses <strong>randonnées</strong> en Ile-de-France, toujours <strong>accessibles en transport en commun</strong> !</p>
             <p>Il est en effet possible de s’évader en pleine nature près de chez soi et rapidement grâce aux transports en commun en Ile-de-France. Votre carte Navigo est désormais complètement dézonée, alors <strong>quittez la grisaille parisienne le temps d’une journée</strong> et profitez-en !</p>
             <p>Vous serez étonné du nombre de randonnées possibles partout en Ile-de-France facilement accessibles <strong>sans voiture</strong>.</p>
             <p>Je vous en propose quelques unes sur ce site web qui s’enrichira au fur et à mesure de nouvelles découvertes.</p>
