@@ -84,4 +84,6 @@ const About = () => (
       </div>
     </article>
   </Layout>
-)AboutAideGpx
+)
+
+export default About
