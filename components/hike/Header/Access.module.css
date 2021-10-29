@@ -5,6 +5,10 @@
   margin-bottom: 16px;
 }
 
+.access.hasEndPoint .transportPoint:first-child {
+  margin-right: 1rem;
+}
+
 .transportPoint {
   flex: 1 0 auto;
   display: flex;

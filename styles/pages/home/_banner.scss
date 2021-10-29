@@ -1,29 +1,29 @@
 .banner {
-    background-image: url('../../../public/images/overlay.png'), url('../../../public/images/IMG_9140-blur.jpg');
-    background-position: top left, center left;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
-    color: white;
-    text-shadow: 0 0 8px black;
-    padding: 10rem 0 10rem 0;
+  background-image: url("../../../public/images/overlay.png"), url("../../../public/images/IMG_9140-blur.jpg");
+  background-position: top left, center left;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  color: white;
+  text-shadow: 0 0 8px black;
+  padding: 10rem 0 10rem 0;
 
-    h1 {
-        font-weight: 700;
+  h1 {
+    font-weight: 700;
+  }
+
+  .text {
+    @media (max-width: 576px) {
+      text-align: center;
     }
+  }
 
-    .text {
-        @media (max-width: 576px) {
-            text-align: center;
-        }
+  .logo {
+    display: block;
+    width: 100%;
+    max-height: 128px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 2rem;
     }
-
-    .logo {
-        display: block;
-        width: 100%;
-        max-height: 128px;
-
-        @media (max-width: 576px) {
-            margin-bottom: 2rem;
-        }
-    }
+  }
 }

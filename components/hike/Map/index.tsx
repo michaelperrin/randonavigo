@@ -1,5 +1,5 @@
 import { Hike } from '../../../lib/types'
-import { MapContainer, TileLayer, Marker, Popup, MapConsumer } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import GpxTrace from './GpxTrace'
 import getHikeGpxPath from '../../../lib/getHikeGpxPath'
 

@@ -1,3 +1,4 @@
+import cn from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { Hike } from '../../../lib/types'
@@ -9,7 +10,10 @@ type AccessProps = {
 }
 
 const Access = ({ hike }: AccessProps) => (
-  <div className={styles.access}>
+  <div className={cn({
+    [styles.access]: true,
+    [styles.hasEndPoint]: hike.ending_point !== undefined
+  })}>
     <div className={styles.transportPoint}>
       <div className={styles.startPointIcon}>
         <FontAwesomeIcon icon={faMapMarkerAlt} size="3x" aria-label="Gare de départ" />
@@ -23,7 +27,7 @@ const Access = ({ hike }: AccessProps) => (
     </div>
 
     { hike.ending_point && (
-      <div className={styles.transportPoint} style={{ paddingLeft: '1rem' }}>
+      <div className={styles.transportPoint}>
         <div className={styles.endPointIcon}>
           <FontAwesomeIcon icon={faMapMarkerAlt} size="3x" aria-label="Gare d'arrivée" />
         </div>

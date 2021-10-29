@@ -14,6 +14,7 @@ const Header = () => (
                 <Link href="/">
                   <a>
                     <Image
+                      priority
                       src="/images/logo.svg"
                       width={80}
                       height={80}
@@ -31,7 +32,7 @@ const Header = () => (
                   </Link>
                 </h1>
 
-                <p className="hidden-xs-down">
+                <p className="tagline hidden-xs-down">
                   Randonnées en Ile-de-France accessibles en transport en commun.
                 </p>
               </div>

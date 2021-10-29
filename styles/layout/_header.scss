@@ -9,13 +9,27 @@ header.main-header {
       font-size: 2rem;
     }
 
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .tagline {
+        font-size: 0.9rem;
+      }
+    }
+
     .brand {
-      display: table-row;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
 
       .logo {
-        display: table-cell;
-        vertical-align: middle;
-        padding-right: 30px;
+        padding-right: 32px;
+
+        @media (max-width: 576px) {
+          padding-right: 16px;
+        }
 
         img {
           height: 50px;
