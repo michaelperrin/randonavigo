@@ -3,7 +3,7 @@ title: La Haute Vallée de la Bièvre par les étangs
 summary: Une randonnée au bord de l’eau qui vous fera découvrir la Haute Vallée
   de la Bièvre !
 slug: la-haute-hallee-de-la-bievre-par-les-etangs
-publication_date: 2021-06-20T21:34:12+0200
+publication_date: '2021-06-20'
 categories:
 - yvelines
 tags:

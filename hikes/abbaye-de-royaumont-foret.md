@@ -4,7 +4,7 @@ summary: Cette randonnée en forêt vous mènera à l'Abbaye de Royaumont. Des p
   vallonnés et une belle variété d'espèces d'arbre donnent du charme à cette randonnée
   en pleine nature.
 slug: abbaye-de-royaumont-foret
-publication_date: 2017-03-26T17:46:19+0100
+publication_date: '2017-03-26'
 categories:
 - Val d'Oise
 tags: []

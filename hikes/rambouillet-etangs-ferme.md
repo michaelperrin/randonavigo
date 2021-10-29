@@ -3,7 +3,7 @@ title: Les 3 étangs et la ferme en forêt de Rambouillet
 summary: Allier plaisir de la nature, repos au bord des étangs et pause gourmande,
   tout cela est possible avec cette randonnée !
 slug: rambouillet-etangs-ferme
-publication_date: 2018-05-06T21:34:12+0200
+publication_date: '2018-05-06'
 categories:
 - Yvelines
 tags:

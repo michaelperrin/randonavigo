@@ -3,7 +3,7 @@ title: Dourdan / Forêt de Saint-Arnoud
 summary: Une randonnée au départ de la gare de RER C Dourdan qui vous fera longer
   l'Orge puis vous emmènera en forêt de Saint-Arnoud.
 slug: dourdan-foret-de-saint-arnoud
-publication_date: 2016-08-17T17:46:19+0100
+publication_date: '2016-08-17'
 categories:
 - Essonne
 tags: []

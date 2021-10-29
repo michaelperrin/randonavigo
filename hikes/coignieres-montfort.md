@@ -2,7 +2,7 @@
 title: De Coignières à Montfort par l’Etang de la Mauldre
 summary: Une belle randonnée dans les Yvelines en forêt et à travers champs.
 slug: coignieres-montfort
-publication_date: 2018-04-22T21:34:12+0200
+publication_date: '2018-04-22'
 categories:
 - Yvelines
 tags:

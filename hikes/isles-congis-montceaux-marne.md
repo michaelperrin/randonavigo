@@ -3,7 +3,7 @@ title: Forêt de Montceaux / La Marne
 summary: Belle randonnée à travers champs, en forêt de Montceaux et le long de la
   Marne.
 slug: isles-congis-montceaux-marne
-publication_date: 2016-04-10T17:46:19+0100
+publication_date: '2016-04-10'
 categories:
 - Seine et Marne
 tags: []

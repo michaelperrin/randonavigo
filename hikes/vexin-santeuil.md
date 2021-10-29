@@ -3,7 +3,7 @@ title: Le Vexin autour de Santeuil
 summary: Découvrez l’étang de Vallière et le tracé de l’ancienne voie romaine Jules
   César traversant le parc national du Vexin.
 slug: vexin-santeuil
-publication_date: 2018-03-24T20:34:12+0100
+publication_date: '2018-03-24'
 categories:
 - Val d'Oise
 tags:

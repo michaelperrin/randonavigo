@@ -2,7 +2,7 @@
 title: La vallée de la Mauldre
 summary: Une belle rando à travers champs et bois… avec un peu de dénivelé !
 slug: beynes
-publication_date: 2014-10-19T21:34:12+0200
+publication_date: '2014-10-19'
 categories:
 - Yvelines
 tags: []

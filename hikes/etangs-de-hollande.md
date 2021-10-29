@@ -2,7 +2,7 @@
 title: Etangs de Hollande
 summary: Une randonnée de gare à gare qui vous mènera le long des étangs de Hollande.
 slug: etangs-de-hollande
-publication_date: 2016-03-13T17:46:19+0100
+publication_date: '2016-03-13'
 categories:
 - Yvelines
 tags: []

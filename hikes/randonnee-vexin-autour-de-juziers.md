@@ -3,7 +3,7 @@ title: Randonnée dans le Vexin autour de Juziers
 summary: Une randonnée dans le Vexin autour de Juziers (Yvelines) à travers champs
   et en sous-bois.
 slug: randonnee-vexin-autour-de-juziers
-publication_date: 2017-04-08T17:46:19+0100
+publication_date: '2017-04-08'
 categories:
 - Yvelines
 tags: []

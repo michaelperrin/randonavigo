@@ -2,7 +2,7 @@
 title: Parc Georges Valbon à La Courneuve
 summary: Une grande balade dans ce parc offrant une véritable bulle de nature en pleine ville.
 slug: parc-georges-valbon-la-courneuve
-publication_date: 2021-10-16T17:46:19+0100
+publication_date: '2021-10-16'
 categories:
 - Seine Saint-Denis
 tags: []

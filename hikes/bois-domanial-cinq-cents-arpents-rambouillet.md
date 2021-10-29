@@ -4,7 +4,7 @@ summary: Une boucle entièrement en forêt depuis et jusqu’à la gare du Perra
   accessible en Transilien depuis Paris. De nombreux étangs agrémentent cette très
   belle randonnée dans le Vaux de Cernay en Vallée de Chevreuse.
 slug: bois-domanial-cinq-cents-arpents-rambouillet
-publication_date: 2015-11-01T12:17:24+0100
+publication_date: '2015-11-01'
 categories:
 - Yvelines
 tags: []

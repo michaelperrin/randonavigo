@@ -45,7 +45,7 @@ pictures:
 - roche-guyon - 38.jpeg
 - roche-guyon - 39.jpeg
 - roche-guyon - 41.jpeg
-publication_date: 2021-07-31T17:46:19+0100
+publication_date: '2021-07-31'
 slug: la-roche-guyon-par-les-coteaux-de-la-seine
 starting_point:
   comment: ''

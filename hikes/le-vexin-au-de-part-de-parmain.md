@@ -3,7 +3,7 @@ title: Le Vexin au départ de Parmain
 summary: Une petite randonnée dans le Parc Naturel du Vexin au départ de la gare
   de Parmain.
 slug: le-vexin-au-de-part-de-parmain
-publication_date: 2017-09-24T22:34:12+0200
+publication_date: '2017-09-24'
 categories:
 - Val d'Oise
 tags: []

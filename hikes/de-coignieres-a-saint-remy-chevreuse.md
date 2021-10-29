@@ -4,7 +4,7 @@ summary: Cette randonnée vous fera partir de Coignières où vous rejoindrez ra
   des chemins le long des champs et traversant de petits villages, avant de rejoindre
   la forêt.
 slug: de-coignieres-a-saint-remy-chevreuse
-publication_date: 2016-12-16T17:46:19+0100
+publication_date: '2016-12-16'
 categories:
 - Yvelines
 tags: []

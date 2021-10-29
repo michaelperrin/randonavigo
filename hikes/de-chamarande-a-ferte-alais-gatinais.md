@@ -4,7 +4,7 @@ summary: Cette randonnée de gare à gare dans le Parc naturel régional du Gât
   vous ravira par la diversité de ses paysages. Bois, champs vallonnés, point de
   vue et petits villages agrémentent la randonnée.
 slug: de-chamarande-a-ferte-alais-gatinais
-publication_date: 2017-05-14T17:46:19+0100
+publication_date: '2017-05-14'
 categories:
 - Essonne
 tags: []

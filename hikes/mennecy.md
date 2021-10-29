@@ -2,7 +2,7 @@
 title: Etangs de Mennecy
 summary: Observez les oiseaux autour des étangs de Mennecy !
 slug: mennecy
-publication_date: 2014-07-28T05:34:12+0200
+publication_date: '2014-07-28'
 categories:
 - essonne
 tags:

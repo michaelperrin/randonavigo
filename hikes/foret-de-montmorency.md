@@ -39,7 +39,7 @@ pictures:
 - montmorency - 29.jpeg
 - montmorency - 30.jpeg
 - montmorency - 31.jpeg
-publication_date: 2021-10-10T17:46:19+0100
+publication_date: '2021-10-10'
 slug: foret-de-montmorency
 starting_point:
   comment: ''

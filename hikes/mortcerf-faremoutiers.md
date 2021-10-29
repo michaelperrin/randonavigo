@@ -2,7 +2,7 @@
 title: De Mortcerf à Faremoutiers dans la Brie
 summary: Une agréable randonnée champêtre dans la Brie qui vous dépaysera bien !
 slug: mortcerf-faremoutiers
-publication_date: 2014-08-24T21:34:12+0200
+publication_date: '2014-08-24'
 categories:
 - Seine-et-Marne
 tags:

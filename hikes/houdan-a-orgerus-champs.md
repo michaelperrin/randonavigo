@@ -2,7 +2,7 @@
 title: Houdan à Orgerus par les champs
 summary: Une balade dans les Yvelines à travers champs de Houdan à Orgerus.
 slug: houdan-a-orgerus-champs
-publication_date: 2017-02-18T17:46:19+0100
+publication_date: '2017-02-18'
 categories:
 - Yvelines
 tags: []

@@ -3,7 +3,7 @@ title: Forêt d'Humulus
 summary: Une petite randonnée facile, qui vous permettra de découvrir cette forêt
   méconnue.
 slug: humulus
-publication_date: 2018-04-01T21:34:12+0200
+publication_date: '2018-04-01'
 categories:
 - Seine et Oise
 tags: []

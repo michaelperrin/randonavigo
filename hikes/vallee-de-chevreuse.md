@@ -4,7 +4,7 @@ summary: Cette randonnée vous fera découvrir le joli petit village de Chevreus
   avec ses canaux agrémentés de ponts, puis vous emmènera en forêt avant de vous
   faire découvrir le château fort de la Madeleine dominant la vallée.
 slug: vallee-de-chevreuse
-publication_date: 2016-07-28T17:46:19+0100
+publication_date: '2016-07-28'
 categories:
 - Yvelines
 - Essonne

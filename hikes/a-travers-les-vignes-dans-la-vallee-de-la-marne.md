@@ -3,7 +3,7 @@ title: À travers les vignes dans la Vallée de la Marne
 summary: Découvrez les vignobles de la Champagne dans la Vallée de la Marne, aux
   abords de l'Île-de-France.
 slug: a-travers-les-vignes-dans-la-vallee-de-la-marne
-publication_date: 2017-06-26T00:34:12+0200
+publication_date: '2017-06-26'
 categories:
 - Seine-et-Marne
 tags: []
