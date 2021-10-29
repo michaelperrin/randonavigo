@@ -1,6 +1,6 @@
 ---
 title: Parc Georges Valbon à La Courneuve
-summary: Une grande balade dans ce parc offrant une véritable bulle de nature en pleine ville.
+summary: Une grande balade dans un parc offrant une véritable bulle de nature en pleine ville.
 slug: parc-georges-valbon-la-courneuve
 publication_date: '2021-10-16'
 categories:
@@ -18,22 +18,23 @@ pictures:
 - la-courneuve-georges-valbon - 9.jpeg
 - la-courneuve-georges-valbon - 10.jpeg
 main_picture: la-courneuve-georges-valbon - 5.jpeg
-distance: 10
-gpx_file: aparc-georges-valbon-la-courneuve.gpx
+distance: 8
+gpx_file: parc-georges-valbon-la-courneuve.gpx
 starting_point:
-  station: Survilliers Fosses
+  station: Dugny - La Courneuve (Parc Georges Valbon)
   line: T11
-  comment: 41 minutes depuis Châtelet-les-Halles
+  comment:
 favorite: false
-hidden: true
+hidden: false
 ---
 
 RandoNavigo privilégie les randonnées en pleine nature, au plus loin de la ville afin de s’évader le temps d’une journée de marche.
 
-Une petite entorse est faite ici, car nous sommes proches de la ville, dans la petite couronne de Paris, en Seine Saint-Denis, au parc Georges Valbon de La Courneuve.
+Une petite entorse est faite car nous sommes ici tout proches de la ville au parc Georges Valbon dans la petite couronne de Paris, à la Courneuve en Seine Saint-Denis.
 
 Un parc qui semble méconnu par rapport à son immensité et à la surprenante bulle de nature qu’il offre. Si vous êtes dans les environs, il vaut vraiment le détour.
 
-On l’atteint le plus facilement par la ligne de Tramway 11 Express ouverte récemment et dont le trajet relie les villes en moyenne couronne.
-
 Le trajet proposé ici permet de faire un tour assez complet du parc et de se rendre compte de sa diversité.
+
+On l’atteint le plus facilement par la ligne de Tramway 11 Express ouverte récemment et dont le trajet relie les villes en moyenne couronne.
+Il est tout à fait possible de moduler la randonnée pour la raccourcir ou de rejoindre la station Stains La Cerisaie du Tramway T11 plutôt que de retourner à celle de Dugny.
