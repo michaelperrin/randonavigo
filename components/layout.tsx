@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from './layout/header';
+import Script from 'next/script'
 // import styles from './layout.module.css'  // TODO
 
 type LayoutProps = {
@@ -38,6 +39,10 @@ const Layout = ({ children, home }: LayoutProps) => (
         </a>
       </div>
     </footer>
+
+    <Script id="mcjs" strategy="lazyOnload">
+      {`!function(c,h,i,m,p){m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/638b84bb33b30902b1122a2c7/04edd094392a25a03e7825794.js");`}
+    </Script>
   </>
 );
 
