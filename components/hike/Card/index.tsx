@@ -60,8 +60,10 @@ const HikeCard = ({ hike }: HikeCardProps) => (
             width={16}
             height={16}
           />
-          { hike.distance }
-          km
+          <div>
+            { hike.distance }
+            km
+          </div>
         </div>
       </div>
     </div>

@@ -49,7 +49,12 @@
       }
 
       .distance {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+
         .hike-icon {
+          flex-shrink: 0;
           height: 16px;
         }
       }
