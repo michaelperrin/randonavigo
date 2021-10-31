@@ -235,8 +235,6 @@
         <ele>194.0</ele>
         <time>2016-03-13T12:27:31Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="48.727716" lon="1.858349">
         <ele>211.0</ele>
         <time>2016-03-13T12:48:30Z</time>
@@ -713,8 +711,6 @@
         <ele>178.0</ele>
         <time>2016-03-13T14:41:34Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="48.716409" lon="1.829638">
         <ele>174.0</ele>
         <time>2016-03-13T14:44:17Z</time>

@@ -1031,8 +1031,6 @@
         <ele>173.0</ele>
         <time>2018-05-06T11:50:41Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="48.659265" lon="1.883677">
         <ele>158.0</ele>
         <time>2018-05-06T12:24:43Z</time>
@@ -1437,8 +1435,6 @@
         <ele>170.0</ele>
         <time>2018-05-06T12:56:39Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="48.660126" lon="1.899441">
         <ele>170.0</ele>
         <time>2018-05-06T13:31:34Z</time>
@@ -2167,8 +2163,6 @@
         <ele>171.0</ele>
         <time>2018-05-06T14:25:38Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="48.640788" lon="1.873789">
         <ele>170.0</ele>
         <time>2018-05-06T14:43:50Z</time>
@@ -2521,8 +2515,6 @@
         <ele>152.0</ele>
         <time>2018-05-06T15:06:56Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="48.63342" lon="1.856893">
         <ele>180.0</ele>
         <time>2018-05-06T15:39:05Z</time>

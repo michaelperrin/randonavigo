@@ -5610,8 +5610,6 @@
         </gpxtpx:TrackPointExtension>
         </extensions>
     </trkpt>
-    </trkseg>
-    <trkseg>
     <trkpt lat="49.065249" lon="1.700575">
         <ele>40.0</ele>
         <time>2021-08-01T05:13:22.617Z</time>

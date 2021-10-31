@@ -1631,8 +1631,6 @@
         <ele>52.0</ele>
         <time>2017-06-25T13:51:38Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="48.958543" lon="3.273179">
         <ele>62.0</ele>
         <time>2017-06-25T13:52:48Z</time>
@@ -1717,8 +1715,6 @@
         <ele>53.0</ele>
         <time>2017-06-25T13:59:20Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="48.962753" lon="3.273291">
         <ele>61.0</ele>
         <time>2017-06-25T14:44:05Z</time>
@@ -2531,8 +2527,6 @@
         <ele>178.0</ele>
         <time>2017-06-25T15:47:47Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="48.986321" lon="3.251701">
         <ele>178.0</ele>
         <time>2017-06-25T15:58:05Z</time>

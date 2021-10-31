@@ -19,8 +19,6 @@
         <ele>29.0</ele>
         <time>2017-09-24T10:47:53Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="49.114366" lon="2.209026">
         <ele>27.0</ele>
         <time>2017-09-24T10:52:58Z</time>
@@ -729,8 +727,6 @@
         <ele>43.0</ele>
         <time>2017-09-24T11:44:32Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="49.127935" lon="2.170938">
         <ele>38.0</ele>
         <time>2017-09-24T12:15:08Z</time>
@@ -1631,8 +1627,6 @@
         <ele>94.0</ele>
         <time>2017-09-24T13:18:30Z</time>
       </trkpt>
-    </trkseg>
-    <trkseg>
       <trkpt lat="49.137541" lon="2.20011">
         <ele>80.0</ele>
         <time>2017-09-24T13:19:31Z</time>
