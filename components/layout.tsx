@@ -43,6 +43,20 @@ const Layout = ({ children, home }: LayoutProps) => (
     <Script id="mcjs" strategy="lazyOnload">
       {`!function(c,h,i,m,p){m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/638b84bb33b30902b1122a2c7/04edd094392a25a03e7825794.js");`}
     </Script>
+
+    <Script
+      strategy="lazyOnload"
+      src={`https://storage.ko-fi.com/cdn/scripts/overlay-widget.js`}
+      onLoad={() => {
+        // #323842
+        kofiWidgetOverlay.draw('randonavigo', {
+          'type': 'floating-chat',
+          'floating-chat.donateButton.text': 'Offrir un café',
+          'floating-chat.donateButton.background-color': 'rgba(49, 57, 63, 0.7)',
+          'floating-chat.donateButton.text-color': '#fff'
+        });
+      }}
+    />
   </>
 );
 
