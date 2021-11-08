@@ -32,11 +32,11 @@ const Hike = ({ hike }: HikeProps) => (
       <meta property="article:published_time" content={hike.publication_date} />
       <meta property="article:modified_time" content={hike.publication_date} />
       <meta property="og:updated_time" content={hike.publication_date} />
-      <meta property="og:image" content={getHikePicturePath(hike, hike.main_picture)} />
+      <meta property="og:image" content={`${process.env.BASE_URL}${getHikePicturePath(hike, hike.main_picture)}`} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:description" content={hike.summary} />
       <meta name="twitter:title" content={hike.title} />
-      <meta name="twitter:image" content={getHikePicturePath(hike, hike.main_picture)} />
+      <meta name="twitter:image" content={`${process.env.BASE_URL}${getHikePicturePath(hike, hike.main_picture)}`} />
     </Head>
 
     <article id="hike" className="hike-show" data-gpx-file="{{ path('hike_download_gpx_file', {slug: hike.slug}) }}">
