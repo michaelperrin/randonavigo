@@ -8,8 +8,8 @@ type TransportPointProps = {
 
 const TransportPoint = ({ line, station }: TransportPointProps) => (
   <div className={styles.point}>
-    <TransportIcon line={line} />
-    <span className={styles.station}>{station}</span>
+    <TransportIcon line={line} size={24} />
+    <span className="font-medium">{station}</span>
   </div>
 )
 

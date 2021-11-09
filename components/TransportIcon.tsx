@@ -12,32 +12,33 @@ const isTram = (line: string): boolean => TRAM_LINES.includes(line)
 
 type TransportIconProps = {
   line: string,
+  size?: number,
 }
 
-const TransportIcon = ({ line }: TransportIconProps) => (
+const TransportIcon = ({ line, size = size }: TransportIconProps) => (
   <div className={styles.line}>
     <div className={styles.network}>
       {isRER(line) && (
         <Image
           src="/images/transport/RER.svg"
-          width={24}
-          height={24}
+          width={size}
+          height={size}
           alt="RER"
         />
       )}
       {isTransilien(line) && (
         <Image
           src="/images/transport/Transilien.svg"
-          width={24}
-          height={24}
+          width={size}
+          height={size}
           alt="Transilien"
         />
       )}
       {isTram(line) && (
         <Image
           src="/images/transport/tram.svg"
-          width={24}
-          height={24}
+          width={size}
+          height={size}
           alt="Tram"
         />
       )}
@@ -46,8 +47,8 @@ const TransportIcon = ({ line }: TransportIconProps) => (
     <div className={styles.lineName}>
       <Image
         src={`/images/transport/${line}.svg`}
-        width={24}
-        height={24}
+        width={size}
+        height={size}
         alt={`Ligne ${line}`}
       />
     </div>

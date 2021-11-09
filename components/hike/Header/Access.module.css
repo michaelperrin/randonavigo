@@ -1,8 +1,6 @@
 .access {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 
 .access.hasEndPoint .transportPoint:first-child {
