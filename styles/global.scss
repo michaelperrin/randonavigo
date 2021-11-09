@@ -1,3 +1,7 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
 // Libraries
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/leaflet/dist/leaflet";
@@ -12,6 +16,6 @@
 @import "pages/_about";
 @import "pages/hike/_show";
 
-body {
-    background: url('../public/images/light-texture.png');
-}
+// body {
+//     background: url('../public/images/light-texture.png');
+// }

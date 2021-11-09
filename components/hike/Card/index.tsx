@@ -4,17 +4,16 @@ import getHikePicturePath from '../../../lib/getHikePicturePath';
 import getHikeUrl from '../../../lib/getHikeUrl';
 import { Hike } from '../../../lib/types';
 import TransportPoint from '../../TransportPoint';
-// import styles from './HikeCard.module.css'
 
 type HikeCardProps = {
   hike: Hike,
 }
 
 const HikeCard = ({ hike }: HikeCardProps) => (
-  <article className="hike-card">
+  <article className="flex flex-col hike-card shadow-lg rounded-md">
     <Link href={getHikeUrl(hike)}>
       <a>
-        <div className="main-picture">
+        <div className="h-52 relative">
           {hike.favorite && (
             <div className="favorite">
               <Image
@@ -33,26 +32,37 @@ const HikeCard = ({ hike }: HikeCardProps) => (
             objectFit="cover"
             sizes="350px"
             quality={40}
+            className="rounded-t-md object-fill"
             alt=""
           />
         </div>
       </a>
     </Link>
 
-    <div className="details">
-      {hike.categories.length >= 0 && (
-        <div className="category">
-          {/* Only display first category */}
-          { hike.categories[0] }
+    <div className="flex flex-col flex-1 px-4">
+      <div className="flex-grow py-3">
+        {hike.categories.length >= 0 && (
+          <div className="uppercase text-sm text-gray-500">
+            {/* Only display first category */}
+            {hike.categories[0]}
+          </div>
+        )}
+        <h2 className="font-condensed font-bold text-xl mb-2">
+          <Link href={getHikeUrl(hike)}>
+            <a>
+              { hike.title }
+            </a>
+          </Link>
+        </h2>
+        <div className="font-serif text-gray-700" style={{ fontSize: '16px' }}>
+          { hike.summary }
         </div>
-      )}
-
-      <div className="access">
-        <div className="transport">
-          <TransportPoint line={hike.starting_point.line} station={ hike.starting_point.station } />
+      </div>
+      <div className="flex pt-4 pb-5 rounded-b-md">
+        <div className="flex-grow text-sm">
+          <TransportPoint line={hike.starting_point.line} station={hike.starting_point.station} />
         </div>
-
-        <div className="distance">
+        <div className="flex flex-shrink-0 items-center">
           <Image
             src="/images/hike-icon.svg"
             alt="Distance de marche"
@@ -61,24 +71,10 @@ const HikeCard = ({ hike }: HikeCardProps) => (
             height={16}
           />
           <div>
-            { hike.distance }
+            {hike.distance}
             km
           </div>
         </div>
-      </div>
-    </div>
-
-    <div className="content">
-      <h2 className="title">
-        <Link href={getHikeUrl(hike)}>
-          <a>
-            { hike.title }
-          </a>
-        </Link>
-      </h2>
-
-      <div className="summary">
-        { hike.summary }
       </div>
     </div>
   </article>

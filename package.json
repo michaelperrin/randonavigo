@@ -13,6 +13,8 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.4.0",
     "bootstrap": "^4.6.0",
     "classnames": "^2.3.1",
     "date-fns": "^2.22.1",
@@ -20,13 +22,16 @@
     "leaflet": "^1.7.1",
     "leaflet-gpx": "^1.5.2",
     "next": "^12.0.1",
+    "postcss": "^8.3.11",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-image-lightbox": "^5.1.4",
     "react-leaflet": "^3.2.0",
     "remark": "13",
     "remark-html": "13",
-    "sass": "^1.36.0"
+    "sass": "^1.36.0",
+    "sharp": "^0.29.2",
+    "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
     "@types/glob": "^7.2.0",

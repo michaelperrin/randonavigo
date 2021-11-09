@@ -38,7 +38,7 @@ const Layout = ({ children, home }: LayoutProps) => (
           </a>
 
           <div>
-            ©
+            Développement, design et contenu :
             {' '}
             <a href="http://www.michaelperrin.fr" target="_blank" rel="noreferrer">
               Michaël Perrin
