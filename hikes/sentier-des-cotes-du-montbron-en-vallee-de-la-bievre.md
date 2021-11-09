@@ -1,6 +1,6 @@
 ---
-title: Sentier des côtes du Montbron en Vallée de la Bièvre
-summary: Une série de petits étangs plein de charme
+title: Sentier des Côtes de Montbron en Vallée de la Bièvre
+summary: Une série de petits étangs pleins de charme
 slug: sentier-des-cotes-du-montbron-en-vallee-de-la-bievre
 publication_date: '2021-10-17'
 categories:
@@ -51,6 +51,6 @@ Nous partons cette fois-ci plus à l'Est, depuis la gare de Jouy-en-Josas du RER
 
 Une randonnée assez courte de moins de 6 kilomètres, mais que l'on peut rallonger de 3 kilomètres ([télécharger la trace](/hikes/2021/10/sentier-des-cotes-du-montbron-en-vallee-de-la-bievre/sentier-des-cotes-du-montbron-en-vallee-de-la-bievre-long.gpx)) en contournant le golf. Ce parcours allongé vous permettra de passer par une petite route longeant la ferme de Viltain et voir quelques vaches brouter paisiblement dans les champs.
 
-Dans les deux cas, l'intérêt principal de la randonnée se trouve dans la série de petits étangs sur les côtes du Montbron, et de la petite forêt qui l'entoure.
+Dans les deux cas, l'intérêt principal de la randonnée se trouve dans la série de petits étangs sur les Côtes de Montbron, et de la petite forêt qui l'entoure.
 
 Le retour passera par le village du Petit Jouy avant un retour agréable vers la gare du Petit Jouy par les chemins.
