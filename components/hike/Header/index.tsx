@@ -24,6 +24,7 @@ const HikeHeader = ({ hike }: HikeHeaderProps) => (
         src={getHikePicturePath(hike, hike.main_picture)}
         layout="fill"
         objectFit="cover"
+        priority
         alt=""
       />
     </div>
