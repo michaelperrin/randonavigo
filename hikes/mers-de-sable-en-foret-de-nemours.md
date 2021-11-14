@@ -92,11 +92,11 @@ La randonnée démarre le long du Loing où barbotent paisiblement quelques cana
 
 Vous longerez alors une petite route au marquage GR avant de rapidement bifurquer sur la gauche pour rejoindre la forêt.
 
-### Votre première plage: la Mer de Sable
+### Votre première plage
 
 Après quatre kilomètres, le sable commence à apparaître ici et là sur les bords de chemin, les arbres laissent place à un plateau de pierre étonnant bordé de pins et de bruyères.
 
-Très vite s'ouvre à vous l'étonnante Mer de Sable que vous dévalerez pour apprécier son ensemble.
+Très vite s'ouvre à vous l'étonnante mer de sable que vous dévalerez pour apprécier son ensemble.
 
 ### Grotte des Troglodytes et autres mers
 
