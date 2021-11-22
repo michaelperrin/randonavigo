@@ -103,10 +103,12 @@ tout d’abord une piste de décollage pour planeurs.
 Les plus téméraires pourront s’écarter du chemin principal en observant de près votre application mobile de GPS (ViewRanger, AllTrails, …) pour découvrir des constructions troglodytes des plus inattendues et impressionnantes par leur taille. Attention à votre sécurité, les chemins sont peu entretenus et escarpés.
 
 Le GR2 poursuit son chemin sur les coteaux de la Seine et vous offre de superbes vues dans une nature florissante.
+
 ### La Roche-Guyon et son château
 
 Vous arriverez alors au petit village de la Roche-Guyon, très pittoresque et donnant l’impression d’être en vacances bien loin
-de Paris. L’occasion de prendre une petite collation pour vous féliciter de vos efforts !
+de Paris. Il mérite bien sa labellisation « Plus Beaux Villages de France ».
+L’occasion de prendre une petite collation en son centre pour vous féliciter de vos efforts.
 
 Vous pouvez commencer par une petite balade au Potager Fruitier de la Roche-Guyon (gratuit), lieu parfait pour un pique-nique.
 
