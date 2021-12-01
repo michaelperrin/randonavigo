@@ -15,9 +15,9 @@ type TransportIconProps = {
   size?: number,
 }
 
-const TransportIcon = ({ line, size = size }: TransportIconProps) => (
-  <div className={styles.line}>
-    <div className={styles.network}>
+const TransportIcon = ({ line, size = 24 }: TransportIconProps) => (
+  <div className="flex items-center">
+    <div className="mr-1" style={{ lineHeight: 0 }}>
       {isRER(line) && (
         <Image
           src="/images/transport/RER.svg"
@@ -44,7 +44,7 @@ const TransportIcon = ({ line, size = size }: TransportIconProps) => (
       )}
     </div>
 
-    <div className={styles.lineName}>
+    <div style={{ lineHeight: 0 }}>
       <Image
         src={`/images/transport/${line}.svg`}
         width={size}
