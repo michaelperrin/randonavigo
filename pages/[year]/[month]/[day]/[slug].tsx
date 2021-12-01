@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Hike as HikeType } from '../../../../lib/types'
 import HikeHeader from '../../../../components/hike/Header/index'
-import styles from './[slug].module.css'
 import Gallery from '../../../../components/hike/Gallery'
 import { getHikeData } from '../../../../lib/hike'
 import { getAllHikePaths } from '../../../../lib/hike'
@@ -44,16 +43,16 @@ const Hike = ({ hike }: HikeProps) => (
       <HikeHeader hike={hike} />
 
       <div className="container">
-        <div className="grid md:grid-cols-10 gap-6 lg:gap-12 xl:gap-24 mb-12">
-          <main className="md:col-span-6 font-serif">
-            <div className="text-lg font-semibold italic mt-12 mb-8">
+        <div className="grid md:grid-cols-10 gap-0 md:gap-6 lg:gap-12 xl:gap-24 mb-12">
+          <main className="order-2 md:order-1 md:col-span-6 font-serif mt-0 md:mt-12">
+            <div className="text-lg font-semibold italic mb-8">
               {hike.summary}
             </div>
 
             <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: hike.content }} />
           </main>
 
-          <aside className="md:col-span-4 md:pt-0 p-2 z-30 font-serif" style={{ marginTop: '-100px' }}>
+          <aside className="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2">
             <HikeProperties hike={hike} />
           </aside>
         </div>

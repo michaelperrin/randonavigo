@@ -13,6 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.4.0",
     "bootstrap": "^4.6.0",
@@ -29,7 +30,6 @@
     "react-leaflet": "^3.2.0",
     "remark": "13",
     "remark-html": "13",
-    "sass": "^1.36.0",
     "sharp": "^0.29.2",
     "tailwindcss": "^2.2.19"
   },

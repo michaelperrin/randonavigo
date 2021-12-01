@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import { Hike } from "../../../lib/types"
-import styles from './Distance.module.css'
 
 type DistanceProps = {
   hike: Hike,
@@ -12,9 +10,8 @@ const Distance = ({ hike }: DistanceProps) => (
       {`${hike.distance} km`}
     </span>
 
-    <span>
-      {' '}
-      {hike.ending_point ? ' (gare à gare)' : ' (boucle)'}
+    <span className="text-gray-600 inline-block pl-3">
+      {hike.ending_point ? '(gare à gare)' : '(boucle)'}
     </span>
   </>
 )

@@ -9,15 +9,15 @@ type HikeHeaderProps = {
 
 const HikeHeader = ({ hike }: HikeHeaderProps) => (
   <header>
-    <div className="flex flex-col justify-center relative" style={{ height: '60vh', minHeight: '400px' }}>
-      <div className="pt-32 px-48 z-30 text-white" style={{ fontFamily: 'Barlow', textShadow: '0 0 40px rgba(0, 0, 0, 0.9)' }}>
+    <div className="flex flex-col justify-center relative h-screen/3 md:h-screen/2" style={{ minHeight: '400px' }}>
+      <div className="pt-32 px-4 md:px-48 z-30 text-white" style={{ fontFamily: 'Barlow', textShadow: '0 0 40px rgba(0, 0, 0, 0.9)' }}>
         {hike.categories && (
-          <div className="uppercase tracking-wider mb-1 leading-none">
+          <div className="uppercase text-sm md:text-base tracking-wider mb-1 leading-none">
             {hike.categories[0]}
           </div>
         )}
 
-        <h1 className="z-30 text-4xl font-condensed font-medium leading-none">{hike.title}</h1>
+        <h1 className="z-30 text-3xl md:text-4xl font-condensed font-medium leading-none">{hike.title}</h1>
 
         <Date dateString={hike.publication_date} className="block mt-4" />
       </div>
@@ -29,7 +29,6 @@ const HikeHeader = ({ hike }: HikeHeaderProps) => (
           objectFit="cover"
           priority
           alt=""
-          // className="after:absolute after:inset-0 after:bg-black after:z-20"
         />
       </div>
     </div>

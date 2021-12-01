@@ -4,7 +4,6 @@ import Lightbox from 'react-image-lightbox'
 import getHikePicturePath from '../../lib/getHikePicturePath'
 import { Hike } from '../../lib/types'
 import 'react-image-lightbox/style.css';
-import styles from './Gallery.module.css'
 
 type GalleryProps = {
   hike: Hike,
@@ -23,16 +22,15 @@ const Gallery = ({ hike }: GalleryProps) => {
 
   return (
     <>
-      <div className={styles.gallery}>
+      <div className="grid gap-1" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
         {pictures.map((picture: string, index: number) => (
           <div
             key={picture}
-            className={styles.thumbnailContainer}
+            className="aspect-w-1 aspect-h-1"
             style={{ position: 'relative', margin: '1px' }}
             onClick={() => { showPicture(index) }}
           >
             <Image
-              className={styles.thumbnail}
               src={picture}
               layout="fill"
               objectFit="cover"
