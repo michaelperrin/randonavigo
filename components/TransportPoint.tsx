@@ -1,5 +1,4 @@
 import TransportIcon from './TransportIcon'
-import styles from './TransportPoint.module.css'
 
 type TransportPointProps = {
   line: string|string[],
@@ -7,8 +6,10 @@ type TransportPointProps = {
 }
 
 const TransportPoint = ({ line, station }: TransportPointProps) => (
-  <div className={styles.point}>
-    <TransportIcon line={line} size={24} />
+  <div className="flex items-center">
+    <div className="flex-shrink-0 mr-2">
+      <TransportIcon line={line} size={20} />
+    </div>
     <span className="font-medium">{station}</span>
   </div>
 )

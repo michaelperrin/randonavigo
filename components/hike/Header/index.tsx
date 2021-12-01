@@ -1,13 +1,7 @@
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import { Hike } from '../../../lib/types'
 import getHikePicturePath from '../../../lib/getHikePicturePath'
 import Date from '../../date'
-
-const MapWithNoSSR = dynamic(
-  () => import('../Map'),
-  { ssr: false }
-)
 
 type HikeHeaderProps = {
   hike: Hike,
@@ -38,38 +32,7 @@ const HikeHeader = ({ hike }: HikeHeaderProps) => (
           // className="after:absolute after:inset-0 after:bg-black after:z-20"
         />
       </div>
-
     </div>
-
-    <div className="container">
-      {/* {hike.categories && (
-        <div>
-          {hike.categories[0]}
-        </div>
-      )}
-
-      <Date dateString={hike.publication_date} className="publication-date" />
-
-      <h1 className="title">{hike.title}</h1> */}
-
-      {/* <div className="summary">
-        {hike.summary}
-      </div>
-
-      <div className="access">
-        <Access hike={hike} />
-      </div>
-
-      <div className="distance">
-        <Distance hike={hike} />
-      </div>
-
-      <DownloadButton hike={hike} /> */}
-    </div>
-
-    {/* <div>
-      <MapWithNoSSR hike={hike} />
-    </div> */}
   </header>
 )
 

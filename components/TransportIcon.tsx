@@ -50,12 +50,12 @@ const groupLinesByNetwork = (lines: string[]): string[][] => {
   }, [])
 }
 
-const TransportIcon = ({ line, size = size }: TransportIconProps) => {
+const TransportIcon = ({ line, size = 24 }: TransportIconProps) => {
   const lines = Array.isArray(line) ? line : [line];
   const linesPerNetwork = groupLinesByNetwork(lines)
 
   return (
-    <div style={{ display: 'flex', gap: '8px' }}>
+    <div className="flex gap-4">
       {linesPerNetwork.map((networkLines, network) => (
         <div className={styles.line} key={network}>
           <div className={styles.network}>
@@ -85,7 +85,7 @@ const TransportIcon = ({ line, size = size }: TransportIconProps) => {
             )}
           </div>
 
-          <div style={{ display: 'flex', gap: '4px' }}>
+          <div className="flex gap-2">
             {networkLines.map((line: string) => (
               <div className={styles.lineName} key={line}>
                 <Image
