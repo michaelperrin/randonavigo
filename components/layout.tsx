@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Header from './layout/header';
 import Script from 'next/script'
-// import styles from './layout.module.css'  // TODO
 
 type LayoutProps = {
   children: JSX.Element | JSX.Element[],

@@ -9,12 +9,18 @@ module.exports = {
 
       // To add horizontal padding by default
       padding: {
-        default: theme("spacing.4"),
+        DEFAULT: theme("spacing.4"),
         sm: theme("spacing.5"),
         xl: theme("spacing.12"),
         '2xl': theme("spacing.24"),
       }
     }),
+    flexGrow: {
+      '0': 0,
+      DEFAULT: 1,
+      '1': 1,
+      '2': 2,
+    },
     extend: {
       fontFamily: {
         'condensed': [
@@ -44,6 +50,12 @@ module.exports = {
           dark: '#297ab7',
         },
       },
+      height: theme => ({
+        "screen/2": "50vh",
+        "screen/3": "calc(100vh / 3)",
+        "screen/4": "calc(100vh / 4)",
+        "screen/5": "calc(100vh / 5)",
+      }),
     },
   },
   variants: {
@@ -51,5 +63,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 }

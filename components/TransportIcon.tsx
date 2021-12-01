@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import styles from './TransportIcon.module.css'
 
 const RER_LINES = ['A', 'B', 'C', 'D', 'E']
 const TRAM_LINES = ['T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8', 'T9', 'T10', 'T11', 'T12', 'T13']
@@ -44,7 +43,7 @@ const TransportIcon = ({ line, size = 24 }: TransportIconProps) => (
       )}
     </div>
 
-    <div style={{ lineHeight: 0 }}>
+    <div className="leading-none">
       <Image
         src={`/images/transport/${line}.svg`}
         width={size}

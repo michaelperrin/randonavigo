@@ -10,12 +10,12 @@ type HikeCardProps = {
 }
 
 const HikeCard = ({ hike }: HikeCardProps) => (
-  <article className="flex hike-card shadow-sm mb-4 bg-white">
+  <article className="flex flex-col hike-card shadow-lg mb-4 bg-white">
     <Link href={getHikeUrl(hike)}>
-      <a className="w-64 flex-none relative">
+      <a className="h-56 flex-none relative">
         <div>
           {hike.favorite && (
-            <div className="favorite">
+            <div className="absolute top-0 right-0 z-10">
               <Image
                 src="/images/favorite.svg"
                 alt="Randonnée favorite"
@@ -42,29 +42,29 @@ const HikeCard = ({ hike }: HikeCardProps) => (
 
 
     <div className="flex flex-col flex-1 py-4">
-      <div className="flex-grow mt-4 pb-4 px-4">
-        {hike.categories.length >= 0 && (
-          <div className="uppercase text-sm text-gray-500 text-center mb-4">
-            {/* Only display first category */}
-            {hike.categories[0]}
-          </div>
-        )}
+      <div className="flex-grow pb-4 px-4">
+        <div className="my-3">
+          {hike.categories.length >= 0 && (
+            <div className="uppercase text-xs text-gray-500 text-center leading-none mb-1">
+              {/* Only display first category */}
+              {hike.categories[0]}
+            </div>
+          )}
+          <h2 className="font-sans-serif text-lg font-semibold text-center mx-8">
+            <Link href={getHikeUrl(hike)}>
+              <a>
+                { hike.title }
+              </a>
+            </Link>
+          </h2>
+        </div>
 
-        <h2 className="font-sans-serif uppercase text-lg font-medium mb-3 text-center mx-8">
-          <Link href={getHikeUrl(hike)}>
-            <a>
-              { hike.title }
-            </a>
-          </Link>
-        </h2>
-
-        <div className="text-gray-600 font-sans-serif text-justify leading-tight" style={{ fontSize: '16px' }}>
+        <div className="text-gray-600 text-justify mb-4" style={{ fontSize: '15px', fontFamily: 'Lato' }}>
           { hike.summary }
         </div>
       </div>
 
       <div className="flex px-4">
-        {/* <div className="flex pt-4 pb-5 px-4 backdrop-filter backdrop-blur-xl" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}> */}
         <div className="flex-grow text-sm pr-2">
           <TransportPoint line={hike.starting_point.line} station={hike.starting_point.station} />
         </div>
