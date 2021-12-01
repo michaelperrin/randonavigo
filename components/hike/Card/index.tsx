@@ -10,10 +10,10 @@ type HikeCardProps = {
 }
 
 const HikeCard = ({ hike }: HikeCardProps) => (
-  <article className="flex flex-col hike-card shadow-lg rounded-md pb-4">
+  <article className="flex hike-card shadow-sm mb-4 bg-white">
     <Link href={getHikeUrl(hike)}>
-      <a>
-        <div className="h-52 relative">
+      <a className="w-64 flex-none relative">
+        <div>
           {hike.favorite && (
             <div className="favorite">
               <Image
@@ -32,7 +32,7 @@ const HikeCard = ({ hike }: HikeCardProps) => (
             objectFit="cover"
             sizes="350px"
             quality={40}
-            className="rounded-t-md object-fill"
+            className="w-full h-full object-fill"
             alt=""
           />
         </div>
@@ -41,16 +41,16 @@ const HikeCard = ({ hike }: HikeCardProps) => (
 
 
 
-    <div className="flex flex-col flex-1 pt-2">
-      <div className="flex-grow pb-4 px-4">
+    <div className="flex flex-col flex-1 py-4">
+      <div className="flex-grow mt-4 pb-4 px-4">
         {hike.categories.length >= 0 && (
-          <div className="uppercase text-sm text-gray-500">
+          <div className="uppercase text-sm text-gray-500 text-center mb-4">
             {/* Only display first category */}
             {hike.categories[0]}
           </div>
         )}
 
-        <h2 className="font-sans-serif font-bold text-md mb-3">
+        <h2 className="font-sans-serif uppercase text-lg font-medium mb-3 text-center mx-8">
           <Link href={getHikeUrl(hike)}>
             <a>
               { hike.title }
@@ -58,7 +58,7 @@ const HikeCard = ({ hike }: HikeCardProps) => (
           </Link>
         </h2>
 
-        <div className="text-gray-700 font-sans-serif" style={{ fontSize: '16px' }}>
+        <div className="text-gray-600 font-sans-serif text-justify leading-tight" style={{ fontSize: '16px' }}>
           { hike.summary }
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function Home({ hikes }: HomeProps) {
         <TopBanner />
         <Intro />
 
-        <section className="hike-list">
+        <section className="bg-gray-100">
           <div className="container">
             <List hikes={hikes} />
           </div>

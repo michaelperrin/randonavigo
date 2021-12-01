@@ -6,7 +6,7 @@ type ListProps = {
 }
 
 const List = ({ hikes }: ListProps) => (
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:mx-16 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:mx-16 gap-8">
     {hikes.map(hike => (
       <HikeCard hike={hike} key={hike.slug} />
     ))}
