@@ -3,6 +3,7 @@ import List from '../components/hike/List'
 import Intro from '../components/home/Intro'
 import TopBanner from '../components/home/TopBanner'
 import Layout from '../components/layout'
+import Header from '../components/layout/header'
 import { getSortedHikesData } from '../lib/hike'
 import { Hike } from '../lib/types'
 
@@ -19,6 +20,7 @@ export default function Home({ hikes }: HomeProps) {
       </Head>
 
       <div className="page-home">
+        <Header />
         <TopBanner />
         <Intro />
 
