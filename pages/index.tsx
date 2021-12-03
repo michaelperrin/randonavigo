@@ -24,7 +24,7 @@ export default function Home({ hikes }: HomeProps) {
         <TopBanner />
         <Intro />
 
-        <section className="bg-gray-50">
+        <section>
           <div className="container">
             <List hikes={hikes} />
           </div>
