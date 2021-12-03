@@ -1,12 +1,11 @@
 import Link from 'next/link'
 
 const Intro = () => (
-  <section className="intro">
-    <div className="container">
-      <div className="row align-items-center">
+  <section className="container">
+      <div className="my-12 w-2/3">
         <div className="col-md-8 ml-md-auto">
-          <div className="content">
-            <h2>Randonnées en Ile-de-France</h2>
+          <div className="font-serif leading-loose">
+            {/* <h2>Randonnées en Ile-de-France</h2> */}
 
             <p>RandoNavigo vous propose de nombreuses <strong>randonnées</strong> en Ile-de-France, toujours <strong>accessibles en transport en commun</strong> !</p>
             <p>Il est en effet possible de s’évader en pleine nature près de chez soi et rapidement grâce aux transports en commun en Ile-de-France. Votre carte Navigo est désormais complètement dézonée, alors <strong>quittez la grisaille parisienne le temps d’une journée</strong> et profitez-en !</p>
@@ -16,7 +15,7 @@ const Intro = () => (
         </div>
 
         <div className="col-md-3">
-          <aside className="gpx-info">
+          {/* <aside className="gpx-info">
             <h3>Traces GPX</h3>
 
             <p>
@@ -27,9 +26,8 @@ const Intro = () => (
             <Link href="/aide/gpx">
               <a className="btn btn-info">En savoir plus</a>
             </Link>
-          </aside>
+          </aside> */}
         </div>
-      </div>
     </div>
   </section>
 )
