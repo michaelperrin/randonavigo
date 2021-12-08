@@ -45,13 +45,13 @@ const HikeCard = ({ hike }: HikeCardProps) => (
       <div className="px-0">
         <div className="my-2">
           {hike.categories.length >= 0 && (
-            <div className="text-xs text-black text-center leading-none mt-5 mb-1 font-bold">
+            <div className="text-xs leading-none mt-4 font-bold uppercase" style={{color: '#4e6c85'}}>
               {/* Only display first category */}
               {hike.categories[0]}
             </div>
           )}
 
-          <h2 className="font-serif font-light text-xl text-center mx-8 mt-2 mb-4">
+          <h2 className="font-sans-serif font-bold text-xl mt-1 mb-3">
             <Link href={getHikeUrl(hike)}>
               <a>
                 {hike.title}
@@ -60,28 +60,29 @@ const HikeCard = ({ hike }: HikeCardProps) => (
           </h2>
         </div>
 
-        <div className="text-center text-gray-600 mb-2 font-light leading-relaxed" style={{ fontSize: '14.4px', fontFamily: 'Lato' }}>
-          { hike.summary }
-        </div>
-      </div>
 
-      <div className="flex flex-col justify-center">
-        <div className="text-sm flex items-center justify-center font-sans-serif mb-2 mt-2">
-          <TransportPoint line={hike.starting_point.line} station={hike.starting_point.station} iconSize={20} />
-        </div>
-
-        <div className="flex items-center justify-center font-sans-serif text-sm font-medium">
-          <Image
-            src="/images/hike-icon.svg"
-            alt="Distance de marche"
-            className="hike-icon"
-            width={16}
-            height={16}
-          />
-          <div>
-            {hike.distance}
-            km
+        <div className="flex mb-4">
+          <div className="flex-grow-1 text-sm items-center font-sans-serif">
+            <TransportPoint line={hike.starting_point.line} station={hike.starting_point.station} iconSize={20} />
           </div>
+
+          <div className="flex ml-auto font-sans-serif text-sm font-medium">
+            <Image
+              src="/images/hike-icon.svg"
+              alt="Distance de marche"
+              className="hike-icon"
+              width={16}
+              height={16}
+            />
+            <div className="ml-1">
+              {hike.distance}
+              km
+            </div>
+          </div>
+        </div>
+
+        <div className="text-gray-600 mb-2 font-light leading-relaxed font-serif">
+          { hike.summary }
         </div>
       </div>
 
