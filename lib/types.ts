@@ -14,6 +14,7 @@ export type Hike = {
   tags: string[],
   pictures: string[],
   main_picture: string,
+  thumbnail_picture?: string,
   distance: string,
   gpx_file: string,
   starting_point: Point,

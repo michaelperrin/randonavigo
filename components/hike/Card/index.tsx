@@ -28,7 +28,7 @@ const HikeCard = ({ hike }: HikeCardProps) => (
           )}
 
           <Image
-            src={getHikePicturePath(hike, hike.main_picture)}
+            src={getHikePicturePath(hike, hike.thumbnail_picture ?? hike.main_picture)}
             layout="fill"
             objectFit="cover"
             sizes="350px"
