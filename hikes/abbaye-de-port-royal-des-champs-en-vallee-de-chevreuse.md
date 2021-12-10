@@ -49,7 +49,9 @@ distance: 19
 gpx_file: port-royal-des-champs-vallee-de-chevreuse.gpx
 starting_point:
   station: La Verrière
-  line: U
+  line:
+    - N
+    - U
   comment: ''
 ending_point:
   station: Saint-Rémy-lès-Chevreuse
@@ -58,7 +60,7 @@ ending_point:
 favorite: false
 hidden: false
 summary: |-
-  Une randonnée au coeur de la Haute Vallée de Chevreuse qui vous fera découvrir son patrimoine par des chemins en pleine nature.
+  Une randonnée au cœur de la Haute Vallée de Chevreuse qui vous fera découvrir son patrimoine par des chemins en pleine nature.
 ---
 
 Point de départ à la gare de La Verrière située sur deux lignes de Transilien :

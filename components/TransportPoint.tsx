@@ -2,7 +2,7 @@ import TransportIcon from './TransportIcon'
 import styles from './TransportPoint.module.css'
 
 type TransportPointProps = {
-  line: string,
+  line: string|string[],
   station: string,
 }
 

@@ -1,6 +1,6 @@
 type Point = {
   station: string,
-  line: string,
+  line: string|string[],
   comment?: string,
 }
 

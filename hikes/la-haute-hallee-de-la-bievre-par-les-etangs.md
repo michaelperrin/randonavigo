@@ -42,7 +42,9 @@ distance: 14
 gpx_file: la-haute-hallee-de-la-bievre-par-les-etangs.gpx
 starting_point:
   station: Saint-Cyr
-  line: C
+  line:
+    - C
+    - N
   comment: ''
 ending_point:
   station: Petit Jouy - Les loges

@@ -5,53 +5,105 @@ const RER_LINES = ['A', 'B', 'C', 'D', 'E']
 const TRAM_LINES = ['T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8', 'T9', 'T10', 'T11', 'T12', 'T13']
 const TRANSILIEN_LINES = ['H', 'J', 'K', 'L', 'N', 'P', 'R', 'U']
 
+const RER = 'RER'
+const TRAM = 'TRAM'
+const TRANSILIEN = 'TRANSILIEN'
+
+enum Network {
+  RER,
+  Tram,
+  Transilien,
+}
+
+const getLineNetwork = (line: string): number => {
+  if (isRER(line)) {
+    return Network.RER
+  }
+
+  if (isTram(line)) {
+    return Network.Tram
+  }
+
+  if (isTransilien(line)) {
+    return Network.Transilien
+  }
+
+  throw new Error('Network for line could not be found')
+}
+
 
 const isRER = (line: string): boolean => RER_LINES.includes(line)
 const isTransilien = (line: string): boolean => TRANSILIEN_LINES.includes(line)
 const isTram = (line: string): boolean => TRAM_LINES.includes(line)
 
 type TransportIconProps = {
-  line: string,
+  line: string|string[],
 }
 
-const TransportIcon = ({ line }: TransportIconProps) => (
-  <div className={styles.line}>
-    <div className={styles.network}>
-      {isRER(line) && (
-        <Image
-          src="/images/transport/RER.svg"
-          width={24}
-          height={24}
-          alt="RER"
-        />
-      )}
-      {isTransilien(line) && (
-        <Image
-          src="/images/transport/Transilien.svg"
-          width={24}
-          height={24}
-          alt="Transilien"
-        />
-      )}
-      {isTram(line) && (
-        <Image
-          src="/images/transport/tram.svg"
-          width={24}
-          height={24}
-          alt="Tram"
-        />
-      )}
-    </div>
+const groupLinesByNetwork = (lines: string[]): string[][] => {
+  return lines.reduce((current: string[][], line: string) => {
+    const network = getLineNetwork(line)
 
-    <div className={styles.lineName}>
-      <Image
-        src={`/images/transport/${line}.svg`}
-        width={24}
-        height={24}
-        alt={`Ligne ${line}`}
-      />
+    if (!current[network]) {
+      current[network] = [];
+    }
+    current[network].push(line)
+
+    return current
+  }, [])
+}
+
+const TransportIcon = ({ line }: TransportIconProps) => {
+  const lines = Array.isArray(line) ? line : [line];
+  const linesPerNetwork = groupLinesByNetwork(lines)
+
+  return (
+    <div style={{ display: 'flex', gap: '8px' }}>
+      {linesPerNetwork.map((networkLines, network) => (
+        <div className={styles.line} key={network}>
+          <div className={styles.network}>
+            {network === Network.RER && (
+              <Image
+                src="/images/transport/RER.svg"
+                width={24}
+                height={24}
+                alt="RER"
+              />
+            )}
+            {network === Network.Transilien && (
+              <Image
+                src="/images/transport/Transilien.svg"
+                width={24}
+                height={24}
+                alt="Transilien"
+              />
+            )}
+            {network === Network.Tram && (
+              <Image
+                src="/images/transport/tram.svg"
+                width={24}
+                height={24}
+                alt="Tram"
+              />
+            )}
+          </div>
+
+          <div style={{ display: 'flex', gap: '4px'}}>
+            {networkLines.map((line: string) => (
+              <div className={styles.lineName} key={line}>
+                <Image
+                  src={`/images/transport/${line}.svg`}
+                  width={24}
+                  height={24}
+                  alt={`Ligne ${line}`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
-  </div>
-)
+  )
+}
 
 export default TransportIcon;
