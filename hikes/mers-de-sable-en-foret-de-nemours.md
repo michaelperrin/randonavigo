@@ -65,7 +65,7 @@ ending_point:
   station: Nemours
   line: R
   comment: ''
-favorite: false
+favorite: true
 hidden: false
 summary: |-
   RandoNavigo vous emmène à la plage !

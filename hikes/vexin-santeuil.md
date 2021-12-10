@@ -65,7 +65,7 @@ Si l’attente se fait en soirée, nous avons tout prévu avec ces deux conseils
 
 Vous pouvez profiter du petit Bistrot de Santeuil juste à côté de la gare avant de reprendre un train
 plus tard le soir. Nous avons testé et approuvé ce petit restaurant familial dans
-lequel vous pourrez y déguster une bière locale, la bière du Vexin \U0001F37B
+lequel vous pourrez y déguster une bière locale, la bière du Vexin 🍻
 
 Si le bistrot est fermé, un petit camion à pizza peut également faire son apparition
 en face de la mairie.

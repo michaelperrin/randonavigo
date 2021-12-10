@@ -52,7 +52,7 @@ starting_point:
   station: Mantes-la-Jolie
   line: J
 summary: |-
-  Formations géologiques exceptionnelles, vues spectaculaires sur la Seine, patrimoine historique surprenant, constructions troglodytes, une flore riche et variée… et aussi du dénivelé !
+  Formations géologiques exceptionnelles, vues spectaculaires sur la Seine, patrimoine historique surprenant, constructions troglodytes, une flore riche et variée… et du dénivelé !
   En somme, une randonnée exigeante, mais pleine de découvertes ! Dépaysement garanti.
 tags:
 ending_point:
@@ -62,9 +62,9 @@ ending_point:
 enabled: true
 ---
 
-Cette randonnée dans le Vexin suit sur sa plus grande partie le chemin de crêtes des falaises calcaires surplombant la Seine et vous fera découvrir un des joyaux de l’Ile-de-France : le Château de la Roche-Guyon . Son parcours suit majoritairement le GR2 pour lequel vous repérerez facilement la marquage rouge et blanc.
+Cette randonnée dans le Vexin suit sur sa plus grande partie le chemin de crêtes des falaises calcaires surplombant la Seine et vous fera découvrir un des joyaux de l’Ile-de-France : le Château de la Roche-Guyon. Son parcours suit principalement le GR2 au marquage rouge et blanc.
 
-Je recommande de démarrer à Mantes la Jolie, le parcours étant plus joli dans ce sens. Elle peut toutefois très bien se faire dans l’autre sens, en
+Je recommande de démarrer à Mantes-la-Jolie, le parcours étant plus joli dans ce sens car il fait quitter la ville pour rejoindre la nature. Il peut toutefois très bien se faire dans l’autre sens, en
 partant de Bonnières-sur-Seine.
 
 Les plus sportifs la feront peut-être en un seul jour, mais personnellement je trouve qu’il vaut mieux la faire en deux jours, en faisant une pause à Vétheuil, avec les distances suivantes :
@@ -74,26 +74,24 @@ Les plus sportifs la feront peut-être en un seul jour, mais personnellement je 
 
 ### Départ de Mantes-la-Jolie
 
-Nombreux sont les trains qui se dirigent de manière assez directe à Mantes-la-Jolie.
+Nombreux sont les trains en direction de Mantes-la-Jolie pour un parcours avec peu d'arrêts depuis Saint-Lazare.
 
-A la sortie de la gare, vous traverserez la vieille ville et apercevrez sur votre droite la Collégiale Notre Dame. Après l’avoir traversée, vous longerez la Seine par un agréable chemin.
+A la sortie de la gare, vous traverserez la vieille ville et ne manquerez pas la Collégiale Notre Dame. Un agréable chemin longe la Seine après l'avoir traversée.
 
-Vous le quitterez ensuite pour faire une bonne petite grimpette qui vous fera rejoindre les bois sur le Chemin de la Pleigne avant d'atteindre la petite commune de Follainville-Dennemont.
+Une bonne grimpette vous attend ensuite pour rejoindre les bois sur par le Chemin de la Pleigne qui vous mène à la petite commune de Follainville-Dennemont.
 
-Vous rejoindrez alors le GR2 qui vous mènera à travers bois jusqu’à Vétheuil.
+Vous rejoindrez alors le GR2 qui rejoint Vétheuil par la forêt.
 
 ### Arrêt à Vétheuil
 
 Si vous en avez le temps, prenez un peu de temps pour visiter le charmant petit village de Vétheuil.
 
-Par temps clément, vous pouvez passer la soirée en bord
-de Seine qui est aménagé. Un petit camion y vend des crêpes à déguster sur place ou à emporter.
+Par temps clément, vous pouvez passer la soirée au bord aménagé de la Seine. Un petit camion y vend des crêpes à déguster sur place ou à emporter.
 
 Plusieurs chambres d’hôtes sont disponibles pour passer la nuit
 dans le joli cadre du village.
 
-Vous pouvez profiter également d’une petite traversée de
-la Seine [en bac](https://mairie-vetheuil.fr/services-et-demarches/transport/le-bac-saison-2021), gratuite et très agréable pour voir la ville d’un autre point de vue. Le bac n’est opérationnel qu’en saison estivale étendue, pensez à vérifier cette information si vous souhaitez l’emprunter. Un coup de cœur en tout cas !
+En saison estivale (étendue), un bac vous permet de traverser gratuitement la Seine [en bac](https://mairie-vetheuil.fr/services-et-demarches/transport/le-bac-saison-2021). Très agréable pour voir la ville d’un autre point de vue. Pensez à vérifier les dates si vous souhaitez l’emprunter. Un coup de cœur en tout cas !
 
 ### De Vétheuil à La Roche-Guyon
 
