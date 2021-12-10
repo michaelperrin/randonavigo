@@ -2,9 +2,10 @@ import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-// import '../styles/global.scss'
+// import '../styles/global.scss'zff
 import 'tailwindcss/tailwind.css'
 import 'leaflet/dist/leaflet.css';
+import 'leaflet.locatecontrol/dist/L.Control.Locate.css';
 
 config.autoAddCss = false
 

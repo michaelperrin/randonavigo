@@ -329,6 +329,13 @@
   dependencies:
     "@types/leaflet" "*"
 
+"@types/leaflet.locatecontrol@^0.74.0":
+  version "0.74.0"
+  resolved "https://registry.yarnpkg.com/@types/leaflet.locatecontrol/-/leaflet.locatecontrol-0.74.0.tgz#bd08448705ff14568e3a6f457aafb26d9f6bd880"
+  integrity sha512-FxJcd5/8CvjQARz86QY+ZquKORvaFZYObYFC0fK/N/4kXTD8dhS+KUxjZCPVz54K/jWkiOvzHV2xqfxnPKf/Iw==
+  dependencies:
+    "@types/leaflet" "*"
+
 "@types/leaflet@*", "@types/leaflet@^1.7.4":
   version "1.7.5"
   resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.7.5.tgz#7b2bcf1271fb7b8c305e3c468eaad65b6dbac472"
@@ -2462,6 +2469,11 @@ leaflet-gpx@^1.5.2:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/leaflet-gpx/-/leaflet-gpx-1.7.0.tgz#8525bac1fb8afee153a8c7ac8c647a1c3769d45c"
   integrity sha512-5NS5WKfp5zaAHMB2KM6OUaIng+SZ3e/UHK2++ABl2wELojYlmLqIL8t1Mj6DaZGkIh3kld+mAUvMGdIzC1yGRA==
+
+leaflet.locatecontrol@^0.76.0:
+  version "0.76.0"
+  resolved "https://registry.yarnpkg.com/leaflet.locatecontrol/-/leaflet.locatecontrol-0.76.0.tgz#afca63a3ccf3161bed0e8bf94a98ddba364e90e1"
+  integrity sha512-Mx8uiihBi8KrrW3LgblsNL/pS8HR0gj60m8VFDFrnhSvDuitChazc095XcMSscf/XqZW+TSqQMCTe+AUy/4/eA==
 
 leaflet@^1.7.1:
   version "1.7.1"

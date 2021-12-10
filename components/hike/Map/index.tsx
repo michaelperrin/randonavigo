@@ -16,11 +16,11 @@ const Map = ({ hike }: MapProps) => {
           url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           detectRetina
         />
-        <Marker position={[51.505, -0.09]}>
+        {/* <Marker position={[51.505, -0.09]}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
-        </Marker>
+        </Marker> */}
         <GpxTrace gpxFile={getHikeGpxPath(hike)} />
       </MapContainer>
     </div>
