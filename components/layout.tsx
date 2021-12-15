@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Header from './layout/header';
 import Script from 'next/script'
-// import styles from './layout.module.css'  // TODO
 
 type LayoutProps = {
   children: JSX.Element | JSX.Element[],
@@ -30,7 +29,7 @@ const Layout = ({ children, home }: LayoutProps) => (
       {children}
     </main>
 
-    <footer className="main-footer">
+    <footer className="bg-zinc-800 text-white mt-24 py-16">
       <div className="container">
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
           <a href='https://ko-fi.com/W7W46TRZ2' target='_blank' rel="noreferrer">
@@ -38,7 +37,7 @@ const Layout = ({ children, home }: LayoutProps) => (
           </a>
 
           <div>
-            ©
+            Développement, design et contenu :
             {' '}
             <a href="http://www.michaelperrin.fr" target="_blank" rel="noreferrer">
               Michaël Perrin

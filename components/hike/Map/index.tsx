@@ -9,18 +9,18 @@ type MapProps = {
 
 const Map = ({ hike }: MapProps) => {
   return (
-    <div className="map" style={{ height: '500px' }}>
-      <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+    <div>
+      <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className="h-64 md:h-52">
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           detectRetina
         />
-        <Marker position={[51.505, -0.09]}>
+        {/* <Marker position={[51.505, -0.09]}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
-        </Marker>
+        </Marker> */}
         <GpxTrace gpxFile={getHikeGpxPath(hike)} />
       </MapContainer>
     </div>

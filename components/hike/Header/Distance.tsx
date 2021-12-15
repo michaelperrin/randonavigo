@@ -1,26 +1,19 @@
-import Image from 'next/image'
 import { Hike } from "../../../lib/types"
-import styles from './Distance.module.css'
 
 type DistanceProps = {
   hike: Hike,
 }
 
 const Distance = ({ hike }: DistanceProps) => (
-  <div className={styles.distance}>
-    <Image
-      src="/images/hike-icon.svg"
-      alt="Distance de marche"
-      className={styles.hikeIcon}
-      width={32}
-      height={32}
-    />
-    <div>
-      {`${hike.distance}km`}
-      {' '}
-      {hike.ending_point ? ' (gare à gare).' : ' (boucle).'}
-    </div>
-  </div>
+  <>
+    <span className="leading-none text-2xl font-bold">
+      {`${hike.distance} km`}
+    </span>
+
+    <span className="text-gray-600 inline-block pl-3">
+      {hike.ending_point ? '(gare à gare)' : '(boucle)'}
+    </span>
+  </>
 )
 
 export default Distance;

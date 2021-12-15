@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Hike as HikeType } from '../../../../lib/types'
 import HikeHeader from '../../../../components/hike/Header/index'
-import styles from './[slug].module.css'
 import Gallery from '../../../../components/hike/Gallery'
 import { getHikeData } from '../../../../lib/hike'
 import { getAllHikePaths } from '../../../../lib/hike'
 import Layout from '../../../../components/layout'
 import getHikePicturePath from '../../../../lib/getHikePicturePath'
+import HikeProperties from '../../../../components/hike/Properties'
 
 type HikeProps = {
   hike: HikeType,
@@ -39,32 +39,28 @@ const Hike = ({ hike }: HikeProps) => (
       <meta name="twitter:image" content={`${process.env.BASE_URL}${getHikePicturePath(hike, hike.main_picture)}`} />
     </Head>
 
-    <article id="hike" className="hike-show" data-gpx-file="{{ path('hike_download_gpx_file', {slug: hike.slug}) }}">
+    <article data-gpx-file="{{ path('hike_download_gpx_file', {slug: hike.slug}) }}">
       <HikeHeader hike={hike} />
-      <div className={styles.details}>
-        <div className="container-fluid">
-          <div className="row align-items-center">
-            <div className="col-md-8 col-lg-8 ml-lg-auto">
-              <div className={styles.description} dangerouslySetInnerHTML={{ __html: hike.content }} />
+
+      <div className="container">
+        <div className="grid md:grid-cols-10 gap-0 md:gap-6 lg:gap-12 xl:gap-24 mb-12">
+          <main className="order-2 md:order-1 md:col-span-6 font-serif mt-0 md:mt-12">
+            <div className="text-lg font-semibold italic mb-8">
+              {hike.summary}
             </div>
-            <div className="col-md-6 col-lg-3" />
-          </div>
+
+            <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: hike.content }} />
+          </main>
+
+          <aside className="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2">
+            <HikeProperties hike={hike} />
+          </aside>
         </div>
+
+        <section>
+          <Gallery hike={hike} />
+        </section>
       </div>
-      <section>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-1"></div>
-            <div className="col-lg-9"><h2>Photos en chemin</h2></div>
-          </div>
-          <div className="row">
-            <div className="col-lg-1"></div>
-            <div className="col-lg-10">
-              <Gallery hike={hike} />
-            </div>
-          </div>
-        </div>
-      </section>
     </article>
   </Layout>
 )

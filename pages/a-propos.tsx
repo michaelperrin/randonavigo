@@ -7,25 +7,26 @@ const About = () => (
     <Head>
       <title>A propos de RandoNavigo</title>
     </Head>
-    <article className="about">
+    <article>
       <div className="container">
-        <section className="intro">
-          <div className="row">
-            <div className="col-2">
+        <section className="my-24">
+          <div className="flex justify-center gap-12">
+            <div>
               <Image
                 src="/images/about/profile.jpg"
-                className="profile-picture"
+                className="rounded-full"
                 width={200}
                 height={200}
                 alt=""
               />
             </div>
 
-            <div className="col-10">
+            <div className="prose">
               <p>
-                J&apos;ai créé ce site internet dans le but de partager les randonnées que j&apos;ai faites en Ile-de-France, et également pour m&apos;en rappeler moi-même.<br />
-                La région possède de nombreux sites naturels insoupçonnés qui sont accessibles en transports en commun. Alors profitez-en pour vous éloigner du stress de la ville !
+                Passionné de randonnée, j&apos;ai créé RandoNavigo dans le but de partager les randonnées que j&apos;ai faites en Ile-de-France, et également pour m&apos;en rappeler moi-même.
               </p>
+
+              <p>La région possède de nombreux sites naturels insoupçonnés qui sont accessibles en transports en commun. Alors profitez-en pour vous éloigner du stress de la ville !</p>
 
               <p>
                 Ce site internet n&apos;est pas affilié à la marque Navigo, ni à aucune autre marque ou entité.
@@ -34,7 +35,7 @@ const About = () => (
           </div>
         </section>
 
-        <section>
+        <section className="prose">
           <h3>Les avantages des transports en commun</h3>
 
           <p>
@@ -52,16 +53,14 @@ const About = () => (
           </ul>
         </section>
 
-        <section>
+        <section className="prose my-8">
           <h3>Quelques conseils</h3>
 
           <p>
             Les chemins peuvent avoir varié ou la trace GPS enregistrée n&apos;est peut-être pas tout à fait exacte.
             N&apos;hésitez pas à improviser en repérant les chemins grâce à votre application&nbsp;!
           </p>
-
           <p>Préparez votre randonnée sans oublier :</p>
-
           <ul>
             <li>De l&apos;eau (on n&apos;en a jamais de trop).</li>
             <li>Des en-cas.</li>
@@ -70,7 +69,7 @@ const About = () => (
           </ul>
         </section>
 
-        <section>
+        <section className="prose">
           <h3>RandoNavigo sur les réseaux sociaux</h3>
 
           <ul>

@@ -8,11 +8,11 @@ const AideGpx = () => (
       <title>Aide sur les fichiers GPX — RandoNavigo</title>
     </Head>
 
-    <article className="help gpx-help">
-      <div className="container-fluid">
+    <article className="">
+      <div className="container">
         <div className="row">
           <div className="col-sm-1"></div>
-          <div className="col-sm-10">
+          <div className="col-sm-10 prose">
             <p className="intro">
               Toutes les randonnées sur le site sont proposées au format GPX. Voici quelques indications pour les utiliser et trouver votre chemin pendant la randonnée.
             </p>
@@ -33,51 +33,39 @@ const AideGpx = () => (
             </ol>
 
             <p>Bonne randonnée !</p>
+          </div>
 
-            <div className="screenshots">
-              <div className="row">
-                <div className="col-md-2">
-                  <Image
-                    src="/images/help/gpx/transfer-1.png"
-                    width={750}
-                    height={1334}
-                    alt=""
-                  />
-                </div>
-                <div className="col-md-2">
-                  <Image
-                    src="/images/help/gpx/transfer-1.png"
-                    width={750}
-                    height={1334}
-                    alt=""
-                  />
-                </div>
-                <div className="col-md-2">
-                  <Image
-                    src="/images/help/gpx/transfer-2.png"
-                    width={750}
-                    height={1334}
-                    alt=""
-                  />
-                </div>
-                <div className="col-md-2">
-                  <Image
-                    src="/images/help/gpx/transfer-3.png"
-                    width={750}
-                    height={1334}
-                    alt=""
-                  />
-                </div>
-                <div className="col-md-2">
-                  <Image
-                    src="/images/help/gpx/transfer-4.png"
-                    width={750}
-                    height={1334}
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+            <Image
+              src="/images/help/gpx/transfer-1.png"
+              width={750}
+              height={1334}
+              alt=""
+            />
+            <Image
+              src="/images/help/gpx/transfer-1.png"
+              width={750}
+              height={1334}
+              alt=""
+            />
+            <Image
+              src="/images/help/gpx/transfer-2.png"
+              width={750}
+              height={1334}
+              alt=""
+            />
+            <Image
+              src="/images/help/gpx/transfer-3.png"
+              width={750}
+              height={1334}
+              alt=""
+            />
+            <Image
+              src="/images/help/gpx/transfer-4.png"
+              width={750}
+              height={1334}
+              alt=""
+            />
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { useLeafletContext } from '@react-leaflet/core'
 import { useMap } from 'react-leaflet'
 import * as L from 'leaflet';
 import 'leaflet-gpx';
+import 'leaflet.locatecontrol'
 
 
 type GpxTraceProps = {
@@ -26,8 +27,10 @@ const GpxTrace = ({ gpxFile }: GpxTraceProps) => {
       }
     ).on('loaded', function (e) {
       map.fitBounds(e.target.getBounds());
+      // map.addControl(t);
+      L.control.locate().addTo(map);
     }).addTo(map);
-  })
+  }, [gpxFile, map])
 
   return null
 }

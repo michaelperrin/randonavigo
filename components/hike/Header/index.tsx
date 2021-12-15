@@ -1,70 +1,35 @@
-import dynamic from 'next/dynamic'
 import Image from 'next/image'
-import { format } from 'date-fns'
 import { Hike } from '../../../lib/types'
-import Access from './Access'
-import Distance from './Distance'
 import getHikePicturePath from '../../../lib/getHikePicturePath'
-import DownloadButton from './DownloadButton'
-// import styles from './Header.module.css' // TODO
-
-const MapWithNoSSR = dynamic(
-  () => import('../Map'),
-  { ssr: false }
-)
+import Date from '../../date'
 
 type HikeHeaderProps = {
   hike: Hike,
 }
 
 const HikeHeader = ({ hike }: HikeHeaderProps) => (
-  <header className="hike-header">
-    <div className="main-picture" style={{ position: 'relative' }}>
-      <Image
-        src={getHikePicturePath(hike, hike.main_picture)}
-        layout="fill"
-        objectFit="cover"
-        priority
-        alt=""
-      />
-    </div>
-
-    <div className="row align-items-center no-gutters">
-      <div className="col-md-5 col-lg-4 offset-lg-1 px-2">
+  <header>
+    <div className="flex flex-col justify-center relative h-screen/3 md:h-screen/2" style={{ minHeight: '400px' }}>
+      <div className="pt-32 px-4 md:px-48 z-30 text-white" style={{ fontFamily: 'Barlow', textShadow: '0 0 40px rgba(0, 0, 0, 0.9)' }}>
         {hike.categories && (
-          <div className="category">
-            {/* Only display first category */}
+          <div className="uppercase text-sm md:text-base tracking-wider mb-1 leading-none">
             {hike.categories[0]}
           </div>
         )}
 
-        <time
-          className="publication-date"
-          dateTime={format
-            (new Date(hike.publication_date), 'yyyy-MM-dd')}
-        >
-          {format(new Date(hike.publication_date), 'dd/MM/yyyy')}
-        </time>
+        <h1 className="z-30 text-3xl md:text-4xl font-condensed font-medium leading-none">{hike.title}</h1>
 
-        <h1 className="title">{hike.title}</h1>
-
-        <div className="summary">
-          {hike.summary}
-        </div>
-
-        <div className="access">
-          <Access hike={hike} />
-        </div>
-
-        <div className="distance">
-          <Distance hike={hike} />
-        </div>
-
-        <DownloadButton hike={hike} />
+        <Date dateString={hike.publication_date} className="block mt-4" />
       </div>
 
-      <div className="col-md-7 col-lg-6 ml-lg-auto">
-        <MapWithNoSSR hike={hike} />
+      <div className="after:absolute after:inset-0 after:bg-gradient-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70">
+        <Image
+          src={getHikePicturePath(hike, hike.main_picture)}
+          layout="fill"
+          objectFit="cover"
+          priority
+          alt=""
+        />
       </div>
     </div>
   </header>

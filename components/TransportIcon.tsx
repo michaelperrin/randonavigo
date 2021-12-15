@@ -1,13 +1,8 @@
 import Image from 'next/image'
-import styles from './TransportIcon.module.css'
 
 const RER_LINES = ['A', 'B', 'C', 'D', 'E']
 const TRAM_LINES = ['T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8', 'T9', 'T10', 'T11', 'T12', 'T13']
 const TRANSILIEN_LINES = ['H', 'J', 'K', 'L', 'N', 'P', 'R', 'U']
-
-const RER = 'RER'
-const TRAM = 'TRAM'
-const TRANSILIEN = 'TRANSILIEN'
 
 enum Network {
   RER,
@@ -38,6 +33,7 @@ const isTram = (line: string): boolean => TRAM_LINES.includes(line)
 
 type TransportIconProps = {
   line: string|string[],
+  size?: number,
 }
 
 const groupLinesByNetwork = (lines: string[]): string[][] => {
@@ -53,48 +49,48 @@ const groupLinesByNetwork = (lines: string[]): string[][] => {
   }, [])
 }
 
-const TransportIcon = ({ line }: TransportIconProps) => {
+const TransportIcon = ({ line, size = 24 }: TransportIconProps) => {
   const lines = Array.isArray(line) ? line : [line];
   const linesPerNetwork = groupLinesByNetwork(lines)
 
   return (
-    <div style={{ display: 'flex', gap: '8px' }}>
+    <div className="flex flex-nowrap gap-3">
       {linesPerNetwork.map((networkLines, network) => (
-        <div className={styles.line} key={network}>
-          <div className={styles.network}>
+        <div key={network} className="flex flex-nowrap gap-1">
+          <div>
             {network === Network.RER && (
               <Image
                 src="/images/transport/RER.svg"
-                width={24}
-                height={24}
+                width={size}
+                height={size}
                 alt="RER"
               />
             )}
             {network === Network.Transilien && (
               <Image
                 src="/images/transport/Transilien.svg"
-                width={24}
-                height={24}
+                width={size}
+                height={size}
                 alt="Transilien"
               />
             )}
             {network === Network.Tram && (
               <Image
                 src="/images/transport/tram.svg"
-                width={24}
-                height={24}
+                width={size}
+                height={size}
                 alt="Tram"
               />
             )}
           </div>
 
-          <div style={{ display: 'flex', gap: '4px'}}>
+          <div className="flex gap-1">
             {networkLines.map((line: string) => (
-              <div className={styles.lineName} key={line}>
+              <div key={line}>
                 <Image
                   src={`/images/transport/${line}.svg`}
-                  width={24}
-                  height={24}
+                  width={size}
+                  height={size}
                   alt={`Ligne ${line}`}
                 />
               </div>
