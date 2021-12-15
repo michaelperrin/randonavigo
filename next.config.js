@@ -2,7 +2,7 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    formats: ['image/webp'],
+    formats: ['image/avif', 'image/webp'],
   },
   async redirects() {
     return [
