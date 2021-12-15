@@ -10,7 +10,7 @@ type HikeCardProps = {
 }
 
 const HikeCard = ({ hike }: HikeCardProps) => (
-  <article className="flex flex-col hike-card mb-3 bg-white">
+  <article className="flex flex-col mb-4 bg-white" style={{ boxShadow: '0px 0px 18px rgb(83 70 29 / 15%) !important' }}>
     <Link href={getHikeUrl(hike)}>
       <a className="h-64 md:h-48 xl:h-64 flex-none relative">
         <div>
@@ -39,19 +39,17 @@ const HikeCard = ({ hike }: HikeCardProps) => (
       </a>
     </Link>
 
-
-
-    <div className="flex flex-col flex-1">
-      <div className="px-0">
-        <div className="my-2">
+    <div className="flex flex-col flex-1 mx-4 mt-4">
+      <div>
+        <div className="mt-2 mb-4">
           {hike.categories.length >= 0 && (
-            <div className="text-xs leading-none mt-4 font-bold uppercase" style={{color: '#4e6c85'}}>
+            <div className="uppercase text-xs text-gray-500 text-center leading-none mb-1" style={{color: '#4e6c85'}}>
               {/* Only display first category */}
               {hike.categories[0]}
             </div>
           )}
 
-          <h2 className="font-sans-serif font-bold text-xl mt-1 mb-3">
+          <h2 className="font-sans-serif text-lg font-semibold text-center mx-8 leading-snug">
             <Link href={getHikeUrl(hike)}>
               <a>
                 {hike.title}
@@ -60,35 +58,31 @@ const HikeCard = ({ hike }: HikeCardProps) => (
           </h2>
         </div>
 
-
-        <div className="flex mb-4">
-          <div className="flex-grow-1 text-sm items-center font-sans-serif">
-            <TransportPoint line={hike.starting_point.line} station={hike.starting_point.station} iconSize={20} />
-          </div>
-
-          <div className="flex ml-auto font-sans-serif text-sm font-medium">
-            <Image
-              src="/images/hike-icon.svg"
-              alt="Distance de marche"
-              className="hike-icon"
-              width={16}
-              height={16}
-            />
-            <div className="ml-1">
-              {hike.distance}
-              km
-            </div>
-          </div>
-        </div>
-
-        <div className="text-gray-600 mb-2 font-light leading-relaxed font-serif">
+        <div className="text-justify text-gray-600 mt-2 mb-4 font-serif" style={{ fontSize: '15px', hyphens: 'auto' }}>
           { hike.summary }
         </div>
       </div>
 
-      {/* <div className="mt-auto flex justify-center">
-        <div className="inline-block text-xs px-4 py-2 bg-gray-600 text-white tracking-wider">VIEW</div>
-      </div> */}
+      <div className="flex mt-auto mb-3 pt-3 border-t border-gray-200">
+        <div className="flex-grow-1 text-sm items-center font-sans-serif">
+          <TransportPoint line={hike.starting_point.line} station={hike.starting_point.station} iconSize={20} />
+        </div>
+
+        <div className="flex ml-auto font-sans-serif text-sm font-medium">
+          <div>
+            <Image
+              src="/images/hike-icon.svg"
+              alt="Distance de marche"
+              width={20}
+              height={20}
+            />
+          </div>
+          <div className="ml-1">
+            {hike.distance}
+            km
+          </div>
+        </div>
+      </div>
     </div>
   </article>
 )
