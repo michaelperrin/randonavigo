@@ -20,6 +20,9 @@ module.exports = {
       '2': 2,
     },
     extend: {
+      boxShadow: {
+        'card': '0px 0px 18px rgb(83 70 29 / 15%)',
+      },
       fontFamily: {
         'condensed': [
           '"Barlow Condensed"',

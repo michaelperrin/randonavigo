@@ -24,7 +24,7 @@ export default function Home({ hikes }: HomeProps) {
         <TopBanner />
         <Intro />
 
-        <section>
+        <section className="bg-zinc-50 py-12">
           <div className="container">
             <List hikes={hikes} />
           </div>

@@ -58,7 +58,6 @@ const Hike = ({ hike }: HikeProps) => (
         </div>
 
         <section>
-          <h2>Photos en chemin</h2>
           <Gallery hike={hike} />
         </section>
       </div>

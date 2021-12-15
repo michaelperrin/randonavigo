@@ -10,7 +10,7 @@ type HikeCardProps = {
 }
 
 const HikeCard = ({ hike }: HikeCardProps) => (
-  <article className="flex flex-col mb-4 bg-white" style={{ boxShadow: '0px 0px 18px rgb(83 70 29 / 15%) !important' }}>
+  <article className="flex flex-col mb-4 bg-white shadow-card">
     <Link href={getHikeUrl(hike)}>
       <a className="h-64 md:h-48 xl:h-64 flex-none relative">
         <div>
@@ -58,7 +58,7 @@ const HikeCard = ({ hike }: HikeCardProps) => (
           </h2>
         </div>
 
-        <div className="text-justify text-gray-600 mt-2 mb-4 font-serif" style={{ fontSize: '15px', hyphens: 'auto' }}>
+        <div className="text-justify text-zinc-600 mt-2 mb-4 font-serif" style={{ fontSize: '15px', hyphens: 'auto' }}>
           { hike.summary }
         </div>
       </div>
