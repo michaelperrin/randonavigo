@@ -57,7 +57,7 @@ const TransportIcon = ({ line, size = 24 }: TransportIconProps) => {
     <div className="flex flex-nowrap gap-3">
       {linesPerNetwork.map((networkLines, network) => (
         <div key={network} className="flex flex-nowrap gap-1">
-          <div>
+          <div style={{ height: `${size}px` }}>
             {network === Network.RER && (
               <Image
                 src="/images/transport/RER.svg"
@@ -86,7 +86,7 @@ const TransportIcon = ({ line, size = 24 }: TransportIconProps) => {
 
           <div className="flex gap-1">
             {networkLines.map((line: string) => (
-              <div key={line}>
+              <div key={line} style={{ height: `${size}px` }}>
                 <Image
                   src={`/images/transport/${line}.svg`}
                   width={size}
