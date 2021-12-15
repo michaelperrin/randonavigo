@@ -1,7 +1,5 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     container: (theme) => ({
       // To center containers by default
@@ -57,9 +55,6 @@ module.exports = {
         "screen/5": "calc(100vh / 5)",
       }),
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     require('@tailwindcss/typography'),
