@@ -63,13 +63,13 @@ const HikeCard = ({ hike }: HikeCardProps) => (
         </div>
       </div>
 
-      <div className="flex mt-auto mb-3 pt-3 border-t border-gray-200">
+      <div className="flex items-center mt-auto mb-3 pt-3 border-t border-gray-200">
         <div className="flex-grow-1 text-sm items-center font-sans-serif">
           <TransportPoint line={hike.starting_point.line} station={hike.starting_point.station} iconSize={20} />
         </div>
 
-        <div className="flex ml-auto font-sans-serif text-sm font-medium">
-          <div>
+        <div className="shrink-0 flex ml-auto font-sans-serif text-sm font-medium">
+          <div className="shrink-0">
             <Image
               src="/images/hike-icon.svg"
               alt="Distance de marche"
