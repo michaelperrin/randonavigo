@@ -6,7 +6,7 @@ const Header = () => (
   <header className="container flex align-middle items-center">
     <div className="lg:flex-1" />
     <div className="flex flex-col flex-1 my-5 flex-grow-2">
-      <div className="flex flex-col lg:items-center mr-4 lg:mr-0">
+      <div className="flex flex-col lg:items-center mr-2 sm:mr-4 lg:mr-0">
         {/* <div className="mr-4">
           <Link href="/">
             <a>
