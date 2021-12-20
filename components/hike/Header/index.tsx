@@ -9,7 +9,7 @@ type HikeHeaderProps = {
 
 const HikeHeader = ({ hike }: HikeHeaderProps) => (
   <header>
-    <div className="flex flex-col justify-center relative h-screen/3 md:h-screen/2" style={{ minHeight: '400px' }}>
+    <div className="flex flex-col justify-center relative h-screen/3 md:h-hero-header" style={{ minHeight: '400px' }}>
       <div className="pt-32 px-4 md:px-48 z-30 text-white" style={{ fontFamily: 'Barlow', textShadow: '0 0 40px rgba(0, 0, 0, 0.9)' }}>
         {hike.categories && (
           <div className="uppercase text-sm md:text-base tracking-wider mb-1 leading-none">
