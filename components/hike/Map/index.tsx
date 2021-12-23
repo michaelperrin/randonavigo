@@ -1,5 +1,5 @@
 import { Hike } from '../../../lib/types'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer } from 'react-leaflet'
 import GpxTrace from './GpxTrace'
 import getHikeGpxPath from '../../../lib/getHikeGpxPath'
 
@@ -12,8 +12,8 @@ const Map = ({ hike }: MapProps) => {
     <div>
       <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className="h-64 md:h-52">
         <TileLayer
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           detectRetina
         />
         {/* <Marker position={[51.505, -0.09]}>
