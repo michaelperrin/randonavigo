@@ -39,4 +39,4 @@ hidden: false
 
 Le départ se fait en gare de Mennecy sur la ligne D du RER (environ 1h depuis Châtelet).
 
-La randonnée commence par la très belle allée de séquoias du parc de Villeroy et vous emmènera ensuite vers les étangs de Mennecy à travers les bois. Ne manquez pas les observatoires que le conseil département a aménagés le long des chemin, ils vous permettront d'observer les multiples espèces d'oiseaux !
+La randonnée commence par la très belle allée de séquoias du parc de Villeroy et vous emmènera ensuite vers les étangs de Mennecy à travers les bois. Ne manquez pas les observatoires que le conseil départemental de l'Essonne a aménagés le long des chemin. Ces cabanons vous permettront d'observer les multiples espèces d'oiseaux du marais.
