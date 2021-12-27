@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from './layout/header';
 import Script from 'next/script'
+import Link from 'next/link';
 
 type LayoutProps = {
   children: JSX.Element | JSX.Element[],
@@ -31,7 +32,7 @@ const Layout = ({ children, home }: LayoutProps) => (
 
     <footer className="bg-zinc-800 text-white mt-24 py-16">
       <div className="container">
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+        <div className="flex flex-col items-center gap-5">
           <a href='https://ko-fi.com/W7W46TRZ2' target='_blank' rel="noreferrer">
             <div dangerouslySetInnerHTML={{ __html: `<img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' />` }} />
           </a>
@@ -42,6 +43,12 @@ const Layout = ({ children, home }: LayoutProps) => (
             <a href="http://www.michaelperrin.fr" target="_blank" rel="noreferrer">
               Michaël Perrin
             </a>
+          </div>
+
+          <div className="text-sm">
+            <Link href="/mentions-legales">
+              <a>Mentions légales</a>
+            </Link>
           </div>
         </div>
       </div>

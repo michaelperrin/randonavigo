@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import List from '../components/hike/List'
 import Intro from '../components/home/Intro'
-import TopBanner from '../components/home/TopBanner'
+import TopBanner from '../components/TopBanner'
 import Layout from '../components/layout'
 import Header from '../components/layout/header'
 import { getSortedHikesData } from '../lib/hike'

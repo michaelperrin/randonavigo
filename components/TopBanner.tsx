@@ -1,0 +1,30 @@
+import Image from 'next/image'
+
+type TopBannerProps = {
+  children?: JSX.Element | JSX.Element[],
+  overlay?: boolean,
+}
+
+const TopBanner = ({ children, overlay = false }: TopBannerProps) => {
+  const overlayClasses = overlay ? 'after:absolute after:inset-0 after:bg-gradient-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70' : '';
+
+  return (
+    <div className="relative flex flex-col align-middle justify-center" style={{ height: '50vh' }}>
+      <div className="pt-32 px-4 md:px-48 z-30 text-white" style={{ fontFamily: 'Barlow', textShadow: '0 0 40px rgba(0, 0, 0, 0.9)' }}>
+        {children}
+      </div>
+
+      <div className={overlayClasses}>
+        <Image
+          src="/hikes/2017/06/a-travers-les-vignes-dans-la-vallee-de-la-marne/pictures/IMG_7513.jpg"
+          layout="fill"
+          objectFit="cover"
+          priority
+          alt=""
+        />
+      </div>
+    </div>
+  )
+}
+
+export default TopBanner
