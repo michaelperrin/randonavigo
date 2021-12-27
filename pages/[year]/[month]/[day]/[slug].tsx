@@ -23,6 +23,7 @@ const Hike = ({ hike }: HikeProps) => (
     <Head>
       <title>{hike.title} – RandoNavigo</title>
       <link rel="canonical" href="" />
+      <meta property="description" content={hike.summary} />
       <meta property="og:locale" content="fr_FR" />
       <meta property="og:type" content="article" />
       <meta property="og:title" content={hike.title} />
