@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Header from './layout/header';
-import Script from 'next/script'
 import Link from 'next/link';
 
 type LayoutProps = {
@@ -20,6 +19,8 @@ const Layout = ({ children, home }: LayoutProps) => (
       <link rel="manifest" href="/manifest.json" />
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="theme-color" content="#ffffff" />
+
+      <script id="mcjs" dangerouslySetInnerHTML={{ __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/638b84bb33b30902b1122a2c7/04edd094392a25a03e7825794.js");`}} />
     </Head>
 
     {home !== true && (
@@ -53,10 +54,6 @@ const Layout = ({ children, home }: LayoutProps) => (
         </div>
       </div>
     </footer>
-
-    <Script id="mcjs" strategy="lazyOnload">
-      {`!function(c,h,i,m,p){m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/638b84bb33b30902b1122a2c7/04edd094392a25a03e7825794.js");`}
-    </Script>
   </>
 );
 
