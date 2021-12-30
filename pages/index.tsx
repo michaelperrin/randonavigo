@@ -15,8 +15,8 @@ export default function Home({ hikes }: HomeProps) {
   return (
     <Layout home>
       <Head>
-        <title>RandoNavigo</title>
-        <meta name="description" content="Randonnées en Ile-de-France accessibles en transport en commun." />
+        <title>RandoNavigo — Randonnées pleine nature en Île-de-France sans voiture</title>
+        <meta name="description" content="Randonnées en pleine nature en Ile-de-France accessibles en transport en commun." />
       </Head>
 
       <div className="page-home">
