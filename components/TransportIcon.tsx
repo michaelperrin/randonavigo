@@ -5,6 +5,7 @@ import NetworkIcon from './NetworkIcon'
 type TransportIconProps = {
   line: string|string[],
   size?: number,
+  linkToPage?: boolean,
 }
 
 const groupLinesByNetwork = (lines: string[]): string[][] => {
@@ -20,7 +21,7 @@ const groupLinesByNetwork = (lines: string[]): string[][] => {
   }, [])
 }
 
-const TransportIcon = ({ line, size = 24 }: TransportIconProps) => {
+const TransportIcon = ({ line, size = 24, linkToPage = true }: TransportIconProps) => {
   const lines = Array.isArray(line) ? line : [line];
   const linesPerNetwork = groupLinesByNetwork(lines)
 
@@ -32,7 +33,7 @@ const TransportIcon = ({ line, size = 24 }: TransportIconProps) => {
 
           <div className="flex gap-1">
             {networkLines.map((line: string) => (
-              <LineIcon key={line} line={line} size={size} />
+              <LineIcon key={line} line={line} size={size} linkToPage={linkToPage} />
             ))}
           </div>
         </div>

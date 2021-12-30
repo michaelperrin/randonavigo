@@ -3,27 +3,11 @@ import 'react-image-lightbox/style.css';
 import TransportIcon from '../TransportIcon'
 import Link from 'next/link'
 import getHikeLines from '../../lib/getHikeLines'
-import { isRER, isTram, isTransilien } from '../../lib/transport'
 import getLinePageUrl from '../../lib/getLinePageUrl'
+import getTransportPageLinkLabel from '../../lib/getTransportPageLinkLabel';
 
 type RelatedHikesProps = {
   hike: Hike,
-}
-
-const getLabel = (line: string): string => {
-  if (isRER(line)) {
-    return `Randonnées sur le RER ${line}`
-  }
-
-  if (isTransilien(line)) {
-    return `Randonnées sur la ligne ${line} du Transilien`
-  }
-
-  if (isTram(line)) {
-    return `Randonnées sur le tramway ${line}`
-  }
-
-  return ''
 }
 
 const RelatedHikes = ({ hike }: RelatedHikesProps) => {
@@ -44,7 +28,7 @@ const RelatedHikes = ({ hike }: RelatedHikesProps) => {
                 <TransportIcon line={line} size={24} />
                 <div className="text-sm text-stone-700">
                   <Link href={getLinePageUrl(line)}>
-                    <a>{getLabel(line)}</a>
+                    <a>{getTransportPageLinkLabel(line)}</a>
                   </Link>
                 </div>
               </div>
