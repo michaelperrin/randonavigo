@@ -10,6 +10,7 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
   <LinePage
     hikes={hikes}
     title="Randonnées sur la ligne R du Transilien"
+    meta="Randonnées accessibles en transports par la ligne R du Transilien en Île-de-France"
     banner="/images/transport/banner/ligne-r.jpeg"
     borderColor="border-transilien-r"
     bgColor="bg-transilien-r"

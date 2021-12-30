@@ -10,6 +10,7 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
   <LinePage
     hikes={hikes}
     title="Randonnées sur le Tram T11"
+    meta="Randonnées accessibles en transports par la ligne T11 du tramway en Île-de-France"
     banner="/images/transport/banner/ligne-t11.jpeg"
     borderColor="border-tram-t11"
     bgColor="bg-tram-t11"

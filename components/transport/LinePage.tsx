@@ -10,6 +10,7 @@ type HikePerLineProps = {
   hikes: Hike[],
   banner?: string,
   line: string,
+  meta?: string,
   title: string,
   borderColor: string,
   bgColor: string,
@@ -20,6 +21,7 @@ const LinePage = ({
   hikes,
   banner='/images/transport/banner/ligne-j.jpeg',
   title,
+  meta,
   line,
   children,
   borderColor,
@@ -28,6 +30,9 @@ const LinePage = ({
   <Layout>
     <Head>
       <title>{title}</title>
+      {meta && (
+        <meta name="description" content={meta} />
+      )}
     </Head>
     <article>
       <TopBanner picture={banner} />

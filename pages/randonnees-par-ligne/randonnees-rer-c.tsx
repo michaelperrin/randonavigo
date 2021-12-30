@@ -11,6 +11,7 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
   <LinePage
     hikes={hikes}
     title="Randonnées sur le RER C"
+    meta="Randonnées accessibles en transports par le RER C en Île-de-France"
     banner="/images/transport/banner/rer-c.jpeg"
     borderColor="border-rer-c"
     bgColor="bg-rer-c"
