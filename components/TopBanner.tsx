@@ -1,11 +1,16 @@
 import Image from 'next/image'
 
 type TopBannerProps = {
+  picture?: string,
   children?: JSX.Element | JSX.Element[],
   overlay?: boolean,
 }
 
-const TopBanner = ({ children, overlay = false }: TopBannerProps) => {
+const TopBanner = ({
+  children,
+  picture = '/hikes/2017/06/a-travers-les-vignes-dans-la-vallee-de-la-marne/pictures/IMG_7513.jpg',
+  overlay = false
+}: TopBannerProps) => {
   const overlayClasses = overlay ? 'after:absolute after:inset-0 after:bg-gradient-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70' : '';
 
   return (
@@ -16,7 +21,7 @@ const TopBanner = ({ children, overlay = false }: TopBannerProps) => {
 
       <div className={overlayClasses}>
         <Image
-          src="/hikes/2017/06/a-travers-les-vignes-dans-la-vallee-de-la-marne/pictures/IMG_7513.jpg"
+          src={picture}
           layout="fill"
           objectFit="cover"
           priority
