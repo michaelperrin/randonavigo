@@ -18,7 +18,7 @@ type HikePerLineProps = {
 
 const LinePage = ({
   hikes,
-  banner = '/images/transport/banner/ligne-j.jpeg',
+  banner='/images/transport/banner/ligne-j.jpeg',
   title,
   line,
   children,
@@ -37,7 +37,7 @@ const LinePage = ({
           <main className="order-2 md:order-1 md:col-span-6 mt-0 md:mt-12">
             <div className="flex items-center mt-12 mb-6">
               <div>
-                <div className="float-right">
+                <div className="float-right ml-2 mb-2">
                   <TransportIcon line={line} size={40} linkToPage={false} />
                 </div>
                 <h1 className="text-2xl font-black">{title}</h1>
@@ -72,12 +72,3 @@ const LinePage = ({
 )
 
 export default LinePage
-
-// export function getStaticProps() {
-//   return {
-//     props: {
-//       hikes: getHikesForTransportLine('J'),
-//     }
-//   }
-// }
-

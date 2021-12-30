@@ -10,7 +10,7 @@ const LineLinks = ({ }: HikePerLineProps) => (
       <div className="md:p-5 md:border-t md:border-l md:border-r md:border-gray-100 md:rounded-xl bg-white">
         <h3 className="uppercase text-sm font-bold text-gray-700 mb-4 font-sans-serif">Des randonnées sur toutes les lignes</h3>
 
-        <section className="flex gap-1 mb-4">
+        <section className="flex flex-wrap gap-1 mb-4">
           <NetworkIcon network={Network.RER} size={32}/>
           <LineIcon line="B" size={32} />
           <LineIcon line="C" size={32} />
@@ -18,7 +18,7 @@ const LineLinks = ({ }: HikePerLineProps) => (
           <LineIcon line="E" size={32} />
         </section>
 
-        <section className="flex gap-1 mb-4">
+        <section className="flex flex-wrap gap-1 mb-4">
           <NetworkIcon network={Network.Transilien} size={32} />
           <LineIcon line="H" size={32} />
           <LineIcon line="J" size={32} />
@@ -29,7 +29,7 @@ const LineLinks = ({ }: HikePerLineProps) => (
           <LineIcon line="U" size={32} />
         </section>
 
-        <section className="flex gap-1">
+        <section className="flex flex-wrap gap-1">
           <NetworkIcon network={Network.Tram} size={32} />
           <LineIcon line="T2" size={32} />
           <LineIcon line="T11" size={32} />
