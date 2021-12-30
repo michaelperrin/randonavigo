@@ -35,11 +35,11 @@ const About = () => (
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <p>RandoNavigo, ce sont des randonnées sélectionnées et conçues avec soin pour proposer au maximum un parcours agréable.</p>
 
           <p>Certaines</p>
-        </section>
+        </section> */}
 
         <section className="prose">
           <h3>Les avantages des transports en commun</h3>
