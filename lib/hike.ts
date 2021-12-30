@@ -65,6 +65,25 @@ export const getSortedHikesData = (): Hike[] => {
   return sortedHikes.filter((hike: Hike) => hike.hidden !== true)
 }
 
+export const getHikesForTransportLine = (line: string): Hike[] => {
+  const allHikes = getSortedHikesData()
+  const hasLine = (hike: Hike, line: string): boolean => {
+    if (hike.starting_point.line === line || hike.starting_point.line.includes(line)) {
+      return true
+    }
+
+    if (hike.ending_point?.line === line || hike.ending_point?.line.includes(line)) {
+      return true
+    }
+
+    return false
+  }
+
+  const hikesForLine = allHikes.filter(hike => hasLine(hike, line))
+
+  return hikesForLine
+}
+
 export const getAllHikePaths = async () => {
   const hikes = await getSortedHikesData();
 
