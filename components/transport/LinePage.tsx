@@ -29,7 +29,7 @@ const LinePage = ({
 }: HikePerLineProps) => (
   <Layout>
     <Head>
-      <title>{title}</title>
+      <title>{title} – RandoNavigo</title>
       {meta && (
         <meta name="description" content={meta} />
       )}
