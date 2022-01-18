@@ -44,6 +44,23 @@ favorite: false
 hidden: false
 ---
 
-*Astuce !* Le château dispose d'un point d'information qui vend la
+Le départ se fait en gare de Saint-Rémy-lès-Chevreuse (terminus du RER B) et commencerez par longer la route sur une voie pour les piétons et vélos bien séparée.
+
+Vous bifurquerez ensuite sur la droite par le chemin d’accès au GR11 (marquage rouge et blanc) pour rejoindre les canaux du petit village de Chevreuse. Une promenade très agréable longe l’Yvette avec ses petits ponts et anciens lavoirs.
+
+Vous poursuiverez sur le chemin Jean Racine pour rejoindre les zones boisées et faire un grand tour par la Forêt de la Madeleine.
+
+En redescendant, vous découvrirez le Château médiéval de la Madeleine qui surplombe toute la vallée.
+
+Le château dispose d’un point d’information qui vend la
 [Volcelest](http://www.brasseriechevreuse.com/), bière de la vallée de Chevreuse
-(blonde, ambrée, brune, triple), que je recommande sans hésitation.
+(blonde, ambrée, brune, triple), que je recommande sans hésitation !
+
+Vous redescendrez ensuite vers le village de Chevreuse et rejoindrez la gare de Saint-Rémy-lès-Chevreuse pour un retour en direction de Paris sur le RER B.
+
+Envie de découvrir d’autres randonnées en Vallée de Chevreuse ?
+
+* [L’abbaye de Port-Royal-des-Champs en Vallée de Chevreuse](/2021/11/28/abbaye-de-port-royal-des-champs-en-vallee-de-chevreuse)
+* [A la découverte du Viaduc des Fauvettes en Vallée de Chevreuse](/2022/01/15/viaduc-des-fauvettes-vallee-de-chevreuse)
+* [De Coignières à Saint-Rémy-Lès-Chevreuse](/2016/12/16/de-coignieres-a-saint-remy-chevreuse)
+* [Bois Domanial des Cinq-Cents Arpents – Rambouillet](/2015/11/01/bois-domanial-cinq-cents-arpents-rambouillet)
