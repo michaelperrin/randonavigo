@@ -69,7 +69,7 @@ Pour démarrer la randonnée, rendez-vous en gare de La Verrière, accessible pa
 * La ligne N, au départ de Gare Montparnasse.
 * La ligne U, au départ de La Défense.
 
-19 kilomètres vous attendent alors avec 400 mètres de dénivelé positif, courage !
+19 kilomètres vous attendent alors avec 400 mètres de dénivelé positif, courage !
 
 ## La Verrière
 
@@ -78,15 +78,15 @@ Mon idée était de passer par le côté Sud de l’étang, mais avec plusieurs 
 
 ## La forêt de Port-Royal
 
-Changement d'ambiance simplement en traversant la route, le calme de la forêt remplace celui de l'étang. Les premières allées rectilignes de la **forêt de Port-Royal** (aucun rapport avec la station du RER B dans Paris !) laisseront rapidement place à un petit chemin bien sinueux et valloné comme on les aime. Ce chemin au balisage jaune dénommé le Chemin Jean Racine suit en amont le tracé de la rivière du Rhodon.
+Changement d'ambiance simplement en traversant la route, le calme de la forêt remplace celui de l'étang. Les premières allées rectilignes de la **forêt de Port-Royal** (aucun rapport avec la station du RER B dans Paris !) laisseront rapidement place à un petit chemin bien sinueux et valloné comme on les aime. Ce chemin au balisage jaune dénommé le Chemin Jean Racine suit en amont le tracé de la rivière du Rhodon.
 
 ## L’ancienne abbaye de Port-Royal-des-Champs
 
-Cette ancienne abbaye située juste à la sortie de la forêt au niveau de la commune de Magny-les-Hameaux est vraiment ce qui m’avait incité à dessiner cette randonnée de gare à gare. Je n’en avais jamais entendu parler auparavant et avais vraiment envie d’aller la découvrir. Et tout le site vaut vraiment le détour !
+Cette ancienne abbaye située juste à la sortie de la forêt au niveau de la commune de Magny-les-Hameaux est vraiment ce qui m’avait incité à dessiner cette randonnée de gare à gare. Je n’en avais jamais entendu parler auparavant et avais vraiment envie d’aller la découvrir. Et tout le site vaut vraiment le détour !
 
 N’hésitez pas remonter un peu sur le chemin pour profiter d’une jolie vue sur le site avant d’y entrer. La visite est libre et permet de voir les ruines de l’abbaye et l’oratoire construit au XIXème siècle en souvenir de cette abbaye.
 
-Un âne qui ne demande que des caresses (enfin surtout des herbes fraîches) et des moutons vous accueilleront également sur le site. Vous pourrez dire que vous avez passé une journée à la campagne !
+Un âne qui ne demande que des caresses (enfin surtout des herbes fraîches) et des moutons vous accueilleront également sur le site. Vous pourrez dire que vous avez passé une journée à la campagne !
 
 ## Forêt de la Madeleine
 

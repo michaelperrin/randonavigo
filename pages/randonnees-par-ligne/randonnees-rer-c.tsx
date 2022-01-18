@@ -18,8 +18,8 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
     line="C"
   >
     <p>
-      Le défaut du RER C : on ne comprend pas grand chose à son plan alambiqué !<br />
-      Son avantage : il dessert de nombreux points de départ ou d’arrivée de randonnée !
+      Le défaut du RER C : on ne comprend pas grand chose à son plan alambiqué !<br />
+      Son avantage : il dessert de nombreux points de départ ou d’arrivée de randonnée !
     </p>
 
     <p>Il dessert entre autres la <b>Vallée de la Bièvre</b>, et surtout le Parc Naturel Régional du <b>Gâtinais</b>, qui sont à eux deux d’excellents spots pour la randonnée.</p>

@@ -1,7 +1,7 @@
 ---
 title: Les 3 étangs et la ferme en forêt de Rambouillet
 summary: Allier plaisir de la nature, repos au bord des étangs et pause gourmande,
-  tout cela est possible avec cette randonnée !
+  tout cela est possible avec cette randonnée !
 slug: rambouillet-etangs-ferme
 publication_date: '2018-05-06'
 categories:
@@ -48,8 +48,8 @@ Dès la sortie de la gare du Perray-en-Yvelines, vous vous retrouverez au bord d
 
 Le chemin vous mènera rapidement en forêt où vous rejoindrez le grand **Étang de la Tour** un peu plus prisé mais où vous pourrez également trouver des coins pour une bonne pause.
 
-Vous poursuivrez par le GR1 faisant partie du Parc Régional de la Haute Vallée de Chevreuse pour rejoindre la **[Ferme des 4 étoiles](http://les4etoiles.free.fr/)**, qui propose dans une petite boutique d’excellents **produits de la ferme et de la région** (fruits et légumes, viande, charcuterie, bières – dont l’excellente Volceleist – jus de fruit, … que de bonnes choses !). Vous y apercevrez les animaux de la ferme, et une petite terrasse se prête pour un café ou même une formule avec assiette fermière si vous n’avez pas pris de quoi manger. La ferme est ouverte les week-ends, mais vérifiez tout de même les horaires.
+Vous poursuivrez par le GR1 faisant partie du Parc Régional de la Haute Vallée de Chevreuse pour rejoindre la **[Ferme des 4 étoiles](http://les4etoiles.free.fr/)**, qui propose dans une petite boutique d’excellents **produits de la ferme et de la région** (fruits et légumes, viande, charcuterie, bières – dont l’excellente Volceleist – jus de fruit, … que de bonnes choses !). Vous y apercevrez les animaux de la ferme, et une petite terrasse se prête pour un café ou même une formule avec assiette fermière si vous n’avez pas pris de quoi manger. La ferme est ouverte les week-ends, mais vérifiez tout de même les horaires.
 
 La randonnée se poursuivra en **forêt de Rambouillet** sur des chemins très agréables et aux espèces de plante variées.
 
-Vous rejoindrez ensuite à nouveau le GR1 et découvrirez le bel **Étang d’Or**. Encore un lieu propice au repos ! Le GR 655 vous permettra de vous rendre à la ville de Rambouillet où le train vous attendra pour un retour en direction de Paris Montparnasse en 42 minutes ou 1h05 selon les horaires.
+Vous rejoindrez ensuite à nouveau le GR1 et découvrirez le bel **Étang d’Or**. Encore un lieu propice au repos ! Le GR 655 vous permettra de vous rendre à la ville de Rambouillet où le train vous attendra pour un retour en direction de Paris Montparnasse en 42 minutes ou 1h05 selon les horaires.

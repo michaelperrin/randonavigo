@@ -18,7 +18,7 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
   >
     <p>La ligne L du Transilien dessert entre autres le Sud-Ouest parisien, sans s’éloigner bien loin dans la région. La ligne est bien pratique pour rejoindre différentes forêts, telle que celle de Marly, de Fausses-Reposes et Meudon, sans oublier également la desserte de Versailles de manière rapide (bien plus qu’avec le RER C en général).</p>
 
-    <p>Les trains sont modernes, et c’est toujours appréciable !</p>
+    <p>Les trains sont modernes, et c’est toujours appréciable !</p>
   </LinePage>
 )
 

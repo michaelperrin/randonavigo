@@ -40,4 +40,4 @@ Nous partons cette fois-ci du côté ouest de Coignières, à l’opposé de la 
 
 Vous suivrez très majoritairement le GR11 qui vous fera rapidement quitter la zone (trop) urbaine de Coignières pour rejoindre le Grand Étang de la Mauldre en pleine forêt. Un coin idyllique pour un pique-nique grâce aux rondins placés face à l’étang.
 
-Vous passerez sur les chemins à travers champs pour le dernier tiers de la randonnée. La fin du trajet rejoignant la gare de Montfort-l’Amaury-Méré se fera le long d’une route sur 500 mètres environ, mais ne gâchera pas pour autant votre sortie !
+Vous passerez sur les chemins à travers champs pour le dernier tiers de la randonnée. La fin du trajet rejoignant la gare de Montfort-l’Amaury-Méré se fera le long d’une route sur 500 mètres environ, mais ne gâchera pas pour autant votre sortie !

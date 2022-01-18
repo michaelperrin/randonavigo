@@ -54,7 +54,7 @@ En redescendant, vous découvrirez le Château médiéval de la Madeleine qui su
 
 Le château dispose d’un point d’information qui vend la
 [Volcelest](http://www.brasseriechevreuse.com/), bière de la vallée de Chevreuse
-(blonde, ambrée, brune, triple), que je recommande sans hésitation !
+(blonde, ambrée, brune, triple), que je recommande sans hésitation !
 
 Vous redescendrez ensuite vers le village de Chevreuse et rejoindrez la gare de Saint-Rémy-lès-Chevreuse pour un retour en direction de Paris sur le RER B.
 

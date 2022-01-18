@@ -68,11 +68,11 @@ ending_point:
 favorite: true
 hidden: false
 summary: |-
-  RandoNavigo vous emmène à la plage !
+  RandoNavigo vous emmène à la plage !
   Pas moins de trois mers de sable à découvrir en pleine forêt au paysage sublime. Vous ne rêvez pas, vous êtes pourtant bien en Ile-de-France.
 ---
 
-Une randonnée parfois exigeante sur des chemins parfois escarpés pour un dénivelé positif de 400 mètres sur l’ensemble de la randonnée. Mais quels paysages ! Vous y découvrirez une très grande variété d'arbres, en passant tour à tour dans des zones de pins et de bruyères, de bouleaux, de chênes et de fougères.
+Une randonnée parfois exigeante sur des chemins parfois escarpés pour un dénivelé positif de 400 mètres sur l’ensemble de la randonnée. Mais quels paysages ! Vous y découvrirez une très grande variété d'arbres, en passant tour à tour dans des zones de pins et de bruyères, de bouleaux, de chênes et de fougères.
 
 Et surtout pas moins de trois mers de sable à découvrir, ainsi que des formations rocheuses surprenantes.
 

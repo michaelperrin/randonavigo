@@ -44,10 +44,10 @@ que la desserte de la gare de Santeuil est actuellement menacée ([une pétition
 à ce sujet a été lancée pour préserver la station).
 
 Pour aider à préserver la gare et donc cette randonnée accessible en transports, **n’oubliez pas de valider
-votre pass Navigo dans la gare !**
+votre pass Navigo dans la gare !**
 
 A la sortie du village de Santeuil, vous serez très rapidement amené en pleine nature jusqu’à l’étang de Vallière. Un bel
-endroit à pique-nique (ou à sieste le cas échéant !).
+endroit à pique-nique (ou à sieste le cas échéant !).
 Vous poursuivrez ensuite à travers bois. Ne manquez pas sur le chemin un magnifique lavoir restauré dont
 l’eau de couleur émeraude nous a fasciné. Pratique, le lieu est également entouré
 de tables de pique-nique.
@@ -61,7 +61,7 @@ La fin du parcours passe par le village Le Perchay puis rejoint Santeuil par les
 Vérifiez bien les horaires de train pour votre retour sur Paris, la gare de Santeuil - Le Perchay étant assez peu desservie
 (jusqu’à 2 / 3 heures entre deux trains).
 
-Si l’attente se fait en soirée, nous avons tout prévu avec ces deux conseils pour votre attente !
+Si l’attente se fait en soirée, nous avons tout prévu avec ces deux conseils pour votre attente !
 
 Vous pouvez profiter du petit Bistrot de Santeuil juste à côté de la gare avant de reprendre un train
 plus tard le soir. Nous avons testé et approuvé ce petit restaurant familial dans

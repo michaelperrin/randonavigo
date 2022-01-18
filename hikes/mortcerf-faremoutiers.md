@@ -1,6 +1,6 @@
 ---
 title: De Mortcerf à Faremoutiers dans la Brie
-summary: Une agréable randonnée champêtre dans la Brie qui vous dépaysera bien !
+summary: Une agréable randonnée champêtre dans la Brie qui vous dépaysera bien !
 slug: mortcerf-faremoutiers
 publication_date: '2014-08-24'
 categories:
@@ -43,6 +43,6 @@ Le départ de la randonnée se fait en gare de Mortcerf, sur la branche de Coulo
 
 Vous traverserez de nombreux champs (coin pique-nique très agréable en lisière de forêt dans une clairière après les premiers kilomètres de la randonnée). Vous traverserez ensuite la forêt domaniale de Malvoisine.
 
-Avec un peu de chance, quelques vaches agrémenteront votre parcours décidément bien loin de Paris !
+Avec un peu de chance, quelques vaches agrémenteront votre parcours décidément bien loin de Paris !
 
-Vous rejoindrez ensuite la gare de Faremoutiers Pommeuse pour reprendre le train, une gare qui a bien porté son nom pour nous car nous avons trouvé sur le parcours quelques pommes à faire en compote !
+Vous rejoindrez ensuite la gare de Faremoutiers Pommeuse pour reprendre le train, une gare qui a bien porté son nom pour nous car nous avons trouvé sur le parcours quelques pommes à faire en compote !

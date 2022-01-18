@@ -33,4 +33,4 @@ hidden: false
 
 Avec un peu de chance, vous pourrez y croiser des cerfs se déplaçant
 de bosquet en bosquet. Si vous n'aimez pas les côtes, n'ayez aucune crainte, toute
-la randonnée se fait sur du plat !
+la randonnée se fait sur du plat !

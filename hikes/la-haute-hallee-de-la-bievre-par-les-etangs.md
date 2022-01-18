@@ -1,7 +1,7 @@
 ---
 title: La Haute Vallée de la Bièvre par les étangs
 summary: Une randonnée au bord de l’eau qui vous fera découvrir la Haute Vallée
-  de la Bièvre !
+  de la Bièvre !
 slug: la-haute-hallee-de-la-bievre-par-les-etangs
 publication_date: '2021-06-20'
 categories:
@@ -60,7 +60,7 @@ Après une dizaine de minutes de marche dans les petites rues de Saint-Cyr-l’E
 
 Plutôt que de poursuivre sur la petite route, je vous conseille de bifurquer à droite pour emprunter le petit chemin en forêt qui lui est parallèle. Vous le redescendrez pour rejoindre l’Etang du Val d’or.
 
-Une fois la D91 traversée, le chemin est un chouïa moins bucolique sur un petit kilomètre, mais vous rejoindrez rapidement un agréable petit sentier qui longe la Bièvre. Attention il peut être assez boueux et glissant, et il est un peu plus difficile sur certaines zones. Mais ce petit chemin peu emprunté est vraiment superbe !
+Une fois la D91 traversée, le chemin est un chouïa moins bucolique sur un petit kilomètre, mais vous rejoindrez rapidement un agréable petit sentier qui longe la Bièvre. Attention il peut être assez boueux et glissant, et il est un peu plus difficile sur certaines zones. Mais ce petit chemin peu emprunté est vraiment superbe !
 
 Il vous fera rejoindre l’Etang de la Geneste, peut-être le plus sauvage des trois étangs de cette randonnée. Soyez attentifs, car la faune y est abondante : foulques, hérons, biches, et même quelques écureils de Corée (chipmunks).
 

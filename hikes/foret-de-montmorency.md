@@ -47,7 +47,7 @@ starting_point:
   line: H
 summary: Des châtaigniers à perte de vue, des fougères, des petits chemins vallonés,
   le tout accessible à portée de pass Navigo, voilà ce qui nous plaît pour s’évader
-  en pleine nature ! Une randonnée aux couleurs de l’automne, mais qui pourra se
+  en pleine nature ! Une randonnée aux couleurs de l’automne, mais qui pourra se
   faire en toute saison.
 tags:
 ending_point:
@@ -57,7 +57,7 @@ ending_point:
 enabled: true
 ---
 
-La randonnée suit des chemins de Petite Randonnée (PR, marquage jaune), des GR de Pays (marquage jaune et rouge), et des chemins sans marquage. Il suffira de suivre la trace GPS !
+La randonnée suit des chemins de Petite Randonnée (PR, marquage jaune), des GR de Pays (marquage jaune et rouge), et des chemins sans marquage. Il suffira de suivre la trace GPS !
 
 A seulement une demi-heure de la Gare du Nord, le départ se fait en gare de Bouffémont-Moiselles sur la ligne H du Transilien.
 Un début en zone résidentielle, mais le parcours de RandoNavigo privilégie au maximum les petites allées pour rapidement oublier la ville. Un bon kilomètre de marche, et la forêt de Montmorency vous accueille.
@@ -65,11 +65,11 @@ Un début en zone résidentielle, mais le parcours de RandoNavigo privilégie au
 Vous descendrez bientôt sur le Château de la Chasse et son étang, qui pourra faire un lieu de pique-nique idéal.
 
 Vous traverserez ensuite la forêt sur toute sa largeur et sa diversité, sur des chemins légèrement vallonés.
-A l’automne, nombreux seront les promeneurs à ramasser les châtaignes, et les champignons pour les plus connaisseurs !
+A l’automne, nombreux seront les promeneurs à ramasser les châtaignes, et les champignons pour les plus connaisseurs !
 
-Après une bonne dizaine de kilomètres dans les pattes, vous voici à la gare de Frépillon, située sur une autre branche de la ligne H du Transilien. Le train vous ramènera confortablement à la Gare du Nord en une demi-heure. N’oubliez pas de valider votre pass Navigo !
+Après une bonne dizaine de kilomètres dans les pattes, vous voici à la gare de Frépillon, située sur une autre branche de la ligne H du Transilien. Le train vous ramènera confortablement à la Gare du Nord en une demi-heure. N’oubliez pas de valider votre pass Navigo !
 
 Deux points d’attention pour une randonnée en automne :
 
 * En période de chasse, prenez les précautions nécessaires pour être vu et entendu.
-* S’il a plu récemment, privilégiez les chemins principaux rectilignes plutôt que les petits chemins qui peuvent facilement se transformer en gadoue. Le plan GPS est votre allié pour improviser sans se perdre !
+* S’il a plu récemment, privilégiez les chemins principaux rectilignes plutôt que les petits chemins qui peuvent facilement se transformer en gadoue. Le plan GPS est votre allié pour improviser sans se perdre !

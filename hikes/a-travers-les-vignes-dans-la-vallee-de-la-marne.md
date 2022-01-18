@@ -37,7 +37,7 @@ hidden: false
 
 En quittant la gare par les chemins à travers champs, vous atteindrez rapidement le chemin de l'aqueduc de la Dhuis (balisage GR 14A).
 
-Après le village de Pavant, vous rejoindrez la Marne que vous longerez pendant un petit kilomètre. Guettez bien les accès permettant de rejoindre les bords de la rivière, vous pourrez même y tenter une petite baignade !
+Après le village de Pavant, vous rejoindrez la Marne que vous longerez pendant un petit kilomètre. Guettez bien les accès permettant de rejoindre les bords de la rivière, vous pourrez même y tenter une petite baignade !
 
 Puis vous rejoindrez l'autre versant de la Marne où les chemins vallonnés (balisage GR 11A) qui passent à travers les vignes dominent la vallée.
 

@@ -16,7 +16,7 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
     borderColor="border-transilien-h"
     bgColor="bg-transilien-h"
   >
-    <p>La ligne H du Transilien dessert une large partie du Nord de l’Île-de-France. Des stations parfois très peu fréquentées, et c’est en général bon signe pour la randonnée !</p>
+    <p>La ligne H du Transilien dessert une large partie du Nord de l’Île-de-France. Des stations parfois très peu fréquentées, et c’est en général bon signe pour la randonnée !</p>
 
     <p>La ligne dessert de charmantes petites villes telles qu’Auvers-sur-Oise et Luzarches. On y reviendra avec de nouvelles randonnées dans ces environs.</p>
 

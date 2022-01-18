@@ -41,4 +41,4 @@ Vous quitterez le GR afin de rejoindre les chemins longeant le Ru des Vaux et l�
 
 Si au contraire vous vous sentez prêt pour une bonne grimpette, poursuivez le tracé pour vous retrouvez dans les hauteurs des Buttes d’Auffargis dans le Bois domanial des Maréchaux. Vous pouvez tout à fait improviser et redescendre par les chemins afin de raccourcir la randonnée d’un petit kilomètre. Autrement, vous rejoindrez le GR, qui vous permettra de faire une boucle complète sans repasser par les mêmes chemins qu’à l’aller.
 
-Le retour se fait à la gare du Perray-en-Yvelines. Après tous ces kilomètres et tout ce dénivelé, profitez de votre trajet en train pour vous reposer !
+Le retour se fait à la gare du Perray-en-Yvelines. Après tous ces kilomètres et tout ce dénivelé, profitez de votre trajet en train pour vous reposer !

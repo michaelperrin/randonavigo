@@ -18,7 +18,7 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
   >
     <p>La ligne P part bien loin dans l’Est de l’Île-de-France pour desservir une large partie du plus grand département de la région : la Seine-et-Marne.</p>
 
-    <p>Des trajets parfois longs au départ de la Gare de l’Est, mais donnant accès à la <b>Brie</b>, terreau de randonnées. Certaines branches sont parfois minuscules, et l’on pourrait se croire dans des petits villages de province. Les lignes ne sont pas toujours électrifiées, et parfois mono-voie !</p>
+    <p>Des trajets parfois longs au départ de la Gare de l’Est, mais donnant accès à la <b>Brie</b>, terreau de randonnées. Certaines branches sont parfois minuscules, et l’on pourrait se croire dans des petits villages de province. Les lignes ne sont pas toujours électrifiées, et parfois mono-voie !</p>
 
     <p>Le bout de ligne tutoie la <b>Champagne</b>, et permet de profiter de ses paysages tout en restant en Île-de-France.</p>
 

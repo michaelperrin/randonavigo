@@ -47,7 +47,7 @@ hidden: false
 
 RandoNavigo vous avait déjà emmené dans la Vallée de la Bièvre lors de cette [belle randonnée le long des étangs](/2021/06/20/la-haute-hallee-de-la-bievre-par-les-etangs) et de ce cours d’eau.
 
-Nous partons cette fois-ci plus à l'Est, depuis la gare de Jouy-en-Josas du RER C pour rejoindre la (petite !) gare du Petit Jouy.
+Nous partons cette fois-ci plus à l'Est, depuis la gare de Jouy-en-Josas du RER C pour rejoindre la (petite !) gare du Petit Jouy.
 
 Une randonnée assez courte de moins de 6 kilomètres, mais que l'on peut rallonger de 3 kilomètres ([télécharger la trace](/hikes/2021/10/sentier-des-cotes-du-montbron-en-vallee-de-la-bievre/sentier-des-cotes-du-montbron-en-vallee-de-la-bievre-long.gpx)) en contournant le golf. Ce parcours allongé vous permettra de passer par une petite route longeant la ferme de Viltain et voir quelques vaches brouter paisiblement dans les champs.
 

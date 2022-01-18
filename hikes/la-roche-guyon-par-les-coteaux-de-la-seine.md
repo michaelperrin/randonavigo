@@ -52,8 +52,8 @@ starting_point:
   station: Mantes-la-Jolie
   line: J
 summary: |-
-  Formations géologiques exceptionnelles, vues spectaculaires sur la Seine, patrimoine historique surprenant, constructions troglodytes, une flore riche et variée… et du dénivelé !
-  En somme, une randonnée exigeante, mais pleine de découvertes ! Dépaysement garanti.
+  Formations géologiques exceptionnelles, vues spectaculaires sur la Seine, patrimoine historique surprenant, constructions troglodytes, une flore riche et variée… et du dénivelé !
+  En somme, une randonnée exigeante, mais pleine de découvertes ! Dépaysement garanti.
 tags:
 ending_point:
   comment: ''
@@ -91,7 +91,7 @@ Par temps clément, vous pouvez passer la soirée au bord aménagé de la Seine.
 Plusieurs chambres d’hôtes sont disponibles pour passer la nuit
 dans le joli cadre du village.
 
-En saison estivale (étendue), un bac vous permet de traverser gratuitement la Seine [en bac](https://mairie-vetheuil.fr/services-et-demarches/transport/le-bac-saison-2021). Très agréable pour voir la ville d’un autre point de vue. Pensez à vérifier les dates si vous souhaitez l’emprunter. Un coup de cœur en tout cas !
+En saison estivale (étendue), un bac vous permet de traverser gratuitement la Seine [en bac](https://mairie-vetheuil.fr/services-et-demarches/transport/le-bac-saison-2021). Très agréable pour voir la ville d’un autre point de vue. Pensez à vérifier les dates si vous souhaitez l’emprunter. Un coup de cœur en tout cas !
 
 ### De Vétheuil à La Roche-Guyon
 
@@ -120,8 +120,8 @@ Pour des bières artisanales dans un cadre troglodyte typique, un petit arrêt �
 
 Toujours de superbes vues sur le chemin des côteaux de la Seine.
 
-N’hésitez pas à vous retourner de temps à autre pour observer au loin le donjon du Château de La Roche-Guyon !
+N’hésitez pas à vous retourner de temps à autre pour observer au loin le donjon du Château de La Roche-Guyon !
 
-Vous reprendrez alors le train depuis Bonnières-sur-Seine. Attention car ils sont peu fréquents et font entorse au principe de RandoNavigo, car vous voici déjà hors zone Navigo et vous devrez donc acheter un billet !
+Vous reprendrez alors le train depuis Bonnières-sur-Seine. Attention car ils sont peu fréquents et font entorse au principe de RandoNavigo, car vous voici déjà hors zone Navigo et vous devrez donc acheter un billet !
 
 Alors, comment avez-vous trouvé cette randonnée ? 😀

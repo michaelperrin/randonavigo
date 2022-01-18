@@ -81,9 +81,9 @@ Au bout de trois kilomètres, le chemin en forêt vous mène sur le **viaduc des
 
 Également nommé **Viaduc de Bures** ou **Viaduc d’Angoulême**, il n’a que très peu été utilisé pour sa destination ferroviaire et a été depuis reconverti en lieu de promenade et loisirs (vous croiserez de nombreux escaladeurs).
 
-Bien ensoleillé, mais proposant également des zones ombragées sous les arbres tout autour, il pourra être un lieu de pique-nique idéal !
+Bien ensoleillé, mais proposant également des zones ombragées sous les arbres tout autour, il pourra être un lieu de pique-nique idéal !
 
-Il est possible de descendre par de petits chemins sur les côtés pour se rendre compte de ses 34 mètres de hauteur d’en bas. Ils sont assez escarpés, alors soyez vigilents !
+Il est possible de descendre par de petits chemins sur les côtés pour se rendre compte de ses 34 mètres de hauteur d’en bas. Ils sont assez escarpés, alors soyez vigilents !
 
 
 ## Le charmant village de Gometz-le-Chatel
