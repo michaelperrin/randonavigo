@@ -75,9 +75,11 @@ La randonnée démarre en gare de Bures-sur-Yvette, en accès direct par le [RER
 
 En lisière de la ville, vous rejoindrez rapidement les zones boisées bien vallonées déjà.
 
+Le chemin en forêt traverse le tunnel de Montjay qui annonce l'arrivée toute prochaine du viaduc !
+
 ### Viaduc des Fauvettes
 
-Au bout de trois kilomètres, le chemin en forêt vous mène sur le **viaduc des Fauvettes**, avec de beaux points de vue sur la vallée.
+Vous aurez fait au total trois kilomètres, et vous voici sur le **viaduc des Fauvettes**, avec de jolis points de vue sur la vallée en contrebas.
 
 Également nommé **Viaduc de Bures** ou **Viaduc d’Angoulême**, il n’a que très peu été utilisé pour sa destination ferroviaire et a été depuis reconverti en lieu de promenade et loisirs (vous croiserez de nombreux escaladeurs).
 
@@ -116,12 +118,11 @@ Pour une randonnée d’un total de **10 kilomètres**, vous pouvez reprendre le
 
 ### Petit prolongement par le GR655 jusqu’à Courcelle-sur-Yvette
 
-➡️ [Télécharger la trace pour un retour par Courcelle-sur-Yvette](</hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/gpx/Chevreuse - Viaduc des Fauvettes.gpx>)
+➡️ [Télécharger la trace pour un retour par Courcelle-sur-Yvette](</hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/gpx/Chevreuse - Viaduc des Fauvettes.gpx>) (trace présentée sur la carte de cette page).
 
-Il est possible de poursuivre la randonnée par le GR655 (chemin de Saint-Jacques) qui longe l’Yvette. La promenade est agréaable mais on regrette quelques passages par des zones de commerces et plus proches de la ville.
+Il est possible de poursuivre la randonnée par le GR655 (chemin de Saint-Jacques) qui longe l’Yvette. La promenade est agréable mais on regrette quelques passages par des zones de commerces et plus proches de la ville.
 
-La randonnée fera un total de **13 kilomètres**, et est celle proposée ici. Je vous remets le lien pour télécharger la trace :
-
+La randonnée fera un total de **13 kilomètres**, et est celle proposée ici.
 
 
 ### Poursuivre le GR655 jusqu’à Saint-Rémy-lès-Chevreuse
