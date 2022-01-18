@@ -64,7 +64,7 @@ summary: |-
   Une randonnée au cœur de la Haute Vallée de Chevreuse qui vous fera découvrir son patrimoine par des chemins en pleine nature.
 ---
 
-Pour démarrer la randonnée, rendez-vous en gare de La Verrière, accessible par deux lignes de Transilien :
+Pour démarrer la randonnée, rendez-vous en gare de La Verrière, accessible par deux lignes de Transilien :
 
 * La ligne N, au départ de Gare Montparnasse.
 * La ligne U, au départ de La Défense.
@@ -93,7 +93,7 @@ Un âne qui ne demande que des caresses (enfin surtout des herbes fraîches) et 
 Poursuite du chemin Jean Racine, pour lequel je me suis écarté quelques instants pour un chemin qui fait une belle petite grimpette pour faire un crochet par le lieu-dit de Beauregard.
 
 Une partie bien escarpée vous attend de toute manière lorsque vous rejoindrez la Forêt départementale de la Madeleine, par le chemin de Salamandre balisé par le département des Yvelines.
-Je suis ensuite passé par la Plaine de la Madeleine : une traversée des champs sur un chemin assez gadouilleux. Afin de vous épargner cette longue traversée, le parcours proposé ici fait un petit détour par l’Ouest.
+Je suis ensuite passé par la Plaine de la Madeleine : une traversée des champs sur un chemin assez gadouilleux. Afin de vous épargner cette longue traversée, le parcours proposé ici fait un petit détour par l’Ouest.
 
 ## Château de la Madeleine et Chevreuse
 

@@ -80,7 +80,7 @@ Et surtout pas moins de trois mers de sable à découvrir, ainsi que des formati
 
 Si vous partez de Paris, rendez-vous en Gare de Lyon avec la ligne R du Transilien, pour un trajet d'une heure et dix minutes pour rejoindre la gare de Bagneaux-sur-Loing avec votre pass Navigo. Un trajet qui semble finalement rapide dans le confort de ces trains modernes (les Regio 2N pour les intimes) circulant en forêt sur une bonne partie du parcours.
 
-Soigneusement concocté par RandoNavigo pour profiter au maximum des vues sur les étendues de sable et de la diversité des paysages, le trajet vous fera passer par différents chemins :
+Soigneusement concocté par RandoNavigo pour profiter au maximum des vues sur les étendues de sable et de la diversité des paysages, le trajet vous fera passer par différents chemins :
 
 - Des PR (marquage jaune)
 - Le GR13 (marquage rouge et blanc)
@@ -100,7 +100,7 @@ Très vite s'ouvre à vous l'étonnante mer de sable que vous dévalerez pour ap
 
 ### Grotte des Troglodytes et autres mers
 
-La randonnée se poursuit au travers des pins et des bouleaux pour rejoindre ensuite votre deuxième "plage" : la carrière de Pierre le Sault.
+La randonnée se poursuit au travers des pins et des bouleaux pour rejoindre ensuite votre deuxième "plage" : la carrière de Pierre le Sault.
 
 Toujours en forêt, vous passerez par la Grotte des Troglodytes et ses étonnantes formations rocheuses avant de poursuivre votre chemin en direction d'une vue dégagée sur Chaintreauville.
 

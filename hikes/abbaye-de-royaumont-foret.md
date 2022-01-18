@@ -51,7 +51,7 @@ Quelques passages vallonnés et une belle variété d'espèces d'arbres donnent 
 
 Il serait dommage de ne pas profiter de cette randonnée pour visiter la superbe abbaye de Royaumont (je vous conseille la visite guidée d'une heure environ). Vous pourrez y prendre une petite collation avant de repartir vers Viarmes où le train vous ramènera à Paris.
 
-Plusieurs possibilités de départ possibles :
+Plusieurs possibilités de départ possibles :
 
 * Survilliers Fosses (RER D), qui est la dernière station en Île-de-France (et donc en avec accès gratuit avec Navigo). Randonnée de 20km.
 * La Borne Blanche (RER D) qui vous permet de raccourcir la randonnée de 2km avec un accès direct en forêt mais qui est hors tarification Île-de-France (il vous faudra acheter un complément de parcours sur votre passe Navigo). Randonnée de 18km.

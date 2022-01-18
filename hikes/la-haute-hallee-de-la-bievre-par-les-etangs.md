@@ -62,7 +62,7 @@ Plutôt que de poursuivre sur la petite route, je vous conseille de bifurquer à
 
 Une fois la D91 traversée, le chemin est un chouïa moins bucolique sur un petit kilomètre, mais vous rejoindrez rapidement un agréable petit sentier qui longe la Bièvre. Attention il peut être assez boueux et glissant, et il est un peu plus difficile sur certaines zones. Mais ce petit chemin peu emprunté est vraiment superbe !
 
-Il vous fera rejoindre l’Etang de la Geneste, peut-être le plus sauvage des trois étangs de cette randonnée. Soyez attentifs, car la faune y est abondante : foulques, hérons, biches, et même quelques écureils de Corée (chipmunks).
+Il vous fera rejoindre l’Etang de la Geneste, peut-être le plus sauvage des trois étangs de cette randonnée. Soyez attentifs, car la faune y est abondante : foulques, hérons, biches, et même quelques écureils de Corée (chipmunks).
 
 Le Chemin du Pré Saint-Jean poursuivra le long de la Bièvre en vous faisant traverser le petit village de Buc. Vous rejoindrez ensuite l’Aqueduc de Buc, construit au XVIIème siècle pour alimenter les fontaines du Château de Versailles. Encore quelques kilomètres en forêt, et la gare du Petit Jouy surgira au bout du chemin parmi les arbres.
 

@@ -62,15 +62,15 @@ ending_point:
 enabled: true
 ---
 
-Cette randonnée dans le Vexin suit sur sa plus grande partie le chemin de crêtes des falaises calcaires surplombant la Seine et vous fera découvrir un des joyaux de l’Ile-de-France : le Château de la Roche-Guyon. Son parcours suit principalement le GR2 au marquage rouge et blanc.
+Cette randonnée dans le Vexin suit sur sa plus grande partie le chemin de crêtes des falaises calcaires surplombant la Seine et vous fera découvrir un des joyaux de l’Ile-de-France : le Château de la Roche-Guyon. Son parcours suit principalement le GR2 au marquage rouge et blanc.
 
 Je recommande de démarrer à Mantes-la-Jolie, le parcours étant plus joli dans ce sens car il fait quitter la ville pour rejoindre la nature. Il peut toutefois très bien se faire dans l’autre sens, en
 partant de Bonnières-sur-Seine.
 
-Les plus sportifs la feront peut-être en un seul jour, mais personnellement je trouve qu’il vaut mieux la faire en deux jours, en faisant une pause à Vétheuil, avec les distances suivantes :
+Les plus sportifs la feront peut-être en un seul jour, mais personnellement je trouve qu’il vaut mieux la faire en deux jours, en faisant une pause à Vétheuil, avec les distances suivantes :
 
-* Mantes-la-Jolie – Vétheuil : 15km
-* Vétheuil – Bonnières-sur-Seine : 16km
+* Mantes-la-Jolie – Vétheuil : 15km
+* Vétheuil – Bonnières-sur-Seine : 16km
 
 ### Départ de Mantes-la-Jolie
 
