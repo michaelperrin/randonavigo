@@ -28,15 +28,17 @@ const Hike = ({ hike }: HikeProps) => (
       <meta property="og:type" content="article" />
       <meta property="og:title" content={hike.title} />
       <meta property="og:description" content={hike.summary} />
-      <meta property="og:site_name" content="Rando Navigo" />
+      <meta property="og:site_name" content="RandoNavigo" />
+      <meta property="og:locale" content="fr_FR" />
+      <meta property="og:image" content={`${process.env.BASE_URL}${getHikePicturePath(hike, hike.main_picture)}`} />
       <meta property="article:section" content={hike.categories[0]} />
       <meta property="article:published_time" content={hike.publication_date} />
       <meta property="article:modified_time" content={hike.publication_date} />
       <meta property="og:updated_time" content={hike.publication_date} />
-      <meta property="og:image" content={`${process.env.BASE_URL}${getHikePicturePath(hike, hike.main_picture)}`} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:description" content={hike.summary} />
+      <meta name="twitter:site" content="@randonavigo" />
       <meta name="twitter:title" content={hike.title} />
+      <meta name="twitter:description" content={hike.summary} />
       <meta name="twitter:image" content={`${process.env.BASE_URL}${getHikePicturePath(hike, hike.main_picture)}`} />
     </Head>
 
