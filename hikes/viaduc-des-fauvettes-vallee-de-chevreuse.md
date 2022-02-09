@@ -133,7 +133,7 @@ Encore envie de quelques kilomètres supplémentaires ?
 
 C’est parti pour trois de plus, pour un total de **16 kilomètres** en poussant jusqu’à la gare de _Saint-Rémy-lès-Chevreuse_, en poursuivant le GR655 vers l’Ouest.
 
-Il s’éloigne des constructions pour passer par la *réserve naturelle du Val et Coteau* de Saint-Rémy avant de rejoindre le terminus du [RER B](/randonnees-par-ligne/randonnees-rer-b), station que l’on affectionne particulièrement car elle est le point de départ ou d’arrivée de nombreuses autres randonnées à découvrir sur Rando Navigo :
+Il s’éloigne des constructions pour passer par la *réserve naturelle du Val et Coteau* de Saint-Rémy avant de rejoindre le terminus du [RER B](/randonnees-par-ligne/randonnees-rer-b), station que l’on affectionne particulièrement car elle est le point de départ ou d’arrivée de nombreuses autres randonnées à découvrir sur Rando Navigo :
 
 * [L’abbaye de Port-Royal-des-Champs en Vallée de Chevreuse](/2021/11/28/abbaye-de-port-royal-des-champs-en-vallee-de-chevreuse)
 * [Balade en forêt autour du village de Chevreuse](/2016/07/28/vallee-de-chevreuse)
