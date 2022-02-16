@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
-import getHikeGpxPath from '../../../lib/getHikeGpxPath';
-import { Hike } from '../../../lib/types'
+import getHikeGpxPath from '@/lib/getHikeGpxPath';
+import { Hike } from '@/lib/types'
 
 type DownloadButtonProps = {
   hike: Hike,

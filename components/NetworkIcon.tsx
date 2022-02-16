@@ -1,5 +1,6 @@
+import React from 'react';
 import Image from 'next/image'
-import { Network } from '../lib/transport';
+import { Network } from '@/lib/transport';
 
 type NetworkIconProps = {
   network: Network,

@@ -1,13 +1,13 @@
 import Head from "next/head";
-import { Hike as HikeType } from "../../../../lib/types";
-import HikeHeader from "../../../../components/hike/Header/index";
-import Gallery from "../../../../components/hike/Gallery";
-import { getHikeData } from "../../../../lib/hike";
-import { getAllHikePaths } from "../../../../lib/hike";
-import Layout from "../../../../components/layout";
-import getHikePicturePath from "../../../../lib/getHikePicturePath";
-import HikeProperties from "../../../../components/hike/Properties";
-import RelatedHikes from "../../../../components/hike/RelatedHikes";
+import { Hike as HikeType } from "@/lib/types";
+import HikeHeader from "@/components/hike/Header/index";
+import Gallery from "@/components/hike/Gallery";
+import { getHikeData } from "@/lib/hike";
+import { getAllHikePaths } from "@/lib/hike";
+import Layout from "@/components/layout";
+import getHikePicturePath from "@/lib/getHikePicturePath";
+import HikeProperties from "@/components/hike/Properties";
+import RelatedHikes from "@/components/hike/RelatedHikes";
 
 type HikeProps = {
   hike: HikeType;

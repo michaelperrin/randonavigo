@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Layout from '../components/layout'
-import TopBanner from '../components/TopBanner'
+import Layout from '@/components/layout'
+import TopBanner from '@/components/TopBanner'
 
 const LegalNotice = () => (
   <Layout>

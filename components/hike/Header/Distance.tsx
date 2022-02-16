@@ -1,4 +1,4 @@
-import { Hike } from "../../../lib/types"
+import { Hike } from "@/lib/types"
 
 type DistanceProps = {
   hike: Hike,

@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import { Hike } from '../../../lib/types'
-import getHikePicturePath from '../../../lib/getHikePicturePath'
-import Date from '../../date'
+import { Hike } from '@/lib/types'
+import getHikePicturePath from '@/lib/getHikePicturePath'
+import Date from '@/components/date'
 
 type HikeHeaderProps = {
   hike: Hike,

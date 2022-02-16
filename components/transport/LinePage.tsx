@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import List from '../hike/List'
-import { Hike } from '../../lib/types'
-import Layout from '../layout'
-import TransportIcon from '../TransportIcon'
-import TopBanner from '../TopBanner'
+import List from '@/components/hike/List'
+import { Hike } from '@/lib/types'
+import Layout from '@/components/layout'
+import TransportIcon from '@/components/TransportIcon'
+import TopBanner from '@/components/TopBanner'
 import LineLinks from './LineLinks'
 
 type HikePerLineProps = {

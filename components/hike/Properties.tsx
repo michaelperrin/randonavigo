@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 
-import getHikeGpxPath from '../../lib/getHikeGpxPath'
-import { Hike } from '../../lib/types'
+import getHikeGpxPath from '@/lib/getHikeGpxPath'
+import { Hike } from '@/lib/types'
 import Access from './Header/Access'
 import Distance from './Header/Distance'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

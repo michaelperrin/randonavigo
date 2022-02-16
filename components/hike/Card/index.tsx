@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import getHikePicturePath from "../../../lib/getHikePicturePath";
-import getHikeUrl from "../../../lib/getHikeUrl";
-import { Hike } from "../../../lib/types";
-import TransportPoint from "../../TransportPoint";
+import getHikePicturePath from "@/lib/getHikePicturePath";
+import getHikeUrl from "@/lib/getHikeUrl";
+import { Hike } from "@/lib/types";
+import TransportPoint from "@/components/TransportPoint";
 
 type HikeCardProps = {
   hike: Hike;

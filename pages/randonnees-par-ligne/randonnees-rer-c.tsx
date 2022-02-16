@@ -1,6 +1,6 @@
-import { getHikesForTransportLine } from '../../lib/hike'
-import { Hike } from '../../lib/types'
-import LinePage from '../../components/transport/LinePage'
+import { getHikesForTransportLine } from '@/lib/hike'
+import { Hike } from '@/lib/types'
+import LinePage from '@/components/transport/LinePage'
 import Link from 'next/link'
 
 type HikePerLineProps = {

@@ -1,10 +1,10 @@
-import { Hike } from '../../lib/types'
+import { Hike } from '@/lib/types'
 import 'react-image-lightbox/style.css';
-import TransportIcon from '../TransportIcon'
+import TransportIcon from '@/components/TransportIcon'
 import Link from 'next/link'
-import getHikeLines from '../../lib/getHikeLines'
-import getLinePageUrl from '../../lib/getLinePageUrl'
-import getTransportPageLinkLabel from '../../lib/getTransportPageLinkLabel';
+import getHikeLines from '@/lib/getHikeLines'
+import getLinePageUrl from '@/lib/getLinePageUrl'
+import getTransportPageLinkLabel from '@/lib/getTransportPageLinkLabel';
 
 type RelatedHikesProps = {
   hike: Hike,

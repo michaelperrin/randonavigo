@@ -1,7 +1,7 @@
-import { Hike } from '../../../lib/types'
+import { Hike } from '@/lib/types'
 import { MapContainer, TileLayer } from 'react-leaflet'
 import GpxTrace from './GpxTrace'
-import getHikeGpxPath from '../../../lib/getHikeGpxPath'
+import getHikeGpxPath from '@/lib/getHikeGpxPath'
 
 type MapProps = {
   hike: Hike,

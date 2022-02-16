@@ -1,6 +1,6 @@
-import { Network } from "../../lib/transport"
-import LineIcon from "../LineIcon"
-import NetworkIcon from "../NetworkIcon"
+import { Network } from "@/lib/transport"
+import LineIcon from "@/components/LineIcon"
+import NetworkIcon from "@/components/NetworkIcon"
 
 type HikePerLineProps = { }
 

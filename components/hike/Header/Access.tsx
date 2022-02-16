@@ -1,6 +1,6 @@
 import cn from 'classnames'
-import { Hike } from '../../../lib/types'
-import TransportPoint from '../../TransportPoint'
+import { Hike } from '@/lib/types'
+import TransportPoint from '@/components/TransportPoint'
 
 type AccessProps = {
   hike: Hike,

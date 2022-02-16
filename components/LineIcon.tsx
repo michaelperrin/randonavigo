@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
-import getLinePageUrl from '../lib/getLinePageUrl';
-import getTransportPageLinkLabel from '../lib/getTransportPageLinkLabel';
+import getLinePageUrl from '@/lib/getLinePageUrl';
+import getTransportPageLinkLabel from '@/lib/getTransportPageLinkLabel';
 
 type LineIconProps = {
   line: string,

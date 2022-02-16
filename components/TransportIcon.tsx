@@ -1,4 +1,4 @@
-import { getLineNetwork } from '../lib/transport'
+import { getLineNetwork } from '@/lib/transport'
 import LineIcon from './LineIcon'
 import NetworkIcon from './NetworkIcon'
 

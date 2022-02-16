@@ -1,4 +1,4 @@
-import { Hike } from '../../lib/types'
+import { Hike } from '@/lib/types'
 import HikeCard from './Card'
 
 type ListProps = {
