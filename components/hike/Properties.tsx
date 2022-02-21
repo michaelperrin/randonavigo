@@ -36,7 +36,7 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => (
       <a className="mt-4 md:mt-0 block w-full font-sans bg-gradient-to-r hover:from-indigo-700 from-softblue via-softblue to-indigo-700 md:after:bg-gradient-to-r md:after:from-softblue after:indigo-700 md:after:blur-2xl md:after:absolute relative md:after:inset-0 md:after:z-10 z-20 hover:bg-yellow-700 text-white text-center py-4 px-4 uppercase font-semibold rounded md:rounded-t-none" href={getHikeGpxPath(hike)} style={{ fontFamily: 'Barlow' }}>
         <div className="flex justify-center items-center z-50 text-white tracking-wider relative text-sm">
           <div className="pr-2">
-            <FontAwesomeIcon icon={faArrowCircleDown} size="lg" aria-label="Gare de départ" />
+            <FontAwesomeIcon icon={faArrowCircleDown} size="lg" aria-label="" />
           </div>
           <div>Télécharger la trace GPS</div>
         </div>
