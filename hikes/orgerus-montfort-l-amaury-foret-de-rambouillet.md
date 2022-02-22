@@ -134,8 +134,8 @@ Juste à côté, des escalier vous feront grimper sur la butte où se trouvent l
 
 ## Retour à la gare de Montfort-l’Amaury - Méré
 
-Il reste malheureusement encore quatre kilomètres pour rejoindre la gare la plus proche.
+Il reste malheureusement encore quatre kilomètres pour rejoindre la gare la plus proche. Courage 😅
 
-On continue globalement par le GR, en démarrant sur une allée agréable. Je vous ai ensuite un petit peu optimisé le parcours pour éviter de passer par une rue sans trottoir. Vous rejoindrez ensuite le village de _Méré_, puis longerez les champs avant d’entamer un dernier kilomètre assez pénible. L’arrivée à la gare de _Montfort-l’Amaury - Méré_, dont le parvis a pourtant été rénové, pourrait vraiment être retravaillée pour les piétons.
+On continue globalement par le GR, en démarrant sur une allée agréable. Je vous ai un petit peu optimisé le parcours pour éviter de passer par une rue sans trottoir. Vous rejoindrez le village de _Méré_, puis longerez les champs avant d’entamer un dernier kilomètre assez pénible. L’arrivée à la gare de _Montfort-l’Amaury - Méré_, dont le parvis a pourtant été rénové, pourrait vraiment être retravaillée pour les piétons.
 
 Avec un peu de chance, vous pourrez vous reposer dans l’un de ses nouveaux trains dits "Regio2N" qui commencent à équiper la ligne N du Transilien.
