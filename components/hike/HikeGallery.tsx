@@ -31,7 +31,7 @@ const HikeGallery = ({ hike }: HikeGalleryProps) => {
         {pictures.map((picture: string, index: number) => (
           <div
             key={picture}
-            className="aspect-w-1 aspect-h-1 cursor-zoom-in"
+            className="aspect-square cursor-zoom-in"
             style={{ position: "relative", margin: "1px" }}
             onClick={() => {
               showPicture(index);
