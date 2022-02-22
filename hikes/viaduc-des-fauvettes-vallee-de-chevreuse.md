@@ -86,29 +86,13 @@ Bien ensoleillé, mais proposant également des zones ombragées sous les arbres
 
 Il est possible de descendre par de petits chemins sur les côtés pour se rendre compte de ses 34 mètres de hauteur d’en bas. Ils sont assez escarpés, alors soyez vigilents !
 
-<Gallery pictures={[
-'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 15b.jpeg',
-'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse%20-%2017.jpeg',
-]} />
-
 ## Le charmant village de Gometz-le-Chatel
 
 Après avoir traversé le viaduc, vous pouvez suivre le marquage du GR de Pays – marquage rouge et jaune – qui vous fera traverser le village de Gometz-le-Chatel.
 
 C’est l’**église Saint-Clair** du XIe et XVIe siècles qui vous accueillera dans ce petit village pittoresque. Juste à côté, en descendant le petit escalier, le presbytère baptisé **L’Ortie Rouge** vaut vraiment le coup d’œil.
 
-<Gallery pictures={[
-'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 25.jpeg',
-'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 26.jpeg',
-'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 27.jpeg',
-]} />
-
 Vous remonterez ensuite la rue principale du village qui domine la vallée.
-
-<Gallery pictures={[
-'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 28.jpeg',
-'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 29.jpeg',
-]} />
 
 ## Forêt de Gif-sur-Yvette
 
