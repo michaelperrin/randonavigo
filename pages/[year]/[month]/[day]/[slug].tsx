@@ -1,16 +1,19 @@
 import Head from "next/head";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { Hike as HikeType } from "@/lib/types";
 import HikeHeader from "@/components/hike/Header/index";
-import Gallery from "@/components/hike/Gallery";
 import { getHikeData } from "@/lib/hike";
 import { getAllHikePaths } from "@/lib/hike";
 import Layout from "@/components/layout";
 import getHikePicturePath from "@/lib/getHikePicturePath";
 import HikeProperties from "@/components/hike/Properties";
 import RelatedHikes from "@/components/hike/RelatedHikes";
+import Gallery from "@/components/hike/Gallery";
+import HikeGallery from "@/components/hike/HikeGallery";
 
 type HikeProps = {
   hike: HikeType;
+  mdxSource: MDXRemoteSerializeResult;
 };
 
 type Params = {
@@ -19,7 +22,7 @@ type Params = {
   };
 };
 
-const Hike = ({ hike }: HikeProps) => (
+const Hike = ({ hike, mdxSource }: HikeProps) => (
   <Layout>
     <Head>
       <title>{hike.title} – RandoNavigo</title>
@@ -64,10 +67,13 @@ const Hike = ({ hike }: HikeProps) => (
               {hike.summary}
             </div>
 
-            <div
+            {/* <div
               className="prose max-w-none"
               dangerouslySetInnerHTML={{ __html: hike.content }}
-            />
+            /> */}
+            <div className="prose max-w-none">
+              <MDXRemote {...mdxSource} components={{ Gallery }} />
+            </div>
           </main>
 
           <aside className="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2">
@@ -76,7 +82,7 @@ const Hike = ({ hike }: HikeProps) => (
         </div>
 
         <section>
-          <Gallery hike={hike} />
+          <HikeGallery hike={hike} />
         </section>
 
         <section>
@@ -88,9 +94,12 @@ const Hike = ({ hike }: HikeProps) => (
 );
 
 export const getStaticProps = async ({ params }: Params) => {
+  const { mdxSource, ...hike } = await getHikeData(params.slug);
+
   return {
     props: {
-      hike: await getHikeData(params.slug),
+      hike,
+      mdxSource,
     },
   };
 };

@@ -1,17 +1,21 @@
-import classNames from "classnames";
 import Image from "next/image";
 import { useState } from "react";
 import Lightbox from "react-image-lightbox";
+import getHikePicturePath from "../../lib/getHikePicturePath";
+import { Hike } from "../../lib/types";
 import "react-image-lightbox/style.css";
 
-type GalleryProps = {
-  pictures: string[];
-  width?: "" | "sm";
+type HikeGalleryProps = {
+  hike: Hike;
 };
 
-const Gallery = ({ pictures, width = "" }: GalleryProps) => {
+const HikeGallery = ({ hike }: HikeGalleryProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
+
+  const pictures = hike.pictures.map((picture: string) =>
+    getHikePicturePath(hike, picture)
+  );
 
   const showPicture = (index: number) => {
     setPhotoIndex(index);
@@ -21,15 +25,13 @@ const Gallery = ({ pictures, width = "" }: GalleryProps) => {
   return (
     <>
       <div
-        className={classNames("mx-auto", "grid", "gap-2", "mb-2", {
-          "max-w-lg": width === "sm",
-        })}
+        className="grid gap-1"
         style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}
       >
         {pictures.map((picture: string, index: number) => (
           <div
             key={picture}
-            className="aspect-[4/3] cursor-zoom-in"
+            className="aspect-w-1 aspect-h-1 cursor-zoom-in"
             style={{ position: "relative", margin: "1px" }}
             onClick={() => {
               showPicture(index);
@@ -40,7 +42,7 @@ const Gallery = ({ pictures, width = "" }: GalleryProps) => {
               layout="fill"
               objectFit="cover"
               sizes="300px"
-              quality={60}
+              quality={40}
               alt=""
             />
           </div>
@@ -67,4 +69,4 @@ const Gallery = ({ pictures, width = "" }: GalleryProps) => {
   );
 };
 
-export default Gallery;
+export default HikeGallery;

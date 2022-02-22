@@ -22,6 +22,7 @@
     "leaflet-gpx": "^1.5.2",
     "leaflet.locatecontrol": "^0.76.0",
     "next": "^12.0.1",
+    "next-mdx-remote": "^3.0.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-image-lightbox": "^5.1.4",
@@ -31,7 +32,6 @@
     "sharp": "^0.29.2"
   },
   "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.3.0",
     "@tailwindcss/typography": "^0.5.0",
     "@types/glob": "^7.2.0",
     "@types/leaflet": "^1.7.4",
