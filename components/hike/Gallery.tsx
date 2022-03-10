@@ -39,8 +39,8 @@ const Gallery = ({ pictures, width = "" }: GalleryProps) => {
               src={picture}
               layout="fill"
               objectFit="cover"
-              sizes="300px"
-              quality={60}
+              sizes={pictures.length === 1 ? "800px" : "300px"}
+              quality={70}
               alt=""
             />
           </div>
