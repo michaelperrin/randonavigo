@@ -1,20 +1,22 @@
 import classNames from "classnames";
+import dynamic from "next/dynamic";
 
-import getHikeGpxPath from '@/lib/getHikeGpxPath'
-import { Hike } from '@/lib/types'
-import Access from './Header/Access'
-import Distance from './Header/Distance'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleDown, faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
+import getHikeGpxPath from "@/lib/getHikeGpxPath";
+import { Hike } from "@/lib/types";
+import Access from "./Header/Access";
+import Distance from "./Header/Distance";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowCircleDown,
+  faQuestionCircle,
+} from "@fortawesome/free-solid-svg-icons";
+import DonationCard from "./DonationCard";
 
-const MapWithNoSSR = dynamic(
-  () => import('./Map'),
-  { ssr: false }
-)
+const MapWithNoSSR = dynamic(() => import("./Map"), { ssr: false });
 
 type HikePropertiesProps = {
-  hike: Hike,
-}
+  hike: Hike;
+};
 
 const HikeProperties = ({ hike }: HikePropertiesProps) => (
   <div className="md:mb-12">
@@ -100,7 +102,11 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => (
         </a>
       </Link>
     </div> */}
+
+    <div className="mt-8 md:mt-16">
+      <DonationCard />
+    </div>
   </div>
-)
+);
 
 export default HikeProperties;
