@@ -1,16 +1,21 @@
-import { Hike } from '@/lib/types'
-import { MapContainer, TileLayer } from 'react-leaflet'
-import GpxTrace from './GpxTrace'
-import getHikeGpxPath from '@/lib/getHikeGpxPath'
+import { Hike } from "@/lib/types";
+import { MapContainer, TileLayer } from "react-leaflet";
+import GpxTrace from "./GpxTrace";
+import getHikeGpxPath from "@/lib/getHikeGpxPath";
 
 type MapProps = {
-  hike: Hike,
-}
+  hike: Hike;
+};
 
 const Map = ({ hike }: MapProps) => {
   return (
     <div>
-      <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className="h-64 md:h-52">
+      <MapContainer
+        center={[51.505, -0.09]}
+        zoom={13}
+        scrollWheelZoom={false}
+        className="h-64 md:h-52"
+      >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -21,10 +26,16 @@ const Map = ({ hike }: MapProps) => {
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker> */}
-        <GpxTrace gpxFile={getHikeGpxPath(hike)} />
+        <GpxTrace
+          gpxFile={getHikeGpxPath(
+            hike.slug,
+            hike.publication_date,
+            hike.gpx_file
+          )}
+        />
       </MapContainer>
     </div>
-  )
+  );
 };
 
 export default Map;

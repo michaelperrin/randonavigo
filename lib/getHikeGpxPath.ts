@@ -1,10 +1,16 @@
-import { format } from 'date-fns';
-import { Hike } from './types'
+import { format } from "date-fns";
 
-const getHikeGpxPath = (hike: Hike): string => {
-  const date = new Date(hike.publication_date)
+const getHikeGpxPath = (
+  slug: string,
+  publication_date: string,
+  file: string
+): string => {
+  const date = new Date(publication_date);
 
-  return `/hikes/${format(date, 'yyyy')}/${format(date, 'MM')}/${hike.slug}/gpx/${hike.gpx_file}`
-}
+  return `/hikes/${format(date, "yyyy")}/${format(
+    date,
+    "MM"
+  )}/${slug}/gpx/${file}`;
+};
 
 export default getHikeGpxPath;
