@@ -14,13 +14,13 @@ gpx_alternatives:
   - file: le-domaine-d-ors-et-la-vallee-de-la-merantaise-shortcut.gpx
     label: "Version raccourcie de 3 kilomètres"
 starting_point:
-  station: Courcelle-sur-Yvette
+  station: Bures-sur-Yvette
   line:
     - B
 ending_point:
-  station: La Ferté-Milon
+  station: Courcelle-sur-Yvette
   line: B
-favorite: false
+favorite: true
 hidden: false
 ---
 
