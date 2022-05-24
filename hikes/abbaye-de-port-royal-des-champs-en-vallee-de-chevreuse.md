@@ -1,49 +1,49 @@
 ---
 title: L’abbaye de Port-Royal-des-Champs en Vallée de Chevreuse
 slug: abbaye-de-port-royal-des-champs-en-vallee-de-chevreuse
-publication_date: '2021-11-28'
+publication_date: "2021-11-28"
 categories:
-- Yvelines
+  - Yvelines
 tags:
-- forêt
-- patrimoine
+  - forêt
+  - patrimoine
 pictures:
-- port-royal-des-champs-vallee-de-chevreuse - 1.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 2.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 3.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 4.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 5.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 6.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 7.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 8.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 9.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 10.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 11.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 12.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 13.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 14.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 15.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 16.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 17.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 18.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 19.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 20.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 21.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 22.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 23.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 24.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 25.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 26.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 27.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 28.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 29.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 30.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 31.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 32.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 33.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 34.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 35.jpeg
-- port-royal-des-champs-vallee-de-chevreuse - 36.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 1.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 2.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 3.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 4.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 5.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 6.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 7.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 8.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 9.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 10.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 11.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 12.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 13.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 14.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 15.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 16.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 17.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 18.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 19.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 20.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 21.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 22.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 23.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 24.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 25.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 26.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 27.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 28.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 29.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 30.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 31.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 32.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 33.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 34.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 35.jpeg
+  - port-royal-des-champs-vallee-de-chevreuse - 36.jpeg
 thumbnail_picture: port-royal-des-champs-vallee-de-chevreuse.jpeg
 main_picture: port-royal-des-champs-vallee-de-chevreuse - 24.jpeg
 distance: 19
@@ -53,11 +53,11 @@ starting_point:
   line:
     - N
     - U
-  comment: ''
+  comment: ""
 ending_point:
   station: Saint-Rémy-lès-Chevreuse
   line: B
-  comment: ''
+  comment: ""
 favorite: false
 hidden: false
 summary: |-
@@ -66,8 +66,8 @@ summary: |-
 
 Pour démarrer la randonnée, rendez-vous en gare de La Verrière, accessible par deux lignes de Transilien :
 
-* La ligne N, au départ de Gare Montparnasse.
-* La ligne U, au départ de La Défense.
+- La ligne N, au départ de Gare Montparnasse.
+- La ligne U, au départ de La Défense.
 
 19 kilomètres vous attendent alors avec 400 mètres de dénivelé positif, courage !
 
@@ -102,3 +102,12 @@ Cette randonnée fait encore la part belle au patrimoine, en arrivant au **Chât
 La redescente vous fera traverser le village pittoresque avec sa célèbre promenade des petits ponts. Ce n'est pas Venise, mais les les lavoirs et anciennes tanneries bordant l’Yvette sont charmants.
 
 La randonnée se termine en gare de Saint-Rémy-lès-Chevreuse sur le RER B, qui vous permettra de facilement rejoindre Paris.
+
+---
+
+Envie de découvrir d’autres randonnées en Vallée de Chevreuse ?
+
+- [A la découverte du Viaduc des Fauvettes en Vallée de Chevreuse](/2022/01/15/viaduc-des-fauvettes-vallee-de-chevreuse)
+- [De Coignières à Saint-Rémy-Lès-Chevreuse](/2016/12/16/de-coignieres-a-saint-remy-chevreuse)
+- [Bois Domanial des Cinq-Cents Arpents – Rambouillet](/2015/11/01/bois-domanial-cinq-cents-arpents-rambouillet)
+- [Le Domaine d’Ors et la Mérantaise](2022/05/21/le-domaine-d-ors-et-la-vallee-de-la-merantaise)
