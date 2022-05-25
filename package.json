@@ -19,6 +19,7 @@
     "date-fns": "^2.22.1",
     "gray-matter": "^4.0.3",
     "leaflet": "^1.7.1",
+    "leaflet-gesture-handling": "^1.2.2",
     "leaflet-gpx": "^1.5.2",
     "leaflet.locatecontrol": "^0.76.0",
     "next": "^12.0.1",

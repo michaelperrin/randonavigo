@@ -2161,6 +2161,11 @@ language-tags@^1.0.5:
   dependencies:
     language-subtag-registry "~0.3.2"
 
+leaflet-gesture-handling@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/leaflet-gesture-handling/-/leaflet-gesture-handling-1.2.2.tgz#ea10afb94f2d477d77d47beb21e409ed327df07a"
+  integrity sha512-Blf5V4PoNphWkzL7Y1qge+Spkd4OCQ2atjwUNhMhLIcjKzPcBH++x/lwOinaR9jSqLWqJ6oKYO8d0XdTffy4hQ==
+
 leaflet-gpx@^1.5.2:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/leaflet-gpx/-/leaflet-gpx-1.7.0.tgz#8525bac1fb8afee153a8c7ac8c647a1c3769d45c"
