@@ -11,6 +11,7 @@ import {
   faQuestionCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import DonationCard from "./DonationCard";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const MapWithNoSSR = dynamic(() => import("./Map"), { ssr: false });
 
@@ -61,7 +62,11 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => (
       >
         <div className="flex justify-center items-center z-50 text-white tracking-wider relative text-sm">
           <div className="pr-2">
-            <FontAwesomeIcon icon={faArrowCircleDown} size="lg" aria-label="" />
+            <FontAwesomeIcon
+              icon={faArrowCircleDown as IconProp}
+              size="lg"
+              aria-label=""
+            />
           </div>
           <div>Télécharger la trace GPS</div>
         </div>
@@ -84,7 +89,10 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => (
                 )}
                 className="font-medium text-gray-800"
               >
-                <FontAwesomeIcon icon={faArrowCircleDown} size="xs" />{" "}
+                <FontAwesomeIcon
+                  icon={faArrowCircleDown as IconProp}
+                  size="xs"
+                />{" "}
                 {alternative.label}
               </a>
             </li>
@@ -96,7 +104,7 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => (
     {/* <div className="font-sans-serif font-bold text-sm text-center mt-2">
       <Link href="/aide/gpx">
         <a>
-          <FontAwesomeIcon icon={faQuestionCircle} size="sm" />
+          <FontAwesomeIcon icon={faQuestionCircle as IconProp} size="sm" />
           {' '}
           Aide
         </a>

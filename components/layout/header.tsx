@@ -1,6 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import Link from 'next/link';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const Header = () => (
   <header className="container flex align-middle items-center">
@@ -24,37 +29,53 @@ const Header = () => (
         <div>
           <Link href="/">
             <a>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-condensed font-medium tracking-wide mb-1 md:mb-2">RandoNavigo</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-condensed font-medium tracking-wide mb-1 md:mb-2">
+                RandoNavigo
+              </h1>
             </a>
           </Link>
         </div>
-        <p className="text-sm md:text-base font-condensed text-gray-600">Randonnées en Ile-de-France accessibles en transport en commun.</p>
+        <p className="text-sm md:text-base font-condensed text-gray-600">
+          Randonnées en Ile-de-France accessibles en transport en commun.
+        </p>
       </div>
-
     </div>
     <div className="flex flex-wrap gap-x-4 gap-y-3 justify-end flex-1">
       <div>
         <Link href="/a-propos">
-          <a className="whitespace-nowrap">
-            A propos
-          </a>
+          <a className="whitespace-nowrap">A propos</a>
         </Link>
       </div>
       <div>
         <ul className="flex ml-auto items-center">
           <li className="mr-4">
-            <a href="https://www.instagram.com/randonavigo" title="RandoNavigo sur Instagram" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
+            <a
+              href="https://www.instagram.com/randonavigo"
+              title="RandoNavigo sur Instagram"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faInstagram as IconProp} size="lg" />
             </a>
           </li>
           <li className="mr-4">
-            <a href="https://www.facebook.com/randonavigo/" title="RandoNavigo sur Facebook" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faFacebook} size="lg" />
+            <a
+              href="https://www.facebook.com/randonavigo/"
+              title="RandoNavigo sur Facebook"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faFacebook as IconProp} size="lg" />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/randonavigo" title="RandoNavigo sur Twitter" target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faTwitter} size="lg" />
+            <a
+              href="https://twitter.com/randonavigo"
+              title="RandoNavigo sur Twitter"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faTwitter as IconProp} size="lg" />
             </a>
           </li>
         </ul>
