@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Header from "./layout/header";
 import Link from "next/link";
@@ -47,37 +48,41 @@ const Layout = ({ children, home }: LayoutProps) => (
 
     <main className="main">{children}</main>
 
-    <footer className="bg-zinc-800 text-white mt-24 py-16">
-      <div className="container">
-        <div className="flex flex-col items-center gap-5">
+    <footer className="bg-zinc-700 text-white mt-24 py-16">
+      <div className="flex flex-col items-center gap-5">
+        <a href="https://ko-fi.com/W7W46TRZ2" target="_blank" rel="noreferrer">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `<img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' />`,
+            }}
+          />
+        </a>
+
+        <div>
+          Développement, design et contenu :{" "}
           <a
-            href="https://ko-fi.com/W7W46TRZ2"
+            href="http://www.michaelperrin.fr"
             target="_blank"
             rel="noreferrer"
           >
-            <div
-              dangerouslySetInnerHTML={{
-                __html: `<img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' />`,
-              }}
-            />
+            Michaël Perrin
           </a>
+        </div>
 
-          <div>
-            Développement, design et contenu :{" "}
-            <a
-              href="http://www.michaelperrin.fr"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Michaël Perrin
-            </a>
-          </div>
+        <div className="text-sm">
+          <Link href="/mentions-legales">
+            <a>Mentions légales</a>
+          </Link>
+        </div>
 
-          <div className="text-sm">
-            <Link href="/mentions-legales">
-              <a>Mentions légales</a>
-            </Link>
-          </div>
+        <div>
+          <a
+            href="https://vercel.com/?utm_source=rando-navigo&amp;utm_campaign=oss"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/images/powered-by-vercel.svg" alt="Powered by Vercel" />
+          </a>
         </div>
       </div>
     </footer>
