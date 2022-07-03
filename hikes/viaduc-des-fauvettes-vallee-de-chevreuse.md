@@ -6,47 +6,7 @@ publication_date: "2022-01-15"
 categories:
   - Essonne
 tags: []
-pictures:
-  - viaduc-des-fauvettes-chevreuse - 1.jpeg
-  - viaduc-des-fauvettes-chevreuse - 2.jpeg
-  - viaduc-des-fauvettes-chevreuse - 4.jpeg
-  - viaduc-des-fauvettes-chevreuse - 5.jpeg
-  - viaduc-des-fauvettes-chevreuse - 6.jpeg
-  - viaduc-des-fauvettes-chevreuse - 8.jpeg
-  - viaduc-des-fauvettes-chevreuse - 9.jpeg
-  - viaduc-des-fauvettes-chevreuse - 10.jpeg
-  - viaduc-des-fauvettes-chevreuse - 11.jpeg
-  - viaduc-des-fauvettes-chevreuse - 12.jpeg
-  - viaduc-des-fauvettes-chevreuse - 13.jpeg
-  - viaduc-des-fauvettes-chevreuse - 14.jpeg
-  - viaduc-des-fauvettes-chevreuse - 15.jpeg
-  - viaduc-des-fauvettes-chevreuse - 15b.jpeg
-  - viaduc-des-fauvettes-chevreuse - 16.jpeg
-  - viaduc-des-fauvettes-chevreuse - 17.jpeg
-  - viaduc-des-fauvettes-chevreuse - 18.jpeg
-  - viaduc-des-fauvettes-chevreuse - 19.jpeg
-  - viaduc-des-fauvettes-chevreuse - 20.jpeg
-  - viaduc-des-fauvettes-chevreuse - 21.jpeg
-  - viaduc-des-fauvettes-chevreuse - 22.jpeg
-  - viaduc-des-fauvettes-chevreuse - 23.jpeg
-  - viaduc-des-fauvettes-chevreuse - 24.jpeg
-  - viaduc-des-fauvettes-chevreuse - 25.jpeg
-  - viaduc-des-fauvettes-chevreuse - 26.jpeg
-  - viaduc-des-fauvettes-chevreuse - 27.jpeg
-  - viaduc-des-fauvettes-chevreuse - 28.jpeg
-  - viaduc-des-fauvettes-chevreuse - 29.jpeg
-  - viaduc-des-fauvettes-chevreuse - 30.jpeg
-  - viaduc-des-fauvettes-chevreuse - 31.jpeg
-  - viaduc-des-fauvettes-chevreuse - 32.jpeg
-  - viaduc-des-fauvettes-chevreuse - 33.jpeg
-  - viaduc-des-fauvettes-chevreuse - 34.jpeg
-  - viaduc-des-fauvettes-chevreuse - 35.jpeg
-  - viaduc-des-fauvettes-chevreuse - 36.jpeg
-  - viaduc-des-fauvettes-chevreuse - 37.jpeg
-  - viaduc-des-fauvettes-chevreuse - 38.jpeg
-  - viaduc-des-fauvettes-chevreuse - 39.jpeg
-  - viaduc-des-fauvettes-chevreuse - 40.jpeg
-  - viaduc-des-fauvettes-chevreuse - 41.jpeg
+pictures: []
 main_picture: viaduc-des-fauvettes-chevreuse - 17.jpeg
 distance: 13
 gpx_file: Chevreuse - Viaduc des Fauvettes.gpx
@@ -72,9 +32,31 @@ Le viaduc des Fauvettes vaut par ailleurs vraiment le détour, d’autant qu’i
 
 La randonnée démarre en gare de Bures-sur-Yvette, en accès direct par le [RER B](/randonnees-par-ligne/randonnees-rer-b). En provenance de Paris, traversez les voies par le passage sous-terrain en bout de station et les longerez sur un petit sentier.
 
-En lisière de la ville, vous rejoindrez rapidement les zones boisées bien vallonées déjà.
+<Gallery width="sm" pictures={[
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 1.jpeg',
+]} />
+
+En lisière de la ville, vous rejoindrez rapidement les zones boisées bien vallonées déjà. Pour ma part c'était dans une ambiance légèrement brumeuse qui rendant la forêt un peu mystérieuse, superbe !
+
+<Gallery pictures={[
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 2.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 4.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 5.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 6.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 8.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 9.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 10.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 12.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 13.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 14.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 15.jpeg',
+]} />
 
 Le chemin en forêt traverse le tunnel de Montjay qui annonce l'arrivée toute prochaine du viaduc !
+
+<Gallery pictures={[
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 11.jpeg',
+]} />
 
 ### Viaduc des Fauvettes
 
@@ -84,7 +66,23 @@ Vous aurez fait au total trois kilomètres, et vous voici sur le **viaduc des Fa
 
 Bien ensoleillé, mais proposant également des zones ombragées sous les arbres tout autour, il pourra être un lieu de pique-nique idéal !
 
+<Gallery pictures={[
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 16.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 17.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 18.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 19.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 20.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 21.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 22.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 23.jpeg',
+]} />
+
 Il est possible de descendre par de petits chemins sur les côtés pour se rendre compte de ses 34 mètres de hauteur d’en bas. Ils sont assez escarpés, alors soyez vigilents !
+
+<Gallery pictures={[
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 15b.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 24.jpeg',
+]} />
 
 ## Le charmant village de Gometz-le-Chatel
 
@@ -94,11 +92,31 @@ C’est l’**église Saint-Clair** du XIe et XVIe siècles qui vous accueillera
 
 Vous remonterez ensuite la rue principale du village qui domine la vallée.
 
+<Gallery pictures={[
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 25.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 26.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 27.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 28.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 29.jpeg',
+]} />
+
 ## Forêt de Gif-sur-Yvette
 
 Le GRP vous fera traverser la route et vous mène à travers champs avec des vues imprenables sur la vallée. Carton rouge pour les immeubles des Ulis construits sans aucune considération pour le paysage et que l’on peut apercevoir sur l’un des versants de la vallée. Mais en aucun cas la randonnée ne s’en trouve gâchée.
 
 On poursuit par une belle grimpette dans le **bois de la Hacquinière** qui nous mène en forêt de Gif-sur-Yvette. Belle variété d’arbres, dont quelque-uns remarquables.
+
+<Gallery pictures={[
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 30.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 31.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 32.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 33.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 34.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 35.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 36.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 37.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 38.jpeg',
+]} />
 
 ## Trois manières de finir la randonnée
 
@@ -119,6 +137,12 @@ Pour une randonnée d’un total de **10 kilomètres**, vous pouvez reprendre le
 Il est possible de poursuivre la randonnée par le GR655 (chemin de Saint-Jacques) qui longe l’Yvette. La promenade est agréable mais on regrette quelques passages par des zones de commerces et plus proches de la ville.
 
 La randonnée fera un total de **13 kilomètres**, et est celle proposée ici.
+
+<Gallery pictures={[
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 39.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 40.jpeg',
+'/hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/pictures/viaduc-des-fauvettes-chevreuse - 41.jpeg',
+]} />
 
 ### Poursuivre le GR655 jusqu’à Saint-Rémy-lès-Chevreuse
 
