@@ -27,9 +27,7 @@ Cette randonnée vous fera découvrir toute la beauté de la Marne en Ile-de-Fra
 Départ Gare de l’Est pour se rendre à **La Ferté-sous-Jouarre** par la [ligne P du Transilien](/randonnees-par-ligne/randonnees-transilien-ligne-p), quarante minutes de trajet pas désagréables.
 A noter que la gare est aussi accessible depuis Marne-la-Vallée sur le RER A par le bus Express 62.
 
-<Gallery width="sm" pictures={[
-'/hikes/2022/07/la-marne-cote-nature/pictures/la-marne-cote-nature - 1.jpeg',
-]} />
+<Picture src="/hikes/2022/07/la-marne-cote-nature/pictures/la-marne-cote-nature - 1.jpeg" caption="Navigo, chapeaux, sacs à dos… ça sent bon la rando !" />
 
 ## La Marne
 
