@@ -9,6 +9,7 @@ import getHikePicturePath from "@/lib/getHikePicturePath";
 import HikeProperties from "@/components/hike/Properties";
 import RelatedHikes from "@/components/hike/RelatedHikes";
 import Gallery from "@/components/hike/Gallery";
+import Picture from "@/components/hike/Picture";
 import HikeGallery from "@/components/hike/HikeGallery";
 
 type HikeProps = {
@@ -72,7 +73,7 @@ const Hike = ({ hike, mdxSource }: HikeProps) => (
               dangerouslySetInnerHTML={{ __html: hike.content }}
             /> */}
             <div className="prose max-w-none">
-              <MDXRemote {...mdxSource} components={{ Gallery }} />
+              <MDXRemote {...mdxSource} components={{ Gallery, Picture }} />
             </div>
           </main>
 
