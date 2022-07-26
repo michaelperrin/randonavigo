@@ -21,7 +21,7 @@ const Gallery = ({ pictures, width = "" }: GalleryProps) => {
   return (
     <>
       <div
-        className={classNames("mx-auto", "grid", "gap-1", "mb-2", {
+        className={classNames("mx-auto", "grid", "gap-2", "mb-2", {
           "max-w-lg": width === "sm",
         })}
         style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}
