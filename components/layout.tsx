@@ -75,6 +75,12 @@ const Layout = ({ children, home }: LayoutProps) => (
           </Link>
         </div>
 
+        <div className="text-sm">
+          <Link href="/politique-de-confidentialite">
+            <a>Politique de confidentialité</a>
+          </Link>
+        </div>
+
         <div>
           <a
             href="https://vercel.com/?utm_source=rando-navigo&amp;utm_campaign=oss"

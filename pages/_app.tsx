@@ -1,12 +1,12 @@
-import type { AppProps } from 'next/app'
-import Script from 'next/script'
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import 'tailwindcss/tailwind.css'
-import 'leaflet/dist/leaflet.css';
-import 'leaflet.locatecontrol/dist/L.Control.Locate.css';
+import type { AppProps } from "next/app";
+import Script from "next/script";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import "tailwindcss/tailwind.css";
+import "leaflet/dist/leaflet.css";
+import "leaflet.locatecontrol/dist/L.Control.Locate.css";
 
-config.autoAddCss = false
+config.autoAddCss = false;
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
@@ -26,8 +26,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       });
       `}
     </Script>
+
+    <Script
+      id="cookieyes"
+      src="https://cdn-cookieyes.com/client_data/dda1fbe485adcbb48774379e/script.js"
+    />
     <Component {...pageProps} />
   </>
-)
+);
 
-export default MyApp
+export default MyApp;
