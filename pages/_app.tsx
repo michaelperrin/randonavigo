@@ -27,10 +27,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       `}
     </Script>
 
-    <Script
-      id="cookieyes"
-      src="https://cdn-cookieyes.com/client_data/dda1fbe485adcbb48774379e/script.js"
-    />
+    {process.env.NEXT_PUBLIC_COOKIE_CONSENT_ENABLED === "1" && (
+      <Script
+        id="cookieyes"
+        src="https://cdn-cookieyes.com/client_data/dda1fbe485adcbb48774379e/script.js"
+      />
+    )}
     <Component {...pageProps} />
   </>
 );
