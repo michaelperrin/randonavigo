@@ -36,9 +36,8 @@ const Hike = ({ hike, mdxSource }: HikeProps) => (
       <meta property="og:locale" content="fr_FR" />
       <meta
         property="og:image"
-        content={`${process.env.BASE_URL}${getHikePicturePath(
-          hike,
-          hike.main_picture
+        content={`${process.env.BASE_URL}${encodeURI(
+          getHikePicturePath(hike, hike.main_picture)
         )}`}
       />
       <meta property="article:section" content={hike.categories[0]} />
@@ -51,9 +50,8 @@ const Hike = ({ hike, mdxSource }: HikeProps) => (
       <meta name="twitter:description" content={hike.summary} />
       <meta
         name="twitter:image"
-        content={`${process.env.BASE_URL}${getHikePicturePath(
-          hike,
-          hike.main_picture
+        content={`${process.env.BASE_URL}${encodeURI(
+          getHikePicturePath(hike, hike.main_picture)
         )}`}
       />
     </Head>
