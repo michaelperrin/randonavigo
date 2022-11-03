@@ -48,22 +48,22 @@ On poursuit entre bois et champs, où paissent tranquillement les chevaux.
 '/hikes/2022/10/vallee-du-grand-morin-champetre-et-viticole/pictures/vallee-du-grand-morin-champetre-et-viticole - 6.jpeg',
 ]} />
 
-## Guérard
+## Grimpette à Guérard
 
-On emprunte ensuite la bien nommée ruelle de la grimpette pour rejoindre l'entrée du village de Guérard. On ne traversera pas son centre mais vous pourrez y faire un petit détour pour y retrouver quelques commerces.
+On emprunte ensuite la bien nommée _Ruelle de la Grimpette_ pour rejoindre l'entrée du village de Guérard. On ne traversera pas son centre mais vous pourrez y faire un petit détour pour y retrouver quelques commerces.
 
 <Picture src="/hikes/2022/10/vallee-du-grand-morin-champetre-et-viticole/pictures/vallee-du-grand-morin-champetre-et-viticole - 7.jpeg" caption="Village de Guérard" />
 
 ## Les vignes de Vigne EnVie
 
-En remontant par le _Chemin de la Croix Saint-Georges_, un peu avant le huitième kilomètre de la randonnée, vous passerez devant la maison de [Vigne Envie](https://www.vigneenvie.fr/). Cette associtiation de viticulteurs aide à promouvoir le vin de la région. Le propriétaire vous accueillera pour vous faire déguster une sélection de vins français, y compris ceux produits à Guérard. Vous apprendrez ainsi que la vigne était présente dans la région depuis le Moyen-Âge jusqu'à sa disparition en 1893 en raison de la maladie du phylloxéra touchant toutes les vignes. Ce sont quelques viticulteurs passionnés qui ont décidé de relancer la production de vin au début des années 2000. Pinot noir et chardonnay sont les deux cépages qui produisent de nos jours le petit millier de bouteilles de vins rouge et blanc du Domaine Bois Brillant.
+En remontant par le _Chemin de la Croix Saint-Georges_, un peu avant le huitième kilomètre de la randonnée, vous passerez devant la maison de [Vigne Envie](https://www.vigneenvie.fr/). Cette association de viticulteurs aide à promouvoir le vin de la région. Le propriétaire vous accueillera pour vous faire déguster une sélection de vins français, y compris ceux produits à Guérard. Vous apprendrez ainsi que la vigne était présente dans la région depuis le Moyen-Âge jusqu'à sa disparition en 1893 en raison de la maladie du phylloxéra touchant toutes les vignes. Ce sont quelques viticulteurs passionnés qui ont décidé de relancer la production de vin au début des années 2000. Pinot noir et chardonnay sont les deux cépages qui produisent de nos jours le petit millier de bouteilles de vin rouge et blanc du Domaine Bois Brillant.
 
 <Gallery pictures={[
 '/hikes/2022/10/vallee-du-grand-morin-champetre-et-viticole/pictures/vallee-du-grand-morin-champetre-et-viticole - 8.jpeg',
 '/hikes/2022/10/vallee-du-grand-morin-champetre-et-viticole/pictures/vallee-du-grand-morin-champetre-et-viticole - 9.jpeg',
 ]} />
 
-A peine 100 mètres plus loin, vous pourrez voir les vignes du domaine.
+Une centaine de mètres plus loin, vous pourrez apprécier une vue sur les vignes du domaine.
 
 <Picture src="/hikes/2022/10/vallee-du-grand-morin-champetre-et-viticole/pictures/vallee-du-grand-morin-champetre-et-viticole - 10.jpeg" caption="Vignes du Domaine Bois Brillant" />
 
@@ -83,7 +83,7 @@ La région de la Brie est aussi réputée pour ses pommiers que vous retrouverez
 
 ## Fin de la boucle à la Celle-sur-Morin
 
-On termine la randonnée en passant par le village de la Celle-sur-Morin.
+On termine la randonnée en passant par le village de La Celle-sur-Morin.
 
 <Gallery pictures={[
 '/hikes/2022/10/vallee-du-grand-morin-champetre-et-viticole/pictures/vallee-du-grand-morin-champetre-et-viticole - 15.jpeg',
