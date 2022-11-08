@@ -1,9 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
@@ -66,16 +62,6 @@ const Header = () => (
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faFacebook as IconProp} size="lg" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/randonavigo"
-              title="RandoNavigo sur Twitter"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faTwitter as IconProp} size="lg" />
             </a>
           </li>
         </ul>
