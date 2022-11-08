@@ -24,11 +24,11 @@ const Header = () => (
 
         <div>
           <Link href="/">
-            <a>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-condensed font-medium tracking-wide mb-1 md:mb-2">
-                RandoNavigo
-              </h1>
-            </a>
+
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-condensed font-medium tracking-wide mb-1 md:mb-2">
+              RandoNavigo
+            </h1>
+
           </Link>
         </div>
         <p className="text-sm md:text-base font-condensed text-gray-600">
@@ -38,8 +38,8 @@ const Header = () => (
     </div>
     <div className="flex flex-wrap gap-x-4 gap-y-3 justify-end flex-1">
       <div>
-        <Link href="/a-propos">
-          <a className="whitespace-nowrap">A propos</a>
+        <Link href="/a-propos" className="whitespace-nowrap">
+          A propos
         </Link>
       </div>
       <div>

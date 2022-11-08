@@ -28,7 +28,7 @@ const RelatedHikes = ({ hike }: RelatedHikesProps) => {
                 <TransportIcon line={line} size={24} />
                 <div className="text-sm text-stone-700">
                   <Link href={getLinePageUrl(line)}>
-                    <a>{getTransportPageLinkLabel(line)}</a>
+                    {getTransportPageLinkLabel(line)}
                   </Link>
                 </div>
               </div>
@@ -37,7 +37,7 @@ const RelatedHikes = ({ hike }: RelatedHikesProps) => {
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
 export default RelatedHikes;

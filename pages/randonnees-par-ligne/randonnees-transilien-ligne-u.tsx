@@ -21,19 +21,19 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
       La ligne U est une petite ligne tangeantielle de l’Ouest parisien. Son départ à <em>La Défense</em> est bien pratique et des connexions avec la
       {' '}
       <Link href="/randonnees-par-ligne/randonnees-transilien-ligne-n">
-        <a>ligne N du Transilien</a>
+        ligne N du Transilien
       </Link>
       {' '}
       et le
       {' '}
       <Link href="/randonnees-par-ligne/randonnees-rer-c">
-        <a>RER C</a>
+        RER C
       </Link>
       {' '}
       à Versailles Chantiers, ainsi que la
       {' '}
       <Link href="/randonnees-par-ligne/randonnees-transilien-ligne-l">
-        <a>ligne L du Transilien</a>
+        ligne L du Transilien
       </Link>
       {' '}
       à Saint-Cloud.

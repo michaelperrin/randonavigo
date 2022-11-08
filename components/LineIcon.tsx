@@ -26,10 +26,10 @@ const LineIcon = ({ line, size = 24, linkToPage = true }: LineIconProps) => {
   }
 
   return (
-    <Link href={getLinePageUrl(line)}>
-      <a title={getTransportPageLinkLabel(line)}>{image}</a>
+    <Link href={getLinePageUrl(line)} title={getTransportPageLinkLabel(line)}>
+      {image}
     </Link>
-  )
+  );
 }
 
 export default LineIcon

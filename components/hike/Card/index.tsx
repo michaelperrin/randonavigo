@@ -11,35 +11,37 @@ type HikeCardProps = {
 
 const HikeCard = ({ hike }: HikeCardProps) => (
   <article className="flex flex-col mb-4 bg-white shadow-card">
-    <Link href={getHikeUrl(hike)}>
-      <a className="h-64 md:h-48 xl:h-64 flex-none relative">
-        <div>
-          {hike.favorite && (
-            <div className="absolute top-0 right-0 z-10">
-              <Image
-                src="/images/favorite.svg"
-                alt="Randonnée favorite"
-                layout="fixed"
-                width={48}
-                height={48}
-              />
-            </div>
-          )}
+    <Link
+      href={getHikeUrl(hike)}
+      className="h-64 md:h-48 xl:h-64 flex-none relative">
 
-          <Image
-            src={getHikePicturePath(
-              hike,
-              hike.thumbnail_picture ?? hike.main_picture
-            )}
-            layout="fill"
-            objectFit="cover"
-            sizes="350px"
-            quality={60}
-            className="w-full h-full object-fill"
-            alt=""
-          />
-        </div>
-      </a>
+      <div>
+        {hike.favorite && (
+          <div className="absolute top-0 right-0 z-10">
+            <Image
+              src="/images/favorite.svg"
+              alt="Randonnée favorite"
+              layout="fixed"
+              width={48}
+              height={48}
+            />
+          </div>
+        )}
+
+        <Image
+          src={getHikePicturePath(
+            hike,
+            hike.thumbnail_picture ?? hike.main_picture
+          )}
+          layout="fill"
+          objectFit="cover"
+          sizes="350px"
+          quality={60}
+          className="w-full h-full object-fill"
+          alt=""
+        />
+      </div>
+
     </Link>
 
     <div className="flex flex-col flex-1 mx-4 mt-4">
@@ -57,7 +59,7 @@ const HikeCard = ({ hike }: HikeCardProps) => (
 
           <h2 className="font-sans-serif text-lg font-semibold text-center mx-8 leading-snug">
             <Link href={getHikeUrl(hike)}>
-              <a>{hike.title}</a>
+              {hike.title}
             </Link>
           </h2>
         </div>
