@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { useState } from "react";
-import Lightbox from "react-image-lightbox";
+import Lightbox from "react-18-image-lightbox";
 import getHikePicturePath from "../../lib/getHikePicturePath";
 import { Hike } from "../../lib/types";
-import "react-image-lightbox/style.css";
+import "react-18-image-lightbox/style.css";
 
 type HikeGalleryProps = {
   hike: Hike;

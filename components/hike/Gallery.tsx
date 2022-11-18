@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import Image from "next/image";
 import { useState } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import Lightbox from "react-18-image-lightbox";
+import "react-18-image-lightbox/style.css";
 
 type GalleryProps = {
   pictures: string[];

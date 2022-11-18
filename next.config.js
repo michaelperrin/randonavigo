@@ -4,11 +4,6 @@ module.exports = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
-  experimental: {
-    images: {
-      allowFutureImage: true,
-    },
-  },
   async redirects() {
     return [
       {

@@ -1,5 +1,5 @@
-import Image from "next/future/image";
-import "react-image-lightbox/style.css";
+import Image from "next/image";
+import "react-18-image-lightbox/style.css";
 import dynamic from "next/dynamic";
 
 type PictureProps = {
