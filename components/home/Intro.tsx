@@ -22,8 +22,8 @@ const Intro = () => (
             Il n&apos;y a plus qu&apos;à suivre la trace !
           </p>
 
-          <Link href="/aide/gpx">
-            <a className="py-2 px-4 bg-sky-700 text-white no-underline">En savoir plus</a>
+          <Link href="/aide/gpx" className="py-2 px-4 bg-sky-700 text-white no-underline">
+            En savoir plus
           </Link>
         </aside>
     </div>

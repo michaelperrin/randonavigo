@@ -18,7 +18,10 @@ const About = () => (
                 width={200}
                 height={200}
                 alt=""
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
 
             <div className="prose">

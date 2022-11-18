@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 import Link from 'next/link';
 import getLinePageUrl from '@/lib/getLinePageUrl';
 import getTransportPageLinkLabel from '@/lib/getTransportPageLinkLabel';
@@ -17,7 +17,10 @@ const LineIcon = ({ line, size = 24, linkToPage = true }: LineIconProps) => {
         width={size}
         height={size}
         alt={`Ligne ${line}`}
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
     </div>
   )
 
@@ -26,10 +29,10 @@ const LineIcon = ({ line, size = 24, linkToPage = true }: LineIconProps) => {
   }
 
   return (
-    <Link href={getLinePageUrl(line)}>
-      <a title={getTransportPageLinkLabel(line)}>{image}</a>
+    <Link href={getLinePageUrl(line)} title={getTransportPageLinkLabel(line)}>
+      {image}
     </Link>
-  )
+  );
 }
 
 export default LineIcon

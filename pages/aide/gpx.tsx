@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/image";
 import Layout from '@/components/layout'
 
 const AideGpx = () => (
@@ -41,31 +41,46 @@ const AideGpx = () => (
               width={750}
               height={1334}
               alt=""
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <Image
               src="/images/help/gpx/transfer-1.png"
               width={750}
               height={1334}
               alt=""
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <Image
               src="/images/help/gpx/transfer-2.png"
               width={750}
               height={1334}
               alt=""
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <Image
               src="/images/help/gpx/transfer-3.png"
               width={750}
               height={1334}
               alt=""
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <Image
               src="/images/help/gpx/transfer-4.png"
               width={750}
               height={1334}
               alt=""
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
       </div>

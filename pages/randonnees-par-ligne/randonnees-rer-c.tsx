@@ -27,7 +27,7 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
     <p>
       Il traverse — à son rythme — Paris, mais peut également être rejoint par
       {' '}
-      <Link href="/randonnees-par-ligne/randonnees-transilien-ligne-n"><a>la ligne N du Transilien</a></Link>
+      <Link href="/randonnees-par-ligne/randonnees-transilien-ligne-n">la ligne N du Transilien</Link>
       {' '}
       à Chaville à Versailles-Chantier ou Viroflay, ce qui peut s’avérer assez pratique.
     </p>

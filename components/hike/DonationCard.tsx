@@ -27,10 +27,12 @@ const DonationCard = () => (
               concocter de nouvelles randonnées
             </span>
             , toujours en pleine nature et accessibles en transports.{" "}
-            <Link href="/a-propos">
-              <a className="underline hover:text-amber-700 whitespace-nowrap">
+            <Link
+              href="/a-propos"
+              className="underline hover:text-amber-700 whitespace-nowrap">
+              
                 En savoir plus
-              </a>
+              
             </Link>
           </p>
         </div>
@@ -42,7 +44,10 @@ const DonationCard = () => (
           width={90}
           height={148}
           alt=""
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
     </div>
     <a

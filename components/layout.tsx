@@ -71,13 +71,13 @@ const Layout = ({ children, home }: LayoutProps) => (
 
         <div className="text-sm">
           <Link href="/mentions-legales">
-            <a>Mentions légales</a>
+            Mentions légales
           </Link>
         </div>
 
         <div className="text-sm">
           <Link href="/politique-de-confidentialite">
-            <a>Politique de confidentialité</a>
+            Politique de confidentialité
           </Link>
         </div>
 

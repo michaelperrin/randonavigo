@@ -21,9 +21,9 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
       Le RER E suit le début de la
       {' '}
       <Link href="/randonnees-par-ligne/randonnees-transilien-ligne-p">
-        <a>
+        
           ligne P du Transilien
-        </a>
+        
       </Link>
       {' '}
       avec des arrêts supplémentaires permettant de desservir quelques forêts.
