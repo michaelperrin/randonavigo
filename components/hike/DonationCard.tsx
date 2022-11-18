@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const DonationCard = () => (
@@ -44,7 +44,10 @@ const DonationCard = () => (
           width={90}
           height={148}
           alt=""
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
     </div>
     <a

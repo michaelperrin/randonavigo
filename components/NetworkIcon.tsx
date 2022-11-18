@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Network } from '@/lib/transport';
 
 type NetworkIconProps = {
@@ -15,7 +15,10 @@ const NetworkIcon = ({ network, size = 24 }: NetworkIconProps) => (
         width={size}
         height={size}
         alt="RER"
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
     )}
     {network === Network.Transilien && (
       <Image
@@ -23,7 +26,10 @@ const NetworkIcon = ({ network, size = 24 }: NetworkIconProps) => (
         width={size}
         height={size}
         alt="Transilien"
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
     )}
     {network === Network.Tram && (
       <Image
@@ -31,7 +37,10 @@ const NetworkIcon = ({ network, size = 24 }: NetworkIconProps) => (
         width={size}
         height={size}
         alt="Tram"
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
     )}
   </div>
 )

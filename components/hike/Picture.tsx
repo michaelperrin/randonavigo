@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import "react-18-image-lightbox/style.css";
 import dynamic from "next/dynamic";
 
@@ -14,10 +14,13 @@ const Picture = ({ src, caption }: PictureProps) => (
         src={src}
         width={800}
         height={800}
-        sizes="800px"
         quality={70}
         alt=""
-      />
+        sizes="800px"
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
       {caption && (
         <figcaption className="text-center text-sm text-gray-500">
           {caption}

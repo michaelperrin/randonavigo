@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useState } from "react";
 import Lightbox from "react-18-image-lightbox";
 import "react-18-image-lightbox/style.css";
@@ -21,7 +21,7 @@ const Gallery = ({ pictures, width = "" }: GalleryProps) => {
   return (
     <>
       <div
-        className={classNames("mx-auto", "grid", "gap-2", "mb-2", {
+        className={classNames("mx-auto", "grid", "gap-2", "mb-2", "not-prose", {
           "max-w-lg": width === "sm",
         })}
         style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}
@@ -37,11 +37,13 @@ const Gallery = ({ pictures, width = "" }: GalleryProps) => {
           >
             <Image
               src={picture}
-              layout="fill"
-              objectFit="cover"
-              sizes={pictures.length === 1 ? "800px" : "300px"}
               quality={70}
               alt=""
+              fill
+              sizes={pictures.length === 1 ? "800px" : "300px"}
+              style={{
+                objectFit: "cover",
+              }}
             />
           </div>
         ))}

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 type TopBannerProps = {
   picture?: string;
@@ -31,7 +31,15 @@ const TopBanner = ({
       </div>
 
       <div className={overlayClasses}>
-        <Image src={picture} layout="fill" objectFit="cover" priority alt="" />
+        <Image
+          src={picture}
+          priority
+          alt=""
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }} />
       </div>
     </div>
   );

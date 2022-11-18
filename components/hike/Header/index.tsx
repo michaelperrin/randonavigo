@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Hike } from '@/lib/types'
 import getHikePicturePath from '@/lib/getHikePicturePath'
 import Date from '@/components/date'
@@ -25,11 +25,13 @@ const HikeHeader = ({ hike }: HikeHeaderProps) => (
       <div className="after:absolute after:inset-0 after:bg-gradient-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70">
         <Image
           src={getHikePicturePath(hike, hike.main_picture)}
-          layout="fill"
-          objectFit="cover"
           priority
           alt=""
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }} />
       </div>
     </div>
   </header>
