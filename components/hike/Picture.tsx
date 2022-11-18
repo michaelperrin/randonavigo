@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import "react-18-image-lightbox/style.css";
 import dynamic from "next/dynamic";
 

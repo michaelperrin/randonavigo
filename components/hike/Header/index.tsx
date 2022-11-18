@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image";
 import { Hike } from '@/lib/types'
 import getHikePicturePath from '@/lib/getHikePicturePath'
 import Date from '@/components/date'

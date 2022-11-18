@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useState } from "react";
 import Lightbox from "react-18-image-lightbox";
 import getHikePicturePath from "../../lib/getHikePicturePath";
