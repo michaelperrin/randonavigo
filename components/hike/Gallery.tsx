@@ -29,7 +29,7 @@ const Gallery = ({ pictures, width = "" }: GalleryProps) => {
         {pictures.map((picture: string, index: number) => (
           <div
             key={picture}
-            className="aspect-[4/3] cursor-zoom-in"
+            className="aspect-[4/3] cursor-zoom-in relative"
             style={{ position: "relative", margin: "1px" }}
             onClick={() => {
               showPicture(index);
