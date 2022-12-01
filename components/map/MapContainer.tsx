@@ -1,23 +1,23 @@
-import { Hike } from "@/lib/types";
 import { MapContainer as LeafletMapContainer, TileLayer } from "react-leaflet";
+// import React from "react";
 import GpxTrace from "./GpxTrace";
-import getHikeGpxPath from "@/lib/getHikeGpxPath";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
+import MapLocateControl from "./LocateControl";
 
 type MapProps = {
-  hike: Hike;
   zoom: number;
   center: [number, number];
   scrollWheelZoom: boolean;
   children?: React.ReactNode;
+  gpxFiles?: string[];
 };
 
 const MapContainer = ({
-  hike,
   zoom,
   center,
   scrollWheelZoom,
   children,
+  gpxFiles,
   ...otherProps
 }: MapProps) => (
   <LeafletMapContainer
@@ -33,14 +33,9 @@ const MapContainer = ({
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       detectRetina
     />
-    {/* <Marker position={[51.505, -0.09]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker> */}
-    <GpxTrace
-      gpxFile={getHikeGpxPath(hike.slug, hike.publication_date, hike.gpx_file)}
-    />
+    <MapLocateControl />
+    {gpxFiles &&
+      gpxFiles.map((gpxFile) => <GpxTrace key={gpxFile} gpxFile={gpxFile} />)}
   </LeafletMapContainer>
 );
 
