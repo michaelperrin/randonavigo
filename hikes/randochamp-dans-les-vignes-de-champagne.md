@@ -21,7 +21,7 @@ enabled: true
 
 J'avais proposé il y a quelques années une [randonnée dans les vignes de Champagne](/2017/06/26/a-travers-les-vignes-dans-la-vallee-de-la-marne), aux confins de l'Île-de-France. Une randonnée coup de cœur, qui permet également de découvrir l'aqueduc de la Dhuis et la Marne.
 
-J'ai voulu redécouvrir les vignes mais cette fois-ci au mois d'automne, les photos d'une fidèle lectrice de RandoNavigo en cette saison ayant fini de me convaincre. J'ai ainsi créé ce nouveau parcours, qui permet de non seulement découvrir les vignes de Champagne, mais aussi de visiter quelques maisons de Champagne pour revenir avec un sac à dos chargé de bouteilles !
+J'ai voulu redécouvrir les vignes mais cette fois-ci en automne, les photos d'une fidèle de RandoNavigo en cette saison m'ayant convaincu. J'ai ainsi créé ce nouveau parcours, qui permet de non seulement découvrir les vignes de la région viticole, mais aussi de visiter quelques maisons de Champagne pour revenir avec un sac à dos chargé de bonnes bouteilles !
 
 ## Départ de Nanteuil - Saâcy
 
@@ -61,7 +61,7 @@ Vous passerez par une petite zone boisée avant d'emprunter les chemins qui rede
 '/hikes/2022/11/randochamp-dans-les-vignes-de-champagne/pictures/randochamp - 13.jpg',
 ]} />
 
-<Picture src="/hikes/2022/11/randochamp-dans-les-vignes-de-champagne/pictures/randochamp - 11.jpg" caption="Vue la vallée" />
+<Picture src="/hikes/2022/11/randochamp-dans-les-vignes-de-champagne/pictures/randochamp - 11.jpg" caption="Vue sur la vallée" />
 
 Sur le chemin, quelques fermes et jardins pour une ambiance champêtre qui ravira tout urbain.
 
@@ -80,11 +80,11 @@ Toujours agréable de se balader en bord de Marne, tout comme lors de la [randon
 
 ## Les maisons de champagnes
 
-Je ne comptais pas revenir les mains vides de cette randonnée ! J'ai à vrai dire construit son parcours afin de passer par des maisons de champagne. Beaucoup de producteurs indépendants sont installés tout autour de cette deuxième partie du parcours. Des productions limitées pour des bouteilles que vous ne trouverez pas dans le commerce. Mais la qualité n'est pas en reste et pour un prix très intéressant. En achat direct, comptez environ 20 euros pour un bon champagne.
+Je ne comptais pas revenir les mains vides de cette randonnée ! J'ai à vrai dire construit son parcours afin de passer par des maisons de champagne. Beaucoup de producteurs indépendants sont installés tout autour de cette deuxième partie du parcours. Des productions limitées pour des bouteilles que vous ne trouverez probablement pas dans le commerce. Mais la qualité n'est pas en reste et pour un prix très intéressant. En achat direct, comptez environ 20 euros pour un bon champagne.
 
 C'est aussi l'occasion de rencontrer les producteurs et de faire des dégustations avant d'acheter un champagne qui vous plaît.
 
-Pour ma part, je me suis arrêté à deux maisons de champagne, que vous retrouvez sur le tracé de la randonnée :
+Pour ma part, je me suis arrêté à deux maisons de champagne, que vous verrez sur la carte du tracé de la randonnée :
 
 - La Maison de Champagne Fallet Dart (tout petit détour).
 - Champagne Baron Albert (détour de 500 mètres aller-retour).
@@ -97,7 +97,7 @@ Pour ma part, je me suis arrêté à deux maisons de champagne, que vous retrouv
 '/hikes/2022/11/randochamp-dans-les-vignes-de-champagne/pictures/randochamp - 23.jpg',
 ]} />
 
-Si vous êtes intéressés, je vous conseille vraiment de regarder sur Google Maps les maisons de champagne, car elles sont nombreuses et vous pourrez ainsi choisir celles qui vous intéressent. Vous en trouverez en particulier dans le village de Crouttes-sur-Marne, sans vous faire faire un grand détour.
+Si vous êtes intéressés, je vous conseille de regarder sur Google Maps les maisons de champagne, car elles sont nombreuses et vous pourrez ainsi choisir celles qui vous intéressent. Vous en trouverez en particulier dans le village de Crouttes-sur-Marne, sans vous faire faire un grand détour.
 
 Autrement, ce sera par la Marne que vous poursuivrez votre parcours.
 
@@ -111,7 +111,7 @@ Autrement, ce sera par la Marne que vous poursuivrez votre parcours.
 
 Non mais quel nom de village ! Si vous restez sur le chemin qui longe la Marne, vous observerez du bas son église du XII<sup>e</sup> siècle.
 
-N'hésitez à y faire à détour, d'autant que de nombreuses maisons de champagne s'y trouvent.
+N'hésitez pas à y faire à détour, d'autant que de nombreuses maisons de champagne s'y trouvent.
 
 <Picture src="/hikes/2022/11/randochamp-dans-les-vignes-de-champagne/pictures/randochamp - 27.jpg" caption="L'église Saint-Quiriace de Crouttes-sur-Marne" />
 
