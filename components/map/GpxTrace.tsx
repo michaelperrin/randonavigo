@@ -10,15 +10,34 @@ type GpxTraceProps = {
 };
 
 const GpxTrace = ({ gpxFile }: GpxTraceProps) => {
-  const context = useLeafletContext();
   const map = useMap();
 
   useEffect(() => {
     new L.GPX(gpxFile, {
       async: true,
       marker_options: {
-        startIconUrl: "/images/map/starting-point-pin.png",
-        endIconUrl: "/images/map/ending-point-pin.png",
+        startIconUrl: "/images/map/starting-point-pin.svg",
+        // startIcon: L.icon({
+        //   iconUrl: "/images/map/starting-point-pin.svg",
+        //   iconSize: [32, 32],
+        //   iconAnchor: [16, 32],
+        // }),
+        endIconUrl: "/images/map/ending-point-pin.svg",
+        // endIcon: L.icon({
+        //   iconUrl: "/images/map/ending-point-pin.svg",
+        //   iconSize: [32, 32],
+        //   iconAnchor: [16, 32],
+        // }),
+        // wptIcons: {
+        //   Winery: L.icon({
+        //     iconUrl: "/images/map/winery-pin.svg",
+        //     iconSize: [40, 40],
+        //     iconAnchor: [20, 40],
+        //   }),
+        // },
+        wptIconUrls: {
+          Winery: "/images/map/winery-pin.svg",
+        },
         shadowUrl: undefined,
       },
     })
