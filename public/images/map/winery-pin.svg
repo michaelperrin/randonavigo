@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="70px" viewBox="0 0 59 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>winery-pin</title>
+    <defs>
+        <filter x="-45.7%" y="-34.8%" width="191.4%" height="169.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.415752704 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="winery-pin" filter="url(#filter-1)" transform="translate(12.000000, 12.000000)" fill-rule="nonzero">
+            <path d="M17.5,46 C17.5,46 35,29.6527497 35,17.2499997 C35,7.72308791 27.164983,0 17.5,0 C7.83501698,0 0,7.72308791 0,17.2499997 C0,29.6527497 17.5,46 17.5,46 Z" id="Shape" fill="#0B93BF"></path>
+            <g id="glass-wine" transform="translate(11.000000, 7.000000)" fill="#FFFFFF">
+                <path d="M11.9,24.0875 L10.724,23.975 C9.66,23.8875 8.75,23.25 8.4,22.3375 C7.658,19.8875 7.658,17.2875 8.4,14.8375 C11.648,14.25 14,11.7125 14,8.75 C14,6.25 11.2,0 11.2,0 L2.8,0 C2.8,0 0,6.25 0,8.75 C0,11.725 2.338,14.275 5.6,14.875 C6.342,17.325 6.342,19.925 5.6,22.375 C5.264,23.275 4.368,23.9125 3.318,24.0125 L2.1,24.125 C2.1,24.125 1.4,24.1 1.4,25 L12.6,25 C12.6,24.1 11.9,24.0875 11.9,24.0875 M3.416,6.25 L4.816,2.5 L9.184,2.5 L10.584,6.25 L3.416,6.25 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
