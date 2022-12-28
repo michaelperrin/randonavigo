@@ -314,9 +314,9 @@
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/leaflet-gpx@^1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@types/leaflet-gpx/-/leaflet-gpx-1.3.3.tgz#c184a097e56d5da65837689339c573ca89c481d9"
-  integrity sha512-YiD9TIzrH4IdcbdjO7Gc+kjK7H6swT4WZi5wABgAeHogUvZcK5zm+tY84utgfHxMavb0jqzJViNEAd3xUzTCtA==
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/@types/leaflet-gpx/-/leaflet-gpx-1.3.4.tgz#1e4f7ac2859b9de05f4fe7729eda02d6b798cd69"
+  integrity sha512-qIPco4PIjCb0AkcuaMvqqqvV7vQ8sd2LY7WTV3p/9qMApiaVGAK0+vM35fuxA7KCiu+5yCnibCkrwkrCc0BDkQ==
   dependencies:
     "@types/leaflet" "*"
 
