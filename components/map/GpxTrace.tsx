@@ -16,13 +16,13 @@ const GpxTrace = ({ gpxFile }: GpxTraceProps) => {
     new L.GPX(gpxFile, {
       async: true,
       marker_options: {
-        startIconUrl: "/images/map/starting-point-pin.svg",
+        startIconUrl: null,
         // startIcon: L.icon({
         //   iconUrl: "/images/map/starting-point-pin.svg",
         //   iconSize: [32, 32],
         //   iconAnchor: [16, 32],
         // }),
-        endIconUrl: "/images/map/ending-point-pin.svg",
+        endIconUrl: null,
         // endIcon: L.icon({
         //   iconUrl: "/images/map/ending-point-pin.svg",
         //   iconSize: [32, 32],

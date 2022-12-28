@@ -4,6 +4,9 @@ import GpxTrace from "./GpxTrace";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import MapLocateControl from "./LocateControl";
 import "leaflet.fullscreen";
+import GeoJsonTrace from "./GeoJsonTrace";
+// import transitNetwork from "../hikes-overview-map/traces-du-reseau-ferre-idf.json";
+import transitNetwork from "../hikes-overview-map/trace-simple.json";
 import "leaflet.fullscreen/Control.FullScreen.css";
 
 type MapProps = {
@@ -30,7 +33,7 @@ const MapContainer = ({
     scrollWheelZoom={scrollWheelZoom}
     fullscreenControl={fullscreenControl}
     {...otherProps}
-    className="h-64 md:h-52"
+    className="h-64 md:h-screen"
   >
     {children}
     <TileLayer
@@ -41,6 +44,7 @@ const MapContainer = ({
     <MapLocateControl />
     {gpxFiles &&
       gpxFiles.map((gpxFile) => <GpxTrace key={gpxFile} gpxFile={gpxFile} />)}
+    <GeoJsonTrace file={transitNetwork} />
   </LeafletMapContainer>
 );
 
