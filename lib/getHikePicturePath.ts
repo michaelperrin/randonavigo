@@ -1,10 +1,10 @@
-import { format } from 'date-fns';
-import { Hike } from './types'
+import dayjs from "dayjs";
+import { Hike } from "./types";
 
 const getHikePicturePath = (hike: Hike, picture: string): string => {
-  const date = new Date(hike.publication_date)
+  const date = dayjs(hike.publication_date);
 
-  return `/hikes/${format(date, 'yyyy')}/${format(date, 'MM')}/${hike.slug}/pictures/${picture}`
-}
+  return `/hikes/${date.format("YYYY/MM")}/${hike.slug}/pictures/${picture}`;
+};
 
 export default getHikePicturePath;
