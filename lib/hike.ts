@@ -1,11 +1,11 @@
 import fs from "fs";
 import glob from "glob";
+import dayjs from "dayjs";
 import { serialize } from "next-mdx-remote/serialize";
 import html from "remark-html";
 import matter from "gray-matter";
 import path from "path";
 import remark from "remark";
-import { format } from "date-fns";
 import { Hike } from "./types";
 
 type HikePathParams = {
@@ -16,12 +16,12 @@ type HikePathParams = {
 };
 
 export const getHikePathParams = (hike: Hike): HikePathParams => {
-  const date = new Date(hike.publication_date);
+  const date = dayjs(hike.publication_date);
 
   return {
-    year: format(date, "yyyy"),
-    month: format(date, "MM"),
-    day: format(date, "dd"),
+    year: date.format("YYYY"),
+    month: date.format("MM"),
+    day: date.format("DD"),
     slug: hike.slug,
   };
 };

@@ -1,5 +1,5 @@
-import { parseISO, format } from "date-fns";
-import { fr } from "date-fns/locale";
+import dayjs from "dayjs";
+import fr from "dayjs/locale/fr";
 
 type DateProps = {
   dateString: string;
@@ -7,7 +7,7 @@ type DateProps = {
 };
 
 export default function Date({ dateString, className }: DateProps) {
-  const date = parseISO(dateString);
+  const date = dayjs(dateString).locale(fr);
   const extraAttributes: any = {};
 
   if (className !== null) {
@@ -16,7 +16,7 @@ export default function Date({ dateString, className }: DateProps) {
 
   return (
     <time dateTime={dateString} {...extraAttributes}>
-      {format(date, "d MMMM yyyy", { locale: fr })}
+      {date.format("DD MMMM YYYY")}
     </time>
   );
 }
