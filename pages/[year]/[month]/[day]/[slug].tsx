@@ -26,7 +26,7 @@ type Params = {
 const Hike = ({ hike, mdxSource }: HikeProps) => (
   <Layout>
     <Head>
-      <title>{hike.title} – RandoNavigo</title>
+      <title>{`${hike.title} – RandoNavigo`}</title>
       <meta name="description" content={hike.summary} />
       <meta property="og:locale" content="fr_FR" />
       <meta property="og:type" content="article" />
