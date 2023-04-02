@@ -1,38 +1,36 @@
-import Head from 'next/head'
-import List from '@/components/hike/List'
-import { Hike } from '@/lib/types'
-import Layout from '@/components/layout'
-import TransportIcon from '@/components/TransportIcon'
-import TopBanner from '@/components/TopBanner'
-import LineLinks from './LineLinks'
+import Head from "next/head";
+import List from "@/components/hike/List";
+import { Hike } from "@/lib/types";
+import Layout from "@/components/layout";
+import TransportIcon from "@/components/TransportIcon";
+import TopBanner from "@/components/TopBanner";
+import LineLinks from "./LineLinks";
 
 type HikePerLineProps = {
-  hikes: Hike[],
-  banner?: string,
-  line: string,
-  meta?: string,
-  title: string,
-  borderColor: string,
-  bgColor: string,
-  children: JSX.Element | JSX.Element[],
-}
+  hikes: Hike[];
+  banner?: string;
+  line: string;
+  meta?: string;
+  title: string;
+  borderColor: string;
+  bgColor: string;
+  children: JSX.Element | JSX.Element[];
+};
 
 const LinePage = ({
   hikes,
-  banner='/images/transport/banner/ligne-j.jpeg',
+  banner = "/images/transport/banner/ligne-j.jpeg",
   title,
   meta,
   line,
   children,
   borderColor,
-  bgColor
+  bgColor,
 }: HikePerLineProps) => (
   <Layout>
     <Head>
       <title>{title} – RandoNavigo</title>
-      {meta && (
-        <meta name="description" content={meta} />
-      )}
+      {meta && <meta name="description" content={meta} />}
     </Head>
     <article>
       <TopBanner picture={banner} />
@@ -47,15 +45,13 @@ const LinePage = ({
                 </div>
                 <h1 className="text-2xl font-black">{title}</h1>
 
-                <div className={`mb-6 text-2xl font-black mt-4 w-24 h-1 ${bgColor}`} />
+                <div
+                  className={`mb-6 text-2xl font-black mt-4 w-24 h-1 ${bgColor}`}
+                />
 
-                <div className="prose">
-                  {children}
-                </div>
+                <div className="prose">{children}</div>
               </div>
-              <div className="ml-auto">
-
-              </div>
+              <div className="ml-auto" />
             </div>
           </main>
 
@@ -74,6 +70,6 @@ const LinePage = ({
       </div>
     </article>
   </Layout>
-)
+);
 
-export default LinePage
+export default LinePage;

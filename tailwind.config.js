@@ -52,6 +52,7 @@ module.exports = {
         "tram-t2": "#c04191",
         "tram-t6": "#e3051c",
         "tram-t11": "#f28e42",
+        "tram-t13": "#8d5e2a",
         "transilien-h": "#8d5e2a",
         "transilien-j": "#d5c900",
         "transilien-l": "#ceadd2",

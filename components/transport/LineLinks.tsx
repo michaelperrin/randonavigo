@@ -39,6 +39,7 @@ const LineLinks = ({}: HikePerLineProps) => (
           <LineIcon line="T2" size={32} />
           <LineIcon line="T6" size={32} />
           <LineIcon line="T11" size={32} />
+          <LineIcon line="T13" size={32} />
         </section>
       </div>
     </div>
