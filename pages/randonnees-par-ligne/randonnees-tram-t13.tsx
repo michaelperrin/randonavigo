@@ -35,7 +35,7 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
       tramway avec des pointes à 100 km/h, loin des lignes parfois
       &quot;tortillard&quot; des centre-villes. Celle-ci devrait être allongée à
       nouveau dans le futur en direction de Poissy et d&apos;Achères afin
-      d'assurer des correspondances qui n&apos;existent pas à l&apos;heure
+      d&apos;assurer des correspondances qui n&apos;existent pas à l&apos;heure
       actuelle.
     </p>
     <p>
