@@ -18,7 +18,7 @@ ending_point:
   comment: ""
   station: Noisy-le-Roi
   line: T13
-summary: Une petite randonnée parmi les champs vallonés le long du ru de Gally, avec quelques curiosités du patrimoine du département des Yvelines.
+summary: Une petite randonnée parmi les champs vallonnés le long du ru de Gally, avec quelques curiosités du patrimoine du département des Yvelines.
 tags:
 enabled: true
 ---
