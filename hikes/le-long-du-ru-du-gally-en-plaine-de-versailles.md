@@ -90,7 +90,7 @@ Et de l'autre côté… une curiosité qui fait régulièrement le bonheur d'Ins
 
 ## Le ru de Gally
 
-Poursuivez le chemin, très bien aménagé, qui longe le _ru de Gally_. Une balade vraiment agréable, dans un environnement à la biodiversité préservée. Saurez-vous y repérer quelques ragodins traversant tranquillement le ru ?
+Poursuivez le chemin, très bien aménagé, qui longe le _ru de Gally_. Une balade vraiment agréable, dans un environnement à la biodiversité préservée. Saurez-vous y repérer quelques ragondins traversant tranquillement le ru ?
 
 <Gallery pictures={[
 '/hikes/2023/04/le-long-du-ru-du-gally-en-plaine-de-versailles/pictures/le-long-du-ru-du-gally-en-plaine-de-versailles - 12.jpeg',
