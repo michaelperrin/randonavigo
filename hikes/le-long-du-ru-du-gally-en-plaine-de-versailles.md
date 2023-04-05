@@ -40,7 +40,7 @@ C'est donc le tramway T13 Express qui nous amène jusqu'à la gare de Bailly. Un
 '/hikes/2023/04/le-long-du-ru-du-gally-en-plaine-de-versailles/pictures/le-long-du-ru-du-gally-en-plaine-de-versailles - 2.jpeg',
 ]} />
 
-Une fois sorti du tram, on traverse le joli _Parc de la Châtaigneraie_. S'enchaînent alors un passage en zones résidentielles, parfois proches des grandes routes, dont une passerelle enjambant la grande route départementale.
+Une fois sorti du tram, on traverse le joli _Parc de la Châtaigneraie_. S'enchaîne alors un passage en zone résidentielle, parfois proche des grandes routes, dont une passerelle enjambant la grande route départementale.
 Le doute s’installe alors : cette randonnée aura-t-elle sa place sur RandoNavigo ? Rassurez-vous ! Passé le premier kilomètre, place aux champs et à davantage de tranquillité.
 
 <Picture
