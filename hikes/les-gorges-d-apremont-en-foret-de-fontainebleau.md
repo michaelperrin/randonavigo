@@ -34,7 +34,7 @@ Cette randonnée sera idéale si :
 - Vous souhaitez faire une randonnée 100% en forêt et globalement à l'ombre.
 - Vous cherchez un point de départ à moins de 45 minutes de Paris en train.
 
-La randonnée peut se faire en toute saison, mais attention aux jours de pluits où les roches pourront être particulièrement glissantes. Dans tous les cas, de bonnes chaussures sont requises car certaines zones sont assez escarpées.
+La randonnée peut se faire en toute saison, mais attention aux jours de pluie où les roches pourront être particulièrement glissantes. Dans tous les cas, de bonnes chaussures sont requises car certaines zones sont assez escarpées.
 
 ## Départ en gare de Bois-le-Roi
 
@@ -46,7 +46,7 @@ La gare de Bois-le-Roi se situe sur la [ligne R du Transilien](/randonnees-par-l
 ]} />
 
 En provenance de Paris, passez de l'autre côté des voies en empruntant les petits escaliers prévus à cet effet.
-On emprunte ensuite quelques rues de Bois-le-Roi pour très rapidement retrouver un chemin qui nous mènes en forêt de Fontainebleau.
+On emprunte ensuite quelques rues de Bois-le-Roi pour très rapidement retrouver un chemin qui nous mène en forêt de Fontainebleau.
 
 ## En forêt de Fontainebleau
 
@@ -54,7 +54,7 @@ En planifiant le tracé pour rejoindre les Gorges d'Apremont depuis Bois-le-Roi,
 
 Quelques routes à traverser et le bruit d’avions viennent troubler la tranquillité, mais on est globalement très vite au calme.
 
-Ayez l'œil, car vous apercevrez certainement des écureuils roux ou peut-être même des chevreuils !
+Ayez l'œil, écureils roux et chevreils ne sont jamais bien loin !
 
 <Gallery pictures={[
 '/hikes/2023/06/les-gorges-d-apremont-en-foret-de-fontainebleau/pictures/gorges-apremont - 3.jpeg',
@@ -65,7 +65,7 @@ Ayez l'œil, car vous apercevrez certainement des écureuils roux ou peut-être 
 
 ## Le secteur du Rocher Canon
 
-Dès le troisième kilomètre, nous allons faire une petite incursion dans le secteur du Rocher Canon. Ce secteur est très fréquenté par les grimpeurs qui s'exercent sur imposants rochers. Suivez attentivement le marquage bleu sur les rochers car c'est un vrai labyrinthe !
+Dès le troisième kilomètre, nous allons faire une petite incursion dans le secteur du Rocher Canon. Ce secteur est très fréquenté par les grimpeurs qui s'exercent sur les imposants rochers. Suivez attentivement le marquage bleu sur les rochers car c'est un petit labyrinthe !
 
 Si vous souhaitez plutôt vous préserver pour la suite dans les Gorges d'Apremont, la trace raccourcie vous permettra d'éviter tous ces détours entre les rochers.
 
@@ -87,7 +87,7 @@ Une vue panoramique sur la forêt de Fontainebleau s'offre à nous et c'est un c
 
 ## Barbizon, le village des peintres
 
-La randonnée se poursuit en direction de Barbizon, un charmant petit village qui a vu passer de nombreux peintres au XIXème siècle. On y trouve d'ailleurs de nombreuses galeries d'art et des ateliers de peinture.
+La randonnée se poursuit en direction de Barbizon, un petit village qui a vu passer de nombreux peintres au XIXème siècle. On y trouve d'ailleurs de nombreuses galeries d'art et des ateliers de peinture.
 
 La rue principale est agréable et pourra être le lieu d'une pause gourmande. On y trouve des restaurants et cafés avec terrasses. Je me suis arrêté au salon de thé _La Juxtaposition_ qui était vraiment parfait.
 
@@ -105,7 +105,7 @@ Si votre but était toutefois de simplement rester en forêt et découvrir les G
 Nous y voilà donc, aux Gorges d'Apremont ! Suivez le sentier qui est tout d'abord balisé en bleu. Plus loin, le GR nous rejoint avec son balisage rouge et blanc.
 Le sentier passe entre les rochers sur plusieurs kilomètres et les vues sur la forêt sont magnifiques. Nous sommes qui plus est accompagnés de la bonne senteur des pins.
 
-Une bonne redescente ensuite et encore plusieurs kilomètres à travers la forêt pour rejoindre la gare de Bois-le-Roi.
+Une bonne descente ensuite et encore plusieurs kilomètres à travers la forêt pour rejoindre la gare de Bois-le-Roi.
 
 <Gallery pictures={[
 '/hikes/2023/06/les-gorges-d-apremont-en-foret-de-fontainebleau/pictures/gorges-apremont - 16.jpeg',
