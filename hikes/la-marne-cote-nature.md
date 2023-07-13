@@ -8,7 +8,7 @@ categories:
 tags: [eau, baignade]
 pictures: []
 main_picture: la-marne-cote-nature - 22.jpeg
-distance: 17
+distance: 16
 gpx_file: la-marne-cote-nature.gpx
 starting_point:
   station: La Ferté-sous-Jouarre
