@@ -1,7 +1,7 @@
 ---
 title: Les bords de Seine pleine nature
 categories:
-  - Seine-et-Marne
+  - Essonne
 distance: 16
 favorite: true
 gpx_file: les-bords-de-seine-pleine-nature.gpx
@@ -16,7 +16,7 @@ starting_point:
   line: D
 ending_point:
   comment: ""
-  station: Ponthierry - Pringy
+  station: Ponthierry-Pringy
   line: D
 summary: Découvrez la Seine comme vous ne l'avez jamais vue, dans un environnement naturel et préservé ! Une superbe randonnée entre bois et bords d'eau.
 tags:
