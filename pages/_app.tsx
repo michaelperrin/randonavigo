@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     <Script
       id="google-tag-manager"
       strategy="lazyOnload"
-      src={`https://www.googletagmanager.com/gtag/js?id=UA-82485566-1`}
+      src={`https://www.googletagmanager.com/gtag/js?id=G-GBHKX90080`}
     />
 
     <Script strategy="lazyOnload" id="google-analytics">
@@ -22,9 +22,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-82485566-1', {
-        page_path: window.location.pathname,
-      });
+
+      gtag('config', 'G-GBHKX90080');
       `}
     </Script>
 
