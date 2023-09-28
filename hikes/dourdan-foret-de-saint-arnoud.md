@@ -3,7 +3,7 @@ title: Dourdan / Forêt de Saint-Arnoult
 summary:
   Une randonnée au départ de la gare de RER C Dourdan qui vous fera longer
   l'Orge puis vous emmènera en forêt de Saint-Arnoult.
-slug: dourdan-foret-de-saint-arnoult
+slug: dourdan-foret-de-saint-arnoud
 publication_date: "2016-08-17"
 categories:
   - Essonne
@@ -18,7 +18,7 @@ pictures:
   - IMG_5137.jpg
 main_picture: IMG_5137.jpg
 distance: 13
-gpx_file: dourdan-foret-de-saint-arnoult.gpx
+gpx_file: dourdan-foret-de-saint-arnoud.gpx
 starting_point:
   station: Dourdan
   line: C
