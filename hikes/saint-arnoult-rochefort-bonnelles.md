@@ -22,7 +22,7 @@ ending_point:
   comment: ""
   station: Dourdan
   line: C
-summary: 40 kilomètres de randonnée sur deux jours, avec de très belles découvertes avec une pause de luxe dans un bel hôtel en Vallée de Chevreuse. Je vous propose également une alternative de 27 kilomètres en un seul jour.
+summary: 40 kilomètres de randonnée sur deux jours, avec de très belles découvertes et une pause dans un bel hôtel en Vallée de Chevreuse. Je vous propose également une alternative de 27 kilomètres en un seul jour.
 tags:
 enabled: true
 ---
@@ -33,7 +33,9 @@ Cela faisait bien longtemps que je souhaitais faire cette randonnée ! Le tracé
 - La forêt de Rochefort et ses paysages de bruyère.
 - Les étangs de Bonnelles et le fameux "pont-clocher" qui enjambe l'étang.
 
-Des coins qui valent vraiment le détour mais pas forcément faciles d'accès en transports en commun. J'avais repéré cet hôtel au milieu d'un haras, à Bonnelles, qui me semblait parfait pour une pause de luxe en milieu de la randonnée. C'est donc parti pour deux jours de randonnée, avec une nuit à l'hôtel.
+Des coins qui valent vraiment le détour mais pas forcément faciles d'accès en transports en commun. J'avais repéré cet hôtel au milieu d'un haras, à Bonnelles, qui me semblait parfait pour une pause en milieu de la randonnée. C'est donc parti pour une escapade de deux jours de randonnée, avec une nuit à l'hôtel.
+
+Si vous avez envie d'une belle escapade en dehors de Paris, de vous ressourcer dans un hôtel situé en pleine Vallée de Chevreuse, de découvrir de beaux paysages et de vous balader en forêt, cette randonnée est faite pour vous !
 
 ## Départ à Dourdan-la-Forêt
 
