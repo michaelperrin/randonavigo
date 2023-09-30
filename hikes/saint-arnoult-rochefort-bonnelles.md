@@ -92,7 +92,7 @@ A la fin du treizième kilomètre, on quitte la route pour bifurquer en forêt s
 
 ## Les étangs de Bonnelles
 
-Après avoir longé un stade, nous voici donc arrivés dans la aux étangs de Bonnelles. La réserve naturelle est composée de deux grands étangs. Un petit chemin vous mènera au premier, avec ce joli pont-clocher qui enjambe l'étang. Je conseille de le traverser pour se rendre à l'observatoire aux oiseaux.
+Après avoir longé un stade, nous voici donc arrivés à la _Réserve naturelle des étangs de Bonnelles_. Un petit chemin vous mènera au premier, avec ce joli pont-clocher qui enjambe l'étang. Je conseille de le traverser pour se rendre à l'observatoire aux oiseaux.
 
 <Gallery pictures={[
 '/hikes/2023/09/saint-arnoult-rochefort-bonnelles/pictures/DSCF8975.jpg',
@@ -117,13 +117,13 @@ On sort de la réserve naturelle par un petit chemin valloné et bien agréable.
 
 ## Passage par l'hôtel Le Barn
 
-Que vous décidiez de réserver un autre logement ou de faire la randonnée en un jour pour les plus courageux, le tracé que je propose passe par l'hôtel Le Barn. Les accès aux portails sont ouverts, avec parfois un interrupteur en amont (situé à hauteur de cavalier) pour ouvrir le portail.
+Que vous décidiez de réserver un autre logement ou de faire la randonnée en un jour pour les plus courageux, le tracé que je propose passe par l'hôtel [Le Barn](https://lebarnhotel.com/). Les accès aux portails sont ouverts, avec parfois un interrupteur en amont (situé à hauteur de cavalier) pour ouvrir le portail.
 
 Par rapport au plan que je propose, il est également possible de contourner l'hôtel en passant par la route.
 
 Nous avons beaucoup apprécié le séjour dans cet hôtel situé au milieu d'un haras et aux abords de la forêt. Le cadre est magnifique, les chambres confortables et le restaurant est excellent. Tout le site est gigantesque, avec de nombreuses activités proposées (cheval, spa, etc.) et prêt de vélos pour se balader dans le domaine. Ca m'a titillé de retourner aux étangs de Bonnelles tôt le matin en vélo ! Il est également possible de se baigner dans un petit étang.
 
-Si vous souhaitez y séjourner, n'hésitez pas à commencer la randonnée le plus tôt possible pour arriver suffisamment tôt à l'hôtel et profiter des activités.
+Si vous souhaitez y séjourner, n'hésitez pas à commencer la randonnée le plus tôt possible pour arriver suffisamment tôt à l'hôtel et profiter des activités. Mon conseil : appeler l'hôtel directement car il n'est pas toujours possible de faire une réservation pour une seule nuit. Si le budget vous le permet, pourquoi pas y passer deux nuits pour profiter pleinement du lieu sur une journée entière.
 
 <Gallery pictures={[
 '/hikes/2023/09/saint-arnoult-rochefort-bonnelles/pictures/IMG_3344.jpg',
