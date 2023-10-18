@@ -93,7 +93,9 @@ Vous redescendrez ensuite vers Seine Port. Arborée, au bord de l’eau, avec de
 
 ## Le Domaine des Iles, un espace naturel d'exception
 
-Le Domaine des Iles est un espace naturel réhabilité très agréable. Le trajet que je propose fait un aller-retour sur une petite île charmante et permet de profiter de la Seine.
+Le Domaine des Iles est un espace naturel réhabilité très agréable. Le trajet que je propose fait un aller-retour sur une petite île charmante et permet de profiter de la Seine. Idéal pour une pause pique-nique par exemple.
+
+Personnellement je m'y suis même baigné, mais attention tout de même c'est à vos risques et périls, aucun surveillance bien sûr, des péniches qui passent au loin, un éventuel courant, etc. Et bien sûr, ça reste la Seine ! Mais la Seine est censée être baignable pour les Jeux Olympiques de 2024, non ?
 
 <Gallery pictures={[
 '/hikes/2023/06/les-bords-de-seine-pleine-nature/pictures/les-bords-de-seine-pleine-nature - 18.jpeg',
