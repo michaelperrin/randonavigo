@@ -35,7 +35,7 @@ Cette randonnée permet de découvrir les bords de l'Yerre, puis de traverser la
 
 ## Départ en gare de Brunoy
 
-Le départ de la randonnée se fait en gare de _Brunoy_, située sur la ligne D du RER à 30 minutes seuelement depuis Gare de Lyon.
+Le départ de la randonnée se fait en gare de _Brunoy_, située sur la ligne D du RER à 30 minutes seulement depuis Gare de Lyon.
 
 Un départ qui se fait donc en ville en suivant le marquage jaune du PR mais l'on rejoint rapidement les bords de l'Yerre.
 
