@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx version="1.1" creator="outdooractive - http://www.outdooractive.com" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" xmlns:oa="http://www.outdooractive.com/GPX/Extensions/1">
+  <metadata>
+    <name>Bords de Seine depuis Triel</name>
+    <author>
+      <name>Michaël michaelperrin - Communauté</name>
+    </author>
+    <link href="https://www.outdooractive.com/r/281704839"/>
+    <time>2023-12-03T10:03:38.836Z</time>
+    <extensions>
+      <oa:oaCategory>hikingTourTrail</oa:oaCategory>
+    </extensions>
+  </metadata>
+  <trk>
+    <name>Bords de Seine depuis Triel</name>
+    <type>hikingTourTrail</type>
+    <trkseg>
+      <trkpt lat="48.980849" lon="2.005699">
+        <ele>51.7</ele>
+        <name>48.980849N, 2.005699E</name>
+      </trkpt>
+      <trkpt lat="48.980878" lon="2.005597">
+        <ele>51.7</ele>
+      </trkpt>
+      <trkpt lat="48.980934" lon="2.00555">
+        <ele>51.8</ele>
+      </trkpt>
+      <trkpt lat="48.980957" lon="2.00561">
+        <ele>51.9</ele>
+      </trkpt>
+      <trkpt lat="48.980969" lon="2.005652">
+        <ele>52.0</ele>
+      </trkpt>
+      <trkpt lat="48.981001" lon="2.005744">
+        <ele>52.2</ele>
+      </trkpt>
+      <trkpt lat="48.981093" lon="2.005672">
+        <ele>52.3</ele>
+      </trkpt>
+      <trkpt lat="48.981231" lon="2.005547">
+        <ele>51.9</ele>
+      </trkpt>
+      <trkpt lat="48.981198" lon="2.005459">
+        <ele>51.7</ele>
+      </trkpt>
+      <trkpt lat="48.981195" lon="2.005426">
+        <ele>51.6</ele>
+      </trkpt>
+      <trkpt lat="48.981201" lon="2.005393">
+        <ele>51.5</ele>
+      </trkpt>
+      <trkpt lat="48.981212" lon="2.005338">
+        <ele>51.3</ele>
+      </trkpt>
+      <trkpt lat="48.981202" lon="2.005318">
+        <ele>51.2</ele>
+      </trkpt>
+      <trkpt lat="48.981184" lon="2.00527">
+        <ele>51.1</ele>
+      </trkpt>
+      <trkpt lat="48.981234" lon="2.005228">
+        <ele>50.9</ele>
+      </trkpt>
+      <trkpt lat="48.981268" lon="2.005202">
+        <ele>50.7</ele>
+      </trkpt>
+      <trkpt lat="48.981264" lon="2.005143">
+        <ele>50.3</ele>
+      </trkpt>
+      <trkpt lat="48.981261" lon="2.005114">
+        <ele>50.1</ele>
+      </trkpt>
+      <trkpt lat="48.981263" lon="2.00506">
+        <ele>49.7</ele>
+      </trkpt>
+      <trkpt lat="48.981279" lon="2.005012">
+        <ele>49.2</ele>
+      </trkpt>
+      <trkpt lat="48.981482" lon="2.004548">
+        <ele>44.5</ele>
+      </trkpt>
+      <trkpt lat="48.981685" lon="2.004084">
+        <ele>38.5</ele>
+      </trkpt>
+      <trkpt lat="48.981725" lon="2.003994">
+        <ele>37.4</ele>
+      </trkpt>
+      <trkpt lat="48.981857" lon="2.003688">
+        <ele>36.3</ele>
+      </trkpt>
+      <trkpt lat="48.981869" lon="2.003655">
+        <ele>36.2</ele>
+      </trkpt>
+      <trkpt lat="48.981882" lon="2.003617">
+        <ele>36.1</ele>
+      </trkpt>
+      <trkpt lat="48.981901" lon="2.003561">
+        <ele>36.0</ele>
+      </trkpt>
+      <trkpt lat="48.982073" lon="2.003246">
+        <ele>35.8</ele>
+      </trkpt>
+      <trkpt lat="48.982" lon="2.003048">
+        <ele>34.1</ele>
+      </trkpt>
+      <trkpt lat="48.981949" lon="2.002805">
+        <ele>32.7</ele>
+      </trkpt>
+      <trkpt lat="48.981943" lon="2.002755">
+        <ele>32.5</ele>
+      </trkpt>
+      <trkpt lat="48.981888" lon="2.002603">
+        <ele>31.7</ele>
+      </trkpt>
+      <trkpt lat="48.981774" lon="2.002703">
+        <ele>31.9</ele>
+      </trkpt>
+      <trkpt lat="48.981746" lon="2.002621">
+        <ele>31.4</ele>
+      </trkpt>
+      <trkpt lat="48.981706" lon="2.002505">
+        <ele>30.0</ele>
+      </trkpt>
+      <trkpt lat="48.981693" lon="2.002453">
+        <ele>29.3</ele>
+      </trkpt>
+      <trkpt lat="48.981735" lon="2.002381">
+        <ele>28.4</ele>
+      </trkpt>
+      <trkpt lat="48.981526" lon="2.001797">
+        <ele>24.6</ele>
+      </trkpt>
+      <trkpt lat="48.98152" lon="2.001653">
+        <ele>24.0</ele>
+      </trkpt>
+      <trkpt lat="48.981382" lon="2.001377">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="48.981243" lon="2.001101">
+        <ele>22.3</ele>
+      </trkpt>
+      <trkpt lat="48.981203" lon="2.001019">
+        <ele>22.1</ele>
+      </trkpt>
+      <trkpt lat="48.981188" lon="2.000988">
+        <ele>22.0</ele>
+      </trkpt>
+      <trkpt lat="48.981158" lon="2.00094">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="48.981161" lon="2.000905">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="48.981156" lon="2.00087">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="48.981144" lon="2.00084">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="48.981129" lon="2.000819">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="48.981109" lon="2.000806">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="48.981065" lon="2.000686">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="48.980961" lon="2.000764">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="48.980893" lon="2.000826">
+        <ele>20.5</ele>
+      </trkpt>
+      <trkpt lat="48.980884" lon="2.000835">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="48.980841" lon="2.000857">
+        <ele>20.7</ele>
+      </trkpt>
+      <trkpt lat="48.980649" lon="2.001077">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="48.980601" lon="2.001131">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="48.98048" lon="2.001224">
+        <ele>21.2</ele>
+      </trkpt>
+      <trkpt lat="48.980275" lon="2.001319">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="48.980187" lon="2.001359">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="48.980091" lon="2.001515">
+        <ele>20.8</ele>
+      </trkpt>
+      <trkpt lat="48.979952" lon="2.001673">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="48.979814" lon="2.001762">
+        <ele>18.8</ele>
+      </trkpt>
+      <trkpt lat="48.979628" lon="2.001883">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="48.979287" lon="2.002105">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="48.979206" lon="2.002185">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="48.9792" lon="2.002191">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="48.979178" lon="2.002209">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="48.978876" lon="2.00238">
+        <ele>21.9</ele>
+      </trkpt>
+      <trkpt lat="48.978891" lon="2.002434">
+        <ele>22.5</ele>
+      </trkpt>
+      <trkpt lat="48.978941" lon="2.002633">
+        <ele>23.8</ele>
+      </trkpt>
+      <trkpt lat="48.978916" lon="2.002983">
+        <ele>27.6</ele>
+      </trkpt>
+      <trkpt lat="48.978976" lon="2.003216">
+        <ele>27.5</ele>
+      </trkpt>
+      <trkpt lat="48.978933" lon="2.003242">
+        <ele>28.4</ele>
+      </trkpt>
+      <trkpt lat="48.978898" lon="2.003109">
+        <ele>28.6</ele>
+      </trkpt>
+      <trkpt lat="48.97879" lon="2.002694">
+        <ele>23.6</ele>
+      </trkpt>
+      <trkpt lat="48.978636" lon="2.002082">
+        <ele>23.4</ele>
+      </trkpt>
+      <trkpt lat="48.978482" lon="2.001469">
+        <ele>23.3</ele>
+      </trkpt>
+      <trkpt lat="48.978328" lon="2.000857">
+        <ele>23.1</ele>
+      </trkpt>
+      <trkpt lat="48.978176" lon="2.00025">
+        <ele>23.0</ele>
+        <name>Rue Eugène Senet, 78510 Triel-sur-Seine</name>
+        <extensions>
+          <oa:address>[administrativeArea:Île-de-France, country:France, streetAddress:Rue Eugène Senet, subAdministrativeArea:Yvelines, town:Triel-sur-Seine, zipcode:78510]</oa:address>
+        </extensions>
+      </trkpt>
+      <trkpt lat="48.978174" lon="2.000245">
+        <ele>23.0</ele>
+      </trkpt>
+      <trkpt lat="48.978134" lon="2.000017">
+        <ele>26.6</ele>
+      </trkpt>
+      <trkpt lat="48.978202" lon="1.99995">
+        <ele>26.9</ele>
+      </trkpt>
+      <trkpt lat="48.97832" lon="2.000142">
+        <ele>22.1</ele>
+      </trkpt>
+      <trkpt lat="48.978366" lon="2.000205">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="48.978474" lon="2.00014">
+        <ele>19.3</ele>
+      </trkpt>
+      <trkpt lat="48.978856" lon="1.999841">
+        <ele>20.4</ele>
+      </trkpt>
+      <trkpt lat="48.979238" lon="1.999541">
+        <ele>21.2</ele>
+      </trkpt>
+      <trkpt lat="48.979529" lon="1.999357">
+        <ele>20.8</ele>
+      </trkpt>
+      <trkpt lat="48.979518" lon="1.99928">
+        <ele>21.5</ele>
+      </trkpt>
+      <trkpt lat="48.979521" lon="1.999186">
+        <ele>22.0</ele>
+      </trkpt>
+      <trkpt lat="48.979533" lon="1.99905">
+        <ele>22.5</ele>
+      </trkpt>
+      <trkpt lat="48.979543" lon="1.998898">
+        <ele>22.7</ele>
+      </trkpt>
+      <trkpt lat="48.97971" lon="1.998275">
+        <ele>22.5</ele>
+      </trkpt>
+      <trkpt lat="48.979877" lon="1.997652">
+        <ele>22.1</ele>
+      </trkpt>
+      <trkpt lat="48.979919" lon="1.997378">
+        <ele>22.6</ele>
+      </trkpt>
+      <trkpt lat="48.979946" lon="1.996977">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="48.979972" lon="1.996576">
+        <ele>23.1</ele>
+      </trkpt>
+      <trkpt lat="48.979946" lon="1.996093">
+        <ele>21.4</ele>
+      </trkpt>
+      <trkpt lat="48.97994" lon="1.995965">
+        <ele>22.6</ele>
+      </trkpt>
+      <trkpt lat="48.979879" lon="1.995677">
+        <ele>22.8</ele>
+        <name>20 Rue du Val de Seine, 78540 Vernouillet</name>
+        <extensions>
+          <oa:address>[administrativeArea:Île-de-France, country:France, streetAddress:20 Rue du Val de Seine, subAdministrativeArea:Yvelines, town:Vernouillet, zipcode:78540]</oa:address>
+        </extensions>
+      </trkpt>
+      <trkpt lat="48.979865" lon="1.995609">
+        <ele>22.9</ele>
+      </trkpt>
+      <trkpt lat="48.97979" lon="1.995252">
+        <ele>23.1</ele>
+      </trkpt>
+      <trkpt lat="48.980054" lon="1.994883">
+        <ele>23.1</ele>
+      </trkpt>
+      <trkpt lat="48.980317" lon="1.994513">
+        <ele>23.2</ele>
+      </trkpt>
+      <trkpt lat="48.980581" lon="1.994144">
+        <ele>22.3</ele>
+      </trkpt>
+      <trkpt lat="48.980845" lon="1.993774">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="48.981228" lon="1.993662">
+        <ele>19.1</ele>
+      </trkpt>
+      <trkpt lat="48.981521" lon="1.993511">
+        <ele>19.3</ele>
+      </trkpt>
+      <trkpt lat="48.981748" lon="1.993342">
+        <ele>19.1</ele>
+      </trkpt>
+      <trkpt lat="48.981975" lon="1.993173">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="48.982246" lon="1.992798">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="48.982427" lon="1.9925">
+        <ele>20.1</ele>
+      </trkpt>
+      <trkpt lat="48.982609" lon="1.992203">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="48.982764" lon="1.992111">
+        <ele>20.8</ele>
+      </trkpt>
+      <trkpt lat="48.982936" lon="1.992176">
+        <ele>22.2</ele>
+      </trkpt>
+      <trkpt lat="48.983056" lon="1.992117">
+        <ele>21.6</ele>
+      </trkpt>
+      <trkpt lat="48.983131" lon="1.991996">
+        <ele>21.5</ele>
+      </trkpt>
+      <trkpt lat="48.983214" lon="1.991865">
+        <ele>22.2</ele>
+      </trkpt>
+      <trkpt lat="48.983341" lon="1.991822">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="48.983453" lon="1.991714">
+        <ele>22.7</ele>
+      </trkpt>
+      <trkpt lat="48.983541" lon="1.9915">
+        <ele>23.1</ele>
+      </trkpt>
+      <trkpt lat="48.983668" lon="1.991307">
+        <ele>22.7</ele>
+      </trkpt>
+      <trkpt lat="48.983848" lon="1.991044">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="48.984024" lon="1.990824">
+        <ele>21.9</ele>
+      </trkpt>
+      <trkpt lat="48.984189" lon="1.990604">
+        <ele>22.3</ele>
+      </trkpt>
+      <trkpt lat="48.984443" lon="1.99032">
+        <ele>23.2</ele>
+      </trkpt>
+      <trkpt lat="48.984633" lon="1.989912">
+        <ele>23.2</ele>
+      </trkpt>
+      <trkpt lat="48.984714" lon="1.989585">
+        <ele>23.7</ele>
+      </trkpt>
+      <trkpt lat="48.984795" lon="1.989257">
+        <ele>23.5</ele>
+      </trkpt>
+      <trkpt lat="48.984953" lon="1.98893">
+        <ele>23.6</ele>
+      </trkpt>
+      <trkpt lat="48.985112" lon="1.988603">
+        <ele>23.7</ele>
+      </trkpt>
+      <trkpt lat="48.985271" lon="1.988339">
+        <ele>23.6</ele>
+      </trkpt>
+      <trkpt lat="48.985431" lon="1.988074">
+        <ele>23.1</ele>
+      </trkpt>
+      <trkpt lat="48.985527" lon="1.987954">
+        <ele>23.9</ele>
+      </trkpt>
+      <trkpt lat="48.985759" lon="1.987616">
+        <ele>24.3</ele>
+      </trkpt>
+      <trkpt lat="48.986006" lon="1.987278">
+        <ele>24.8</ele>
+      </trkpt>
+      <trkpt lat="48.986273" lon="1.98687">
+        <ele>25.4</ele>
+      </trkpt>
+      <trkpt lat="48.98646" lon="1.986581">
+        <ele>25.0</ele>
+      </trkpt>
+      <trkpt lat="48.986745" lon="1.98635">
+        <ele>23.6</ele>
+      </trkpt>
+      <trkpt lat="48.986889" lon="1.986058">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="48.987006" lon="1.985694">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="48.987188" lon="1.98545">
+        <ele>19.6</ele>
+      </trkpt>
+      <trkpt lat="48.987372" lon="1.98532">
+        <ele>20.5</ele>
+      </trkpt>
+      <trkpt lat="48.987541" lon="1.98524">
+        <ele>22.9</ele>
+      </trkpt>
+      <trkpt lat="48.98771" lon="1.985191">
+        <ele>23.9</ele>
+      </trkpt>
+      <trkpt lat="48.987967" lon="1.985073">
+        <ele>24.2</ele>
+      </trkpt>
+      <trkpt lat="48.988122" lon="1.985116">
+        <ele>24.2</ele>
+      </trkpt>
+      <trkpt lat="48.988382" lon="1.98525">
+        <ele>24.2</ele>
+      </trkpt>
+      <trkpt lat="48.988664" lon="1.985309">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="48.988815" lon="1.985266">
+        <ele>24.3</ele>
+      </trkpt>
+      <trkpt lat="48.989118" lon="1.984912">
+        <ele>23.9</ele>
+      </trkpt>
+      <trkpt lat="48.989325" lon="1.984397">
+        <ele>24.7</ele>
+      </trkpt>
+      <trkpt lat="48.989397" lon="1.984219">
+        <ele>24.7</ele>
+        <name>78510 Verneuil-sur-Seine, France</name>
+        <extensions>
+          <oa:address>[administrativeArea:Île-de-France, country:France, subAdministrativeArea:Yvelines, town:Verneuil-sur-Seine, zipcode:78510]</oa:address>
+        </extensions>
+      </trkpt>
+      <trkpt lat="48.989533" lon="1.983882">
+        <ele>24.8</ele>
+      </trkpt>
+      <trkpt lat="48.989723" lon="1.983689">
+        <ele>25.0</ele>
+      </trkpt>
+      <trkpt lat="48.989906" lon="1.983249">
+        <ele>24.7</ele>
+      </trkpt>
+      <trkpt lat="48.990135" lon="1.983062">
+        <ele>24.4</ele>
+      </trkpt>
+      <trkpt lat="48.990364" lon="1.982874">
+        <ele>23.9</ele>
+      </trkpt>
+      <trkpt lat="48.990652" lon="1.982423">
+        <ele>24.2</ele>
+      </trkpt>
+      <trkpt lat="48.99086" lon="1.98216">
+        <ele>24.3</ele>
+      </trkpt>
+      <trkpt lat="48.991068" lon="1.981897">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="48.991293" lon="1.981515">
+        <ele>23.3</ele>
+      </trkpt>
+      <trkpt lat="48.991518" lon="1.981132">
+        <ele>24.0</ele>
+      </trkpt>
+      <trkpt lat="48.991744" lon="1.980749">
+        <ele>23.8</ele>
+      </trkpt>
+      <trkpt lat="48.991979" lon="1.980363">
+        <ele>23.7</ele>
+      </trkpt>
+      <trkpt lat="48.992214" lon="1.979976">
+        <ele>24.3</ele>
+      </trkpt>
+      <trkpt lat="48.992449" lon="1.979589">
+        <ele>24.7</ele>
+      </trkpt>
+      <trkpt lat="48.992655" lon="1.979213">
+        <ele>21.5</ele>
+      </trkpt>
+      <trkpt lat="48.992896" lon="1.978929">
+        <ele>23.0</ele>
+      </trkpt>
+      <trkpt lat="48.993095" lon="1.978454">
+        <ele>24.1</ele>
+      </trkpt>
+      <trkpt lat="48.993377" lon="1.978035">
+        <ele>23.1</ele>
+      </trkpt>
+      <trkpt lat="48.993542" lon="1.977692">
+        <ele>23.4</ele>
+      </trkpt>
+      <trkpt lat="48.993708" lon="1.977348">
+        <ele>24.3</ele>
+      </trkpt>
+      <trkpt lat="48.993888" lon="1.976953">
+        <ele>23.5</ele>
+      </trkpt>
+      <trkpt lat="48.994067" lon="1.976558">
+        <ele>22.1</ele>
+      </trkpt>
+      <trkpt lat="48.994222" lon="1.976234">
+        <ele>23.9</ele>
+      </trkpt>
+      <trkpt lat="48.994377" lon="1.975911">
+        <ele>23.6</ele>
+      </trkpt>
+      <trkpt lat="48.994581" lon="1.975525">
+        <ele>24.5</ele>
+      </trkpt>
+      <trkpt lat="48.994785" lon="1.975138">
+        <ele>25.0</ele>
+      </trkpt>
+      <trkpt lat="48.994943" lon="1.9748">
+        <ele>24.9</ele>
+      </trkpt>
+      <trkpt lat="48.995102" lon="1.974462">
+        <ele>24.3</ele>
+      </trkpt>
+      <trkpt lat="48.995281" lon="1.974006">
+        <ele>24.7</ele>
+      </trkpt>
+      <trkpt lat="48.995461" lon="1.97355">
+        <ele>24.2</ele>
+      </trkpt>
+      <trkpt lat="48.995721" lon="1.973178">
+        <ele>24.6</ele>
+      </trkpt>
+      <trkpt lat="48.995981" lon="1.972805">
+        <ele>24.1</ele>
+      </trkpt>
+      <trkpt lat="48.996156" lon="1.972555">
+        <ele>24.0</ele>
+      </trkpt>
+      <trkpt lat="48.996308" lon="1.972162">
+        <ele>23.4</ele>
+      </trkpt>
+      <trkpt lat="48.99646" lon="1.971769">
+        <ele>24.4</ele>
+      </trkpt>
+      <trkpt lat="48.996636" lon="1.971405">
+        <ele>24.4</ele>
+      </trkpt>
+      <trkpt lat="48.996812" lon="1.97104">
+        <ele>24.1</ele>
+      </trkpt>
+      <trkpt lat="48.996967" lon="1.970745">
+        <ele>25.2</ele>
+      </trkpt>
+      <trkpt lat="48.997122" lon="1.97045">
+        <ele>24.6</ele>
+      </trkpt>
+      <trkpt lat="48.997354" lon="1.970192">
+        <ele>25.1</ele>
+      </trkpt>
+      <trkpt lat="48.99752" lon="1.969946">
+        <ele>25.1</ele>
+      </trkpt>
+      <trkpt lat="48.997685" lon="1.969699">
+        <ele>24.8</ele>
+      </trkpt>
+      <trkpt lat="48.99781" lon="1.969416">
+        <ele>24.6</ele>
+      </trkpt>
+      <trkpt lat="48.998002" lon="1.96898">
+        <ele>25.3</ele>
+      </trkpt>
+      <trkpt lat="48.998262" lon="1.968444">
+        <ele>25.9</ele>
+      </trkpt>
+      <trkpt lat="48.998565" lon="1.968089">
+        <ele>26.3</ele>
+      </trkpt>
+      <trkpt lat="48.99873" lon="1.96773">
+        <ele>26.2</ele>
+      </trkpt>
+      <trkpt lat="48.998896" lon="1.967371">
+        <ele>24.6</ele>
+      </trkpt>
+      <trkpt lat="48.999142" lon="1.966952">
+        <ele>24.5</ele>
+      </trkpt>
+      <trkpt lat="48.999363" lon="1.966484">
+        <ele>25.7</ele>
+      </trkpt>
+      <trkpt lat="48.999583" lon="1.966015">
+        <ele>25.7</ele>
+      </trkpt>
+      <trkpt lat="48.99971" lon="1.965746">
+        <ele>26.0</ele>
+        <name>78740 Verneuil-sur-Seine, France</name>
+        <extensions>
+          <oa:address>[administrativeArea:Île-de-France, country:France, subAdministrativeArea:Yvelines, town:Verneuil-sur-Seine, zipcode:78740]</oa:address>
+        </extensions>
+      </trkpt>
+      <trkpt lat="48.999804" lon="1.965547">
+        <ele>26.2</ele>
+      </trkpt>
+      <trkpt lat="48.999997" lon="1.965187">
+        <ele>25.7</ele>
+      </trkpt>
+      <trkpt lat="49.000191" lon="1.964828">
+        <ele>26.1</ele>
+      </trkpt>
+      <trkpt lat="49.000367" lon="1.96435">
+        <ele>26.1</ele>
+      </trkpt>
+      <trkpt lat="49.000543" lon="1.963873">
+        <ele>26.5</ele>
+      </trkpt>
+      <trkpt lat="49.000543" lon="1.963768">
+        <ele>26.0</ele>
+      </trkpt>
+      <trkpt lat="49.00053" lon="1.963682">
+        <ele>25.9</ele>
+      </trkpt>
+      <trkpt lat="49.000538" lon="1.963583">
+        <ele>26.0</ele>
+      </trkpt>
+      <trkpt lat="49.000564" lon="1.963468">
+        <ele>26.1</ele>
+      </trkpt>
+      <trkpt lat="49.000599" lon="1.963363">
+        <ele>26.0</ele>
+      </trkpt>
+      <trkpt lat="49.000627" lon="1.963074">
+        <ele>24.2</ele>
+      </trkpt>
+      <trkpt lat="49.000592" lon="1.962687">
+        <ele>23.1</ele>
+      </trkpt>
+      <trkpt lat="49.000374" lon="1.962167">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="49.00012" lon="1.961706">
+        <ele>20.5</ele>
+      </trkpt>
+      <trkpt lat="49.000031" lon="1.961428">
+        <ele>20.7</ele>
+      </trkpt>
+      <trkpt lat="48.999955" lon="1.961314">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="48.999847" lon="1.961065">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="48.999719" lon="1.96087">
+        <ele>21.2</ele>
+      </trkpt>
+      <trkpt lat="48.999638" lon="1.96074">
+        <ele>21.2</ele>
+      </trkpt>
+      <trkpt lat="48.999508" lon="1.960491">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="48.999367" lon="1.960311">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="48.99916" lon="1.960062">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="48.999127" lon="1.959939">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="48.999115" lon="1.95975">
+        <ele>21.9</ele>
+      </trkpt>
+      <trkpt lat="48.99915" lon="1.959608">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="48.999191" lon="1.959457">
+        <ele>21.4</ele>
+      </trkpt>
+      <trkpt lat="48.999247" lon="1.959299">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="48.999338" lon="1.959132">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="48.999487" lon="1.958851">
+        <ele>19.3</ele>
+      </trkpt>
+      <trkpt lat="48.999587" lon="1.958627">
+        <ele>19.5</ele>
+      </trkpt>
+      <trkpt lat="48.999731" lon="1.958186">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="48.999883" lon="1.957666">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="49.000036" lon="1.957281">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="49.000098" lon="1.957164">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="49.000178" lon="1.957073">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="49.000299" lon="1.957052">
+        <ele>20.1</ele>
+      </trkpt>
+      <trkpt lat="49.000392" lon="1.957056">
+        <ele>20.1</ele>
+      </trkpt>
+      <trkpt lat="49.000643" lon="1.957204">
+        <ele>19.6</ele>
+      </trkpt>
+      <trkpt lat="49.000831" lon="1.957333">
+        <ele>19.3</ele>
+      </trkpt>
+      <trkpt lat="49.000999" lon="1.957409">
+        <ele>19.6</ele>
+      </trkpt>
+      <trkpt lat="49.001296" lon="1.957522">
+        <ele>19.4</ele>
+      </trkpt>
+      <trkpt lat="49.001547" lon="1.957617">
+        <ele>19.1</ele>
+      </trkpt>
+      <trkpt lat="49.001758" lon="1.95773">
+        <ele>19.2</ele>
+      </trkpt>
+      <trkpt lat="49.001882" lon="1.957841">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="49.00193" lon="1.957938">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="49.002029" lon="1.958153">
+        <ele>20.5</ele>
+      </trkpt>
+      <trkpt lat="49.002116" lon="1.958273">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="49.002209" lon="1.958389">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="49.002242" lon="1.958468">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="49.002259" lon="1.958575">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="49.00224" lon="1.958721">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="49.002194" lon="1.958891">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="49.002093" lon="1.959105">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="49.001985" lon="1.959358">
+        <ele>19.7</ele>
+      </trkpt>
+      <trkpt lat="49.001981" lon="1.959452">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="49.00201" lon="1.959528">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="49.002136" lon="1.959547">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="49.002345" lon="1.959547">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="49.002407" lon="1.959506">
+        <ele>20.9</ele>
+      </trkpt>
+      <trkpt lat="49.002453" lon="1.959414">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="49.002536" lon="1.959175">
+        <ele>21.9</ele>
+      </trkpt>
+      <trkpt lat="49.002646" lon="1.958953">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="49.002735" lon="1.958718">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="49.002806" lon="1.958519">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="49.00297" lon="1.958004">
+        <ele>20.7</ele>
+      </trkpt>
+      <trkpt lat="49.003134" lon="1.957489">
+        <ele>20.8</ele>
+      </trkpt>
+      <trkpt lat="49.003298" lon="1.956974">
+        <ele>20.9</ele>
+      </trkpt>
+      <trkpt lat="49.003361" lon="1.9566">
+        <ele>20.9</ele>
+      </trkpt>
+      <trkpt lat="49.003438" lon="1.9563">
+        <ele>21.6</ele>
+      </trkpt>
+      <trkpt lat="49.003657" lon="1.955872">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="49.003707" lon="1.955617">
+        <ele>21.6</ele>
+      </trkpt>
+      <trkpt lat="49.0039" lon="1.95501">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="49.003997" lon="1.954581">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="49.004094" lon="1.954152">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="49.004173" lon="1.95372">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="49.004252" lon="1.953288">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="49.004254" lon="1.953279">
+        <ele>21.2</ele>
+        <name>78740 Verneuil-sur-Seine, France</name>
+        <extensions>
+          <oa:address>[administrativeArea:Île-de-France, country:France, subAdministrativeArea:Yvelines, town:Verneuil-sur-Seine, zipcode:78740]</oa:address>
+        </extensions>
+      </trkpt>
+      <trkpt lat="49.004307" lon="1.95291">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="49.004361" lon="1.952532">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="49.004416" lon="1.952135">
+        <ele>21.2</ele>
+      </trkpt>
+      <trkpt lat="49.00447" lon="1.951738">
+        <ele>23.4</ele>
+      </trkpt>
+      <trkpt lat="49.004523" lon="1.951288">
+        <ele>25.9</ele>
+      </trkpt>
+      <trkpt lat="49.004586" lon="1.950982">
+        <ele>23.7</ele>
+      </trkpt>
+      <trkpt lat="49.004608" lon="1.950832">
+        <ele>23.0</ele>
+      </trkpt>
+      <trkpt lat="49.004605" lon="1.950764">
+        <ele>23.2</ele>
+      </trkpt>
+      <trkpt lat="49.00465" lon="1.950636">
+        <ele>23.3</ele>
+      </trkpt>
+      <trkpt lat="49.004733" lon="1.950275">
+        <ele>23.4</ele>
+      </trkpt>
+      <trkpt lat="49.004815" lon="1.949732">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="49.004839" lon="1.949445">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="49.004924" lon="1.949359">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="49.005044" lon="1.949209">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="49.00509" lon="1.948942">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="49.005154" lon="1.94862">
+        <ele>20.7</ele>
+      </trkpt>
+      <trkpt lat="49.00524" lon="1.948048">
+        <ele>22.6</ele>
+      </trkpt>
+      <trkpt lat="49.005291" lon="1.947545">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="49.005342" lon="1.947043">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="49.00541" lon="1.946429">
+        <ele>20.7</ele>
+      </trkpt>
+      <trkpt lat="49.005431" lon="1.946204">
+        <ele>20.9</ele>
+      </trkpt>
+      <trkpt lat="49.005452" lon="1.945612">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="49.005472" lon="1.94502">
+        <ele>19.5</ele>
+      </trkpt>
+      <trkpt lat="49.005496" lon="1.944473">
+        <ele>19.2</ele>
+      </trkpt>
+      <trkpt lat="49.00547" lon="1.943911">
+        <ele>21.4</ele>
+      </trkpt>
+      <trkpt lat="49.005474" lon="1.943553">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="49.005478" lon="1.943195">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="49.005505" lon="1.942764">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="49.005532" lon="1.942333">
+        <ele>20.4</ele>
+      </trkpt>
+      <trkpt lat="49.005493" lon="1.941768">
+        <ele>20.1</ele>
+      </trkpt>
+      <trkpt lat="49.005454" lon="1.941203">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="49.005414" lon="1.940638">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="49.005405" lon="1.940105">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="49.005394" lon="1.939571">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="49.005356" lon="1.938924">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="49.005317" lon="1.938456">
+        <ele>20.7</ele>
+      </trkpt>
+      <trkpt lat="49.005254" lon="1.937877">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="49.005078" lon="1.937615">
+        <ele>20.5</ele>
+      </trkpt>
+      <trkpt lat="49.005274" lon="1.937269">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="49.005231" lon="1.93684">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="49.005241" lon="1.936662">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="49.005204" lon="1.9364">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="49.005167" lon="1.93633">
+        <ele>20.1</ele>
+      </trkpt>
+      <trkpt lat="49.005137" lon="1.936215">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="49.005141" lon="1.936056">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="49.005151" lon="1.935981">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="49.00515" lon="1.935909">
+        <ele>19.7</ele>
+      </trkpt>
+      <trkpt lat="49.005091" lon="1.935812">
+        <ele>20.5</ele>
+      </trkpt>
+      <trkpt lat="49.005063" lon="1.935692">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="49.005058" lon="1.935547">
+        <ele>20.5</ele>
+      </trkpt>
+      <trkpt lat="49.005011" lon="1.934908">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="49.004962" lon="1.93445">
+        <ele>19.2</ele>
+      </trkpt>
+      <trkpt lat="49.004913" lon="1.933992">
+        <ele>19.4</ele>
+      </trkpt>
+      <trkpt lat="49.004878" lon="1.933778">
+        <ele>19.7</ele>
+      </trkpt>
+      <trkpt lat="49.004853" lon="1.933456">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="49.004785" lon="1.933169">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="49.004768" lon="1.932976">
+        <ele>19.7</ele>
+      </trkpt>
+      <trkpt lat="49.004666" lon="1.932561">
+        <ele>20.6</ele>
+      </trkpt>
+      <trkpt lat="49.004724" lon="1.932336">
+        <ele>19.3</ele>
+      </trkpt>
+      <trkpt lat="49.004569" lon="1.931752">
+        <ele>22.0</ele>
+      </trkpt>
+      <trkpt lat="49.004415" lon="1.931169">
+        <ele>21.4</ele>
+      </trkpt>
+      <trkpt lat="49.00426" lon="1.930585">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="49.004106" lon="1.930002">
+        <ele>21.9</ele>
+      </trkpt>
+      <trkpt lat="49.003951" lon="1.929418">
+        <ele>21.4</ele>
+      </trkpt>
+      <trkpt lat="49.003813" lon="1.928894">
+        <ele>20.8</ele>
+      </trkpt>
+      <trkpt lat="49.003674" lon="1.92837">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="49.003536" lon="1.927846">
+        <ele>20.4</ele>
+      </trkpt>
+      <trkpt lat="49.003397" lon="1.927321">
+        <ele>20.5</ele>
+      </trkpt>
+      <trkpt lat="49.003258" lon="1.926797">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="49.003121" lon="1.926261">
+        <ele>19.9</ele>
+      </trkpt>
+      <trkpt lat="49.002985" lon="1.925725">
+        <ele>21.5</ele>
+      </trkpt>
+      <trkpt lat="49.002848" lon="1.925189">
+        <ele>19.7</ele>
+      </trkpt>
+      <trkpt lat="49.002711" lon="1.924653">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="49.002574" lon="1.924116">
+        <ele>21.4</ele>
+      </trkpt>
+      <trkpt lat="49.002441" lon="1.923546">
+        <ele>19.7</ele>
+      </trkpt>
+      <trkpt lat="49.002307" lon="1.922975">
+        <ele>19.6</ele>
+      </trkpt>
+      <trkpt lat="49.002174" lon="1.922405">
+        <ele>19.1</ele>
+      </trkpt>
+      <trkpt lat="49.002041" lon="1.921834">
+        <ele>19.6</ele>
+      </trkpt>
+      <trkpt lat="49.001907" lon="1.921263">
+        <ele>19.1</ele>
+      </trkpt>
+      <trkpt lat="49.001774" lon="1.920693">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="49.001641" lon="1.920122">
+        <ele>19.5</ele>
+      </trkpt>
+      <trkpt lat="49.001534" lon="1.919667">
+        <ele>20.1</ele>
+      </trkpt>
+      <trkpt lat="49.001428" lon="1.919213">
+        <ele>19.4</ele>
+      </trkpt>
+      <trkpt lat="49.001321" lon="1.918758">
+        <ele>19.7</ele>
+      </trkpt>
+      <trkpt lat="49.001198" lon="1.918268">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="49.001075" lon="1.917778">
+        <ele>21.0</ele>
+      </trkpt>
+      <trkpt lat="49.000952" lon="1.917288">
+        <ele>19.7</ele>
+      </trkpt>
+      <trkpt lat="49.000935" lon="1.917205">
+        <ele>19.8</ele>
+      </trkpt>
+      <trkpt lat="49.000935" lon="1.917204">
+        <ele>19.8</ele>
+        <name>Voie Verte Robert Arnauld, 78130 Les Mureaux</name>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:mapZoom>19</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="49.000848" lon="1.916761">
+        <ele>20.1</ele>
+      </trkpt>
+      <trkpt lat="49.000744" lon="1.916233">
+        <ele>19.5</ele>
+      </trkpt>
+      <trkpt lat="49.00064" lon="1.915706">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="49.00057" lon="1.915214">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="49.000499" lon="1.914721">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="49.000448" lon="1.914452">
+        <ele>20.0</ele>
+      </trkpt>
+      <trkpt lat="49.000331" lon="1.913851">
+        <ele>20.8</ele>
+      </trkpt>
+      <trkpt lat="49.000213" lon="1.91325">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="49.000119" lon="1.912748">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="48.99998" lon="1.912347">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="48.999953" lon="1.912218">
+        <ele>22.0</ele>
+      </trkpt>
+      <trkpt lat="48.999835" lon="1.911662">
+        <ele>22.6</ele>
+      </trkpt>
+      <trkpt lat="48.999717" lon="1.911105">
+        <ele>22.8</ele>
+      </trkpt>
+      <trkpt lat="48.999604" lon="1.910578">
+        <ele>21.9</ele>
+      </trkpt>
+      <trkpt lat="48.999723" lon="1.910244">
+        <ele>21.1</ele>
+      </trkpt>
+      <trkpt lat="48.99975" lon="1.910036">
+        <ele>19.7</ele>
+      </trkpt>
+      <trkpt lat="48.999621" lon="1.909695">
+        <ele>20.8</ele>
+      </trkpt>
+      <trkpt lat="48.999513" lon="1.909313">
+        <ele>20.2</ele>
+      </trkpt>
+      <trkpt lat="48.999405" lon="1.908931">
+        <ele>20.3</ele>
+      </trkpt>
+      <trkpt lat="48.999325" lon="1.908487">
+        <ele>19.5</ele>
+      </trkpt>
+      <trkpt lat="48.999245" lon="1.908043">
+        <ele>22.1</ele>
+      </trkpt>
+      <trkpt lat="48.999148" lon="1.908099">
+        <ele>24.0</ele>
+        <name>48.999148,1.908099</name>
+        <extensions>
+          <oa:locType>routingNode</oa:locType>
+          <oa:mapZoom>19</oa:mapZoom>
+        </extensions>
+      </trkpt>
+      <trkpt lat="48.999082" lon="1.908137">
+        <ele>25.3</ele>
+      </trkpt>
+      <trkpt lat="48.999071" lon="1.908092">
+        <ele>26.1</ele>
+      </trkpt>
+      <trkpt lat="48.99944" lon="1.907879">
+        <ele>25.7</ele>
+      </trkpt>
+      <trkpt lat="48.999809" lon="1.907666">
+        <ele>25.4</ele>
+      </trkpt>
+      <trkpt lat="49.000178" lon="1.907453">
+        <ele>25.0</ele>
+      </trkpt>
+      <trkpt lat="49.000547" lon="1.90724">
+        <ele>24.7</ele>
+      </trkpt>
+      <trkpt lat="49.000651" lon="1.907192">
+        <ele>24.6</ele>
+      </trkpt>
+      <trkpt lat="49.000978" lon="1.907039">
+        <ele>27.0</ele>
+      </trkpt>
+      <trkpt lat="49.001306" lon="1.906886">
+        <ele>25.3</ele>
+      </trkpt>
+      <trkpt lat="49.001293" lon="1.906841">
+        <ele>25.3</ele>
+      </trkpt>
+      <trkpt lat="49.001266" lon="1.906723">
+        <ele>25.0</ele>
+      </trkpt>
+      <trkpt lat="49.001303" lon="1.9067">
+        <ele>25.0</ele>
+      </trkpt>
+      <trkpt lat="49.001345" lon="1.906675">
+        <ele>25.0</ele>
+      </trkpt>
+      <trkpt lat="49.001318" lon="1.906584">
+        <ele>24.6</ele>
+      </trkpt>
+      <trkpt lat="49.001419" lon="1.906521">
+        <ele>24.2</ele>
+      </trkpt>
+      <trkpt lat="49.001447" lon="1.906534">
+        <ele>24.3</ele>
+      </trkpt>
+      <trkpt lat="49.001478" lon="1.906531">
+        <ele>24.3</ele>
+      </trkpt>
+      <trkpt lat="49.001819" lon="1.906341">
+        <ele>22.9</ele>
+      </trkpt>
+      <trkpt lat="49.001954" lon="1.906296">
+        <ele>23.8</ele>
+      </trkpt>
+      <trkpt lat="49.002076" lon="1.906274">
+        <ele>24.5</ele>
+      </trkpt>
+      <trkpt lat="49.002215" lon="1.906268">
+        <ele>24.7</ele>
+      </trkpt>
+      <trkpt lat="49.002334" lon="1.906274">
+        <ele>24.4</ele>
+      </trkpt>
+      <trkpt lat="49.002458" lon="1.9063">
+        <ele>23.6</ele>
+      </trkpt>
+      <trkpt lat="49.002667" lon="1.906368">
+        <ele>21.2</ele>
+      </trkpt>
+      <trkpt lat="49.002992" lon="1.906491">
+        <ele>21.3</ele>
+        <name>Pont Rhin et Danube, 78250 Meulan-en-Yvelines</name>
+        <extensions>
+          <oa:address>[administrativeArea:Île-de-France, country:France, streetAddress:Pont Rhin et Danube, subAdministrativeArea:Yvelines, town:Meulan-en-Yvelines, zipcode:78250]</oa:address>
+        </extensions>
+      </trkpt>
+      <trkpt lat="49.002997" lon="1.906493">
+        <ele>21.3</ele>
+      </trkpt>
+      <trkpt lat="49.003327" lon="1.906618">
+        <ele>21.5</ele>
+      </trkpt>
+      <trkpt lat="49.003657" lon="1.906743">
+        <ele>21.6</ele>
+      </trkpt>
+      <trkpt lat="49.003864" lon="1.90681">
+        <ele>23.2</ele>
+      </trkpt>
+      <trkpt lat="49.003993" lon="1.906822">
+        <ele>23.0</ele>
+      </trkpt>
+      <trkpt lat="49.004147" lon="1.906798">
+        <ele>22.4</ele>
+      </trkpt>
+      <trkpt lat="49.004204" lon="1.906757">
+        <ele>22.2</ele>
+      </trkpt>
+      <trkpt lat="49.004227" lon="1.906706">
+        <ele>22.0</ele>
+      </trkpt>
+      <trkpt lat="49.004253" lon="1.906619">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="49.004307" lon="1.906613">
+        <ele>21.9</ele>
+      </trkpt>
+      <trkpt lat="49.004294" lon="1.906479">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="49.004254" lon="1.906056">
+        <ele>21.5</ele>
+      </trkpt>
+      <trkpt lat="49.004214" lon="1.905634">
+        <ele>20.9</ele>
+      </trkpt>
+      <trkpt lat="49.004205" lon="1.905545">
+        <ele>20.8</ele>
+      </trkpt>
+      <trkpt lat="49.004211" lon="1.905502">
+        <ele>20.7</ele>
+      </trkpt>
+      <trkpt lat="49.004225" lon="1.905469">
+        <ele>20.7</ele>
+      </trkpt>
+      <trkpt lat="49.004246" lon="1.905448">
+        <ele>20.7</ele>
+      </trkpt>
+      <trkpt lat="49.004573" lon="1.905271">
+        <ele>20.1</ele>
+      </trkpt>
+      <trkpt lat="49.004959" lon="1.905165">
+        <ele>21.7</ele>
+      </trkpt>
+      <trkpt lat="49.005214" lon="1.905088">
+        <ele>21.8</ele>
+      </trkpt>
+      <trkpt lat="49.005469" lon="1.905011">
+        <ele>22.7</ele>
+      </trkpt>
+      <trkpt lat="49.005518" lon="1.904995">
+        <ele>22.5</ele>
+      </trkpt>
+      <trkpt lat="49.005504" lon="1.904903">
+        <ele>22.4</ele>
+      </trkpt>
+      <trkpt lat="49.005479" lon="1.904726">
+        <ele>22.5</ele>
+      </trkpt>
+      <trkpt lat="49.005465" lon="1.904631">
+        <ele>22.6</ele>
+      </trkpt>
+      <trkpt lat="49.005442" lon="1.90447">
+        <ele>22.7</ele>
+      </trkpt>
+      <trkpt lat="49.005401" lon="1.904188">
+        <ele>23.0</ele>
+      </trkpt>
+      <trkpt lat="49.005489" lon="1.904155">
+        <ele>23.2</ele>
+      </trkpt>
+      <trkpt lat="49.005528" lon="1.904113">
+        <ele>23.5</ele>
+      </trkpt>
+      <trkpt lat="49.005584" lon="1.904002">
+        <ele>24.3</ele>
+      </trkpt>
+      <trkpt lat="49.005707" lon="1.903734">
+        <ele>25.6</ele>
+      </trkpt>
+      <trkpt lat="49.005753" lon="1.90362">
+        <ele>25.9</ele>
+      </trkpt>
+      <trkpt lat="49.005775" lon="1.903546">
+        <ele>26.4</ele>
+      </trkpt>
+      <trkpt lat="49.005783" lon="1.90349">
+        <ele>27.0</ele>
+      </trkpt>
+      <trkpt lat="49.005786" lon="1.903441">
+        <ele>27.5</ele>
+      </trkpt>
+      <trkpt lat="49.005785" lon="1.903385">
+        <ele>28.0</ele>
+      </trkpt>
+      <trkpt lat="49.00578" lon="1.903341">
+        <ele>28.3</ele>
+      </trkpt>
+      <trkpt lat="49.005768" lon="1.903252">
+        <ele>28.9</ele>
+      </trkpt>
+      <trkpt lat="49.005684" lon="1.902799">
+        <ele>30.5</ele>
+      </trkpt>
+      <trkpt lat="49.005602" lon="1.902328">
+        <ele>32.2</ele>
+      </trkpt>
+      <trkpt lat="49.005575" lon="1.902189">
+        <ele>33.0</ele>
+        <name>6 Avenue de la Gare, 78250 Hardricourt</name>
+        <extensions>
+          <oa:address>[administrativeArea:Île-de-France, country:France, streetAddress:6 Avenue de la Gare, subAdministrativeArea:Yvelines, town:Hardricourt, zipcode:78250]</oa:address>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
