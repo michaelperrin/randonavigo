@@ -20,8 +20,9 @@ const About = () => (
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </div>
 
             <div className="prose">
@@ -40,6 +41,20 @@ const About = () => (
               <p>
                 Ce site internet n&apos;est pas affilié à la marque Navigo, ni à
                 aucune autre marque ou entité.
+              </p>
+
+              <p>
+                Pour des randonnées et découvertes hors Ile-de-France mais
+                toujours accessibles en train, n&apos;hésitez pas à consulter
+                mon autre site web, les{" "}
+                <a
+                  href="https://www.escapades-sans-voiture.fr/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Escapades sans voiture
+                </a>
+                 !
               </p>
             </div>
           </div>
