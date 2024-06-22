@@ -36,13 +36,13 @@ Nous avions suivi la petite route le long des voies du RER pour rejoindre la for
 La forêt de Saint-Germain-en-Laye est l'une des plus grandes forêts d'Île-de-France. Les chemins sont pour la plupart larges et bien entretenus. Pour rjoindre le l'étang du Corra, j'ai choisi des chemins plus étroits car je les trouve toujours plus bucoliques. Les larges chemins rectilignes cassent un peu le côté nature que je recherche en forêt. Ces petits chemins sont bien plus agréables au final.
 
 <Gallery pictures={[
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6191.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6190.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6192.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6194.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6195.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6196.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6197.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6191.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6190.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6192.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6194.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6195.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6196.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6197.jpg',
 ]} />
 
 ## L'étang du Corra
@@ -52,25 +52,25 @@ Au septième kilomètre, nous arrivons à l'étang du Corra. C'est un endroit tr
 Ce qui nous a surpris, c'est que l'étang est vraiment grand, pas du genre tout petit étang de forêt ! On le longe en hauteur au début, puis des petits chemins parallèles permettent de s'approcher de l'eau.
 
 <Picture
-  src="/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6198.jpg"
+  src="/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6198.jpg"
   caption="Arrivée à l'étang du Corra."
 />
 
 <Gallery pictures={[
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6198.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6203.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6205.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6207.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6208.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6210.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6213.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6198.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6203.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6205.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6207.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6208.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6210.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6213.jpg',
 ]} />
 
 Un peu plus loin, une petite plage est même aménagée pour pouvoir s'y baigner. Prévoyez les maillots 😃
 
 <Gallery pictures={[
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6214.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6215.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6214.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6215.jpg',
 ]} />
 
 ## Retour à Conflans Fin d'Oise en longeant la Seine
@@ -82,8 +82,8 @@ Mais tout le reste de la randonnée avec les chemins agréables en forêt de Sai
 Une fois la Seine traversée, je propose de poursuivre le long de la rivière pour rejoindre la gare de Conflans Fin d'Oise. C'est urbain mais agréable quand même. Vous rejoindrez _le Pointil_ qui correspond à la confluence de la Seine et de l'Oise.
 
 <Gallery pictures={[
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6217.jpg',
-'/hikes/2024/06/etang-corra-en-foret-de-saint-germain/pictures/IMG_6218.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6217.jpg',
+'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6218.jpg',
 ]} />
 
 Un peu plus loin se trouve la gare de Conflans Fin d'Oise, desservie par le RER A pour rejoindre très aisément Paris.
