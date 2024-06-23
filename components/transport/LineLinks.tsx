@@ -17,6 +17,7 @@ const LineLinks = ({}: HikePerLineProps) => (
 
         <section className="flex flex-wrap gap-1 mb-4">
           <NetworkIcon network={Network.RER} size={32} />
+          <LineIcon line="A" size={32} />
           <LineIcon line="B" size={32} />
           <LineIcon line="C" size={32} />
           <LineIcon line="D" size={32} />

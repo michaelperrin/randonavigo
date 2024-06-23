@@ -45,6 +45,7 @@ module.exports = {
           DEFAULT: "#297ab7",
           dark: "#297ab7",
         },
+        "rer-a": "#e3051c",
         "rer-b": "#5291ce",
         "rer-c": "#ffce00",
         "rer-d": "#00814f",
