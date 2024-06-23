@@ -29,11 +29,11 @@ J'ai créé le parcours dans le but de découvrir ce très bel étang du Corra e
 
 Le départ de la randonnée se fait en gare de Maisons-Laffite, très accessible depuis Paris : le RER A vous y emmène en 20 minutes depuis Charles-de-Gaulle-Étoile avec des départs réguliers.
 
-Nous avions suivi la petite route le long des voies du RER pour rejoindre la forêt de Saint-Germain-en-Laye, mais j'ai modifié la trace pour passer par des rues plus agréables de Maisons-Laffite.
+Nous avions suivi la petite route le long des voies du RER pour rejoindre la forêt de Saint-Germain-en-Laye, mais j'ai modifié le tracé pour passer par des rues plus agréables de Maisons-Laffite.
 
 ## Forêt de Saint-Germain-en-Laye
 
-La forêt de Saint-Germain-en-Laye est l'une des plus grandes forêts d'Île-de-France. Les chemins sont pour la plupart larges et bien entretenus. Pour rjoindre le l'étang du Corra, j'ai choisi des chemins plus étroits car je les trouve toujours plus bucoliques. Les larges chemins rectilignes cassent un peu le côté nature que je recherche en forêt. Ces petits chemins sont bien plus agréables au final.
+La forêt de Saint-Germain-en-Laye est l'une des plus grandes forêts d'Île-de-France. Les chemins sont pour la plupart larges et bien entretenus. Pour rejoindre l'étang du Corra, j'ai choisi des chemins plus étroits car je les trouve toujours plus bucoliques par rapports aux larges chemins rectilignes qui cassent un peu le côté nature que je recherche en forêt.
 
 <Gallery pictures={[
 '/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6191.jpg',
@@ -47,7 +47,7 @@ La forêt de Saint-Germain-en-Laye est l'une des plus grandes forêts d'Île-de-
 
 ## L'étang du Corra
 
-Au septième kilomètre, nous arrivons à l'étang du Corra. C'est un endroit très agréable pour une pause. Parfait pour le pique-nique. L'étang est entouré de verdure et de grands espaces. C'était l'endroit impeccable pour prendre le temps de tester le montage de la tente louée avant une [bien jolie escapade dans le Vercors](https://www.escapades-sans-voiture.fr/randonnee-de-3-jours-dans-le-vercors-au-mont-aiguille/) quelques jours plus tard.
+Au septième kilomètre, nous arrivons à l'étang du Corra. C'est un endroit idéal pour une pause pique-nique. L'étang est entouré de verdure et de grands espaces. L'occasion pour moi de prendre le temps de tester le montage de la tente louée avant une [bien jolie escapade dans le Vercors](https://www.escapades-sans-voiture.fr/randonnee-de-3-jours-dans-le-vercors-au-mont-aiguille/) quelques jours plus tard.
 
 Ce qui nous a surpris, c'est que l'étang est vraiment grand, pas du genre tout petit étang de forêt ! On le longe en hauteur au début, puis des petits chemins parallèles permettent de s'approcher de l'eau.
 
@@ -57,7 +57,6 @@ Ce qui nous a surpris, c'est que l'étang est vraiment grand, pas du genre tout 
 />
 
 <Gallery pictures={[
-'/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6198.jpg',
 '/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6203.jpg',
 '/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6205.jpg',
 '/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6207.jpg',
@@ -79,7 +78,7 @@ La suite de la randonnée en quittant l'étang du Corra est beaucoup moins sympa
 
 Mais tout le reste de la randonnée avec les chemins agréables en forêt de Saint-Germain-en-Laye et l'étang du Corra valent vraiment le coup et ce ne sont pas ces deux petits kilomètres qui vont gâcher la balade.
 
-Une fois la Seine traversée, je propose de poursuivre le long de la rivière pour rejoindre la gare de Conflans Fin d'Oise. C'est urbain mais agréable quand même. Vous rejoindrez _le Pointil_ qui correspond à la confluence de la Seine et de l'Oise.
+Une fois la Seine traversée, je propose de poursuivre le long de la rivière pour rejoindre la gare de Conflans Fin d'Oise. C'est urbain mais bien séparé de la route quand même. Vous rejoindrez _le Pointil_ qui correspond à la confluence de la Seine et de l'Oise.
 
 <Gallery pictures={[
 '/hikes/2024/05/etang-corra-en-foret-de-saint-germain/pictures/IMG_6217.jpg',
