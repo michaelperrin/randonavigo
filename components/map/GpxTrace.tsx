@@ -32,6 +32,16 @@ const GpxTrace = ({ gpxFile }: GpxTraceProps) => {
             iconSize: [40, 40],
             iconAnchor: [20, 40],
           }),
+          Bar: L.icon({
+            iconUrl: "/images/map/bar-pin.svg",
+            iconSize: [40, 40],
+            iconAnchor: [20, 40],
+          }),
+          Museum: L.icon({
+            iconUrl: "/images/map/museum-pin.svg",
+            iconSize: [40, 40],
+            iconAnchor: [20, 40],
+          }),
         },
         shadowUrl: undefined,
       },
