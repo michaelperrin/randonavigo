@@ -17,12 +17,15 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
     line="A"
   >
     <p>
-      Ligne la plus empruntée d&apos;Île-de-France et même d&apos;Europe, le RER
-      A dessert principalement des zones fortement urbaines. Cependant, il est
-      possible de trouver des randonnées à proximité de certaines de ses gares,
-      notamment dans les forêts de Saint-Germain-en-Laye ou de Vincennes. Des
-      randonnées qui ne seront donc pas toujours 100% nature, mais qui
-      permettent de s&apos;évader un peu de la ville tout de même !
+      Ligne la plus empruntée d&apos;Île-de-France et même d&apos;Europe, le
+      RER A dessert principalement des zones fortement urbaines. Son avantage ?
+      Avec une fréquence élevée et sa rapidité, il permet d&amp;improviser une
+      petite randonnée pour une demi-journée sans avoir à planifier des heures à
+      l&apos;avance. Il est ainsi possible de trouver des randonnées à proximité
+      de certaines de ses gares, notamment dans les forêts de
+      Saint-Germain-en-Laye ou de Vincennes. Des randonnées qui ne seront donc
+      pas toujours 100% nature, mais qui permettent de s&apos;évader un peu de
+      la ville tout de même !
     </p>
   </LinePage>
 );
