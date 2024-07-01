@@ -38,7 +38,7 @@ A noter que les bâtiments de l'ancienne chocolaterie ne sont pas accessibles sa
 
 ## Départ à Noisiel
 
-Le départ de la randonnée se fait en gare de Noisiel, sur la [ligne A du RER](/randonnees-par-ligne/randonnees-rer-a). Très accessible depuis Paris, elle n'est située située qu'à une bonne vingtaine de minutes du centre de Paris. On démarre dans un cadre certes urbain mais calme et arboré pour rejoindre le grand _Parc de Noisiel_.
+Le départ de la randonnée se fait en gare de Noisiel, sur la [ligne A du RER](/randonnees-par-ligne/randonnees-rer-a) en direction de Marne-la-Vallée. Seules vingt petites minutes la sépare du centre de Paris. On démarre dans un cadre certes urbain mais calme et joliment arboré pour rejoindre le grand _Parc de Noisiel_ par cette large allée.
 
 <Picture
   src="/hikes/2024/06/chocolaterie-menier-noisiel-bords-de-marne/pictures/IMG_6463.jpg"
@@ -47,7 +47,7 @@ Le départ de la randonnée se fait en gare de Noisiel, sur la [ligne A du RER](
 
 ## Le Parc de Noisiel
 
-Le parc de Noisiel est un vaste parc arboré, avec de très belles espèces (quelques beaux séquoia entre autres). Vous aurez peut-être aussi l'occasion de croiser quelques animaux (moutons, vaches) sur certaines zones du parc.
+La Grande Allée des Bois de Noisiel vous fait arriver devant la grille d'honneur de l'ancien château du parc de Noisiel. De nombreuses espèces d'arbres composent ce vaste parc arboré avec entre autres de beaux séquoias ou érables. Vous aurez peut-être aussi l'occasion de croiser quelques animaux (moutons, vaches) sur certaines zones du parc.
 
 <Gallery pictures={[
 '/hikes/2024/06/chocolaterie-menier-noisiel-bords-de-marne/pictures/IMG_6464.jpg',
