@@ -34,7 +34,7 @@ C’est avec ma petite passion inexpliquée pour les reportages des archives de 
 
 A noter que les bâtiments de l'ancienne chocolaterie ne sont pas accessibles sans visite guidée. Les visites sont organisées par la mairie de Noisiel **le samedi matin**, et sont **à réserver en avance**. Il vous faudra joindre les service de la mairie par téléphone et faire le paiement en envoyant un chèque. Les informations sont à retrouver sur [le site web de la mairie de Noisiel](https://www.ville-noisiel.fr/loisirs/patrimoine-et-tourisme/visites-de-noisiel/).
 
-**Visite que je recommande grandement** car il est actuellement impossible de s’approcher des superbes bâtiments et de bien voir leurs détails architecturaux.
+**Visite que je recommande grandement** car autrement il n'est pas possible de s’approcher des superbes bâtiments pour apprécier leurs détails architecturaux.
 
 ## Départ à Noisiel
 

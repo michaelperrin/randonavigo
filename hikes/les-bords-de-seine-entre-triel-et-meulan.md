@@ -23,7 +23,7 @@ tags:
 enabled: true
 ---
 
-Cette randonnée sur les bords de Seine, sur une fine bande de terre entre la rivière et des étangs qu'elle alimente. Elle peut se faire en toute saison, y compris en hiver. La fin est plus urbaine et donc perd un peu de son charme, mais il est tout à fait possible de faire la randonnée en sens inverse si vous le préférez.
+Cette randonnée sur les bords de Seine, sur une fine bande de terre entre la rivière et des étangs qu'elle alimente. Elle peut se faire en toute saison, y compris en hiver sous réserve que le niveau d'eau de la Seine ne soit pas trop haut. La fin est plus urbaine et donc perd un peu de son charme, mais il est tout à fait possible de faire la randonnée en sens inverse si vous le préférez.
 
 ## Départ à Triel-sur-Seine
 
