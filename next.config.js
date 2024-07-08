@@ -12,6 +12,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: "/2016/10/09/foret-armainvilliers",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/wp-content/uploads/gpx/2016-07-chevreuse.gpx",
         destination: "/2016/07/28/vallee-de-chevreuse",
         permanent: true,
