@@ -34,13 +34,18 @@ const GpxTrace = ({ gpxFile }: GpxTraceProps) => {
           }),
           Bar: L.icon({
             iconUrl: "/images/map/bar-pin.svg",
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
+            iconSize: [20, 20],
+            iconAnchor: [20, 20],
           }),
           Museum: L.icon({
             iconUrl: "/images/map/museum-pin.svg",
-            iconSize: [40, 40],
-            iconAnchor: [20, 40],
+            iconSize: [20, 20],
+            iconAnchor: [20, 20],
+          }),
+          "Picnic Area": L.icon({
+            iconUrl: "/images/map/picnic-pin.svg",
+            iconSize: [20, 20],
+            iconAnchor: [20, 20],
           }),
         },
         shadowUrl: undefined,
