@@ -25,7 +25,7 @@ const InfoBox = ({ type, children }: InfoBoxProps) => {
             <FontAwesomeIcon icon={faCircleInfo} className="mr-2" />
           </span>
         )}
-        {type === "danger" && (
+        {type === "warning" && (
           <span className="text-amber-700">
             <FontAwesomeIcon icon={faTriangleExclamation} className="mr-2" />
           </span>
