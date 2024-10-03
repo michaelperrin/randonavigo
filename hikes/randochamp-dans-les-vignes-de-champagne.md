@@ -86,8 +86,16 @@ C'est aussi l'occasion de rencontrer les producteurs et de faire des dégustatio
 
 Pour ma part, je me suis arrêté à deux maisons de champagne, que vous verrez sur la carte du tracé de la randonnée :
 
-- La Maison de Champagne Fallet Dart (tout petit détour).
-- Champagne Baron Albert (détour de 500 mètres aller-retour).
+- Champagne Baron Albert.
+- La Maison de Champagne Fallet Dart.
+
+Vous pourrez également trouver d'autres maisons de champagne toutes proches, comme le Champagne Alain Bedel.
+
+<InfoBox type="info">
+Si vous souhaitez rendre visite à l'une de ces maisons (ou d'autres situées dans le village de Crouttes-sur-Marne), **appelez-les** afin de vous assurer qu'elles sont ouvertes et qu'elles peuvent vous accueillir.
+
+Ce sont en effet des maisons de champagnes familiales, les horaires d'ouverture ou les capacités d'acceuil sont donc souvent limités.
+</InfoBox>
 
 <Gallery pictures={[
 '/hikes/2022/11/randochamp-dans-les-vignes-de-champagne/pictures/randochamp - 19.jpg',
@@ -97,7 +105,7 @@ Pour ma part, je me suis arrêté à deux maisons de champagne, que vous verrez 
 '/hikes/2022/11/randochamp-dans-les-vignes-de-champagne/pictures/randochamp - 23.jpg',
 ]} />
 
-Si vous êtes intéressés, je vous conseille de regarder sur Google Maps les maisons de champagne, car elles sont nombreuses et vous pourrez ainsi choisir celles qui vous intéressent. Vous en trouverez en particulier dans le village de Crouttes-sur-Marne, sans vous faire faire un grand détour.
+Je vous conseille de regarder sur Google Maps les maisons de champagne, car elles sont nombreuses et vous pourrez ainsi choisir celles qui vous intéressent. Vous en trouverez en particulier dans le village de Crouttes-sur-Marne, sans vous faire faire un grand détour.
 
 Autrement, ce sera par la Marne que vous poursuivrez votre parcours.
 

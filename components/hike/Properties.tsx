@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import DonationCard from "./DonationCard";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import Image from "next/image";
 
 const MapWithNoSSR = dynamic(() => import("./Map"), { ssr: false });
 
@@ -40,6 +41,91 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => {
               Distance
             </h3>
             <Distance hike={hike} />
+          </div>
+
+          <div className="mb-4">
+            <div className="flex gap-4 justify-between">
+              <div>
+                <h3 className="uppercase text-sm font-bold text-gray-500 mb-2">
+                  Nature
+                </h3>
+                <div className="flex gap-1">
+                  <Image
+                    src="/images/icons/leaf.png"
+                    width={20}
+                    height={20}
+                    alt=""
+                  />
+                  <Image
+                    src="/images/icons/leaf.png"
+                    width={20}
+                    height={20}
+                    alt=""
+                  />
+                  <Image
+                    src="/images/icons/leaf.png"
+                    width={20}
+                    height={20}
+                    alt=""
+                    className="grayscale opacity-40"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <h3 className="uppercase text-sm font-bold text-gray-500 mb-2">
+                  Patrimoine
+                </h3>
+                <div className="flex gap-1">
+                  <Image
+                    src="/images/icons/castle2.png"
+                    width={12}
+                    height={12}
+                    alt=""
+                  />
+                  <Image
+                    src="/images/icons/castle2.png"
+                    width={12}
+                    height={12}
+                    alt=""
+                  />
+                  <Image
+                    src="/images/icons/castle2.png"
+                    width={12}
+                    height={12}
+                    alt=""
+                    className="grayscale opacity-40"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <h3 className="uppercase text-sm font-bold text-gray-500 mb-2">
+                  Difficulté
+                </h3>
+                <div className="flex gap-1">
+                  <Image
+                    src="/images/icons/hiker.svg"
+                    width={14}
+                    height={14}
+                    alt=""
+                  />
+                  <Image
+                    src="/images/icons/hiker.svg"
+                    width={14}
+                    height={14}
+                    alt=""
+                  />
+                  <Image
+                    src="/images/icons/hiker.svg"
+                    width={14}
+                    height={14}
+                    alt=""
+                    className="grayscale opacity-40"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div>
