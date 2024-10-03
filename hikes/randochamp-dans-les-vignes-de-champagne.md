@@ -94,7 +94,7 @@ Vous pourrez également trouver d'autres maisons de champagne toutes proches, co
 <InfoBox type="info">
 Si vous souhaitez rendre visite à l'une de ces maisons (ou d'autres situées dans le village de Crouttes-sur-Marne), **appelez-les** afin de vous assurer qu'elles sont ouvertes et qu'elles peuvent vous accueillir.
 
-Ce sont en effet des maisons de champagnes familiales, les horaires d'ouverture ou les capacités d'acceuil sont donc souvent limités.
+Ce sont en effet des maisons de champagnes familiales, les horaires d'ouverture ou les capacités d'accueil sont donc souvent limités.
 </InfoBox>
 
 <Gallery pictures={[
