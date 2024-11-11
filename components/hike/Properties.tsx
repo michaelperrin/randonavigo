@@ -43,7 +43,7 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => {
             <Distance hike={hike} />
           </div>
 
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <div className="flex gap-4 justify-between">
               <div>
                 <h3 className="uppercase text-sm font-bold text-gray-500 mb-2">
@@ -126,7 +126,7 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div>
           <MapWithNoSSR hike={hike} />
