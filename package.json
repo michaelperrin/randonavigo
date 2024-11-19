@@ -22,7 +22,7 @@
     "leaflet-gpx": "^1.5.2",
     "leaflet.fullscreen": "^2.4.0",
     "leaflet.locatecontrol": "^0.78.0",
-    "next": "^13.0.4",
+    "next": "^13.5.0",
     "next-mdx-remote": "^4.2.0",
     "react": "^18.2.0",
     "react-18-image-lightbox": "^5.1.4",
