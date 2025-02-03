@@ -1,15 +1,18 @@
 import { getHikesForTransportLine } from '@/lib/hike'
-import { Hike } from '@/lib/types'
+import { FilterDefaults, Hike } from '@/lib/types'
 import LinePage from '@/components/transport/LinePage'
 import Link from 'next/link'
+import getFilterDefaults from '@/lib/getFilterDefaults';
 
 type HikePerLineProps = {
   hikes: Hike[],
+  filterDefaults: FilterDefaults;
 }
 
-const HikesOnLine = ({ hikes }: HikePerLineProps) => (
+const HikesOnLine = ({ hikes, filterDefaults }: HikePerLineProps) => (
   <LinePage
     hikes={hikes}
+    filterDefaults={filterDefaults}
     title="Randonnées sur le RER C"
     meta="Randonnées accessibles en transports par le RER C en Île-de-France"
     banner="/images/transport/banner/rer-c.jpeg"
@@ -37,9 +40,13 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
 export default HikesOnLine
 
 export function getStaticProps() {
+  const hikes = getHikesForTransportLine('C');
+  const filterDefaults = getFilterDefaults(hikes);
+
   return {
     props: {
-      hikes: getHikesForTransportLine('C'),
+      hikes,
+      filterDefaults,
     }
   }
 }
