@@ -45,8 +45,6 @@ export async function getStaticProps() {
   const hikes = getSortedHikesData();
   const filterDefaults = getFilterDefaults(hikes);
 
-  console.log(filterDefaults);
-
   return {
     props: {
       hikes,
