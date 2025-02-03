@@ -56,7 +56,7 @@ export default function FilterBank({ allHikes, setFilteredHikes, filterDefaults 
               min={filterDefaults.minDistance}
               max={filterDefaults.maxDistance}
               defaultValue={filterDefaults.minDistance}
-              className="w-20 px-2 py-1 border rounded"
+              className="w-14 px-2 py-1 border rounded"
               onChange={(e) => {
                 const min = parseInt(e.target.value || `${filterDefaults.minDistance}`, 10);
                 const max = parseInt((document.getElementById('maxDistance') as HTMLInputElement).value || `${filterDefaults.maxDistance}`, 10);
@@ -70,7 +70,7 @@ export default function FilterBank({ allHikes, setFilteredHikes, filterDefaults 
               min={filterDefaults.minDistance}
               max={filterDefaults.maxDistance}
               defaultValue={filterDefaults.maxDistance}
-              className="w-20 px-2 py-1 border rounded"
+              className="w-14 px-2 py-1 border rounded"
               onChange={(e) => {
                 const max = parseInt(e.target.value || `${filterDefaults.maxDistance}`, 10);
                 const min = parseInt((document.getElementById('minDistance') as HTMLInputElement).value || `${filterDefaults.minDistance}`, 10);
