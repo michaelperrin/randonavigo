@@ -6,14 +6,16 @@ import Layout from '@/components/layout'
 import Header from '@/components/layout/header'
 import FilterBank from '@/components/hike/FilterBank'
 import { getSortedHikesData } from '@/lib/hike'
-import { Hike } from '@/lib/types'
+import { Hike, FilterDefaults } from '@/lib/types'
 import { useState } from 'react'
+import getFilterDefaults from '@/lib/getFilterDefaults'
 
 type HomeProps = {
   hikes: Hike[],
+  filterDefaults: FilterDefaults,
 }
 
-export default function Home({ hikes }: HomeProps) {
+export default function Home({ hikes, filterDefaults }: HomeProps) {
   const [filteredHikes, setFilteredHikes] = useState(hikes);
 
   return (
@@ -30,7 +32,7 @@ export default function Home({ hikes }: HomeProps) {
 
         <section className="bg-zinc-50 py-12">
           <div className="container">
-            <FilterBank allHikes={hikes} setFilteredHikes={setFilteredHikes} />
+            <FilterBank allHikes={hikes} setFilteredHikes={setFilteredHikes} filterDefaults={filterDefaults} />
             <List hikes={filteredHikes} />
           </div>
         </section>
@@ -39,10 +41,16 @@ export default function Home({ hikes }: HomeProps) {
   )
 }
 
-export function getStaticProps() {
+export async function getStaticProps() {
+  const hikes = getSortedHikesData();
+  const filterDefaults = getFilterDefaults(hikes);
+
+  console.log(filterDefaults);
+
   return {
     props: {
-      hikes: getSortedHikesData(),
+      hikes,
+      filterDefaults,
     }
   }
 }

@@ -1,12 +1,13 @@
-import { Hike } from '@/lib/types'
+import { Hike, FilterDefaults } from '@/lib/types'
 import { Dispatch, SetStateAction, useState } from 'react'
 
 type FilterBankProps = {
   allHikes: Hike[]
   setFilteredHikes: Dispatch<SetStateAction<Hike[]>>
+  filterDefaults: FilterDefaults
 }
 
-export default function FilterBank({ allHikes, setFilteredHikes }: FilterBankProps) {
+export default function FilterBank({ allHikes, setFilteredHikes, filterDefaults }: FilterBankProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   // Example filter function
@@ -52,13 +53,13 @@ export default function FilterBank({ allHikes, setFilteredHikes }: FilterBankPro
             <input
               type="number"
               id="minDistance"
-              min="0"
-              max="30"
-              defaultValue="0"
+              min={filterDefaults.minDistance}
+              max={filterDefaults.maxDistance}
+              defaultValue={filterDefaults.minDistance}
               className="w-20 px-2 py-1 border rounded"
               onChange={(e) => {
-                const min = parseInt(e.target.value || "0", 10);
-                const max = parseInt((document.getElementById('maxDistance') as HTMLInputElement).value || "30", 10);
+                const min = parseInt(e.target.value || `${filterDefaults.minDistance}`, 10);
+                const max = parseInt((document.getElementById('maxDistance') as HTMLInputElement).value || `${filterDefaults.maxDistance}`, 10);
                 handleDistanceFilter(min, max);
               }}
             />
@@ -66,13 +67,13 @@ export default function FilterBank({ allHikes, setFilteredHikes }: FilterBankPro
             <input
               type="number"
               id="maxDistance"
-              min="0"
-              max="30"
-              defaultValue="30"
+              min={filterDefaults.minDistance}
+              max={filterDefaults.maxDistance}
+              defaultValue={filterDefaults.maxDistance}
               className="w-20 px-2 py-1 border rounded"
               onChange={(e) => {
-                const max = parseInt(e.target.value || "30", 10);
-                const min = parseInt((document.getElementById('minDistance') as HTMLInputElement).value || "0", 10);
+                const max = parseInt(e.target.value || `${filterDefaults.maxDistance}`, 10);
+                const min = parseInt((document.getElementById('minDistance') as HTMLInputElement).value || `${filterDefaults.minDistance}`, 10);
                 handleDistanceFilter(min, max);
               }}
             />
