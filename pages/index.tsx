@@ -4,14 +4,18 @@ import Intro from '@/components/home/Intro'
 import TopBanner from '@/components/TopBanner'
 import Layout from '@/components/layout'
 import Header from '@/components/layout/header'
+import FilterBank from '@/components/hike/FilterBank'
 import { getSortedHikesData } from '@/lib/hike'
 import { Hike } from '@/lib/types'
+import { useState } from 'react'
 
 type HomeProps = {
   hikes: Hike[],
 }
 
 export default function Home({ hikes }: HomeProps) {
+  const [filteredHikes, setFilteredHikes] = useState(hikes);
+
   return (
     <Layout home>
       <Head>
@@ -26,7 +30,8 @@ export default function Home({ hikes }: HomeProps) {
 
         <section className="bg-zinc-50 py-12">
           <div className="container">
-            <List hikes={hikes} />
+            <FilterBank allHikes={hikes} setFilteredHikes={setFilteredHikes} />
+            <List hikes={filteredHikes} />
           </div>
         </section>
       </div>
