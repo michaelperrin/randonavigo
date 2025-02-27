@@ -3,6 +3,8 @@ module.exports = {
   swcMinify: true,
   images: {
     formats: ["image/avif", "image/webp"],
+    // 5 days in seconds
+    minimumCacheTTL: 432000,
   },
   async redirects() {
     return [
