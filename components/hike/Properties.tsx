@@ -1,3 +1,5 @@
+"use client";
+
 import classNames from "classnames";
 import dynamic from "next/dynamic";
 
@@ -12,7 +14,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import DonationCard from "./DonationCard";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import Image from "next/image";
 
 const MapWithNoSSR = dynamic(() => import("./Map"), { ssr: false });
 
