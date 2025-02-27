@@ -5,6 +5,8 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import "tailwindcss/tailwind.css";
 import "leaflet/dist/leaflet.css";
 import "leaflet.locatecontrol/dist/L.Control.Locate.css";
+import Image from "next/image";
+import imageLoader from "../lib/imageLoader";
 
 config.autoAddCss = false;
 
@@ -38,3 +40,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
 );
 
 export default MyApp;
+// Set default loader globally
+Image.defaultProps = {
+  loader: imageLoader,
+};
