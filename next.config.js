@@ -2,6 +2,8 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    loader: "cloudinary",
+    path: "https://res.cloudinary.com/dldea3lqs/image/upload/",
     formats: ["image/avif", "image/webp"],
     // 5 days in seconds
     minimumCacheTTL: 432000,
