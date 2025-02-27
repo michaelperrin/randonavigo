@@ -41,6 +41,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
 
 export default MyApp;
 // Set default loader globally
-Image.defaultProps = {
-  loader: imageLoader,
-};
+// Image.defaultProps = {
+//   loader: imageLoader,
+// };

@@ -2,8 +2,10 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    loader: "custom",
-    path: "/api/image?url=", // Custom optimization route
+    // loader: "custom",
+    // path: "/api/image?url=", // Custom optimization route
+    loader: "cloudinary",
+    path: "https://res.cloudinary.com/dldea3lqs/image/upload/",
     // 5 days in seconds
     minimumCacheTTL: 432000,
   },
