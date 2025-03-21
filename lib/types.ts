@@ -28,3 +28,11 @@ export type Hike = {
   favorite?: boolean;
   hidden?: boolean;
 };
+
+export type FilterDefaults = {
+  minDistance: number;
+  maxDistance: number;
+  categories: string[];
+  tags: string[];
+  lines: string[];
+};

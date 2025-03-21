@@ -1,14 +1,17 @@
 import { getHikesForTransportLine } from '@/lib/hike'
-import { Hike } from '@/lib/types'
+import { Hike, FilterDefaults } from '@/lib/types'
 import LinePage from '@/components/transport/LinePage'
+import getFilterDefaults from '@/lib/getFilterDefaults'
 
 type HikePerLineProps = {
   hikes: Hike[],
+  filterDefaults: FilterDefaults;
 }
 
-const HikesOnLine = ({ hikes }: HikePerLineProps) => (
+const HikesOnLine = ({ hikes, filterDefaults }: HikePerLineProps) => (
   <LinePage
     hikes={hikes}
+    filterDefaults={filterDefaults}
     banner="/images/transport/banner/ligne-t2.jpeg"
     title="Randonnées sur le Tram T2"
     meta="Randonnées accessibles en transports par la ligne T2 du tramway en Île-de-France"
@@ -25,9 +28,13 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
 export default HikesOnLine
 
 export function getStaticProps() {
+  const hikes = getHikesForTransportLine('T2')
+  const filterDefaults = getFilterDefaults(hikes)
+
   return {
     props: {
-      hikes: getHikesForTransportLine('T2'),
+      hikes,
+      filterDefaults,
     }
   }
 }

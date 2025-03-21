@@ -1,18 +1,21 @@
 import { getHikesForTransportLine } from '@/lib/hike'
-import { Hike } from '@/lib/types'
+import { Hike, FilterDefaults } from '@/lib/types'
 import LinePage from '@/components/transport/LinePage'
+import getFilterDefaults from '@/lib/getFilterDefaults'
 
 type HikePerLineProps = {
   hikes: Hike[],
+  filterDefaults: FilterDefaults;
 }
 
-const HikesOnLine = ({ hikes }: HikePerLineProps) => (
+const HikesOnLine = ({ hikes, filterDefaults }: HikePerLineProps) => (
   <LinePage
     line="N"
     title="Randonnées sur la ligne N du Transilien"
     meta="Randonnées accessibles en transports par la ligne N du Transilien en Île-de-France"
     banner="/images/transport/banner/ligne-n.jpeg"
     hikes={hikes}
+    filterDefaults={filterDefaults}
     borderColor="border-transilien-n"
     bgColor="bg-transilien-n"
   >
@@ -25,9 +28,13 @@ const HikesOnLine = ({ hikes }: HikePerLineProps) => (
 export default HikesOnLine
 
 export function getStaticProps() {
+  const hikes = getHikesForTransportLine('N')
+  const filterDefaults = getFilterDefaults(hikes)
+
   return {
     props: {
-      hikes: getHikesForTransportLine('N'),
+      hikes,
+      filterDefaults,
     }
   }
 }
