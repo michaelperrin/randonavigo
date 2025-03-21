@@ -1,3 +1,5 @@
+"use client";
+
 import { MapContainer as LeafletMapContainer, TileLayer } from "react-leaflet";
 import GpxTrace from "./GpxTrace";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";

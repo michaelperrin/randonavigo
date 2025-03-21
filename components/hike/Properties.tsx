@@ -148,11 +148,11 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => {
             )}
           >
             <div className="pr-2">
-              <FontAwesomeIcon
+              {/* <FontAwesomeIcon
                 icon={faArrowCircleDown as IconProp}
                 size="lg"
                 aria-label=""
-              />
+              /> */}
             </div>
             <div>Télécharger la trace GPS</div>
           </div>

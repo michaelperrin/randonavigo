@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import type { JSX } from "react";
+
 type TopBannerProps = {
   picture?: string;
   children?: JSX.Element | JSX.Element[];

@@ -6,6 +6,8 @@ import TransportIcon from "@/components/TransportIcon";
 import TopBanner from "@/components/TopBanner";
 import LineLinks from "./LineLinks";
 
+import type { JSX } from "react";
+
 type HikePerLineProps = {
   hikes: Hike[];
   banner?: string;

@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import Header from "./layout/header";
 import Link from "next/link";
+
+import type { JSX } from "react";
+import Header from "./layout/Header";
 
 type LayoutProps = {
   children: JSX.Element | JSX.Element[];
@@ -70,9 +72,7 @@ const Layout = ({ children, home }: LayoutProps) => (
         </div>
 
         <div className="text-sm">
-          <Link href="/mentions-legales">
-            Mentions légales
-          </Link>
+          <Link href="/mentions-legales">Mentions légales</Link>
         </div>
 
         <div className="text-sm">
