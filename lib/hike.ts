@@ -1,11 +1,9 @@
 import fs from "fs";
-import glob from "glob";
+import glob, { globSync } from "glob";
 import dayjs from "dayjs";
 import { serialize } from "next-mdx-remote/serialize";
-import html from "remark-html";
 import matter from "gray-matter";
 import path from "path";
-import remark from "remark";
 import { Hike } from "./types";
 
 type HikePathParams = {
@@ -29,7 +27,7 @@ export const getHikePathParams = (hike: Hike): HikePathParams => {
 const hikesDirectory = path.join(process.cwd(), "hikes");
 
 export const getSortedHikesData = (): Hike[] => {
-  const fileNames = glob.sync("*.md", { cwd: hikesDirectory });
+  const fileNames = globSync("*.md", { cwd: hikesDirectory });
 
   const allHikesData = fileNames.map((fileName: string): Hike => {
     // Remove ".md" from file name to get id
