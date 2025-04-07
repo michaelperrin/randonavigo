@@ -19,7 +19,7 @@ const RelatedHikes = ({ hike }: RelatedHikesProps) => {
 
   return (
     <div className="flex">
-      <div className="bg-stone-100 px-4 py-4 rounded my-6">
+      <div className="bg-stone-100 px-4 py-4 rounded-sm my-6">
         <h4 className="font-bold uppercase mb-5">
           Randonnées sur toute la ligne
         </h4>

@@ -33,7 +33,7 @@ const HikeHeader = ({ hike }: HikeHeaderProps) => (
         <Date dateString={hike.publication_date} className="block mt-4" />
       </div>
 
-      <div className="absolute inset-0 after:absolute after:inset-0 after:bg-gradient-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70">
+      <div className="absolute inset-0 after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70">
         <Image
           src={getHikePicturePath(hike, hike.main_picture)}
           priority

@@ -135,7 +135,7 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => {
 
         <a
           className={classNames(
-            "mt-4 md:mt-0 block w-full bg-gradient-to-r from-softblue to-indigo-700 md:after:bg-gradient-to-r md:after:from-softblue after:indigo-700 md:after:blur-2xl md:after:absolute relative md:after:inset-0 md:after:z-10 z-20 md:rounded-t-none",
+            "mt-4 md:mt-0 block w-full bg-linear-to-r from-softblue to-indigo-700 md:after:bg-linear-to-r md:after:from-softblue after:indigo-700 md:after:blur-2xl md:after:absolute relative md:after:inset-0 md:after:z-10 z-20 md:rounded-t-none",
             roundedButtonClasses
           )}
           href={getHikeGpxPath(hike.slug, hike.publication_date, hike.gpx_file)}
@@ -143,7 +143,7 @@ const HikeProperties = ({ hike }: HikePropertiesProps) => {
         >
           <div
             className={classNames(
-              "rounded flex justify-center items-center z-50 text-white tracking-wider relative text-sm bg-transparent transition-all hover:bg-softblue-light text-center py-4 px-4 uppercase font-semibold duration-500",
+              "rounded-sm flex justify-center items-center z-50 text-white tracking-wider relative text-sm bg-transparent transition-all hover:bg-softblue-light text-center py-4 px-4 uppercase font-semibold duration-500",
               roundedButtonClasses
             )}
           >

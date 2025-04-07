@@ -51,7 +51,7 @@ const DonationCard = () => (
       </div>
     </div>
     <a
-      className="relative before:duration-500 transition-all block w-full font-sans bg-gradient-to-r z-20 text-white text-center text-sm py-2 px-4 uppercase font-semibold rounded-b from-amber-600 to-amber-800 before:absolute before:block before:inset-0 before:-z-10 before:opacity-0 before:rounded-b hover:before:opacity-100 before:transition-opacity before:bg-gradient-to-r before:from-yellow-600 before:to-yellow-800 focus:from-yellow-600 focus:to-yellow-800"
+      className="relative before:duration-500 transition-all block w-full font-sans bg-linear-to-r z-20 text-white text-center text-sm py-2 px-4 uppercase font-semibold rounded-b from-amber-600 to-amber-800 before:absolute before:block before:inset-0 before:-z-10 before:opacity-0 before:rounded-b hover:before:opacity-100 before:transition-opacity before:bg-linear-to-r before:from-yellow-600 before:to-yellow-800 focus:from-yellow-600 focus:to-yellow-800"
       href="https://ko-fi.com/W7W46TRZ2"
       target="_blank"
       rel="noopener noreferrer"

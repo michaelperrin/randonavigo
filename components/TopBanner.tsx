@@ -12,7 +12,7 @@ const TopBanner = ({
   overlay = false,
 }: TopBannerProps) => {
   const overlayClasses = overlay
-    ? "after:absolute after:inset-0 after:bg-gradient-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70"
+    ? "after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70"
     : "";
 
   return (
