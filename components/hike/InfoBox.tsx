@@ -14,7 +14,7 @@ type InfoBoxProps = {
 const InfoBox = ({ type, children }: InfoBoxProps) => {
   return (
     <div
-      className={classNames("px-8 py-6 mb-4 rounded", {
+      className={classNames("px-8 py-6 mb-4 rounded-sm", {
         "bg-amber-100": type === "warning",
         "bg-sky-100": type === "info",
       })}
