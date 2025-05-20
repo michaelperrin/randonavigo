@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 
@@ -11,10 +11,10 @@
 
   --shadow-card: 0px 0px 18px rgb(83 70 29 / 15%);
 
-  --font-condensed: 'Barlow Condensed', ui-sans-serif, system-ui;
+  --font-condensed: "Barlow Condensed", ui-sans-serif, system-ui;
   --font-sans-serif: Barlow, ui-sans-serif, system-ui;
-  --font-serif:
-    Lora, ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-serif: Lora, ui-serif, Georgia, Cambria, "Times New Roman", Times,
+    serif;
 
   --color-softblue-light: #297ab7;
   --color-softblue: #297ab7;
@@ -74,4 +74,9 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentcolor);
   }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
 }

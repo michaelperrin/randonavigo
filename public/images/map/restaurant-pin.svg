@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="46px" viewBox="0 0 35 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>restaurant-pin</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="restaurant-pin" fill-rule="nonzero">
+            <path d="M17.5,46 C17.5,46 35,29.6527497 35,17.2499997 C35,7.72308791 27.164983,0 17.5,0 C7.83501698,0 0,7.72308791 0,17.2499997 C0,29.6527497 17.5,46 17.5,46 Z" id="Shape" fill="#0B93BF"></path>
+            <g id="material-symbols--restaurant" transform="translate(8, 8)" fill="#FFFFFF">
+                <path d="M3.6,24 L3.6,13.02 C2.58,12.74 1.7252,12.18 1.0356,11.34 C0.346,10.5 0.0008,9.52 0,8.4 L0,0 L2.4,0 L2.4,8.4 L3.6,8.4 L3.6,0 L6,0 L6,8.4 L7.2,8.4 L7.2,0 L9.6,0 L9.6,8.4 C9.6,9.52 9.2552,10.5 8.5656,11.34 C7.876,12.18 7.0208,12.74 6,13.02 L6,24 L3.6,24 Z M15.6,24 L15.6,14.4 L12,14.4 L12,6 C12,4.34 12.5852,2.9252 13.7556,1.7556 C14.926,0.586 16.3408,0.0008 18,0 L18,24 L15.6,24 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
