@@ -42,6 +42,11 @@ const GpxTrace = ({ gpxFile }: GpxTraceProps) => {
             iconSize: [20, 20],
             iconAnchor: [20, 20],
           }),
+          Restaurant: L.icon({
+            iconUrl: "/images/map/restaurant-pin.svg",
+            iconSize: [20, 20],
+            iconAnchor: [20, 20],
+          }),
           "Picnic Area": L.icon({
             iconUrl: "/images/map/picnic-pin.svg",
             iconSize: [20, 20],
