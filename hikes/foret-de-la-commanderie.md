@@ -1,6 +1,6 @@
 ---
 title: Rochers, pins et auberge en forêt de la Commanderie
-summary:
+summary: Une randonnée à la découverte de la forêt de la Commanderie, avec ses rochers, ses pins et son restaurant idyllique en milieu de parcours.
 slug: foret-de-la-commanderie
 publication_date: "2025-05-14"
 categories:
