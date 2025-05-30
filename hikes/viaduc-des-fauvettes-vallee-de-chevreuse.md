@@ -146,7 +146,7 @@ La randonnée fera un total de **13 kilomètres**, et est celle proposée ici.
 
 ### Poursuivre le GR655 jusqu’à Saint-Rémy-lès-Chevreuse
 
-➡️ [Télécharger la trace pour un retour par Saint-Rémy-lès-Chevreuse](</hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/gpx/Chevreuse - Viaduc des Fauvettes - Saint-Rémy.gpx>)
+➡️ [Télécharger la trace pour un retour par Saint-Rémy-lès-Chevreuse](</hikes/2022/01/viaduc-des-fauvettes-vallee-de-chevreuse/gpx/Chevreuse - Viaduc des Fauvettes - Saint-Remy.gpx>)
 
 Encore envie de quelques kilomètres supplémentaires ?
 
