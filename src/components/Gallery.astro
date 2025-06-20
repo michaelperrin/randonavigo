@@ -1,0 +1,135 @@
+---
+export interface Props {
+  pictures: string[];
+  width?: "" | "sm";
+}
+
+const { pictures, width = "" } = Astro.props;
+---
+
+<div
+  class:list={[
+    "mx-auto grid gap-2 mb-2 not-prose",
+    { "max-w-lg": width === "sm" }
+  ]}
+  style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));"
+  data-gallery
+>
+  {pictures.map((picture: string, index: number) => (
+    <div
+      class="aspect-4/3 cursor-zoom-in relative"
+      style="position: relative; margin: 1px;"
+      data-pswp-item
+      data-src={picture}
+      data-w="800"
+      data-h="600"
+    >
+      <img
+        src={picture}
+        alt=""
+        loading="lazy"
+        style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 4px;
+        "
+      />
+    </div>
+  ))}
+</div>
+
+<script>
+  import PhotoSwipe from 'photoswipe';
+  import 'photoswipe/style.css';
+
+  // Initialize PhotoSwipe when the page loads
+  document.addEventListener('DOMContentLoaded', () => {
+    const galleries = document.querySelectorAll('[data-gallery]');
+
+    galleries.forEach((gallery) => {
+      const items = Array.from(gallery.querySelectorAll('[data-pswp-item]')).map((item) => ({
+        src: item.getAttribute('data-src') || '',
+        width: parseInt(item.getAttribute('data-w') || '800'),
+        height: parseInt(item.getAttribute('data-h') || '600'),
+      }));
+
+      gallery.addEventListener('click', (e) => {
+        const clickedItem = (e.target as HTMLElement).closest('[data-pswp-item]');
+        if (!clickedItem) return;
+
+        e.preventDefault();
+
+        const index = Array.from(gallery.querySelectorAll('[data-pswp-item]')).indexOf(clickedItem);
+
+        const lightbox = new PhotoSwipe({
+          dataSource: items,
+          index: index,
+          pswpModule: () => import('photoswipe'),
+        });
+
+        lightbox.init();
+      });
+    });
+  });
+</script>
+
+<style>
+  .aspect-4/3 {
+    aspect-ratio: 4/3;
+  }
+
+  .cursor-zoom-in {
+    cursor: zoom-in;
+  }
+
+  .not-prose {
+    /* Reset prose styles if needed */
+  }
+
+  .max-w-lg {
+    max-width: 32rem;
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid {
+    display: grid;
+  }
+
+  .gap-2 {
+    gap: 0.5rem;
+  }
+
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  /* PhotoSwipe custom styles */
+  .pswp {
+    z-index: 9999;
+  }
+
+  .pswp__bg {
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .pswp__counter {
+    color: #fff;
+  }
+
+  .pswp__button {
+    color: #fff;
+  }
+
+  .pswp__caption {
+    color: #fff;
+  }
+</style>

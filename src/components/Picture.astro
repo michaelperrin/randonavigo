@@ -1,0 +1,33 @@
+---
+export interface Props {
+  src: string;
+  caption?: string;
+  width?: "" | "sm";
+}
+
+const { src, caption, width = "" } = Astro.props;
+---
+
+<div
+  class:list={[
+    "mx-auto mb-2 not-prose",
+    { "max-w-lg": width === "sm" }
+  ]}
+>
+  <img
+    src={src}
+    alt={caption || ""}
+    loading="lazy"
+    style="
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+    "
+  />
+  {caption && (
+    <p class="text-center text-sm text-gray-600 mt-2 italic">
+      {caption}
+    </p>
+  )}
+</div>
