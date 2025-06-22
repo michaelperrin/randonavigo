@@ -1,11 +1,38 @@
 ---
+import { Image } from 'astro:assets';
+import { getHikeImage } from '../lib/getHikeImage';
+import type { ImageMetadata } from 'astro';
+
 export interface Props {
-  src: string;
+  src: string | ImageMetadata;
   caption?: string;
   width?: "" | "sm";
 }
 
 const { src, caption, width = "" } = Astro.props;
+
+// Handle both string paths (for backward compatibility) and imported images
+let imageSrc: ImageMetadata | null;
+if (typeof src === 'string') {
+  // If it's a string path, try to get the imported image
+
+  console.log('src', src);
+  const importedImage = getHikeImage(src);
+
+
+
+  if (importedImage) {
+    imageSrc = importedImage;
+  } else {
+    // Fallback to regular img tag for images not in assets
+    imageSrc = null;
+  }
+} else {
+  // If it's already an imported image, use it directly
+  imageSrc = src;
+}
+
+console.log("imageSrc", imageSrc);
 ---
 
 <div
@@ -14,17 +41,24 @@ const { src, caption, width = "" } = Astro.props;
     { "max-w-lg": width === "sm" }
   ]}
 >
-  <img
-    src={src}
-    alt={caption || ""}
-    loading="lazy"
-    style="
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-      display: block;
-    "
-  />
+  <!-- TEST {imageSrc?.src} -->
+  {imageSrc ? (
+    <Image
+      src={imageSrc}
+      alt={caption || ""}
+      width={800}
+      height={600}
+      format="webp"
+      class="w-full h-auto rounded block"
+    />
+  ) : (
+    <img
+      src={typeof src === 'string' ? src : ''}
+      alt={caption || ""}
+      class="w-full h-auto rounded block"
+      loading="lazy"
+    />
+  )}
   {caption && (
     <p class="text-center text-sm text-gray-600 mt-2 italic">
       {caption}

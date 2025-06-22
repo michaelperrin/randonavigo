@@ -1,0 +1,34 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Picture from '../components/Picture.astro';
+
+// Test direct import
+import testImage from '../assets/hikes/2024/06/etangs-de-commelles/pictures/IMG_6619.jpeg';
+---
+
+<html lang="fr">
+  <head>
+    <BaseHead title="Image Import Test" description="Testing direct image imports" />
+  </head>
+  <body>
+    <Header />
+    <main style="max-width: 800px; margin: 0 auto; padding: 2rem;">
+      <h1>Direct Image Import Test</h1>
+
+      <h2>Test with Direct Import</h2>
+      <Picture
+        src={testImage}
+        caption="Test image with direct import"
+      />
+
+      <h2>Test with String Path</h2>
+      <Picture
+        src="/hikes/2024/06/etangs-de-commelles/pictures/IMG_6619.jpeg"
+        caption="Test image with string path"
+      />
+    </main>
+    <Footer />
+  </body>
+</html>
