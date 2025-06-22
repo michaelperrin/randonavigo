@@ -1,0 +1,49 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Picture from '../components/Picture.astro';
+import Gallery from '../components/Gallery.astro';
+import { getAvailableHikeImages } from '../lib/getHikeImage';
+---
+
+<html lang="fr">
+  <head>
+    <BaseHead title="Image Test" description="Testing image imports" />
+  </head>
+  <body>
+    <Header />
+    <main style="max-width: 800px; margin: 0 auto; padding: 2rem;">
+      <h1>Image Import Test</h1>
+
+      <h2>Available Images</h2>
+      <p>Found {getAvailableHikeImages().length} images in assets:</p>
+      <ul>
+        {getAvailableHikeImages().slice(0, 5).map(path => (
+          <li>{path}</li>
+        ))}
+        {getAvailableHikeImages().length > 5 && (
+          <li>... and {getAvailableHikeImages().length - 5} more</li>
+        )}
+      </ul>
+
+      <h2>Test Picture Component</h2>
+      <p>Testing with a sample image path:</p>
+
+      <Picture
+        src="/hikes/2023/03/balade-champetre-sur-les-plateaux-de-mareil-sur-mauldre/pictures/autour-de-mareil-sur-mauldre - 1.jpeg"
+        caption="Test image from assets"
+      />
+
+      <h2>Test Gallery Component</h2>
+      <Gallery
+        pictures={[
+          "/hikes/2023/03/balade-champetre-sur-les-plateaux-de-mareil-sur-mauldre/pictures/autour-de-mareil-sur-mauldre - 1.jpeg",
+          "/hikes/2023/03/balade-champetre-sur-les-plateaux-de-mareil-sur-mauldre/pictures/autour-de-mareil-sur-mauldre - 2.jpeg",
+          "/hikes/2023/03/balade-champetre-sur-les-plateaux-de-mareil-sur-mauldre/pictures/autour-de-mareil-sur-mauldre - 3.jpeg",
+        ]}
+      />
+    </main>
+    <Footer />
+  </body>
+</html>
