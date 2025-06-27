@@ -1,0 +1,60 @@
+---
+import { Image } from 'astro:assets';
+import CoffeeCup from '../../assets/coffee-cup.png';
+---
+
+<div>
+  <div class="flex items-center bg-stone-100 rounded-t p-5 md:p-6 font-sans-serif shadow-md">
+    <div class="grow pr-4 md:pr-6">
+      <div class="font-bold uppercase mb-2 text-stone-800">
+        Vous aimez cette suggestion de randonnée ?
+      </div>
+      <div class="text-sm flex flex-col gap-2 md:gap-3 text-stone-700">
+        <p>
+          RandoNavigo est entièrement{" "}
+          <span class="font-medium text-amber-700">
+            gratuit et sans publicité
+          </span>
+          .
+        </p>
+
+        <p>
+          Un don me permettra de{" "}
+          <span class="font-medium">
+            supporter les frais liés au site
+          </span>{" "}
+          et de m’encourager à vous{" "}
+          <span class="font-medium">
+            concocter de nouvelles randonnées
+          </span>
+          , toujours en pleine nature et accessibles en transports.{" "}
+          <a
+            href="/a-propos"
+            class="underline hover:text-amber-700 whitespace-nowrap">
+
+              En savoir plus
+
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="w-12 md:w-16 shrink-0">
+      <Image
+        src={CoffeeCup}
+        class="rounded-full"
+        width={90}
+        height={148}
+        alt=""
+      />
+
+    </div>
+  </div>
+  <a
+    class="relative before:duration-500 transition-all block w-full font-sans bg-linear-to-r z-20 text-white text-center text-sm py-2 px-4 uppercase font-semibold rounded-b from-amber-600 to-amber-800 before:absolute before:block before:inset-0 before:-z-10 before:opacity-0 before:rounded-b hover:before:opacity-100 before:transition-opacity before:bg-linear-to-r before:from-yellow-600 before:to-yellow-800 focus:from-yellow-600 focus:to-yellow-800"
+    href="https://ko-fi.com/W7W46TRZ2"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Offrir un café
+  </a>
+</div>

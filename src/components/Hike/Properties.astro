@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import DonationCard from './DonationCard.astro';
 
 type Props = CollectionEntry<'hike'>['data'];
 
@@ -205,11 +206,6 @@ const roundedButtonClasses = {
   </div> -->
 
   <div class="mt-8 md:mt-16">
-    <!-- DonationCard component would go here -->
-    <div class="bg-blue-50 p-4 rounded-lg text-center">
-      <p class="text-sm text-gray-600">
-        Si vous appréciez ces randonnées, vous pouvez soutenir le projet ☕
-      </p>
-    </div>
+    <DonationCard />
   </div>
 </div>
