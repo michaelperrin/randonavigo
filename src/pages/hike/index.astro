@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 
-const posts = (await getCollection('blog')).sort(
+const hikes = (await getCollection('hike')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
@@ -92,15 +92,15 @@ const posts = (await getCollection('blog')).sort(
 			<section>
 				<ul>
 					{
-						posts.map((post) => (
+						hikes.map((hike) => (
 							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
+								<a href={`/hike/${hike.id}/`}>
+									{hike.data.heroImage && (
+										<Image width={720} height={360} src={hike.data.heroImage} alt="" />
 									)}
-									<h4 class="title">{post.data.title}</h4>
+									<h4 class="title">{hike.data.title}</h4>
 									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
+										<FormattedDate date={hike.data.pubDate} />
 									</p>
 								</a>
 							</li>
