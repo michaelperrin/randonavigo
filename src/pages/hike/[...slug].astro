@@ -1,0 +1,22 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import HikePost from '../../layouts/HikePost.astro';
+import { render } from 'astro:content';
+import { components } from '../../components/mdx-components';
+
+export async function getStaticPaths() {
+	const hikes = await getCollection('hike');
+	return hikes.map((hike) => ({
+		params: { slug: hike.id },
+		props: hike,
+	}));
+}
+type Props = CollectionEntry<'hike'>;
+
+const hike = Astro.props;
+const { Content } = await render(hike);
+---
+
+<HikePost {...hike.data}>
+	<Content components={components} />
+</HikePost>

@@ -1,9 +1,9 @@
 import { glob } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 
-const blog = defineCollection({
-  // Load Markdown and MDX files in the `src/content/blog/` directory.
-  loader: glob({ base: "./src/content/blog", pattern: "**/*.{md,mdx}" }),
+const hike = defineCollection({
+  // Load Markdown and MDX files in the `src/content/hike/` directory.
+  loader: glob({ base: "./src/content/hike", pattern: "**/*.{md,mdx}" }),
   // Type-check frontmatter using a schema
   schema: ({ image }) =>
     z.object({
@@ -13,8 +13,8 @@ const blog = defineCollection({
       pubDate: z.coerce.date(),
       updatedDate: z.coerce.date().optional(),
       heroImage: image().optional(),
-      // Additional fields for your blog posts
-      slug: z.string().optional(),
+      slug: z.string(),
+      // Additional fields for your hike posts
       categories: z.array(z.string()).optional(),
       tags: z.array(z.string()).optional(),
       pictures: z.array(z.string()).optional(),
@@ -35,7 +35,15 @@ const blog = defineCollection({
         .optional(),
       favorite: z.boolean().optional(),
       hidden: z.boolean().optional(),
+      gpx_alternatives: z
+        .array(
+          z.object({
+            label: z.string(),
+            file: z.string(),
+          })
+        )
+        .optional(),
     }),
 });
 
-export const collections = { blog };
+export const collections = { hike };
