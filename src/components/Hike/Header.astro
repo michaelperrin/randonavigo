@@ -1,0 +1,52 @@
+---
+import FormattedDate from "../FormattedDate.astro";
+
+// import Image from "next/image";
+// import { Hike } from "@/lib/types";
+// import getHikePicturePath from "@/lib/getHikePicturePath";
+// import Date from "@/components/date";
+
+const { categories, title, pubDate, main_picture } = Astro.props;
+
+---
+<header>
+  <div
+    class="flex flex-col justify-center relative h-screen/3 md:h-hero-header"
+    style={{ minHeight: "400px" }}
+  >
+    <div
+      class="pt-32 px-4 md:px-48 z-30 text-white"
+      style={{
+        fontFamily: "Barlow",
+        textShadow: "0 0 40px rgba(0, 0, 0, 0.9)",
+      }}
+    >
+      {categories && (
+        <div class="uppercase text-sm md:text-base tracking-wider mb-1 leading-none">
+          {categories[0]}
+        </div>
+      )}
+
+      <h1 class="z-30 text-3xl md:text-4xl font-condensed font-medium leading-none">
+        {title}
+      </h1>
+
+       <div class="block mt-4">
+         <FormattedDate date={pubDate} />
+       </div>
+    </div>
+
+    <div class="absolute inset-0 after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70">
+      <!-- <Image
+        src={getHikePicturePath(hike, main_picture)}
+        priority
+        alt=""
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+        }}
+      /> -->
+    </div>
+  </div>
+</header>
