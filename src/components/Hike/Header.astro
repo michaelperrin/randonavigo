@@ -6,10 +6,8 @@ import { Image } from "astro:assets";
 const { categories, title, pubDate, main_picture, slug } = Astro.props;
 
 const image = getHikeImage(getHikeImagePath(pubDate, slug, main_picture));
-
-console.log("image", getHikeImagePath(pubDate, slug, main_picture));
-
 ---
+
 <header>
   <div
     class="flex flex-col justify-center relative h-screen/3 md:h-hero-header"
