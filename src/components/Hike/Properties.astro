@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import DonationCard from './DonationCard.astro';
+import Access from './Access.astro';
 
 type Props = CollectionEntry<'hike'>['data'];
 
@@ -27,24 +28,7 @@ const roundedButtonClasses = {
         <h3 class="uppercase text-sm font-bold text-gray-500 mb-2">
           Départ / arrivée
         </h3>
-        <!-- Access component would go here -->
-        <div class="text-gray-800">
-          {starting_point && (
-            <div class="mb-2">
-              <strong>Départ:</strong> {starting_point.station}
-              {Array.isArray(starting_point.line)
-                ? starting_point.line.join(', ')
-                : starting_point.line}
-            </div>
-          )}
-          {ending_point && (
-            <div>
-              <strong>Arrivée:</strong> {ending_point.station}
-              {Array.isArray(ending_point.line)
-                ? ending_point.line.join(', ')
-                : ending_point.line}
-            </div>
-          )}
+        <Access startingPoint={starting_point} endingPoint={ending_point} transportIconSize={26} />
         </div>
       </div>
       <div class="mb-4">

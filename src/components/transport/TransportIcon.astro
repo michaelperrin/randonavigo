@@ -1,0 +1,34 @@
+---
+import { groupLinesByNetwork } from '../../lib/groupLinesByNetwork';
+import LineIcon from './LineIcon.astro';
+import NetworkIcon from './NetworkIcon.astro';
+
+export interface Props {
+  line: string|string[];
+  size?: number;
+  linkToPage?: boolean;
+}
+
+const { line, size = 24, linkToPage = true } = Astro.props;
+
+const lines = Array.isArray(line) ? line : [line];
+const linesPerNetwork = groupLinesByNetwork(lines);
+---
+
+<div class="flex flex-nowrap gap-3">
+    {linesPerNetwork.map((networkLines, network) => (
+      <div class="flex flex-nowrap gap-1">
+        <NetworkIcon network={network} size={size} />
+
+        <div class="flex gap-1">
+          {networkLines.map((line: string) => (
+            <LineIcon
+              line={line}
+              size={size}
+              linkToPage={linkToPage}
+            />
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>

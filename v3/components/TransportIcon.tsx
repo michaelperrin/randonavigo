@@ -1,29 +1,33 @@
-import { getLineNetwork } from '@/lib/transport'
-import LineIcon from './LineIcon'
-import NetworkIcon from './NetworkIcon'
+import { getLineNetwork } from "@/lib/transport";
+import LineIcon from "./LineIcon";
+import NetworkIcon from "./NetworkIcon";
 
 type TransportIconProps = {
-  line: string|string[],
-  size?: number,
-  linkToPage?: boolean,
-}
+  line: string | string[];
+  size?: number;
+  linkToPage?: boolean;
+};
 
 const groupLinesByNetwork = (lines: string[]): string[][] => {
   return lines.reduce((current: string[][], line: string) => {
-    const network = getLineNetwork(line)
+    const network = getLineNetwork(line);
 
     if (!current[network]) {
       current[network] = [];
     }
-    current[network].push(line)
+    current[network].push(line);
 
-    return current
-  }, [])
-}
+    return current;
+  }, []);
+};
 
-const TransportIcon = ({ line, size = 24, linkToPage = true }: TransportIconProps) => {
+const TransportIcon = ({
+  line,
+  size = 24,
+  linkToPage = true,
+}: TransportIconProps) => {
   const lines = Array.isArray(line) ? line : [line];
-  const linesPerNetwork = groupLinesByNetwork(lines)
+  const linesPerNetwork = groupLinesByNetwork(lines);
 
   return (
     <div className="flex flex-nowrap gap-3">
@@ -33,13 +37,18 @@ const TransportIcon = ({ line, size = 24, linkToPage = true }: TransportIconProp
 
           <div className="flex gap-1">
             {networkLines.map((line: string) => (
-              <LineIcon key={line} line={line} size={size} linkToPage={linkToPage} />
+              <LineIcon
+                key={line}
+                line={line}
+                size={size}
+                linkToPage={linkToPage}
+              />
             ))}
           </div>
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
 export default TransportIcon;
