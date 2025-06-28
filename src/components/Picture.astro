@@ -15,11 +15,7 @@ const { src, caption, width = "" } = Astro.props;
 let imageSrc: ImageMetadata | null;
 if (typeof src === 'string') {
   // If it's a string path, try to get the imported image
-
-  console.log('src', src);
   const importedImage = getHikeImage(src);
-
-
 
   if (importedImage) {
     imageSrc = importedImage;
@@ -31,8 +27,6 @@ if (typeof src === 'string') {
   // If it's already an imported image, use it directly
   imageSrc = src;
 }
-
-console.log("imageSrc", imageSrc);
 ---
 
 <div
@@ -41,7 +35,6 @@ console.log("imageSrc", imageSrc);
     { "max-w-lg": width === "sm" }
   ]}
 >
-  <!-- TEST {imageSrc?.src} -->
   {imageSrc ? (
     <Image
       src={imageSrc}
