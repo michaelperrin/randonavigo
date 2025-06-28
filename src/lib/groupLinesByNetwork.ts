@@ -1,14 +1,18 @@
-import { getLineNetwork } from "./transport";
+import { getLineNetwork, Network } from "./transport";
 
-export const groupLinesByNetwork = (lines: string[]): string[][] => {
-  return lines.reduce((current: string[][], line: string) => {
+export const groupLinesByNetwork = (
+  lines: string[]
+): Record<Network, string[]> => {
+  const result: Record<Network, string[]> = {
+    [Network.RER]: [],
+    [Network.Tram]: [],
+    [Network.Transilien]: [],
+  };
+
+  lines.forEach((line: string) => {
     const network = getLineNetwork(line);
+    result[network].push(line);
+  });
 
-    if (!current[network]) {
-      current[network] = [];
-    }
-    current[network].push(line);
-
-    return current;
-  }, []);
+  return result;
 };
