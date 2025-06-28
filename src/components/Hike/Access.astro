@@ -1,0 +1,40 @@
+---
+import TransportPoint from "../transport/TransportPoint.astro";
+
+export interface Props {
+  // TODO: common props for starting and ending point
+  startingPoint: {
+    line: string|string[];
+    station: string;
+  };
+  endingPoint?: {
+    line: string|string[];
+    station: string;
+  } | null;
+  transportIconSize?: number,
+}
+
+const { startingPoint, endingPoint, transportIconSize = 20 } = Astro.props;
+---
+<div class="flex flex-wrap gap-y-2">
+  <div class:list={[
+    'flex-auto',
+    { 'mr-4': endingPoint !== undefined },
+  ]}>
+    <TransportPoint
+      line={startingPoint.line}
+      station={startingPoint.station}
+      iconSize={transportIconSize}
+    />
+  </div>
+
+  { endingPoint && (
+    <div class="flex-auto">
+      <TransportPoint
+        line={endingPoint.line}
+        station={endingPoint.station}
+        iconSize={transportIconSize}
+      />
+    </div>
+  )}
+</div>
