@@ -12,7 +12,6 @@ const hike = defineCollection({
       // Transform string to Date object
       pubDate: z.coerce.date(),
       updatedDate: z.coerce.date().optional(),
-      heroImage: image().optional(),
       slug: z.string(),
       // Additional fields for your hike posts
       categories: z.array(z.string()).optional(),

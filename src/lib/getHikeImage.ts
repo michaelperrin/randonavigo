@@ -15,16 +15,9 @@ export function getHikeImage(path: string): ImageMetadata | null {
 
   const assetsPath = `/src/assets${path}`;
 
-  console.log("assetsPath", assetsPath);
-
-  // console.log("hikeImages", Object.keys(hikeImages));
-
   // Find the matching image in the glob results
   for (const [filePath, image] of Object.entries(hikeImages)) {
-    // console.log("filePath", filePath);
-    // console.log("assetsPath", assetsPath);
     if (filePath === assetsPath) {
-      // console.log("image BBBB", image.default.width);
       // TODO: why default?
       return image.default;
     }
@@ -37,4 +30,15 @@ export function getHikeImage(path: string): ImageMetadata | null {
 // Helper function to get all available image paths
 export function getAvailableHikeImages(): string[] {
   return Object.keys(hikeImages).map((path) => path.replace("/src/assets", ""));
+}
+
+export function getHikeImagePath(
+  pubDate: Date,
+  slug: string,
+  picture: string
+): string {
+  const year = pubDate.getFullYear();
+  const month = (pubDate.getMonth() + 1).toString().padStart(2, "0");
+
+  return `/hikes/${year}/${month}/${slug}/pictures/${picture}`;
 }
