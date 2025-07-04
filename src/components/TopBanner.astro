@@ -1,7 +1,8 @@
 ---
 import { Image } from "astro:assets";
+import banner from "../assets/home-bg.jpeg";
 
-const { picture, overlay = false } = Astro.props;
+const { picture = banner, overlay = false } = Astro.props;
 
 const overlayClasses = overlay
   ? "after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70"
