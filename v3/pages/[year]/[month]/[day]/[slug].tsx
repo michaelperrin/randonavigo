@@ -27,6 +27,7 @@ type Params = {
 const Hike = ({ hike, mdxSource }: HikeProps) => (
   <Layout>
     <Head>
+      {/* TODO: set meta on Astro */}
       <title>{`${hike.title} – RandoNavigo`}</title>
       <meta name="description" content={hike.summary} />
       <meta property="og:locale" content="fr_FR" />
@@ -57,7 +58,7 @@ const Hike = ({ hike, mdxSource }: HikeProps) => (
       />
     </Head>
 
-    <article data-gpx-file="{{ path('hike_download_gpx_file', {slug: hike.slug}) }}">
+    <article>
       <HikeHeader hike={hike} />
 
       <div className="container">
