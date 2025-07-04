@@ -1,10 +1,8 @@
 ---
 import { Image } from "astro:assets";
-// import hikeIcon from "./hike-icon.svg";
 import { type CollectionEntry } from 'astro:content';
 import { getHikeImage, getHikeImagePath } from "../../lib/getHikeImage";
 import TransportPoint from "../transport/TransportPoint.astro";
-
 
 const { hike } = Astro.props;
 
@@ -14,12 +12,9 @@ const getHikeImageUrl = (hike: CollectionEntry<'hike'>) => {
 
 const imageUrl = getHikeImageUrl(hike);
 
-
 const getHikeUrl = (hike: CollectionEntry<'hike'>) => `/hike/${hike.data.slug}/`;
 
 const hikeData = hike.data;
-
-console.log(hikeData);
 ---
 
 <article class="flex flex-col mb-4 bg-white shadow-card">
@@ -43,20 +38,6 @@ console.log(hikeData);
       {imageUrl && (
         <Image width={720} height={600} src={imageUrl} alt="" class="w-full h-full object-cover" />
       )}
-
-      <!-- <Image
-        src={getHikePicturePath(
-          hike,
-          hike.thumbnail_picture ?? hike.main_picture
-        )}
-        quality={60}
-        class="w-full h-full object-fill"
-        alt=""
-        sizes="350px"
-        style={{
-          objectFit: "cover",
-        }}
-      /> -->
     </div>
   </a>
 
@@ -95,11 +76,11 @@ console.log(hikeData);
         />
       </div>
 
-      <div class="shrink-0 flex ml-auto font-sans-serif text-sm font-medium">
-        <div class="shrink-0 relative w-5 h-5">
-          <!-- <Image src={hikeIcon} alt="Distance de marche" /> -->
+      <div class="shrink-0 flex ml-auto font-sans-serif text-sm font-medium gap-1">
+        <div>
+          <Image src="/images/hike-icon.svg" alt="Distance de marche" width={14} height={14} />
         </div>
-        <div class="ml-1">
+        <div>
           {hikeData.distance}
           km
         </div>
