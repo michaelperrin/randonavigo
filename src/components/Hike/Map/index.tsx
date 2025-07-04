@@ -7,7 +7,7 @@
 
 import { getHikeGpxPath } from "../../../lib/getHikeGpxPath";
 import MapContainer from "../../Map/MapContainer";
-// import withFullScreenControl from "../../Map/withFullScreenControl";
+import withFullScreenControl from "../../Map/withFullScreenControl";
 import withLeafletGestureHandling from "../../Map/withLeafletGestureHandling";
 
 type MapProps = {
@@ -26,7 +26,7 @@ const compose = (...fns: Function[]) =>
 
 const ComposedMapContainer = compose(
   withLeafletGestureHandling,
-  // withFullScreenControl(true) // TODO
+  withFullScreenControl()
 )(MapContainer);
 
 const gpxFiles = (slug: string, pubDate: Date, gpxFile: string): string[] => [
