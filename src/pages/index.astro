@@ -1,26 +1,14 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import List from '../components/Hike/List.astro';
-import { getHikesSorted } from '../lib/getHikes';
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import List from "../components/Hike/List.astro";
+import { getHikesSorted } from "../lib/getHikes";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const hikes = await getHikesSorted();
 ---
 
-<!doctype html>
-<html lang="fr">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main>
-      <section>
-        <List hikes={hikes} />
-      </section>
-    </main>
-    <Footer />
-  </body>
-</html>
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <section>
+    <List hikes={hikes} />
+  </section>
+</BaseLayout>
