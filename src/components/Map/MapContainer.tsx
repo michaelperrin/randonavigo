@@ -33,7 +33,7 @@ const MapContainer = ({
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       detectRetina
     />
-    {/* <MapLocateControl /> */}
+    <MapLocateControl />
     {gpxFiles &&
       gpxFiles.map((gpxFile) => <GpxTrace key={gpxFile} gpxFile={gpxFile} />)}
   </LeafletMapContainer>

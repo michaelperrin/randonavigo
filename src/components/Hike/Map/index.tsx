@@ -35,7 +35,6 @@ const gpxFiles = (slug: string, pubDate: Date, gpxFile: string): string[] => [
 
 
 const Map = ({ slug, pubDate, gpxFile }: MapProps) => {
-    console.log(slug, pubDate, gpxFile, getHikeGpxPath(slug, pubDate, gpxFile));
     return (
         <div>
           <ComposedMapContainer

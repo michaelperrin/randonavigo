@@ -1,13 +1,14 @@
 import { useEffect, useMemo } from "react";
 import { useMap } from "react-leaflet";
-import * as L from "leaflet";
+import { LocateControl } from "leaflet.locatecontrol";
+import "leaflet.locatecontrol/dist/L.Control.Locate.min.css";
 
 const MapLocateControl = () => {
   const map = useMap();
-  const locateControl = useMemo(() => new L.Control.Locate(), []);
+  const locateControl = useMemo(() => new LocateControl(), []);
 
   useEffect(() => {
-    map.addControl(locateControl);
+    locateControl.addTo(map);
   }, [map, locateControl]);
 
   return null;
