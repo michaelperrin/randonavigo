@@ -3,7 +3,6 @@ import { useLeafletContext } from "@react-leaflet/core";
 import { useMap } from "react-leaflet";
 import * as L from "leaflet";
 import "leaflet-gpx";
-import "leaflet.locatecontrol";
 
 type GpxTraceProps = {
   gpxFile: string;
