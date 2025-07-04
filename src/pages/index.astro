@@ -7,6 +7,7 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 import { getHikeImage, getHikeImagePath } from '../lib/getHikeImage';
+import List from '../components/Hike/List.astro';
 
 const hikes = (await getCollection('hike')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -25,8 +26,9 @@ const getHikeImageUrl = (hike: CollectionEntry<'hike'>) => {
   <body>
     <Header />
     <main>
-      <section>
-        <ul>
+      <section class="container mx-auto">
+        <List />
+        <!-- <ul>
           {
             hikes.map((hike) => {
               const imageUrl = getHikeImageUrl(hike);
@@ -44,7 +46,7 @@ const getHikeImageUrl = (hike: CollectionEntry<'hike'>) => {
                 </li>
             )})
           }
-        </ul>
+        </ul> -->
       </section>
     </main>
     <Footer />
