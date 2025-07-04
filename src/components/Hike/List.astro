@@ -1,10 +1,8 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
 import HikeCard from './HikeCard.astro';
+import { getHikesSorted } from '../../lib/getHikes';
 
-const hikes = (await getCollection('hike')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const hikes = await getHikesSorted();
 ---
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
