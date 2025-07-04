@@ -23,8 +23,6 @@ const MapContainer = ({
   <LeafletMapContainer
     zoom={zoom}
     center={center}
-    // center={[51.505, -0.09]}
-    // zoom={13}
     scrollWheelZoom={scrollWheelZoom}
     {...otherProps}
     className="h-64 md:h-52"

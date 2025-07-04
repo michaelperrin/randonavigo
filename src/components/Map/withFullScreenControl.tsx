@@ -1,18 +1,30 @@
-import React, { ComponentType } from "react";
+import React from "react";
 import {
   MapContainer,
-  MapContainerProps,
+  type MapContainerProps,
   useMap,
   useMapEvents,
 } from "react-leaflet";
 import "leaflet.fullscreen";
 import "leaflet.fullscreen/Control.FullScreen.css";
+import L from "leaflet";
 
+// Extend Leaflet Map type to include gestureHandling
+declare module "leaflet" {
+  interface Map {
+    gestureHandling?: {
+      enable(): void;
+      disable(): void;
+    };
+  }
+}
+
+// Disable gesture handling when map is in full screen mode
+// Improves user experience on mobile devices
 const withFullScreenControl =
-  (enabled: boolean) => (Component: typeof MapContainer) => {
+  () => (Component: typeof MapContainer) => {
     const MapWithFullScreenControl = (
       props: MapContainerProps,
-      children: React.ReactNode
     ) => {
       const Elt = () => {
         const map = useMap();
@@ -27,13 +39,19 @@ const withFullScreenControl =
             // This makes the user experience better on mobile devices
             map.gestureHandling?.disable();
           },
-        });
+        } as any);
+
+        L.control.fullscreen({
+          position: "topleft",
+          title: "Passer en plein écran",
+          titleCancel: "Quitter le mode plein écran",
+        }).addTo(map);
 
         return null;
       };
 
       return (
-        <Component {...props} fullscreenControl={enabled}>
+        <Component {...props}>
           <Elt />
         </Component>
       );
@@ -43,3 +61,10 @@ const withFullScreenControl =
   };
 
 export default withFullScreenControl;
+
+// Add this near the top of your file (after imports)
+declare module "leaflet" {
+  namespace control {
+    function fullscreen(options?: any): Control;
+  }
+}
