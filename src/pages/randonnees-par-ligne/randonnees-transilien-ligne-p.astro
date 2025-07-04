@@ -1,0 +1,43 @@
+---
+import LinePage from "../../layouts/LinePage.astro";
+import { getHikesForTransportLine } from "../../lib/getHikes";
+import banner from "../../assets/transport/banner/ligne-p.jpeg";
+
+const hikes = await getHikesForTransportLine("P");
+---
+
+<LinePage
+  title="Randonnées sur la ligne P du Transilien"
+  description="Randonnées accessibles en transports par la ligne P du Transilien en Île-de-France"
+  hikes={hikes}
+  borderColor="border-transilien-p"
+  bgColor="bg-transilien-p"
+  line="P"
+  banner={banner}
+>
+  <p>
+    La ligne P part bien loin dans l&apos;Est de l&apos;Île-de-France pour
+    desservir une large partie du plus grand département de la région : la
+    Seine-et-Marne.
+  </p>
+
+  <p>
+    Des trajets parfois longs au départ de la Gare de l&apos;Est, mais donnant
+    accès à la <b>Brie</b>, terreau de randonnées. Certaines branches sont
+    parfois minuscules, et l&apos;on pourrait se croire dans des petits villages
+    de province. Les lignes ne sont pas toujours électrifiées, et parfois
+    mono-voie !
+  </p>
+
+  <p>
+    Le bout de ligne tutoie la <b>Champagne</b>, et permet de profiter de ses
+    paysages tout en restant en Île-de-France.
+  </p>
+
+  <p>
+    La ligne est également connue pour desservir <b>Provins</b>, l&apos;un des
+    plus beaux villages médivaux (on y fera une rando à l&apos;avenir). Une
+    ligne à l&apos;évocation fromagère également, entre le brie (de Meaux) et le
+    coulommiers (de… Coulommiers). De quoi lier l&apos;utile à l&apos;agréable.
+  </p>
+</LinePage>

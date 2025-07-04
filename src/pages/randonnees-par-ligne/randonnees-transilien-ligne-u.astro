@@ -1,0 +1,43 @@
+---
+import LinePage from "../../layouts/LinePage.astro";
+import { getHikesForTransportLine } from "../../lib/getHikes";
+import banner from "../../assets/transport/banner/ligne-u.jpeg";
+
+const hikes = await getHikesForTransportLine("U");
+---
+
+<LinePage
+  title="Randonnées sur la ligne U du Transilien"
+  description="Randonnées accessibles en transports par la ligne U du Transilien en Île-de-France"
+  hikes={hikes}
+  borderColor="border-transilien-u"
+  bgColor="bg-transilien-u"
+  line="U"
+  banner={banner}
+>
+  <p>
+    La ligne U est une petite ligne tangeantielle de l&apos;Ouest parisien. Son
+    départ à <em>La Défense</em> est bien pratique et des connexions avec la
+    {" "}
+    <a href="/randonnees-par-ligne/randonnees-transilien-ligne-n"
+      >ligne N du Transilien</a
+    >
+    {" "}
+    et le
+    {" "}
+    <a href="/randonnees-par-ligne/randonnees-rer-c">RER C</a>
+    {" "}
+    à Versailles Chantiers, ainsi que la
+    {" "}
+    <a href="/randonnees-par-ligne/randonnees-transilien-ligne-l"
+      >ligne L du Transilien</a
+    >
+    {" "}
+    à Saint-Cloud.
+  </p>
+
+  <p>
+    On regrettera sa fréquence trop faible en particulier le week-end (un train
+    par heure le dimanche).
+  </p>
+</LinePage>
