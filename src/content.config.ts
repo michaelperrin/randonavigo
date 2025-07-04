@@ -19,7 +19,7 @@ const hike = defineCollection({
       pictures: z.array(z.string()).optional(),
       main_picture: z.string(),
       distance: z.number().optional(),
-      gpx_file: z.string().optional(),
+      gpx_file: z.string(),
       starting_point: z.object({
         station: z.string(),
         line: z.union([z.string(), z.array(z.string())]),
