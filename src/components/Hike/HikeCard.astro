@@ -88,12 +88,11 @@ console.log(hikeData);
 
     <div class="flex items-center mt-auto mb-3 pt-3 border-t border-gray-200">
       <div class="flex-grow-1 text-sm items-center font-sans-serif">
-        {hikeData.starting_point?.line || "MISSING"}
-        <!-- <TransportPoint
-          line={hike.starting_point.line}
-          station={hike.starting_point.station}
+        <TransportPoint
+          line={hikeData.starting_point.line}
+          station={hikeData.starting_point.station}
           iconSize={20}
-        /> -->
+        />
       </div>
 
       <div class="shrink-0 flex ml-auto font-sans-serif text-sm font-medium">

@@ -15,7 +15,7 @@ const TRAM_LINES = [
   "T12",
   "T13",
 ];
-const TRANSILIEN_LINES = ["H", "J", "K", "L", "N", "P", "R", "U"];
+const TRANSILIEN_LINES = ["H", "J", "K", "L", "N", "P", "R", "U", "Z"];
 
 export enum Network {
   RER,
@@ -36,7 +36,7 @@ export const getLineNetwork = (line: string): Network => {
     return Network.Transilien;
   }
 
-  throw new Error("Network for line could not be found");
+  throw new Error(`Network for line ${line} could not be found`);
 };
 
 export const isRER = (line: string): boolean => RER_LINES.includes(line);
