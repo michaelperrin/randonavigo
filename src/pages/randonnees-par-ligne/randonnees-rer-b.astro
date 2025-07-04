@@ -1,0 +1,30 @@
+---
+import LinePage from "../../layouts/LinePage.astro";
+import { getHikesForTransportLine } from "../../lib/getHikes";
+import banner from "../../assets/transport/banner/rer-b.jpeg";
+
+const hikes = await getHikesForTransportLine("B");
+---
+
+<LinePage
+  title="Randonnées sur le RER B"
+  description="Randonnées accessibles en transports par le RER B en Île-de-France"
+  hikes={hikes}
+  borderColor="border-rer-b"
+  bgColor="bg-rer-b"
+  line="B"
+  banner={banner}
+>
+  <p>
+    Ah ! Le RER B… Synonyme de galères bien souvent. Très sollicité et avec des
+    rames dont la modernisation ou le remplacement se font attendre… Il n&apos;a
+    pas grand chose pour plaire !
+  </p>
+  <p>
+    Et pourtant. Il est idéal pour partir en randonnée dans la célèbre{" "}
+    <b>Vallée de Chevreuse</b>. Ce Parc Naturel est idéal pour la randonnée et
+    le RER sera beaucoup plus calme le week-end. Bien loin de
+    Châtelet-les-Halles et Gare du Nord — qu&apos;il dessert certes idéalement —
+    vous verrez désormais le RER B comme un nouveau compagnon de randonnée 😄
+  </p>
+</LinePage>

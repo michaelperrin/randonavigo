@@ -1,0 +1,34 @@
+---
+import LinePage from "../../layouts/LinePage.astro";
+import { getHikesForTransportLine } from "../../lib/getHikes";
+import banner from "../../assets/transport/banner/ligne-t2.jpeg";
+
+const hikes = await getHikesForTransportLine("T2");
+---
+
+<LinePage
+  title="Randonnées sur le Tram T2"
+  description="Randonnées accessibles en transports par la ligne T2 du tramway en Île-de-France"
+  hikes={hikes}
+  borderColor="border-tram-t2"
+  bgColor="bg-tram-t2"
+  line="T2"
+  banner={banner}
+>
+  <p>
+    Ancienne ligne de chemin de fer reconvertie dans les années 90 en tram, le
+    T2 propose un parcours agréable (quasi-bucolique) longeant la partie Ouest
+    de la Seine. Blindé en semaine, il sera assez tranquille le weekend pour
+    rejoindre les autres lignes de Transilien ou même comme point de départ pour
+    une randonnée à condition de ne pas exiger un parcours en pleine nature.
+  </p>
+  <p>
+    Tout proche de Paris, elle permettra tout de même d&apos;accéder au <b
+      >Domaine de Saint-Cloud</b
+    >, lui-même porte d&apos;entrée de la <b>forêt de Fausses-Reposes</b>.
+  </p>
+  <p>
+    La passerelle de l&apos;Avre accessible depuis la station des <em>Milons</em
+    > est également un point d&apos;entrée intéressant vers le Bois de Boulogne.
+  </p>
+</LinePage>
