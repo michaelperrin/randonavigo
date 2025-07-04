@@ -4,6 +4,9 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import List from '../components/Hike/List.astro';
+import { getHikesSorted } from '../lib/getHikes';
+
+const hikes = await getHikesSorted();
 ---
 
 <!doctype html>
@@ -14,8 +17,8 @@ import List from '../components/Hike/List.astro';
   <body>
     <Header />
     <main>
-      <section class="container mx-auto">
-        <List />
+      <section>
+        <List hikes={hikes} />
       </section>
     </main>
     <Footer />
