@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import List from "../components/Hike/List.astro";
 import TransportIcon from "../components/transport/TransportIcon.astro";
 import TopBanner from "../components/TransportLine/TopBanner.astro";
+import LineLinks from "../components/TransportLine/LineLinks.astro";
 
 const { title, description, hikes, borderColor, bgColor, line, banner } =
   Astro.props;
@@ -61,8 +62,7 @@ const { title, description, hikes, borderColor, bgColor, line, banner } =
             <aside
               class="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2"
             >
-              TODO
-              <!-- <LineLinks /> -->
+              <LineLinks />
             </aside>
           </div>
         </div>
