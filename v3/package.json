@@ -1,0 +1,52 @@
+{
+  "name": "randonavigo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.7",
+    "glob": "^11.0.1",
+    "gray-matter": "^4.0.3",
+    "leaflet": "^1.7.1",
+    "leaflet-gesture-handling": "^1.2.2",
+    "leaflet-gpx": "^1.7.0",
+    "leaflet.fullscreen": "^3.0.2",
+    "leaflet.locatecontrol": "^0.81.1",
+    "next": "^14.2.24",
+    "next-mdx-remote": "^4.2.0",
+    "react": "^18.3.1",
+    "react-18-image-lightbox": "^5.1.4",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.1.0",
+    "remark": "14.0.2",
+    "remark-html": "15.0.1",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.3",
+    "@tailwindcss/typography": "^0.5.0",
+    "@types/glob": "^8.0.0",
+    "@types/leaflet": "^1.7.4",
+    "@types/leaflet-gpx": "^1.3.3",
+    "@types/leaflet.fullscreen": "^1.6.1",
+    "@types/leaflet.locatecontrol": "^0.74.0",
+    "@types/react": "18.0.25",
+    "eslint": "8.27.0",
+    "eslint-config-next": "^14.2.24",
+    "next-sitemap": "^3.1.32",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.3",
+    "typescript": "4.9.3"
+  }
+}

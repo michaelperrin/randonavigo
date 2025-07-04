@@ -1,0 +1,30 @@
+---
+import LinePage from "../../layouts/LinePage.astro";
+import { getHikesForTransportLine } from "../../lib/getHikes";
+import banner from "../../assets/transport/banner/ligne-t6.jpeg";
+
+const hikes = await getHikesForTransportLine("T6");
+---
+
+<LinePage
+  title="Randonnées sur le Tram T6"
+  description="Randonnées accessibles en transports par la ligne T6 du tramway en Île-de-France"
+  hikes={hikes}
+  borderColor="border-tram-t6"
+  bgColor="bg-tram-t6"
+  line="T6"
+  banner={banner}
+>
+  <p>
+    Le T6 dessert un grand nombre de quartiers neufs, depuis Châtillon (ligne 13
+    du métro) jusque Chaville. Il permet une connexion avec la ligne L du
+    Transilien en gare de Chaville-Rive-Droite, et avec la ligne N en gare de
+    Chaville-Rive-Gauche. Ces deux stations en sous-sol, esthétiquement
+    réussies, donnent un petit air de station de métro (type métro 14) en pleine
+    petite ville pavillonaire !
+  </p>
+  <p>
+    Pour la randonnée, il permet l&apos;accès aux forêts de Meudon et de
+    Fausses-Reposes.
+  </p>
+</LinePage>

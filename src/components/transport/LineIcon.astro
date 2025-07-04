@@ -1,0 +1,36 @@
+---
+import getLinePageUrl from '../../lib/getLinePageUrl';
+import getTransportPageLinkLabel from '../../lib/getTransportPageLinkLabel';
+
+export interface Props {
+  line: string;
+  size?: number;
+  linkToPage?: boolean;
+}
+
+const { line, size = 24, linkToPage = true } = Astro.props;
+---
+
+{linkToPage ? (
+  <a href={getLinePageUrl(line)} title={getTransportPageLinkLabel(line)}>
+    <div style={`height: ${size}px`}>
+      <img
+        src={`/images/transport/${line}.svg`}
+        width={size}
+        height={size}
+        alt={`Ligne ${line}`}
+        style="max-width: 100%; height: auto;"
+      />
+    </div>
+  </a>
+) : (
+  <div style={`height: ${size}px`}>
+    <img
+      src={`/images/transport/${line}.svg`}
+      width={size}
+      height={size}
+      alt={`Ligne ${line}`}
+      style="max-width: 100%; height: auto;"
+    />
+  </div>
+)}

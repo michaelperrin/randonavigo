@@ -1,0 +1,18 @@
+---
+import TransportIcon from './TransportIcon.astro';
+
+export interface Props {
+  line: string|string[];
+  station: string;
+  iconSize?: number;
+}
+
+const { line, station, iconSize = 20 } = Astro.props;
+---
+
+<div class="flex items-center">
+  <div class="shrink-0 mr-2">
+    <TransportIcon line={line} size={iconSize} />
+  </div>
+  <span class="font-medium">{station}</span>
+</div>

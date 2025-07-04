@@ -1,0 +1,32 @@
+---
+import LinePage from "../../layouts/LinePage.astro";
+import { getHikesForTransportLine } from "../../lib/getHikes";
+import banner from "../../assets/transport/banner/rer-d.jpeg";
+
+const hikes = await getHikesForTransportLine("D");
+---
+
+<LinePage
+  title="Randonnées sur le RER D"
+  description="Randonnées accessibles en transports par le RER D en Île-de-France"
+  hikes={hikes}
+  borderColor="border-rer-d"
+  bgColor="bg-rer-d"
+  line="D"
+  banner={banner}
+>
+  <p>
+    La ligne D s&apos;étend loin loin loin avec ses branches tentaculaires se
+    déployant au Nord et au Sud de l&apos;Île-de-France.
+  </p>
+
+  <p>
+    Au Sud, c&apos;est l&apos;eau qui nous accompagne tout le long, avec une
+    branche longeant la Seine dans ses parties parfois les plus bucoliques.
+    L&apos;autre branche suit l&apos;Essone et sa multitude d&apos;étangs.
+  </p>
+  <p>
+    Au Nord, ce sont les forêts du Nord et du Val d&apos;Oise qui sont
+    desservies.
+  </p>
+</LinePage>
