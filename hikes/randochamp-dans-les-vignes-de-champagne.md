@@ -84,12 +84,7 @@ Je ne comptais pas revenir les mains vides de cette randonnée ! J'ai à vrai di
 
 C'est aussi l'occasion de rencontrer les producteurs et de faire des dégustations avant d'acheter un champagne qui vous plaît.
 
-Pour ma part, je me suis arrêté à deux maisons de champagne, que vous verrez sur la carte du tracé de la randonnée :
-
-- Champagne Baron Albert.
-- La Maison de Champagne Fallet Dart.
-
-Vous pourrez également trouver d'autres maisons de champagne toutes proches, comme le Champagne Alain Bedel.
+Pour ma part, je me suis arrêté à deux maisons de champagne dont la maison de champagne Baron Albert que vous verrez sur la carte du tracé de la randonnée. Plusieurs autres maisons de champagne se trouvent dans la même rue, vous avez donc le choix !
 
 <InfoBox type="info">
 Si vous souhaitez rendre visite à l'une de ces maisons (ou d'autres situées dans le village de Crouttes-sur-Marne), **appelez-les** afin de vous assurer qu'elles sont ouvertes et qu'elles peuvent vous accueillir.
