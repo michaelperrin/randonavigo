@@ -8,9 +8,16 @@ export async function GET(context) {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     site: context.site,
-    items: hikes.map((hike) => ({
-      ...hike.data,
-      link: `/hike/${hike.id}/`,
-    })),
+    items: hikes.map((hike) => {
+      const pubDate = hike.data.pubDate;
+      const year = pubDate.getFullYear().toString();
+      const month = (pubDate.getMonth() + 1).toString().padStart(2, '0');
+      const day = pubDate.getDate().toString().padStart(2, '0');
+
+      return {
+        ...hike.data,
+        link: `/${year}/${month}/${day}/${hike.id}/`,
+      };
+    }),
   });
 }
