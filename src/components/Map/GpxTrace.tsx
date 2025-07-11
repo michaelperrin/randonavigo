@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { useLeafletContext } from "@react-leaflet/core";
 import { useMap } from "react-leaflet";
 import * as L from "leaflet";
 import "leaflet-gpx";
@@ -14,7 +13,7 @@ const GpxTrace = ({ gpxFile }: GpxTraceProps) => {
   useEffect(() => {
     new L.GPX(gpxFile, {
       async: true,
-      marker_options: {
+      markers: {
         startIcon: L.icon({
           iconUrl: "/images/map/starting-point-pin.svg",
           iconSize: [32, 32],
