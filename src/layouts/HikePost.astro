@@ -5,10 +5,12 @@ import FormattedDate from "../components/FormattedDate.astro";
 import HikeHeader from "../components/Hike/Header.astro";
 import Properties from "../components/Hike/Properties.astro";
 import { getHikeImage, getHikeImagePath } from "~/lib/getHikeImage";
+import RelatedHikes from "~/components/Hike/RelatedHikes.astro";
 
 type Props = CollectionEntry<"hike">["data"];
 
-const { title, description, pubDate, main_picture, slug } = Astro.props;
+const { title, description, pubDate, main_picture, slug, pictures } =
+  Astro.props;
 
 const imageMetadata = getHikeImage(
   getHikeImagePath(pubDate, slug, main_picture)
@@ -44,23 +46,15 @@ const imageMetadata = getHikeImage(
         </aside>
       </div>
 
-      <section>
-        <!-- <HikeGallery hike={hike} /> -->
-      </section>
+      {
+        pictures && pictures.length > 0 && (
+          <section>{/* <HikeGallery hike={hike} /> */}</section>
+        )
+      }
 
       <section>
-        <!-- <RelatedHikes hike={hike} /> -->
+        <RelatedHikes {...Astro.props} />
       </section>
-    </div>
-
-    <div class="prose">
-      <div class="title">
-        <div class="date">
-          <FormattedDate date={pubDate} />
-        </div>
-        <h1>{title}</h1>
-        <hr />
-      </div>
     </div>
   </article>
 </BaseLayout>

@@ -1,0 +1,38 @@
+---
+import type { CollectionEntry } from "astro:content";
+import getHikeLines from "~/lib/getHikeLines";
+import getLinePageUrl from "~/lib/getLinePageUrl";
+import getTransportPageLinkLabel from "~/lib/getTransportPageLinkLabel";
+import TransportIcon from "~/components/transport/TransportIcon.astro";
+
+type Props = CollectionEntry<"hike">["data"];
+
+const { starting_point, ending_point } = Astro.props;
+
+const hikeLines = getHikeLines({
+  startingPointLines: starting_point.line,
+  endingPointLines: ending_point?.line,
+});
+---
+
+<div class="flex">
+  <div class="bg-stone-100 px-4 py-4 rounded-sm my-6">
+    <h4 class="font-bold uppercase mb-5">Randonnées sur toute la ligne</h4>
+    <ul class="flex flex-col gap-4">
+      {
+        hikeLines.map((line) => (
+          <li>
+            <div class="flex items-center gap-2">
+              <TransportIcon line={line} size={24} />
+              <div class="text-sm text-stone-700">
+                <a href={getLinePageUrl(line)}>
+                  {getTransportPageLinkLabel(line)}
+                </a>
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
