@@ -1,0 +1,38 @@
+---
+import DownloadIcon from "../Icon/DownloadIcon.astro";
+import { getHikeGpxPath } from "~/lib/getHikeGpxPath";
+
+type Props = {
+  gpx_alternatives: {
+    label: string;
+    file: string;
+  }[];
+  slug: string;
+  pubDate: Date;
+};
+
+const { gpx_alternatives, slug, pubDate } = Astro.props;
+---
+
+{
+  gpx_alternatives && (
+    <div class="font-sans-serif text-sm bg-slate-50/70 z-20 relative rounded-b py-5 px-6 shadow-xl shadow-slate-200">
+      <div class="uppercase font-semibold text-gray-600 mb-2">
+        Trace GPS alternative
+      </div>
+      <ul class="space-y-1">
+        {gpx_alternatives.map((alternative) => (
+          <li>
+            <a
+              href={getHikeGpxPath(slug, pubDate, alternative.file)}
+              class="font-medium text-gray-800 flex gap-1 items-center"
+            >
+              <DownloadIcon class="w-4 h-4" />
+              {alternative.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
