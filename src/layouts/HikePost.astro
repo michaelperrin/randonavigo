@@ -1,73 +1,66 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
-import HikeHeader from '../components/Hike/Header.astro';
-import Properties from '../components/Hike/Properties.astro';
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "./BaseLayout.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import HikeHeader from "../components/Hike/Header.astro";
+import Properties from "../components/Hike/Properties.astro";
+import { getHikeImage, getHikeImagePath } from "~/lib/getHikeImage";
 
-type Props = CollectionEntry<'hike'>['data'];
+type Props = CollectionEntry<"hike">["data"];
 
-const { title, description, pubDate, main_picture, categories } = Astro.props;
+const { title, description, pubDate, main_picture, slug } = Astro.props;
+
+const imageMetadata = getHikeImage(
+  getHikeImagePath(pubDate, slug, main_picture)
+);
 ---
 
-<html lang="fr">
-	<head>
-		<BaseHead title={title} description={description} />
-		<meta property="og:type" content="article" />
-		<meta property="og:image" content={main_picture} />
-		<meta property="article:section" content={categories?.[0] ?? ''} />
-		<meta property="article:published_time" content={pubDate.toISOString()} />
-		<meta property="article:modified_time" content={pubDate.toISOString()} />
-	</head>
+<BaseLayout
+  title={title}
+  description={description}
+  image={imageMetadata || undefined}
+>
+  <article>
+    <HikeHeader {...Astro.props} />
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				<HikeHeader {...Astro.props} />
+    <div class="container mx-auto">
+      <div
+        class="grid md:grid-cols-10 gap-0 md:gap-6 lg:gap-12 xl:gap-16 mb-12"
+      >
+        <main class="order-2 md:order-1 md:col-span-6 font-serif mt-0 md:mt-12">
+          <div class="text-lg font-semibold italic mb-8">
+            {description}
+          </div>
 
-				<div class="container mx-auto">
-					<div class="grid md:grid-cols-10 gap-0 md:gap-6 lg:gap-12 xl:gap-16 mb-12">
-					  <main class="order-2 md:order-1 md:col-span-6 font-serif mt-0 md:mt-12">
-						<div class="text-lg font-semibold italic mb-8">
-						  {description}
-						</div>
+          <div class="prose max-w-none">
+            <slot />
+          </div>
+        </main>
 
-						<div class="prose max-w-none">
-						  <slot  />
-						</div>
-					  </main>
+        <aside
+          class="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2"
+        >
+          <Properties {...Astro.props} />
+        </aside>
+      </div>
 
-					  <aside class="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2">
-						<Properties {...Astro.props} />
-					  </aside>
-					</div>
+      <section>
+        <!-- <HikeGallery hike={hike} /> -->
+      </section>
 
-					<section>
-					  <!-- <HikeGallery hike={hike} /> -->
-					</section>
+      <section>
+        <!-- <RelatedHikes hike={hike} /> -->
+      </section>
+    </div>
 
-					<section>
-					  <!-- <RelatedHikes hike={hike} /> -->
-					</section>
-				  </div>
-
-
-
-
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
-</html>
+    <div class="prose">
+      <div class="title">
+        <div class="date">
+          <FormattedDate date={pubDate} />
+        </div>
+        <h1>{title}</h1>
+        <hr />
+      </div>
+    </div>
+  </article>
+</BaseLayout>
