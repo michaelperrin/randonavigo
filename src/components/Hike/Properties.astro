@@ -6,6 +6,7 @@ import Map from "./Map";
 import { getHikeGpxPath } from "../../lib/getHikeGpxPath";
 import MapContainer from "../Map/MapContainer";
 import DownloadIcon from "../Icon/DownloadIcon.astro";
+import Distance from "./Distance.astro";
 
 type Props = CollectionEntry<"hike">["data"];
 
@@ -40,17 +41,10 @@ const roundedButtonClasses = {
           transportIconSize={26}
         />
       </div>
-    </div>
-    <div class="mb-4">
-      <h3 class="uppercase text-sm font-bold text-gray-500 mb-2">Distance</h3>
-      <!-- Distance component would go here -->
-      {
-        distance && (
-          <div class="text-gray-800">
-            <strong>{distance} km</strong>
-          </div>
-        )
-      }
+      <div class="mb-4">
+        <h3 class="uppercase text-sm font-bold text-gray-500 mb-2">Distance</h3>
+        <Distance distance={distance} isLoop={!!ending_point} />
+      </div>
     </div>
 
     <!-- <div class="mb-4">
