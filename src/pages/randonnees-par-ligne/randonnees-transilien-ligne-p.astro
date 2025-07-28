@@ -1,7 +1,7 @@
 ---
-import LinePage from "../../layouts/LinePage.astro";
-import { getHikesForTransportLine } from "../../lib/getHikes";
-import banner from "../../assets/transport/banner/ligne-p.jpeg";
+import LinePage from "~/layouts/LinePage.astro";
+import { getHikesForTransportLine } from "~/lib/getHikes";
+import banner from "~/assets/transport/banner/ligne-p.jpeg";
 
 const hikes = await getHikesForTransportLine("P");
 ---

@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import banner from "../assets/home-bg.jpeg";
+import type { ImageMetadata } from "astro";
+import banner from "~/assets/home-bg.jpeg";
 
 const { picture = banner, overlay = false } = Astro.props;
 

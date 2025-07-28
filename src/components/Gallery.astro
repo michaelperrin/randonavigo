@@ -1,7 +1,7 @@
 ---
-import { getHikeImage } from '../lib/getHikeImage';
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
+import { getHikeImage } from "~/lib/getHikeImage";
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
 export interface Props {
   pictures: (string | ImageMetadata)[];
@@ -11,19 +11,19 @@ export interface Props {
 const { pictures, width = "" } = Astro.props;
 
 // Process each picture to get the imported image or fallback to string path
-const processedPictures = pictures.map(picture => {
-  if (typeof picture === 'string') {
+const processedPictures = pictures.map((picture) => {
+  if (typeof picture === "string") {
     const importedImage = getHikeImage(picture);
     return {
       src: picture,
       importedImage,
-      isImported: !!importedImage
+      isImported: !!importedImage,
     };
   } else {
     return {
-      src: '',
+      src: "",
       importedImage: picture,
-      isImported: true
+      isImported: true,
     };
   }
 });
@@ -32,72 +32,80 @@ const processedPictures = pictures.map(picture => {
 <div
   class:list={[
     "mx-auto grid gap-2 mb-2 not-prose",
-    { "max-w-lg": width === "sm" }
+    { "max-w-lg": width === "sm" },
   ]}
   style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));"
   data-gallery
 >
-  {processedPictures.map((picture, index) => (
-    <div
-      class="aspect-4/3 cursor-zoom-in relative"
-      style="position: relative; margin: 1px;"
-      data-pswp-item
-      data-src={picture.src}
-      data-w="800"
-      data-h="600"
-    >
-      {picture.isImported && picture.importedImage ? (
-        <Image
-          src={picture.importedImage}
-          alt=""
-          loading="lazy"
-          width={800}
-          height={600}
-          format="webp"
-          class="w-full h-full block object-cover"
-        />
-      ) : (
-        <Image
-          src={picture.src}
-          alt=""
-          loading="lazy"
-          width={800}
-          height={600}
-          format="webp"
-          class="w-full h-full block object-cover"
-        />
-      )}
-    </div>
-  ))}
+  {
+    processedPictures.map((picture, index) => (
+      <div
+        class="aspect-4/3 cursor-zoom-in relative"
+        style="position: relative; margin: 1px;"
+        data-pswp-item
+        data-src={picture.src}
+        data-w="800"
+        data-h="600"
+      >
+        {picture.isImported && picture.importedImage ? (
+          <Image
+            src={picture.importedImage}
+            alt=""
+            loading="lazy"
+            width={800}
+            height={600}
+            format="webp"
+            class="w-full h-full block object-cover"
+          />
+        ) : (
+          <Image
+            src={picture.src}
+            alt=""
+            loading="lazy"
+            width={800}
+            height={600}
+            format="webp"
+            class="w-full h-full block object-cover"
+          />
+        )}
+      </div>
+    ))
+  }
 </div>
 
 <script>
-  import PhotoSwipe from 'photoswipe';
-  import 'photoswipe/style.css';
+  import PhotoSwipe from "photoswipe";
+  import "photoswipe/style.css";
 
   // Initialize PhotoSwipe when the page loads
-  document.addEventListener('DOMContentLoaded', () => {
-    const galleries = document.querySelectorAll('[data-gallery]');
+  document.addEventListener("DOMContentLoaded", () => {
+    const galleries = document.querySelectorAll("[data-gallery]");
 
     galleries.forEach((gallery) => {
-      const items = Array.from(gallery.querySelectorAll('[data-pswp-item]')).map((item) => ({
-        src: item.getAttribute('data-src') || '',
-        width: parseInt(item.getAttribute('data-w') || '800'),
-        height: parseInt(item.getAttribute('data-h') || '600'),
+      const items = Array.from(
+        gallery.querySelectorAll("[data-pswp-item]")
+      ).map((item) => ({
+        src: item.getAttribute("data-src") || "",
+        width: parseInt(item.getAttribute("data-w") || "800"),
+        height: parseInt(item.getAttribute("data-h") || "600"),
       }));
 
-      gallery.addEventListener('click', (e) => {
-        const clickedItem = (e.target as HTMLElement).closest('[data-pswp-item]');
+      gallery.addEventListener("click", (e) => {
+        const clickedItem = (e.target as HTMLElement).closest(
+          "[data-pswp-item]"
+        );
         if (!clickedItem) return;
 
         e.preventDefault();
 
-        const index = Array.from(gallery.querySelectorAll('[data-pswp-item]')).indexOf(clickedItem);
+        const index = Array.from(
+          gallery.querySelectorAll("[data-pswp-item]")
+        ).indexOf(clickedItem);
 
         const lightbox = new PhotoSwipe({
           dataSource: items,
           index: index,
-          pswpModule: () => import('photoswipe'),
+          pswpModule: () => import("photoswipe"),
         });
 
         lightbox.init();

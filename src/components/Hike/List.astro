@@ -1,14 +1,12 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import HikeCard from './HikeCard.astro';
+import type { CollectionEntry } from "astro:content";
+import HikeCard from "~/components/Hike/HikeCard.astro";
 
 const { hikes } = Astro.props;
 ---
 
 <div class="container mx-auto">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    {hikes.map((hike: CollectionEntry<'hike'>) => (
-      <HikeCard hike={hike} />
-    ))}
+    {hikes.map((hike: CollectionEntry<"hike">) => <HikeCard hike={hike} />)}
   </div>
 </div>

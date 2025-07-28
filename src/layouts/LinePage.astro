@@ -1,11 +1,11 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import List from "../components/Hike/List.astro";
-import TransportIcon from "../components/transport/TransportIcon.astro";
-import TopBanner from "../components/TopBanner.astro";
-import LineLinks from "../components/TransportLine/LineLinks.astro";
+import BaseHead from "~/components/BaseHead.astro";
+import Header from "~/components/Header.astro";
+import Footer from "~/components/Footer.astro";
+import List from "~/components/Hike/List.astro";
+import TransportIcon from "~/components/transport/TransportIcon.astro";
+import TopBanner from "~/components/TopBanner.astro";
+import LineLinks from "~/components/TransportLine/LineLinks.astro";
 
 const { title, description, hikes, borderColor, bgColor, line, banner } =
   Astro.props;
@@ -76,13 +76,13 @@ const { title, description, hikes, borderColor, bgColor, line, banner } =
 </html>
 
 <!-- import Head from "next/head";
-import List from "@/components/hike/List";
-import { FilterDefaults, Hike } from "@/lib/types";
-import Layout from "@/components/layout";
-import TransportIcon from "@/components/TransportIcon";
-import TopBanner from "@/components/TopBanner";
-import LineLinks from "./LineLinks";
-import FilterBank from "../hike/FilterBank";
+import List from "~/components/hike/List";
+import { FilterDefaults, Hike } from "~/lib/types";
+import Layout from "~/components/layout";
+import TransportIcon from "~/components/TransportIcon";
+import TopBanner from "~/components/TopBanner";
+import LineLinks from "~/components/LineLinks";
+import FilterBank from "~/components/hike/FilterBank";
 import { useState } from 'react';
 
 type HikePerLineProps = {

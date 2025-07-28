@@ -9,9 +9,13 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.randonavigo.fr",
-  integrations: [mdx({
-    remarkPlugins: [],
-    rehypePlugins: [],
-  }), sitemap(), react()],
+  integrations: [
+    mdx({
+      remarkPlugins: [],
+      rehypePlugins: [],
+    }),
+    sitemap(),
+    react(),
+  ],
   vite: { plugins: [tailwindcss()] },
 });

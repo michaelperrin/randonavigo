@@ -1,10 +1,12 @@
 ---
-import { Image } from 'astro:assets';
-import CoffeeCup from '../../assets/coffee-cup.png';
+import { Image } from "astro:assets";
+import CoffeeCup from "~/assets/coffee-cup.png";
 ---
 
 <div>
-  <div class="flex items-center bg-stone-100 rounded-t p-5 md:p-6 font-sans-serif shadow-md">
+  <div
+    class="flex items-center bg-stone-100 rounded-t p-5 md:p-6 font-sans-serif shadow-md"
+  >
     <div class="grow pr-4 md:pr-6">
       <div class="font-bold uppercase mb-2 text-stone-800">
         Vous aimez cette suggestion de randonnée ?
@@ -20,20 +22,17 @@ import CoffeeCup from '../../assets/coffee-cup.png';
 
         <p>
           Un don me permettra de{" "}
-          <span class="font-medium">
-            supporter les frais liés au site
-          </span>{" "}
+          <span class="font-medium"> supporter les frais liés au site </span>{
+            " "
+          }
           et de m’encourager à vous{" "}
-          <span class="font-medium">
-            concocter de nouvelles randonnées
-          </span>
+          <span class="font-medium"> concocter de nouvelles randonnées </span>
           , toujours en pleine nature et accessibles en transports.{" "}
           <a
             href="/a-propos"
-            class="underline hover:text-amber-700 whitespace-nowrap">
-
-              En savoir plus
-
+            class="underline hover:text-amber-700 whitespace-nowrap"
+          >
+            En savoir plus
           </a>
         </p>
       </div>
@@ -46,7 +45,6 @@ import CoffeeCup from '../../assets/coffee-cup.png';
         height={148}
         alt=""
       />
-
     </div>
   </div>
   <a

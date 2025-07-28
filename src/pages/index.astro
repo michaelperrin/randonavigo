@@ -1,10 +1,10 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import List from "../components/Hike/List.astro";
-import { getHikesSorted } from "../lib/getHikes";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Intro from "../components/Home/Intro.astro";
-import TopBanner from "../components/TopBanner.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "~/consts";
+import List from "~/components/Hike/List.astro";
+import { getHikesSorted } from "~/lib/getHikes";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import Intro from "~/components/Home/Intro.astro";
+import TopBanner from "~/components/TopBanner.astro";
 
 const hikes = await getHikesSorted();
 ---
