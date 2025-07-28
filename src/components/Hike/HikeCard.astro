@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import { type CollectionEntry } from "astro:content";
 import { getHikeImage, getHikeImagePath } from "~/lib/getHikeImage";
+import { getHikeUrl } from "~/lib/getHikeUrl";
 import TransportPoint from "~/components/transport/TransportPoint.astro";
 
 const { hike } = Astro.props;
@@ -13,15 +14,6 @@ const getHikeImageUrl = (hike: CollectionEntry<"hike">) => {
 };
 
 const imageUrl = getHikeImageUrl(hike);
-
-const getHikeUrl = (hike: CollectionEntry<"hike">) => {
-  const pubDate = hike.data.pubDate;
-  const year = pubDate.getFullYear().toString();
-  const month = (pubDate.getMonth() + 1).toString().padStart(2, "0");
-  const day = pubDate.getDate().toString().padStart(2, "0");
-
-  return `/${year}/${month}/${day}/${hike.id}/`;
-};
 
 const hikeData = hike.data;
 ---
