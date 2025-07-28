@@ -44,16 +44,16 @@ const processedPictures = pictures.map((picture) => {
         style="position: relative; margin: 1px;"
         data-pswp-item
         data-src={picture.src}
-        data-w="800"
-        data-h="600"
+        data-w="1200"
+        data-h="800"
       >
         {picture.isImported && picture.importedImage ? (
           <Image
             src={picture.importedImage}
             alt=""
             loading="lazy"
-            width={800}
-            height={600}
+            width={1200}
+            height={800}
             format="webp"
             class="w-full h-full block object-cover"
           />
@@ -62,8 +62,8 @@ const processedPictures = pictures.map((picture) => {
             src={picture.src}
             alt=""
             loading="lazy"
-            width={800}
-            height={600}
+            width={1200}
+            height={800}
             format="webp"
             class="w-full h-full block object-cover"
           />
@@ -86,8 +86,8 @@ const processedPictures = pictures.map((picture) => {
         gallery.querySelectorAll("[data-pswp-item]")
       ).map((item) => ({
         src: item.getAttribute("data-src") || "",
-        width: parseInt(item.getAttribute("data-w") || "800"),
-        height: parseInt(item.getAttribute("data-h") || "600"),
+        width: parseInt(item.getAttribute("data-w") || "1200"),
+        height: parseInt(item.getAttribute("data-h") || "800"),
       }));
 
       gallery.addEventListener("click", (e) => {
