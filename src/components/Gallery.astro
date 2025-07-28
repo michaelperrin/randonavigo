@@ -4,28 +4,23 @@ import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
 export interface Props {
-  pictures: (string | ImageMetadata)[];
+  pictures: string[];
   width?: "" | "sm";
 }
 
 const { pictures, width = "" } = Astro.props;
 
-// Process each picture to get the imported image or fallback to string path
 const processedPictures = pictures.map((picture) => {
-  if (typeof picture === "string") {
-    const importedImage = getHikeImage(picture);
-    return {
-      src: picture,
-      importedImage,
-      isImported: !!importedImage,
-    };
-  } else {
-    return {
-      src: "",
-      importedImage: picture,
-      isImported: true,
-    };
+  const importedImage = getHikeImage(picture);
+
+  if (!importedImage) {
+    return null;
   }
+
+  return {
+    src: picture,
+    importedImage,
+  };
 });
 ---
 
@@ -38,16 +33,16 @@ const processedPictures = pictures.map((picture) => {
   data-gallery
 >
   {
-    processedPictures.map((picture, index) => (
-      <div
-        class="aspect-4/3 cursor-zoom-in relative"
-        style="position: relative; margin: 1px;"
-        data-pswp-item
-        data-src={picture.src}
-        data-w="1200"
-        data-h="800"
-      >
-        {picture.isImported && picture.importedImage ? (
+    processedPictures.map((picture, index) =>
+      picture ? (
+        <div
+          class="aspect-4/3 cursor-zoom-in relative"
+          style="position: relative; margin: 1px;"
+          data-pswp-item
+          data-src={picture?.importedImage?.src}
+          data-w="1200"
+          data-h="800"
+        >
           <Image
             src={picture.importedImage}
             alt=""
@@ -57,19 +52,9 @@ const processedPictures = pictures.map((picture) => {
             format="webp"
             class="w-full h-full block object-cover"
           />
-        ) : (
-          <Image
-            src={picture.src}
-            alt=""
-            loading="lazy"
-            width={1200}
-            height={800}
-            format="webp"
-            class="w-full h-full block object-cover"
-          />
-        )}
-      </div>
-    ))
+        </div>
+      ) : null
+    )
   }
 </div>
 
