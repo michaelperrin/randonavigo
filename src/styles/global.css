@@ -12,8 +12,8 @@
 
   --font-condensed: "Barlow Condensed", ui-sans-serif, system-ui;
   --font-sans-serif: Barlow, ui-sans-serif, system-ui;
-  --font-serif: Lora, ui-serif, Georgia, Cambria, "Times New Roman", Times,
-    serif;
+  --font-serif:
+    Lora, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
   --color-softblue-light: #297ab7;
   --color-softblue: #297ab7;
@@ -41,4 +41,9 @@
   --height-screen\/3: calc(100vh / 3);
   --height-screen\/4: calc(100vh / 4);
   --height-screen\/5: calc(100vh / 5);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
