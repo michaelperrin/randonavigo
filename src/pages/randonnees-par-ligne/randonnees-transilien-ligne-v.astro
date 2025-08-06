@@ -1,0 +1,31 @@
+---
+import LinePage from "~/layouts/LinePage.astro";
+import { getHikesForTransportLine } from "~/lib/getHikes";
+import banner from "~/assets/transport/banner/ligne-v.jpeg";
+
+const hikes = await getHikesForTransportLine("V");
+---
+
+<LinePage
+  title="Randonnées sur la ligne V du Transilien"
+  description="Randonnées accessibles en transports par la ligne V du Transilien en Île-de-France"
+  hikes={hikes}
+  borderColor="border-transilien-v"
+  bgColor="bg-transilien-v"
+  line="V"
+  banner={banner}
+>
+  <p>
+    La ligne V du Transilien est une ligne nouvellement créée. C'était
+    auparavant une branche de la
+    <a href="/randonnees-par-ligne/randonnees-rer-c">ligne C du RER</a>. Elle
+    vit désormais sa vie toute seule, en suivant la vallée de la Bièvre de
+    Versailles - Chantiers à Massy. Une petite ligne bucolique dont la couleur
+    vert olive a été choisie en référence au cadre naturel qu'elle traverse.
+  </p>
+
+  <p>
+    Cette nouvelle vie pour cette branche permet surtout une fréquence plus
+    intéressante, impeccable pour partir en randonnée dans la Bièvre !
+  </p>
+</LinePage>

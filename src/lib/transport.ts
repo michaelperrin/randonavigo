@@ -14,8 +14,9 @@ const TRAM_LINES = [
   "T11",
   "T12",
   "T13",
+  "T14",
 ];
-const TRANSILIEN_LINES = ["H", "J", "K", "L", "N", "P", "R", "U", "Z"];
+const TRANSILIEN_LINES = ["H", "J", "K", "L", "N", "P", "R", "U", "V", "Z"];
 
 export enum Network {
   RER,
