@@ -1,0 +1,120 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+const { hikes } = Astro.props;
+
+// Calculate min and max distances from the hikes data
+const distances = hikes.map((hike: CollectionEntry<"hike">) =>
+  Number(hike.data.distance)
+);
+const minDistance = Math.min(...distances);
+const maxDistance = Math.max(...distances);
+
+// Create distance ranges for the filter
+const distanceRanges = [
+  { label: "Toutes", min: minDistance, max: maxDistance },
+  { label: "Court (≤ 10 km)", min: minDistance, max: 10 },
+  { label: "Moyen (10-18 km)", min: 10, max: 18 },
+  { label: "Long (≥ 18 km)", min: 18, max: maxDistance },
+];
+---
+
+<div class="flex items-center justify-end mb-6">
+  <div class="relative inline-block text-left">
+    <button
+      id="filterButton"
+      class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      <span id="filterLabel">Toutes</span>
+      <svg
+        class="w-4 h-4 ml-2 -mr-1"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+
+    <div
+      id="filterDropdown"
+      class="hidden absolute right-0 z-10 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5"
+    >
+      <div class="py-1" role="menu">
+        {
+          distanceRanges.map((range, index) => (
+            <button
+              class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              data-min={range.min}
+              data-max={range.max}
+              data-label={range.label}
+            >
+              {range.label}
+            </button>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const filterButton = document.getElementById(
+    "filterButton"
+  ) as HTMLButtonElement;
+  const filterDropdown = document.getElementById(
+    "filterDropdown"
+  ) as HTMLDivElement;
+  const filterLabel = document.getElementById("filterLabel") as HTMLSpanElement;
+  const hikeCards = document.querySelectorAll("[data-hike-distance]");
+  const filterOptions = document.querySelectorAll("[data-min]");
+
+  let isDropdownOpen = false;
+
+  // Toggle dropdown
+  filterButton?.addEventListener("click", () => {
+    isDropdownOpen = !isDropdownOpen;
+    filterDropdown.style.display = isDropdownOpen ? "block" : "none";
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (event) => {
+    if (!filterButton?.contains(event.target as Node)) {
+      isDropdownOpen = false;
+      filterDropdown.style.display = "none";
+    }
+  });
+
+  // Handle filter selection
+  filterOptions.forEach((option) => {
+    option.addEventListener("click", () => {
+      const min = parseInt(option.getAttribute("data-min") || "0");
+      const max = parseInt(option.getAttribute("data-max") || "0");
+      const label = option.getAttribute("data-label") || "";
+
+      filterLabel.textContent = label;
+      filterDropdown.style.display = "none";
+      isDropdownOpen = false;
+
+      // Filter hikes
+      let visibleCount = 0;
+      hikeCards.forEach((card) => {
+        const distance = parseInt(
+          card.getAttribute("data-hike-distance") || "0"
+        );
+        const isVisible = distance >= min && distance <= max;
+
+        if (isVisible) {
+          (card as HTMLElement).style.display = "block";
+          visibleCount++;
+        } else {
+          (card as HTMLElement).style.display = "none";
+        }
+      });
+    });
+  });
+</script>

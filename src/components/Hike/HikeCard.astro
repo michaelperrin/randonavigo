@@ -18,8 +18,14 @@ const imageUrl = getHikeImageUrl(hike);
 const hikeData = hike.data;
 ---
 
-<article class="flex flex-col mb-4 bg-white shadow-card">
-  <a href={getHikeUrl(hike)} class="h-64 md:h-48 xl:h-64 flex-none relative">
+<article
+  class="flex flex-col mb-4 bg-white shadow-card"
+  data-hike-distance={hikeData.distance}
+>
+  <a
+    href={getHikeUrl(hike)}
+    class="h-64 md:h-48 xl:h-64 block flex-none relative"
+  >
     <div class="relative h-full">
       {
         hikeData.favorite && (
