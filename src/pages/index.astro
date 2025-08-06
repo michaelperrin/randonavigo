@@ -5,11 +5,12 @@ import { getHikesSorted } from "~/lib/getHikes";
 import BaseLayout from "~/layouts/BaseLayout.astro";
 import Intro from "~/components/Home/Intro.astro";
 import TopBanner from "~/components/TopBanner.astro";
+import banner from "~/assets/home-bg.jpeg";
 
 const hikes = await getHikesSorted();
 ---
 
-<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} image={banner}>
   <TopBanner />
   <Intro />
   <section class="bg-zinc-50 py-12">
