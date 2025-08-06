@@ -1,0 +1,16 @@
+---
+type Props = {
+  distance: number;
+  isLoop: boolean;
+};
+
+const { distance, isLoop } = Astro.props;
+---
+
+<span class="leading-none text-2xl font-bold">
+  <strong>{distance} km</strong>
+</span>
+
+<span class="text-gray-600 inline-block pl-3">
+  {isLoop ? "(boucle)" : "(gare à gare)"}
+</span>

@@ -1,0 +1,50 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import List from "~/components/Hike/List.astro";
+import TransportIcon from "~/components/transport/TransportIcon.astro";
+import TopBanner from "~/components/TopBanner.astro";
+import LineLinks from "~/components/TransportLine/LineLinks.astro";
+
+const { title, description, hikes, borderColor, bgColor, line, banner } =
+  Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <article>
+    <TopBanner picture={banner} />
+
+    <div class="container mx-auto">
+      <div
+        class="grid md:grid-cols-10 gap-0 md:gap-6 lg:gap-12 xl:gap-24 mb-12"
+      >
+        <main class="order-2 md:order-1 md:col-span-6 mt-0 md:mt-12">
+          <div class="flex items-center mt-12 mb-6">
+            <div>
+              <div class="float-right ml-2 mb-2">
+                <TransportIcon line={line} size={40} linkToPage={false} />
+              </div>
+              <h1 class="text-2xl font-black">{title}</h1>
+
+              <div class={`mb-6 text-2xl font-black mt-4 w-24 h-1 ${bgColor}`}>
+              </div>
+
+              <div class="prose">
+                <slot />
+              </div>
+            </div>
+            <div class="ml-auto"></div>
+          </div>
+        </main>
+
+        <aside
+          class="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2"
+        >
+          <LineLinks />
+        </aside>
+      </div>
+    </div>
+  </article>
+  <section>
+    <List hikes={hikes} />
+  </section>
+</BaseLayout>

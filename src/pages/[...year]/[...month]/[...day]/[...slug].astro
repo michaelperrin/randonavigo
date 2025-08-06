@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from "astro:content";
+import HikePost from "~/layouts/HikePost.astro";
+import type { CollectionEntry } from "astro:content";
+import { components } from "~/components/mdx-components";
+import { getHikes } from "~/lib/getHikes";
+
+export async function getStaticPaths() {
+  const hikes = await getHikes();
+  return hikes.map((hike) => {
+    const pubDate = hike.data.pubDate;
+    const year = pubDate.getFullYear().toString();
+    const month = (pubDate.getMonth() + 1).toString().padStart(2, "0");
+    const day = pubDate.getDate().toString().padStart(2, "0");
+
+    return {
+      params: {
+        year,
+        month,
+        day,
+        slug: hike.id,
+      },
+      props: hike,
+    };
+  });
+}
+type Props = CollectionEntry<"hike">;
+
+const hike = Astro.props;
+const { Content } = await render(hike);
+---
+
+<HikePost {...hike.data}>
+  <Content components={components} />
+</HikePost>

@@ -1,0 +1,66 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import HikeHeader from "~/components/Hike/Header.astro";
+import Properties from "~/components/Hike/Properties.astro";
+import { getHikeImage, getHikeImagePath } from "~/lib/getHikeImage";
+import RelatedHikes from "~/components/Hike/RelatedHikes.astro";
+import Gallery from "~/components/Gallery.astro";
+
+type Props = CollectionEntry<"hike">["data"];
+
+const { title, description, pubDate, main_picture, slug, pictures } =
+  Astro.props;
+
+const imageMetadata = getHikeImage(
+  getHikeImagePath(pubDate, slug, main_picture)
+);
+
+const oldGalleryPictures = pictures?.map((picture) =>
+  getHikeImagePath(pubDate, slug, picture)
+);
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={imageMetadata || undefined}
+>
+  <article>
+    <HikeHeader {...Astro.props} />
+
+    <div class="container mx-auto">
+      <div
+        class="grid md:grid-cols-10 gap-0 md:gap-6 lg:gap-12 xl:gap-16 mb-12"
+      >
+        <main class="order-2 md:order-1 md:col-span-6 font-serif mt-0 md:mt-12">
+          <div class="text-lg font-semibold italic mb-8">
+            {description}
+          </div>
+
+          <div class="prose max-w-none">
+            <slot />
+          </div>
+        </main>
+
+        <aside
+          class="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2"
+        >
+          <Properties {...Astro.props} />
+        </aside>
+      </div>
+
+      {
+        oldGalleryPictures && oldGalleryPictures.length > 0 && (
+          <section>
+            <Gallery pictures={oldGalleryPictures} />
+          </section>
+        )
+      }
+
+      <section>
+        <RelatedHikes {...Astro.props} />
+      </section>
+    </div>
+  </article>
+</BaseLayout>

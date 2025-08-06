@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import banner from "~/assets/home-bg.jpeg";
+
+const { picture = banner, overlay = false } = Astro.props;
+
+const overlayClasses = overlay
+  ? "after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70"
+  : "";
+---
+
+<div
+  class="relative flex flex-col align-middle justify-center"
+  style={{ height: "50vh" }}
+>
+  <div
+    class="pt-32 px-4 md:px-48 z-30 text-white"
+    style={{
+      fontFamily: "Barlow",
+      textShadow: "0 0 40px rgba(0, 0, 0, 0.9)",
+    }}
+  >
+    <slot />
+  </div>
+
+  <div class={overlayClasses}>
+    <Image
+      src={picture}
+      alt=""
+      width={1920}
+      height={1080}
+      class="w-full h-full object-cover absolute top-0 left-0"
+    />
+  </div>
+</div>

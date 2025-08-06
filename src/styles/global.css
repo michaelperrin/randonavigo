@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --flex-grow-*: initial;
+  --flex-grow-0: 0;
+  --flex-grow-1: 1;
+  --flex-grow-2: 2;
+  --flex-grow: 1;
+
+  --shadow-card: 0px 0px 18px rgb(83 70 29 / 15%);
+
+  --font-condensed: "Barlow Condensed", ui-sans-serif, system-ui;
+  --font-sans-serif: Barlow, ui-sans-serif, system-ui;
+  --font-serif:
+    Lora, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-softblue-light: #297ab7;
+  --color-softblue: #297ab7;
+  --color-softblue-dark: #297ab7;
+
+  --color-rer-a: #e3051c;
+  --color-rer-b: #5291ce;
+  --color-rer-c: #ffce00;
+  --color-rer-d: #00814f;
+  --color-rer-e: #c04191;
+  --color-tram-t2: #c04191;
+  --color-tram-t6: #e3051c;
+  --color-tram-t11: #f28e42;
+  --color-tram-t13: #8d5e2a;
+  --color-transilien-h: #8d5e2a;
+  --color-transilien-j: #d5c900;
+  --color-transilien-l: #ceadd2;
+  --color-transilien-n: #00a88f;
+  --color-transilien-p: #f28e42;
+  --color-transilien-r: #f3a4ba;
+  --color-transilien-u: #b90845;
+
+  --height-hero-header: 60vh;
+  --height-screen\/2: 50vh;
+  --height-screen\/3: calc(100vh / 3);
+  --height-screen\/4: calc(100vh / 4);
+  --height-screen\/5: calc(100vh / 5);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
