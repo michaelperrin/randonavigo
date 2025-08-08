@@ -20,6 +20,8 @@ const processedPictures = pictures.map((picture) => {
   return {
     src: picture,
     importedImage,
+    width: importedImage.width,
+    height: importedImage.height,
   };
 });
 ---
@@ -40,8 +42,8 @@ const processedPictures = pictures.map((picture) => {
           style="position: relative; margin: 1px;"
           data-pswp-item
           data-src={picture?.importedImage?.src}
-          data-w="1200"
-          data-h="800"
+          data-w={picture.width}
+          data-h={picture.height}
         >
           <Image
             src={picture.importedImage}
