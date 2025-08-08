@@ -1,0 +1,28 @@
+---
+import LinePage from "~/layouts/LinePage.astro";
+import { getHikesForTransportLine } from "~/lib/getHikes";
+import banner from "~/assets/transport/banner/ligne-t14.jpeg";
+
+const hikes = await getHikesForTransportLine("T14");
+---
+
+<LinePage
+  title="Randonnées sur le Tram T14"
+  description="Randonnées accessibles en transports par la ligne T14 du tramway en Île-de-France"
+  hikes={hikes}
+  borderColor="border-tram-t14"
+  bgColor="bg-tram-t14"
+  line="T14"
+  banner={banner}
+>
+  <p>
+    La ligne T14 du tramway faisait auparavant partie de la
+    <a href="/randonnees-par-ligne/randonnees-transilien-ligne-p"
+      >ligne P du Transilien</a
+    >. Désormais gérée indépendamment, cet étonnant petit bout de ligne dessert
+    tout à l&apos;Est de l&apos;Île-de-France des villes du Pays de Brie
+    d&apos;Esbly – en correspondance avec la
+    <a href="/randonnees-par-ligne/randonnees-transilien-ligne-p">ligne P</a> – à
+    Crécy-la-Chapelle.
+  </p>
+</LinePage>
