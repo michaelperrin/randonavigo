@@ -9,11 +9,13 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
   <article>
     <div class="container mx-auto">
       <section class="my-24">
-        <div class="flex justify-center gap-12">
-          <div>
+        <div
+          class="flex justify-center gap-12 flex-col md:flex-row items-center"
+        >
+          <div class="shrink-0">
             <img
               src="/images/about/profile.jpg"
-              class="rounded-full w-48 h-48"
+              class="rounded-full w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48"
               alt=""
             />
           </div>
@@ -32,8 +34,8 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
             </p>
 
             <p>
-              Ce site internet n&apos;est pas affilié à la marque Navigo, ni à
-              aucune autre marque ou entité.
+              Ce site internet n&apos;est pas affilié à la marque Navigo, ni
+              Ile-de-France Mobilités, ni à aucune autre marque ou entité.
             </p>
 
             <p>
