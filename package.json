@@ -9,32 +9,32 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/mdx": "^4.3.4",
     "@astrojs/react": "^4.3.0",
     "@astrojs/rss": "^4.0.12",
-    "@astrojs/sitemap": "^3.4.1",
+    "@astrojs/sitemap": "^3.5.0",
     "@fontsource-variable/lora": "^5.2.6",
     "@fontsource/barlow": "^5.2.6",
     "@fontsource/barlow-condensed": "^5.2.6",
-    "@tailwindcss/vite": "^4.1.10",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "astro": "^5.10.0",
+    "@tailwindcss/vite": "^4.1.12",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "astro": "^5.13.2",
     "leaflet": "^1.9.4",
     "leaflet-gesture-handling": "^1.2.2",
     "leaflet-gpx": "^2.2.0",
     "leaflet.fullscreen": "^4.0.0",
     "leaflet.locatecontrol": "^0.84.2",
     "photoswipe": "^5.4.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "react-leaflet": "^5.0.0",
-    "sharp": "^0.34.2",
-    "tailwindcss": "^4.1.10"
+    "sharp": "^0.34.3",
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
-    "@types/leaflet": "^1.9.19",
+    "@types/leaflet": "^1.9.20",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1"
   }
