@@ -11,9 +11,9 @@
   --shadow-card: 0px 0px 18px rgb(83 70 29 / 15%);
 
   --font-condensed: "Barlow Condensed", ui-sans-serif, system-ui;
-  --font-sans-serif: Barlow, ui-sans-serif, system-ui;
+  --font-sans-serif: "Barlow", ui-sans-serif, system-ui;
   --font-serif:
-    Lora, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    "Lora Variable", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
   --color-softblue-light: #297ab7;
   --color-softblue: #297ab7;
