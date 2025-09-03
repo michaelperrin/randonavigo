@@ -3,12 +3,11 @@ import type { CollectionEntry } from "astro:content";
 import DonationCard from "~/components/Hike/DonationCard.astro";
 import Access from "~/components/Hike/Access.astro";
 import Map from "~/components/Hike/Map";
-import type { ImageMetadata } from "astro";
-import { Image } from "astro:assets";
 import { getHikeGpxPath } from "~/lib/getHikeGpxPath";
 import DownloadIcon from "~/components/Icon/DownloadIcon.astro";
 import Distance from "~/components/Hike/Distance.astro";
 import GpxAlternatives from "~/components/Hike/GpxAlternatives.astro";
+import About from "./About.astro";
 
 type Props = CollectionEntry<"hike">["data"];
 
@@ -186,4 +185,8 @@ const roundedButtonClasses = {
 
 <div class="mt-8 md:mt-16">
   <DonationCard />
+</div>
+
+<div class="hidden md:block mt-8 md:mt-16">
+  <About />
 </div>

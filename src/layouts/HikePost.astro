@@ -6,6 +6,7 @@ import Properties from "~/components/Hike/Properties.astro";
 import { getHikeImage, getHikeImagePath } from "~/lib/getHikeImage";
 import RelatedHikes from "~/components/Hike/RelatedHikes.astro";
 import Gallery from "~/components/Gallery.astro";
+import About from "~/components/Hike/About.astro";
 
 type Props = CollectionEntry<"hike">["data"];
 
@@ -57,6 +58,10 @@ const oldGalleryPictures = pictures?.map((picture) =>
           </section>
         )
       }
+
+      <section class="md:hidden">
+        <About />
+      </section>
 
       <section>
         <RelatedHikes {...Astro.props} />
