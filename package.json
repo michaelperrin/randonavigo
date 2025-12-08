@@ -19,7 +19,7 @@
     "@tailwindcss/vite": "^4.1.12",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
-    "astro": "^5.13.5",
+    "astro": "^5.16.4",
     "leaflet": "^1.9.4",
     "leaflet-gesture-handling": "^1.2.2",
     "leaflet-gpx": "^2.2.0",
