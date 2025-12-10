@@ -16,6 +16,7 @@
     "@fontsource-variable/lora": "^5.2.8",
     "@fontsource/barlow": "^5.2.8",
     "@fontsource/barlow-condensed": "^5.2.8",
+    "@plausible-analytics/tracker": "^0.4.4",
     "@tailwindcss/vite": "^4.1.17",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
