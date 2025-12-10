@@ -33,12 +33,6 @@ const { title, description, image } = Astro.props;
       <slot />
     </main>
     <Footer />
-    <script type="module">
-      import { init } from "@plausible-analytics/tracker";
-
-      init({
-        domain: "randonavigo.fr",
-      });
-    </script>
+    <script src="../lib/plausible.ts"></script>
   </body>
 </html>
