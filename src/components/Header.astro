@@ -3,9 +3,9 @@
 ---
 
 <header
-  class="container mx-auto flex flex-col md:flex-row align-middle items-center"
+  class="container mx-auto flex flex-row align-middle items-center"
 >
-  <div class="lg:flex-1"></div>
+  <div class="hidden lg:block lg:flex-1"></div>
   <div class="flex flex-col flex-1 my-5 flex-grow-2">
     <div class="flex flex-col lg:items-center mr-2 sm:mr-4 lg:mr-0">
       <div>
@@ -27,9 +27,14 @@
       </div>
     </div>
   </div>
-  <div class="flex flex-wrap gap-x-4 gap-y-3 justify-end flex-1 md:mb-0 mb-4">
+
+  <!-- Desktop nav -->
+  <div class="hidden md:flex flex-wrap gap-x-4 gap-y-3 justify-end flex-1">
     <div>
       <a href="/a-propos" class="whitespace-nowrap">A propos</a>
+    </div>
+    <div>
+      <a href="/contact" class="whitespace-nowrap">Contact</a>
     </div>
     <div>
       <ul class="flex ml-auto items-center">
@@ -64,4 +69,103 @@
       </ul>
     </div>
   </div>
+
+  <!-- Mobile burger button -->
+  <button
+    id="burger-btn"
+    class="md:hidden ml-auto p-2"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg
+      class="w-7 h-7"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+    >
+      <line id="burger-top" x1="3" y1="6" x2="21" y2="6" />
+      <line id="burger-mid" x1="3" y1="12" x2="21" y2="12" />
+      <line id="burger-bot" x1="3" y1="18" x2="21" y2="18" />
+    </svg>
+  </button>
 </header>
+
+<!-- Mobile menu -->
+<nav
+  id="mobile-menu"
+  class="md:hidden grid bg-white border-b border-gray-200 transition-[grid-template-rows] duration-300 ease-in-out"
+  style="grid-template-rows: 0fr;"
+>
+  <div class="overflow-hidden">
+    <div class="container mx-auto flex flex-col gap-4 py-4 px-4">
+      <a href="/a-propos" class="text-lg">A propos</a>
+      <a href="/contact" class="text-lg">Contact</a>
+      <div class="flex gap-4 pt-2">
+        <a
+          href="https://www.instagram.com/randonavigo"
+          title="RandoNavigo sur Instagram"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="/images/social/instagram.svg"
+            alt="Instagram"
+            class="w-6 h-6"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/randonavigo/"
+          title="RandoNavigo sur Facebook"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="/images/social/facebook.svg"
+            alt="Facebook"
+            class="w-6 h-6"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById("burger-btn");
+  const menu = document.getElementById("mobile-menu") as HTMLElement | null;
+
+  if (btn && menu) {
+    btn.addEventListener("click", () => {
+      const isOpen = menu.style.gridTemplateRows === "1fr";
+
+      menu.style.gridTemplateRows = isOpen ? "0fr" : "1fr";
+      btn.classList.toggle("open", !isOpen);
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      btn.setAttribute(
+        "aria-label",
+        isOpen ? "Ouvrir le menu" : "Fermer le menu"
+      );
+    });
+  }
+</script>
+
+<style>
+  #burger-btn line {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: 12px 12px;
+  }
+
+  #burger-btn.open #burger-top {
+    transform: rotate(45deg) translateY(6px);
+  }
+
+  #burger-btn.open #burger-mid {
+    opacity: 0;
+  }
+
+  #burger-btn.open #burger-bot {
+    transform: rotate(-45deg) translateY(-6px);
+  }
+</style>
