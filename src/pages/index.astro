@@ -4,6 +4,7 @@ import List from "~/components/Hike/List.astro";
 import { getHikesSorted } from "~/lib/getHikes";
 import BaseLayout from "~/layouts/BaseLayout.astro";
 import Intro from "~/components/Home/Intro.astro";
+import Testimonials from "~/components/Home/Testimonials.astro";
 import TopBanner from "~/components/TopBanner.astro";
 import banner from "~/assets/home-bg.jpeg";
 
@@ -16,4 +17,5 @@ const hikes = await getHikesSorted();
   <section class="bg-zinc-50 py-12">
     <List hikes={hikes} />
   </section>
+  <Testimonials />
 </BaseLayout>

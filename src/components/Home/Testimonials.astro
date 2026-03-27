@@ -1,0 +1,162 @@
+---
+import testimonials from "~/data/testimonials.json";
+
+/**
+ * Témoignages tirés pour le carrousel (un emplacement supplémentaire est réservé au lien « Voir tous » en JS).
+ */
+const CAROUSEL_TESTIMONIAL_COUNT = 7;
+---
+
+<section class="bg-white py-14 md:py-16 border-t border-zinc-200/80">
+  <div class="container mx-auto">
+    <div class="text-center mb-10 md:mb-12">
+      <h2
+        class="font-condensed text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 mb-3"
+      >
+        Ils soutiennent RandoNavigo ❤️
+      </h2>
+      <p
+        class="text-stone-600 text-sm md:text-base max-w-xl mx-auto leading-relaxed"
+      >
+        RandoNavigo est un projet indépendant, gratuit et sans publicité,
+        maintenu sur mon temps libre. Voici quelques témoignages de randonneuses
+        et randonneurs qui soutiennent ce projet. Un très grand merci, je suis
+        vraiment heureux de partager ces randonnées avec vous.
+      </p>
+    </div>
+
+    <div
+      class="testimonials-carousel max-w-6xl mx-auto"
+      data-carousel
+      data-carousel-count={CAROUSEL_TESTIMONIAL_COUNT}
+    >
+      <div class="flex items-center gap-2 md:gap-3">
+        <button
+          class="carousel-prev shrink-0 w-9 h-9 flex items-center justify-center text-zinc-400 hover:text-zinc-800 transition-colors disabled:opacity-25 disabled:pointer-events-none self-center"
+          data-prev
+          aria-label="Précédent"
+          type="button"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+
+        <div class="min-w-0 flex-1 overflow-hidden">
+          <div
+            class="carousel-track flex transition-transform duration-300 ease-out min-h-28 md:min-h-24"
+            data-track
+          >
+          </div>
+        </div>
+
+        <button
+          class="carousel-next shrink-0 w-9 h-9 flex items-center justify-center text-zinc-400 hover:text-zinc-800 transition-colors disabled:opacity-25 disabled:pointer-events-none self-center"
+          data-next
+          aria-label="Suivant"
+          type="button"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex justify-center gap-1.5 mt-8" data-dots></div>
+
+      <div class="mt-7 flex justify-center">
+        <a
+          href="/temoignages/"
+          class="group inline-flex items-center gap-2 text-sm font-medium text-sky-800 no-underline border-b border-sky-800/25 pb-0.5 transition-colors hover:border-sky-800 hover:text-sky-900"
+        >
+          <span>Voir tous les témoignages</span>
+          <svg
+            class="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <p class="text-stone-500 text-sm mb-4">
+        Rejoignez les randonneurs qui soutiennent RandoNavigo
+      </p>
+      <a
+        class="inline-block font-sans-serif bg-linear-to-r from-amber-600 to-amber-800 text-white text-sm py-2.5 px-8 rounded-md uppercase font-semibold tracking-wide hover:from-yellow-600 hover:to-yellow-800 transition-colors"
+        href="https://ko-fi.com/W7W46TRZ2"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ☕ Offrir un café
+      </a>
+    </div>
+
+    <noscript>
+      <p class="text-center text-sm text-stone-600 mt-4">
+        <a href="/temoignages/" class="text-sky-800 underline"
+          >Voir tous les témoignages</a
+        >
+      </p>
+    </noscript>
+  </div>
+</section>
+
+<script
+  type="application/json"
+  id="testimonials-json"
+  set:html={JSON.stringify(testimonials).replace(/</g, "\\u003c")}
+/>
+
+<script>
+  import { mountHomeTestimonialsCarousel } from "~/scripts/home-testimonials-carousel.ts";
+  mountHomeTestimonialsCarousel();
+</script>
+
+<style>
+  /* :global — les slides sont créées en JS et n’ont pas l’attribut de scope Astro */
+  .testimonials-carousel :global(.carousel-slide) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .testimonials-carousel :global(.carousel-slide) {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .testimonials-carousel :global(.carousel-slide) {
+      width: 33.333%;
+    }
+  }
+</style>

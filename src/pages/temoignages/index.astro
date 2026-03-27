@@ -1,0 +1,117 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import TopBanner from "~/components/TopBanner.astro";
+import Presse from "~/components/Presse.astro";
+import testimonials from "~/data/testimonials.json";
+
+const testimonialCount = testimonials.length;
+---
+
+<BaseLayout
+  title="Témoignages — RandoNavigo"
+  description="Messages de soutien de la communauté RandoNavigo et mentions dans la presse."
+>
+  <TopBanner overlay={true}>
+    <h1 class="text-3xl md:text-5xl font-condensed font-medium">
+      Dans la presse et témoignages
+    </h1>
+    <p class="mt-2 text-lg md:text-xl max-w-2xl">
+      Voici des articles et des témoignages de la communauté RandoNavigo.
+    </p>
+  </TopBanner>
+
+  <article
+    id="temoignages-page"
+    class="container mx-auto max-w-5xl py-14 md:py-16 px-4"
+  >
+    <Presse />
+
+    <section
+      class="border-t border-zinc-200 pt-12 md:pt-16 mt-12 md:mt-16"
+      aria-labelledby="temoignages-heading"
+    >
+      <h2
+        id="temoignages-heading"
+        class="font-condensed text-2xl md:text-3xl font-bold text-zinc-900 mb-3"
+      >
+        Ils soutiennent RandoNavigo
+      </h2>
+
+      {
+        testimonialCount === 0 ? (
+          <p class="mb-8 text-stone-600 text-base">
+            Aucun témoignage pour le moment.
+          </p>
+        ) : (
+          <p class="mb-4 md:mb-6 max-w-3xl text-base md:text-[1.0625rem] font-medium text-stone-700 leading-relaxed">
+            Voici des messages de soutien partagés par des randonneuses et
+            randonneurs — merci à toutes et à tous. Pour faire un don et partager votre témoignage, cliquez sur le bouton ci-dessous.
+          </p>
+          <a
+            href="https://ko-fi.com/randonavigo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block font-sans-serif bg-linear-to-r from-amber-600 to-amber-800 text-white text-sm py-2.5 px-8 rounded-md uppercase font-semibold tracking-wide hover:from-yellow-600 hover:to-yellow-800 transition-colors mb-8 md:mb-10"
+          >
+            ☕ Offrir un café
+          </a>
+        )
+      }
+
+      {
+        testimonialCount > 0 && (
+          <ul
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 lg:gap-7 list-none p-0 m-0"
+            role="list"
+          >
+            {testimonials.map((t) => (
+              <li class="min-w-0">
+                <blockquote class="testimonial-reveal h-full rounded-lg border border-zinc-200 bg-white px-5 py-5 md:px-6 md:py-6">
+                  <p class="font-serif text-stone-700 text-sm md:text-[0.9375rem] leading-relaxed mb-3">
+                    {t.message}
+                  </p>
+                  <footer class="font-sans-serif text-xs font-semibold text-zinc-900">
+                    — {t.name}
+                  </footer>
+                </blockquote>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </section>
+  </article>
+
+  <script>
+    import "~/scripts/temoignages-scroll-reveal.ts";
+  </script>
+
+  <style>
+    .testimonial-reveal {
+      opacity: 1;
+      transform: none;
+    }
+
+    #temoignages-page[data-reveal-scroll="true"] .testimonial-reveal {
+      opacity: 0;
+      transform: translateY(12px);
+      transition:
+        opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    #temoignages-page[data-reveal-scroll="true"]
+      .testimonial-reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #temoignages-page .testimonial-reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</BaseLayout>

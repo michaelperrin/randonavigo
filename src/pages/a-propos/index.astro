@@ -21,6 +21,12 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
           </div>
 
           <div class="prose">
+            <p
+              class="text-lg md:text-xl font-medium text-stone-700 leading-relaxed"
+            >
+              Bonjour ! Je suis Michaël Perrin, le créateur de RandoNavigo.
+            </p>
+
             <p>
               Passionné de randonnée, j&apos;ai créé RandoNavigo dans le but de
               partager les randonnées que j&apos;ai faites en Ile-de-France, et
@@ -64,7 +70,11 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
       }
 
       <section class="prose">
-        <h3>Les avantages des transports en commun</h3>
+        <h3
+          class="font-condensed text-xl md:text-2xl font-bold text-zinc-900 mb-6"
+        >
+          Les avantages des transports en commun
+        </h3>
 
         <p>
           Partir pour une randonnée en transports présente de nombreux
@@ -73,8 +83,8 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
 
         <ul>
           <li>
-            <strong>Vous respectez l&apos;environnement.</strong> Quitte à aller
-            se ressourcer en pleine nature, autant la respecter plutôt que d&apos;utiliser
+            <strong>Vous respectez l&apos;environnement.</strong> Quitte à aller se
+            ressourcer en pleine nature, autant la respecter plutôt que d&apos;utiliser
             un mode de transport polluant&nbsp;!
           </li>
           <li>
@@ -83,8 +93,8 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
           </li>
           <li>
             <strong>Vous êtes plus libre.</strong> La voiture vous imposerait une
-            randonnée sous forme de boucle ou d&apos;aller-retour. Une randonnée
-            gare à gare vous permettra d&apos;aller plus loin.
+            randonnée sous forme de boucle ou d&apos;aller-retour. Une randonnée gare
+            à gare vous permettra d&apos;aller plus loin.
           </li>
           <li>
             <strong>C&apos;est plus reposant.</strong> Les trains sont de plus en
@@ -107,7 +117,11 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
       </section>
 
       <section class="prose my-8">
-        <h3>Quelques conseils</h3>
+        <h3
+          class="font-condensed text-xl md:text-2xl font-bold text-zinc-900 mb-6"
+        >
+          Quelques conseils
+        </h3>
 
         <p>
           Les chemins peuvent avoir varié ou la trace GPS enregistrée n&apos;est
@@ -123,8 +137,70 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
         </ul>
       </section>
 
+      <section class="border-t border-zinc-200 pt-10 mt-10">
+        <h3
+          class="font-condensed text-xl md:text-2xl font-bold text-zinc-900 mb-6"
+        >
+          Ils en parlent
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <a
+            href="/temoignages/#dans-la-presse"
+            class="group block no-underline rounded-xl border border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm transition-all p-5"
+          >
+            <img
+              src="/images/press/france3-black.svg"
+              alt="France 3"
+              width="36"
+              height="29"
+              class="mb-3"
+            />
+            <p
+              class="font-semibold text-zinc-900 group-hover:text-sky-800 transition-colors text-sm leading-snug mb-1"
+            >
+              Dans la presse
+            </p>
+            <p class="text-stone-500 text-xs leading-relaxed">
+              RandoNavigo dans le JT de France 3 Île-de-France.
+            </p>
+          </a>
+
+          <a
+            href="/temoignages/"
+            class="group block no-underline rounded-xl border border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm transition-all p-5"
+          >
+            <svg
+              class="w-8 h-8 mb-3 text-zinc-400"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M7.5 8.25h9m-9 3H12m-6.375 5.25c0 .621.504 1.125 1.125 1.125h11.25c.621 0 1.125-.504 1.125-1.125V6.375c0-.621-.504-1.125-1.125-1.125H6.75A1.125 1.125 0 0 0 5.625 6.375v10.5Z"
+              ></path>
+            </svg>
+            <p
+              class="font-semibold text-zinc-900 group-hover:text-sky-800 transition-colors text-sm leading-snug mb-1"
+            >
+              Témoignages
+            </p>
+            <p class="text-stone-500 text-xs leading-relaxed">
+              Messages de soutien de la communauté RandoNavigo.
+            </p>
+          </a>
+        </div>
+      </section>
+
       <section class="prose">
-        <h3>RandoNavigo sur les réseaux sociaux</h3>
+        <h3
+          class="font-condensed text-xl md:text-2xl font-bold text-zinc-900 mb-6"
+        >
+          RandoNavigo sur les réseaux sociaux
+        </h3>
 
         <ul>
           <li>
