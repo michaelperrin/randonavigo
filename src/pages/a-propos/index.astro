@@ -1,232 +1,277 @@
 ---
 import BaseLayout from "~/layouts/BaseLayout.astro";
+import TopBanner from "~/components/TopBanner.astro";
 ---
 
 <BaseLayout
-  title="A propos de RandoNavigo"
-  description="A propos de RandoNavigo"
+  title="À propos de RandoNavigo"
+  description="RandoNavigo vous propose des randonnées en Île-de-France accessibles en transport en commun. Découvrez le projet, ses avantages et quelques conseils."
 >
-  <article>
-    <div class="container mx-auto">
-      <section class="my-24">
-        <div
-          class="flex justify-center gap-12 flex-col md:flex-row items-center"
-        >
-          <div class="shrink-0">
-            <img
-              src="/images/about/profile.jpg"
-              class="rounded-full w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48"
-              alt=""
-            />
-          </div>
+  <TopBanner overlay={true}>
+    <h1 class="text-3xl md:text-5xl font-condensed font-medium">À propos</h1>
+    <p class="mt-2 text-lg md:text-xl max-w-2xl">
+      Des randonnées en Île-de-France, accessibles en transport en commun.
+    </p>
+  </TopBanner>
 
-          <div class="prose">
-            <p
-              class="text-lg md:text-xl font-medium text-stone-700 leading-relaxed"
-            >
-              Bonjour ! Je suis Michaël Perrin, le créateur de RandoNavigo.
-            </p>
+  <article class="container mx-auto max-w-5xl py-14 md:py-16 px-4">
 
+    <!-- Intro / Qui suis-je -->
+    <section class="mb-16 md:mb-20">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+        <div class="shrink-0">
+          <img
+            src="/images/about/profile.jpg"
+            class="rounded-full w-28 h-28 md:w-36 md:h-36 shadow-md"
+            alt="Michaël Perrin"
+          />
+        </div>
+
+        <div>
+          <h2 class="font-condensed text-2xl md:text-3xl font-bold text-zinc-900 mb-4">
+            Bonjour, moi c'est Michaël !
+          </h2>
+
+          <div class="space-y-4 text-stone-700 text-base md:text-[1.0625rem] leading-relaxed">
             <p>
               Passionné de randonnée, j&apos;ai créé RandoNavigo dans le but de
-              partager les randonnées que j&apos;ai faites en Ile-de-France, et
+              partager les randonnées que j&apos;ai faites en Île-de-France, et
               également pour m&apos;en rappeler moi-même.
             </p>
-
             <p>
               La région possède de nombreux sites naturels insoupçonnés qui sont
               accessibles en transports en commun. Alors profitez-en pour vous
               éloigner du stress de la ville !
             </p>
-
-            <p>
+            <p class="text-stone-500 text-sm">
               Ce site internet n&apos;est pas affilié à la marque Navigo, ni
-              Ile-de-France Mobilités, ni à aucune autre marque ou entité.
-            </p>
-
-            <p>
-              Pour des randonnées et découvertes hors Ile-de-France mais
-              toujours accessibles en train, n&apos;hésitez pas à consulter mon
-              autre site web, les{" "}
-              <a
-                href="https://www.escapades-sans-voiture.fr/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Escapades sans voiture
-              </a>
-               !
+              Île-de-France Mobilités, ni à aucune autre marque ou entité.
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      {
-        /* <section>
-          <p>RandoNavigo, ce sont des randonnées sélectionnées et conçues avec soin pour proposer au maximum un parcours agréable.</p>
+    <!-- Pourquoi les transports en commun -->
+    <section class="border-t border-zinc-200 pt-12 md:pt-16 mb-16 md:mb-20">
+      <h2 class="font-condensed text-2xl md:text-3xl font-bold text-zinc-900 mb-3">
+        Pourquoi les transports en commun ?
+      </h2>
+      <p class="text-stone-600 text-base md:text-[1.0625rem] leading-relaxed mb-8 md:mb-10 max-w-3xl">
+        Partir pour une randonnée en transports présente de nombreux avantages.
+      </p>
 
-          <p>Certaines</p>
-        </section> */
-      }
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+        <div class="rounded-xl border border-zinc-200 bg-white p-5 md:p-6">
+          <div class="text-2xl mb-3" aria-hidden="true">🌱</div>
+          <h3 class="font-semibold text-zinc-900 text-sm md:text-base mb-1">Respectez l'environnement</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">
+            Quitte à aller se ressourcer en pleine nature, autant la respecter
+            plutôt que d&apos;utiliser un mode de transport polluant.
+          </p>
+        </div>
 
-      <section class="prose">
-        <h3
-          class="font-condensed text-xl md:text-2xl font-bold text-zinc-900 mb-6"
-        >
-          Les avantages des transports en commun
-        </h3>
+        <div class="rounded-xl border border-zinc-200 bg-white p-5 md:p-6">
+          <div class="text-2xl mb-3" aria-hidden="true">💶</div>
+          <h3 class="font-semibold text-zinc-900 text-sm md:text-base mb-1">C'est gratuit !</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">
+            Votre passe Navigo vous donne accès à toute l&apos;Île-de-France.
+            Pas de péage, pas de carburant.
+          </p>
+        </div>
 
-        <p>
-          Partir pour une randonnée en transports présente de nombreux
-          avantages. En voici quelques uns :
-        </p>
+        <div class="rounded-xl border border-zinc-200 bg-white p-5 md:p-6">
+          <div class="text-2xl mb-3" aria-hidden="true">🗺️</div>
+          <h3 class="font-semibold text-zinc-900 text-sm md:text-base mb-1">Plus de liberté</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">
+            Pas besoin de boucle ni d&apos;aller-retour. Une randonnée gare à gare
+            vous permet d&apos;aller plus loin.
+          </p>
+        </div>
 
-        <ul>
-          <li>
-            <strong>Vous respectez l&apos;environnement.</strong> Quitte à aller se
-            ressourcer en pleine nature, autant la respecter plutôt que d&apos;utiliser
-            un mode de transport polluant&nbsp;!
-          </li>
-          <li>
-            <strong>C&apos;est gratuit !</strong> (ou presque) Votre passe Navigo
-            que vous utilisez habituellement vous donne accès à toute l&apos;Ile-de-France.
-          </li>
-          <li>
-            <strong>Vous êtes plus libre.</strong> La voiture vous imposerait une
-            randonnée sous forme de boucle ou d&apos;aller-retour. Une randonnée gare
-            à gare vous permettra d&apos;aller plus loin.
-          </li>
-          <li>
-            <strong>C&apos;est plus reposant.</strong> Les trains sont de plus en
-            plus confortables et vous méritez bien une petite sieste à votre retour
-            de randonnée plutôt que les stressants embouteillages.
-          </li>
-          <li>
-            <strong>Vous gagnez du temps.</strong> Si vous partez en fin de matinée,
-            profitez de votre trajet en train pour y prendre votre déjeuner.
-          </li>
-          <li>
-            Vous laissez place à l&apos;imprévu. Vous attendez votre train ?
-            Pourquoi ne pas prendre une petite bière (et oui, vous ne conduisez
-            pas !) au café du coin ou même à l&apos;auberge&nbsp;!
-          </li>
-          <li>
-            … et bien sûr, vous n&apos;avez pas besoin de posséder une voiture.
-          </li>
-        </ul>
-      </section>
+        <div class="rounded-xl border border-zinc-200 bg-white p-5 md:p-6">
+          <div class="text-2xl mb-3" aria-hidden="true">😴</div>
+          <h3 class="font-semibold text-zinc-900 text-sm md:text-base mb-1">Plus reposant</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">
+            Les trains sont de plus en plus confortables — une petite sieste
+            au retour plutôt que les embouteillages.
+          </p>
+        </div>
 
-      <section class="prose my-8">
-        <h3
-          class="font-condensed text-xl md:text-2xl font-bold text-zinc-900 mb-6"
-        >
-          Quelques conseils
-        </h3>
+        <div class="rounded-xl border border-zinc-200 bg-white p-5 md:p-6">
+          <div class="text-2xl mb-3" aria-hidden="true">⏱️</div>
+          <h3 class="font-semibold text-zinc-900 text-sm md:text-base mb-1">Gain de temps</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">
+            Départ en fin de matinée ? Profitez du trajet en train pour déjeuner
+            tranquillement.
+          </p>
+        </div>
 
+        <div class="rounded-xl border border-zinc-200 bg-white p-5 md:p-6">
+          <div class="text-2xl mb-3" aria-hidden="true">🍺</div>
+          <h3 class="font-semibold text-zinc-900 text-sm md:text-base mb-1">Place à l'imprévu</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">
+            Pourquoi ne pas prendre une petite bière au café de la gare ?
+            Après tout, vous ne conduisez pas !
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conseils -->
+    <section class="border-t border-zinc-200 pt-12 md:pt-16 mb-16 md:mb-20">
+      <h2 class="font-condensed text-2xl md:text-3xl font-bold text-zinc-900 mb-3">
+        Quelques conseils
+      </h2>
+
+      <div class="space-y-4 text-stone-700 text-base leading-relaxed max-w-3xl mb-8">
         <p>
           Les chemins peuvent avoir varié ou la trace GPS enregistrée n&apos;est
           peut-être pas tout à fait exacte. N&apos;hésitez pas à improviser en
-          repérant les chemins grâce à votre application&nbsp;!
+          repérant les chemins grâce à votre application !
         </p>
-        <p>Préparez votre randonnée sans oublier :</p>
-        <ul>
-          <li>De l&apos;eau (on n&apos;en a jamais de trop).</li>
-          <li>Des en-cas.</li>
-          <li>Le minimum de secours (pansements, etc.).</li>
-          <li>Votre carte de transport.</li>
-        </ul>
-      </section>
+      </div>
 
-      <section class="border-t border-zinc-200 pt-10 mt-10">
-        <h3
-          class="font-condensed text-xl md:text-2xl font-bold text-zinc-900 mb-6"
-        >
-          Ils en parlent
+      <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-6 md:p-8 max-w-2xl">
+        <h3 class="font-semibold text-zinc-900 text-base mb-4">
+          Préparez votre randonnée sans oublier :
         </h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <a
-            href="/temoignages/#dans-la-presse"
-            class="group block no-underline rounded-xl border border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm transition-all p-5"
-          >
-            <img
-              src="/images/press/france3-black.svg"
-              alt="France 3"
-              width="36"
-              height="29"
-              class="mb-3"
-            />
-            <p
-              class="font-semibold text-zinc-900 group-hover:text-sky-800 transition-colors text-sm leading-snug mb-1"
-            >
-              Dans la presse
-            </p>
-            <p class="text-stone-500 text-xs leading-relaxed">
-              RandoNavigo dans le JT de France 3 Île-de-France.
-            </p>
-          </a>
-
-          <a
-            href="/temoignages/"
-            class="group block no-underline rounded-xl border border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm transition-all p-5"
-          >
-            <svg
-              class="w-8 h-8 mb-3 text-zinc-400"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M7.5 8.25h9m-9 3H12m-6.375 5.25c0 .621.504 1.125 1.125 1.125h11.25c.621 0 1.125-.504 1.125-1.125V6.375c0-.621-.504-1.125-1.125-1.125H6.75A1.125 1.125 0 0 0 5.625 6.375v10.5Z"
-              ></path>
-            </svg>
-            <p
-              class="font-semibold text-zinc-900 group-hover:text-sky-800 transition-colors text-sm leading-snug mb-1"
-            >
-              Témoignages
-            </p>
-            <p class="text-stone-500 text-xs leading-relaxed">
-              Messages de soutien de la communauté RandoNavigo.
-            </p>
-          </a>
-        </div>
-      </section>
-
-      <section class="prose">
-        <h3
-          class="font-condensed text-xl md:text-2xl font-bold text-zinc-900 mb-6"
-        >
-          RandoNavigo sur les réseaux sociaux
-        </h3>
-
-        <ul>
-          <li>
-            <a
-              href="https://www.facebook.com/randonavigo/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Facebook
-            </a>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <li class="flex items-center gap-3 text-stone-700 text-sm">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-xs">💧</span>
+            De l&apos;eau (on n&apos;en a jamais de trop)
           </li>
-          <li>
-            <a href="https://www.instagram.com/randonavigo/" rel="noreferrer">
-              Instagram
-            </a>
+          <li class="flex items-center gap-3 text-stone-700 text-sm">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-xs">🥖</span>
+            Des en-cas
+          </li>
+          <li class="flex items-center gap-3 text-stone-700 text-sm">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-xs">🩹</span>
+            Le minimum de secours (pansements…)
+          </li>
+          <li class="flex items-center gap-3 text-stone-700 text-sm">
+            <span class="shrink-0 w-7 h-7 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-xs">🚇</span>
+            Votre carte de transport
           </li>
         </ul>
+      </div>
+    </section>
 
-        <p>
-          Le code de ce site web est open-source ! Les sources sont{" "}
-          <a href="https://github.com/michaelperrin/randonavigo">
-            disponibles sur Github
-          </a>
-          .
-        </p>
-      </section>
-    </div>
+    <!-- Ils en parlent -->
+    <section class="border-t border-zinc-200 pt-12 md:pt-16 mb-16 md:mb-20">
+      <h2 class="font-condensed text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
+        Ils en parlent
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <a
+          href="/temoignages/#dans-la-presse"
+          class="group block no-underline rounded-xl border border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm transition-all p-5"
+        >
+          <img
+            src="/images/press/france3-black.svg"
+            alt="France 3"
+            width="36"
+            height="29"
+            class="mb-3"
+          />
+          <p class="font-semibold text-zinc-900 group-hover:text-sky-800 transition-colors text-sm leading-snug mb-1">
+            Dans la presse
+          </p>
+          <p class="text-stone-500 text-xs leading-relaxed">
+            RandoNavigo dans le JT de France 3 Île-de-France.
+          </p>
+        </a>
+
+        <a
+          href="/temoignages/"
+          class="group block no-underline rounded-xl border border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm transition-all p-5"
+        >
+          <svg
+            class="w-8 h-8 mb-3 text-zinc-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.5 8.25h9m-9 3H12m-6.375 5.25c0 .621.504 1.125 1.125 1.125h11.25c.621 0 1.125-.504 1.125-1.125V6.375c0-.621-.504-1.125-1.125-1.125H6.75A1.125 1.125 0 0 0 5.625 6.375v10.5Z"
+            ></path>
+          </svg>
+          <p class="font-semibold text-zinc-900 group-hover:text-sky-800 transition-colors text-sm leading-snug mb-1">
+            Témoignages
+          </p>
+          <p class="text-stone-500 text-xs leading-relaxed">
+            Messages de soutien de la communauté RandoNavigo.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Autre projet -->
+    <section class="border-t border-zinc-200 pt-12 md:pt-16 mb-16 md:mb-20">
+      <h2 class="font-condensed text-2xl md:text-3xl font-bold text-zinc-900 mb-3">
+        Aussi hors Île-de-France
+      </h2>
+      <p class="text-stone-700 text-base leading-relaxed max-w-3xl mb-6">
+        Pour des randonnées et découvertes hors Île-de-France mais toujours
+        accessibles en train, n&apos;hésitez pas à consulter mon autre site.
+      </p>
+      <a
+        href="https://www.escapades-sans-voiture.fr/"
+        target="_blank"
+        rel="noreferrer"
+        class="group inline-flex items-center gap-2 text-sm font-medium text-sky-800 no-underline border-b border-sky-800/25 pb-0.5 transition-colors hover:border-sky-800 hover:text-sky-900"
+      >
+        <span>Escapades sans voiture</span>
+        <svg
+          class="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </section>
+
+    <!-- Réseaux sociaux & open-source -->
+    <section class="border-t border-zinc-200 pt-12 md:pt-16">
+      <h2 class="font-condensed text-2xl md:text-3xl font-bold text-zinc-900 mb-6">
+        Suivre RandoNavigo
+      </h2>
+      <div class="flex flex-wrap gap-4 mb-8">
+        <a
+          href="https://www.instagram.com/randonavigo"
+          target="_blank"
+          rel="noreferrer"
+          class="group inline-flex items-center gap-2.5 no-underline rounded-lg border border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm transition-all px-5 py-3"
+        >
+          <img src="/images/social/instagram.svg" alt="" class="w-5 h-5" />
+          <span class="text-sm font-medium text-zinc-900 group-hover:text-sky-800 transition-colors">Instagram</span>
+        </a>
+        <a
+          href="https://www.facebook.com/randonavigo/"
+          target="_blank"
+          rel="noreferrer"
+          class="group inline-flex items-center gap-2.5 no-underline rounded-lg border border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm transition-all px-5 py-3"
+        >
+          <img src="/images/social/facebook.svg" alt="" class="w-5 h-5" />
+          <span class="text-sm font-medium text-zinc-900 group-hover:text-sky-800 transition-colors">Facebook</span>
+        </a>
+      </div>
+      <p class="text-stone-500 text-sm">
+        Le code de ce site web est open-source !
+        Les sources sont{" "}
+        <a href="https://github.com/michaelperrin/randonavigo" class="text-sky-700 hover:underline">
+          disponibles sur Github
+        </a>.
+      </p>
+    </section>
+
   </article>
 </BaseLayout>
