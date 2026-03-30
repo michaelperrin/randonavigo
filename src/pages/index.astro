@@ -6,6 +6,7 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
 import HomeIntro from "~/components/Home/HomeIntro.astro";
 import HowItWorks from "~/components/Home/HowItWorks.astro";
 import FeaturedHikes from "~/components/Home/FeaturedHikes.astro";
+import AboutTeaser from "~/components/Home/AboutTeaser.astro";
 import Testimonials from "~/components/Home/Testimonials.astro";
 import TopBanner from "~/components/TopBanner.astro";
 import banner from "~/assets/home-bg.jpeg";
@@ -46,6 +47,8 @@ const hikes = await getHikesSorted();
     </div>
     <List hikes={hikes} />
   </section>
+
+  <AboutTeaser />
 
   <Testimonials />
 </BaseLayout>
