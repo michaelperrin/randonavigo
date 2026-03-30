@@ -3,7 +3,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "~/consts";
 import List from "~/components/Hike/List.astro";
 import { getHikesSorted } from "~/lib/getHikes";
 import BaseLayout from "~/layouts/BaseLayout.astro";
-import Intro from "~/components/Home/Intro.astro";
+import HomeIntro from "~/components/Home/HomeIntro.astro";
+import HowItWorks from "~/components/Home/HowItWorks.astro";
+import FeaturedHikes from "~/components/Home/FeaturedHikes.astro";
 import Testimonials from "~/components/Home/Testimonials.astro";
 import TopBanner from "~/components/TopBanner.astro";
 import banner from "~/assets/home-bg.jpeg";
@@ -12,10 +14,38 @@ const hikes = await getHikesSorted();
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} image={banner}>
-  <TopBanner />
-  <Intro />
-  <section class="bg-zinc-50 py-12">
+  <TopBanner overlay={true}>
+    <h1 class="text-3xl md:text-5xl font-condensed font-medium">RandoNavigo</h1>
+    <p class="mt-2 text-lg md:text-xl max-w-2xl">
+      Évadez-vous en pleine nature en Île-de-France. Pas besoin de voiture&nbsp;: votre carte Navigo suffit.
+    </p>
+    <a
+      href="#toutes-les-randonnees"
+      class="inline-block mt-6 font-sans-serif bg-white/90 text-zinc-900 text-sm py-2.5 px-7 rounded-md font-semibold tracking-wide hover:bg-white transition-colors no-underline"
+    >
+      Découvrir les randonnées
+    </a>
+  </TopBanner>
+
+  <HomeIntro />
+
+  <HowItWorks />
+
+  <FeaturedHikes />
+
+  <section id="toutes-les-randonnees" class="py-14 md:py-16 scroll-mt-16">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-10 md:mb-12">
+        <h2 class="font-condensed text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 mb-3">
+          Toutes les randonnées
+        </h2>
+        <p class="text-stone-600 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+          {hikes.length} randonnées en Île-de-France, toutes accessibles en transport en commun.
+        </p>
+      </div>
+    </div>
     <List hikes={hikes} />
   </section>
+
   <Testimonials />
 </BaseLayout>

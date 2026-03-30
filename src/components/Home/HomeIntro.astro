@@ -1,0 +1,80 @@
+---
+import { Image } from "astro:assets";
+import introPhoto from "~/assets/hikes/2023/06/les-gorges-d-apremont-en-foret-de-fontainebleau/pictures/gorges-apremont - 20.jpeg";
+---
+
+<section class="container mx-auto py-14 md:py-20 px-4">
+  <div
+    class="flex flex-col md:flex-row items-center gap-10 md:gap-16 max-w-5xl mx-auto"
+  >
+    <div class="flex-1 min-w-0">
+      <h2
+        class="font-condensed text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 mb-5"
+      >
+        Des randonnées en Île-de-France, accessibles en transport en commun
+      </h2>
+
+      <div
+        class="space-y-4 text-stone-700 text-base md:text-[1.0625rem] leading-relaxed"
+      >
+        <p>
+          Saviez-vous que l'Île-de-France regorge de <strong
+            >sites naturels insoupçonnés</strong
+          >&nbsp;? Forêts profondes, vallées préservées, vignobles, gorges
+          rocheuses… Et tout cela accessible en transport en commun avec votre <strong
+            >carte Navigo</strong
+          >. Pas besoin de voiture !
+        </p>
+        <p>
+          RandoNavigo vous propose des <strong>randonnées</strong> en pleine nature
+          sélectionnées avec soin, chacune avec sa <strong>trace GPX</strong> à télécharger.
+          Quittez la grisaille parisienne le temps d'une journée et laissez-vous surprendre
+          !
+        </p>
+      </div>
+    </div>
+
+    <div class="shrink-0 w-64 md:w-72 lg:w-80">
+      <div class="intro-photo-frame relative">
+        <Image
+          src={introPhoto}
+          alt="Gorges d'Apremont en forêt de Fontainebleau"
+          width={480}
+          height={640}
+          class="w-full rounded-2xl shadow-lg object-cover aspect-[3/4]"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .intro-photo-frame {
+    transform: rotate(2deg);
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .intro-photo-frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    translate: 12px 12px;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    z-index: -1;
+  }
+
+  .intro-photo-frame:hover {
+    transform: rotate(0deg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .intro-photo-frame {
+      transform: none;
+      transition: none;
+    }
+    .intro-photo-frame:hover {
+      transform: none;
+    }
+  }
+</style>
