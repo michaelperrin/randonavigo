@@ -2,11 +2,25 @@
 import { Image } from "astro:assets";
 import banner from "~/assets/home-bg.jpeg";
 
-const { picture = banner, overlay = false } = Astro.props;
+type OverlayVariant = "default" | "hero";
+
+const { picture = banner, overlay = false, overlayVariant = "default" } =
+  Astro.props as {
+    picture?: typeof banner;
+    overlay?: boolean;
+    overlayVariant?: OverlayVariant;
+  };
 
 const overlayClasses = overlay
-  ? "after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70"
+  ? overlayVariant === "hero"
+    ? "after:absolute after:inset-0 after:z-20 after:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.22)_40%,rgba(0,0,0,0.58)_100%)]"
+    : "after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70"
   : "";
+
+const contentClasses =
+  overlayVariant === "hero"
+    ? "pt-28 md:pt-32 pb-10 md:pb-14 px-4 max-w-3xl mx-auto text-center z-30 text-white flex flex-col items-center"
+    : "pt-32 px-4 md:px-48 z-30 text-white";
 ---
 
 <div
@@ -14,10 +28,13 @@ const overlayClasses = overlay
   style={{ height: "50vh" }}
 >
   <div
-    class="pt-32 px-4 md:px-48 z-30 text-white"
+    class={contentClasses}
     style={{
       fontFamily: "Barlow",
-      textShadow: "0 0 40px rgba(0, 0, 0, 0.9)",
+      textShadow:
+        overlayVariant === "hero"
+          ? "0 1px 16px rgba(0, 0, 0, 0.35)"
+          : "0 0 40px rgba(0, 0, 0, 0.9)",
     }}
   >
     <slot />

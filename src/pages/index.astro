@@ -5,7 +5,7 @@ import { getHikesSorted } from "~/lib/getHikes";
 import BaseLayout from "~/layouts/BaseLayout.astro";
 import HomeIntro from "~/components/Home/HomeIntro.astro";
 import HowItWorks from "~/components/Home/HowItWorks.astro";
-import FeaturedHikes from "~/components/Home/FeaturedHikes.astro";
+// import FeaturedHikes from "~/components/Home/FeaturedHikes.astro";
 import AboutTeaser from "~/components/Home/AboutTeaser.astro";
 import Testimonials from "~/components/Home/Testimonials.astro";
 import TopBanner from "~/components/TopBanner.astro";
@@ -15,33 +15,83 @@ const hikes = await getHikesSorted();
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} image={banner}>
-  <TopBanner overlay={true}>
-    <h1 class="text-3xl md:text-5xl font-condensed font-medium">RandoNavigo</h1>
-    <p class="mt-2 text-lg md:text-xl max-w-2xl">
-      Évadez-vous en pleine nature en Île-de-France. Pas besoin de voiture&nbsp;: votre carte Navigo suffit.
+  <TopBanner overlay={true} overlayVariant="hero">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-condensed font-medium leading-snug tracking-tight max-w-2xl">
+      Évadez-vous en pleine nature en Île-de-France
+    </h1>
+    <p class="mt-4 text-base md:text-lg text-white/95 max-w-xl leading-relaxed">
+      Pas besoin de voiture&nbsp;: votre carte Navigo suffit pour partir
+      randonner.
     </p>
-    <a
-      href="#toutes-les-randonnees"
-      class="inline-block mt-6 font-sans-serif bg-white/90 text-zinc-900 text-sm py-2.5 px-7 rounded-md font-semibold tracking-wide hover:bg-white transition-colors no-underline"
-    >
+    <a href="#toutes-les-randonnees" class="hero-cta">
       Découvrir les randonnées
     </a>
   </TopBanner>
+
+  <style>
+    .hero-cta {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      font-family: var(--font-sans-serif);
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+      text-decoration: none;
+      color: #fff;
+      text-shadow: none;
+      border-radius: 9999px;
+      border: 2px solid rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .hero-cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: rgba(255, 255, 255, 0);
+      transition: background 0.2s ease;
+      pointer-events: none;
+    }
+
+    .hero-cta:hover {
+      border-color: rgba(255, 255, 255, 0.88);
+      box-shadow: none;
+      text-shadow: none;
+    }
+
+    .hero-cta:hover::before {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
 
   <HomeIntro />
 
   <HowItWorks />
 
-  <FeaturedHikes />
+  <!-- <FeaturedHikes /> -->
 
   <section id="toutes-les-randonnees" class="py-14 md:py-16 scroll-mt-16">
     <div class="container mx-auto px-4">
       <div class="text-center mb-10 md:mb-12">
-        <h2 class="font-condensed text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 mb-3">
+        <h2
+          class="font-condensed text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 mb-3"
+        >
           Toutes les randonnées
         </h2>
-        <p class="text-stone-600 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
-          {hikes.length} randonnées en Île-de-France, toutes accessibles en transport en commun.
+        <p
+          class="text-stone-600 text-sm md:text-base max-w-xl mx-auto leading-relaxed"
+        >
+          {hikes.length} randonnées en Île-de-France, toutes accessibles en transport
+          en commun.
         </p>
       </div>
     </div>
