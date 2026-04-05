@@ -78,9 +78,9 @@ async function updateTestimonialsJson(env, newTestimonial) {
 
   const fileData = await getRes.json();
   const sha = fileData.sha;
-  const existingContent = JSON.parse(
-    atob(fileData.content.replace(/\n/g, ""))
-  );
+  const base64 = fileData.content.replace(/\n/g, "");
+  const bytes = Uint8Array.from(atob(base64), (c) => c.charCodeAt(0));
+  const existingContent = JSON.parse(new TextDecoder("utf-8").decode(bytes));
 
   // Prepend the new testimonial
   const updatedContent = [newTestimonial, ...existingContent];
