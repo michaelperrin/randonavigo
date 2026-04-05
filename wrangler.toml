@@ -1,0 +1,10 @@
+name = "randonavigo"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "randonavigo-db"
+database_id = "REPLACE_WITH_ACTUAL_ID_AFTER_wrangler_d1_create"
+migrations_dir = "migrations"

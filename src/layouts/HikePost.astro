@@ -7,6 +7,7 @@ import { getHikeImage, getHikeImagePath } from "~/lib/getHikeImage";
 import RelatedHikes from "~/components/Hike/RelatedHikes.astro";
 import Gallery from "~/components/Gallery.astro";
 import About from "~/components/Hike/About.astro";
+import CommunitySection from "~/components/Hike/CommunitySection";
 
 type Props = CollectionEntry<"hike">["data"];
 
@@ -65,6 +66,14 @@ const oldGalleryPictures = pictures?.map((picture) =>
 
       <section>
         <RelatedHikes {...Astro.props} />
+      </section>
+
+      <section class="my-12 border-t border-stone-200 pt-10">
+        <h2 class="font-condensed text-3xl font-bold uppercase text-stone-800 mb-8">
+          La communauté
+        </h2>
+
+        <CommunitySection slug={slug} client:load />
       </section>
     </div>
   </article>
