@@ -4,12 +4,15 @@ import banner from "~/assets/home-bg.jpeg";
 
 type OverlayVariant = "default" | "hero";
 
-const { picture = banner, overlay = false, overlayVariant = "default" } =
-  Astro.props as {
-    picture?: typeof banner;
-    overlay?: boolean;
-    overlayVariant?: OverlayVariant;
-  };
+const {
+  picture = banner,
+  overlay = false,
+  overlayVariant = "default",
+} = Astro.props as {
+  picture?: typeof banner;
+  overlay?: boolean;
+  overlayVariant?: OverlayVariant;
+};
 
 const overlayClasses = overlay
   ? overlayVariant === "hero"
@@ -24,8 +27,7 @@ const contentClasses =
 ---
 
 <div
-  class="relative flex flex-col align-middle justify-center"
-  style={{ height: "50vh" }}
+  class="relative flex min-h-[35vh] md:min-h-[65vh] flex-col align-middle justify-center"
 >
   <div
     class={contentClasses}
