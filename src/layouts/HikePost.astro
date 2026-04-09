@@ -7,11 +7,16 @@ import { getHikeImage, getHikeImagePath } from "~/lib/getHikeImage";
 import RelatedHikes from "~/components/Hike/RelatedHikes.astro";
 import Gallery from "~/components/Gallery.astro";
 import About from "~/components/Hike/About.astro";
+import HikeEngagement from "~/components/Hike/HikeEngagement";
+import { getHikeRouteKeyFromParts } from "~/lib/getHikeUrl";
 
-type Props = CollectionEntry<"hike">["data"];
+type Props = CollectionEntry<"hike">["data"] & { hikeEntryId: string };
 
+const { hikeEntryId, ...dataProps } = Astro.props;
 const { title, description, pubDate, main_picture, slug, pictures } =
-  Astro.props;
+  dataProps;
+
+const routeKey = getHikeRouteKeyFromParts(pubDate, hikeEntryId);
 
 const imageMetadata = getHikeImage(
   getHikeImagePath(pubDate, slug, main_picture)
@@ -28,7 +33,7 @@ const oldGalleryPictures = pictures?.map((picture) =>
   image={imageMetadata || undefined}
 >
   <article>
-    <HikeHeader {...Astro.props} />
+    <HikeHeader {...dataProps} />
 
     <div class="container mx-auto">
       <div
@@ -47,7 +52,7 @@ const oldGalleryPictures = pictures?.map((picture) =>
         <aside
           class="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2"
         >
-          <Properties {...Astro.props} />
+          <Properties {...dataProps} />
         </aside>
       </div>
 
@@ -63,8 +68,12 @@ const oldGalleryPictures = pictures?.map((picture) =>
         <About />
       </section>
 
+      <section class="mt-12 max-w-3xl mx-auto w-full">
+        <HikeEngagement routeKey={routeKey} client:load />
+      </section>
+
       <section>
-        <RelatedHikes {...Astro.props} />
+        <RelatedHikes {...dataProps} />
       </section>
     </div>
   </article>

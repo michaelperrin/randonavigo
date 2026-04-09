@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "randonavigo",
+  "pages_build_output_dir": "dist",
+  "compatibility_date": "2026-04-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "randonavigo-engagement",
+      "migrations_dir": "drizzle/migrations"
+    }
+  ]
+}
