@@ -1,0 +1,57 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import List from "~/components/Hike/List.astro";
+import TopBanner from "~/components/TopBanner.astro";
+import { getHikesSorted } from "~/lib/getHikes";
+import { themes, themeKeys } from "~/data/themes";
+
+const hikes = await getHikesSorted();
+---
+
+<BaseLayout
+  title="Toutes les randonnées — RandoNavigo"
+  description="Retrouvez toutes les randonnées en Île-de-France accessibles en transport en commun : forêt, bord de l'eau, patrimoine et campagne."
+>
+  <TopBanner overlay={true}>
+    <h1
+      class="font-condensed text-2xl font-bold tracking-tight md:text-4xl"
+      style={{ textShadow: "0 1px 16px rgba(0,0,0,0.35)" }}
+    >
+      Toutes les randonnées
+    </h1>
+    <p class="mt-3 max-w-xl text-base text-white/90 md:text-lg">
+      {hikes.length} randonnées en Île-de-France, toutes accessibles en
+      transport en commun.
+    </p>
+  </TopBanner>
+
+  <section class="py-14 md:py-16">
+    <div class="container mx-auto px-4">
+      <nav
+        class="mb-10 flex flex-wrap gap-2 md:mb-12"
+        aria-label="Filtrer par thème"
+      >
+        {
+          themeKeys.map((key) => (
+            <a
+              href={`/randonnees/${themes[key].slug}/`}
+              class="inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors hover:shadow-sm"
+              style={{
+                borderColor: `${themes[key].accent}40`,
+                color: themes[key].accent,
+              }}
+            >
+              <span
+                class="h-2 w-2 shrink-0 rounded-full"
+                style={{ backgroundColor: themes[key].accent }}
+              />
+              {themes[key].label}
+            </a>
+          ))
+        }
+      </nav>
+    </div>
+
+    <List hikes={hikes} />
+  </section>
+</BaseLayout>

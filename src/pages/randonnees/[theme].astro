@@ -1,0 +1,70 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import HikeCard from "~/components/Hike/HikeCard.astro";
+import TopBanner from "~/components/TopBanner.astro";
+import { themes, themeKeys } from "~/data/themes";
+import { getHikesForTheme } from "~/lib/getHikes";
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const key of themeKeys) {
+    const config = themes[key];
+    const hikes = await getHikesForTheme(key);
+    paths.push({
+      params: { theme: config.slug },
+      props: { config, hikes },
+    });
+  }
+  return paths;
+}
+
+const { config, hikes } = Astro.props;
+---
+
+<BaseLayout
+  title={`${config.label} — Randonnées en Île-de-France`}
+  description={config.description}
+>
+  <TopBanner overlay={true}>
+    <h1
+      class="font-condensed text-2xl font-bold tracking-tight md:text-4xl"
+      style={{ textShadow: "0 1px 16px rgba(0,0,0,0.35)" }}
+    >
+      {config.label}
+    </h1>
+    <p class="mt-3 max-w-xl text-base text-white/90 md:text-lg">
+      {config.description}
+    </p>
+  </TopBanner>
+
+  <section class="py-14 md:py-16">
+    <div class="container mx-auto px-4">
+      <div class="mb-10 flex flex-wrap items-center justify-between gap-4 md:mb-12">
+        <p class="text-sm text-stone-600 md:text-base">
+          {hikes.length} randonnée{hikes.length > 1 ? "s" : ""}
+        </p>
+        <a
+          href="/randonnees/"
+          class="text-sm font-medium transition-colors hover:underline"
+          style={{ color: config.accent }}
+        >
+          &larr; Toutes les randonnées
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {hikes.map((hike) => (
+          <HikeCard hike={hike} />
+        ))}
+      </div>
+
+      {
+        hikes.length === 0 && (
+          <p class="py-12 text-center text-stone-500">
+            Aucune randonnée dans cette catégorie pour le moment.
+          </p>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

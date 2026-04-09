@@ -31,6 +31,9 @@ const hike = defineCollection({
         })
         .optional(),
       favorite: z.boolean().optional(),
+      themes: z
+        .array(z.enum(["eau", "foret", "champetre", "patrimoine"]))
+        .optional(),
       hidden: z.boolean().optional(),
       gpx_alternatives: z
         .array(

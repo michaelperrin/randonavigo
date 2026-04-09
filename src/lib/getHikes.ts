@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from "astro:content";
+import type { ThemeKey } from "~/data/themes";
 
 /**
  * Get all hikes from the collection, excluding hidden ones
@@ -43,4 +44,11 @@ export async function getHikesForTransportLine(
   const hikesForLine = hikes.filter((hike) => hasLine(hike, line));
 
   return hikesForLine;
+}
+
+export async function getHikesForTheme(
+  theme: ThemeKey
+): Promise<CollectionEntry<"hike">[]> {
+  const hikes = await getHikesSorted();
+  return hikes.filter((hike) => hike.data.themes?.includes(theme));
 }
