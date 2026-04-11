@@ -47,12 +47,17 @@ const oldGalleryPictures = pictures?.map((picture) =>
           <div class="prose max-w-none">
             <slot />
           </div>
+
+          <HikeEngagement routeKey={routeKey} client:load />
         </main>
 
         <aside
           class="order-1 md:order-2 md:col-span-4 md:pt-0 z-30 font-serif mt-8 md:-mt-24 mb-5 md:mb-0 md:p-2"
         >
           <Properties {...dataProps} />
+          <div class="hidden md:block">
+            <RelatedHikes {...dataProps} />
+          </div>
         </aside>
       </div>
 
@@ -68,13 +73,6 @@ const oldGalleryPictures = pictures?.map((picture) =>
         <About />
       </section>
 
-      <section class="mt-12 max-w-3xl mx-auto w-full">
-        <HikeEngagement routeKey={routeKey} client:load />
-      </section>
-
-      <section>
-        <RelatedHikes {...dataProps} />
-      </section>
     </div>
   </article>
 </BaseLayout>

@@ -15,7 +15,6 @@ const REACTIONS: {
   emoji: string;
 }[] = [
   { type: "inspire", label: "Ça donne envie", emoji: "✨" },
-  { type: "prepare", label: "Je garde l’idée", emoji: "🧭" },
   { type: "done", label: "J’y suis allé(e)", emoji: "🥾" },
 ];
 
@@ -136,8 +135,7 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
 
   return (
     <section
-      className="not-prose font-sans text-stone-800 rounded-xl border border-stone-200/90 bg-white p-6 md:p-8"
-      style={{ boxShadow: "var(--shadow-card)" }}
+      className="not-prose font-sans text-stone-800 border-t border-gray-200 pt-10 mt-10"
       aria-labelledby="hike-engagement-title"
     >
       <h2
@@ -146,11 +144,8 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
       >
         Un mot sur cette randonnée ?
       </h2>
-      <p className="mt-2 text-center text-sm text-stone-500">
-        Réactions anonymes — un clic par ligne pour indiquer ce que tu en penses.
-      </p>
 
-      <div className="mt-6 flex flex-wrap justify-center gap-3">
+<div className="mt-6 flex flex-wrap justify-center gap-3">
         {REACTIONS.map(({ type, label, emoji }) => {
           const on = active[type];
           return (
@@ -176,8 +171,8 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
         })}
       </div>
 
-      <div className="mt-10 border-t border-stone-200 pt-8">
-        <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
+      <div className="mt-10">
+        <div className="mb-4">
           <h3 className="font-condensed text-lg font-semibold text-stone-900">
             Commentaires
             {!loading && (
@@ -186,6 +181,19 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
               </span>
             )}
           </h3>
+          <p className="mt-1 text-sm text-stone-500">
+            Des conseils, un retour d'expérience sur cette randonnée ? Les commentaires sont là pour ça.{" "}
+            Vous pouvez aussi{" "}
+            <a
+              href="https://ko-fi.com/W7W46TRZ2"
+              target="_blank"
+              rel="noreferrer"
+              className="underline hover:text-stone-700"
+            >
+              soutenir le site sur Ko-fi
+            </a>{" "}
+            si vous avez apprécié !
+          </p>
         </div>
 
         {loading && (
@@ -199,7 +207,7 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
 
         {!loading && !loadError && comments.length === 0 && (
           <p className="mb-4 text-sm text-stone-500">
-            Sois la première personne à laisser un mot sur cette sortie.
+            Soyez la première personne à laisser un mot sur cette sortie.
           </p>
         )}
 
@@ -235,7 +243,7 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
             <input
               type="text"
               name="author"
-              placeholder="Ton prénom ou pseudo (optionnel)"
+              placeholder="Votre prénom ou pseudo (optionnel)"
               value={authorName}
               onChange={(e) => setAuthorName(e.target.value)}
               maxLength={80}
@@ -249,7 +257,7 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
               name="content"
               required
               rows={4}
-              placeholder="Ton message…"
+              placeholder="Votre message…"
               value={content}
               onChange={(e) => setContent(e.target.value)}
               maxLength={2000}

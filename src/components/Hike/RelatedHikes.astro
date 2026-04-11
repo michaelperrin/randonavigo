@@ -15,24 +15,22 @@ const hikeLines = getHikeLines({
 });
 ---
 
-<div class="flex">
-  <div class="bg-stone-100 px-4 py-4 rounded-sm my-6">
-    <h4 class="font-bold uppercase mb-5">Randonnées sur toute la ligne</h4>
-    <ul class="flex flex-col gap-4">
-      {
-        hikeLines.map((line) => (
-          <li>
-            <div class="flex items-center gap-2">
-              <TransportIcon line={line} size={24} />
-              <div class="text-sm text-stone-700">
-                <a href={getLinePageUrl(line)}>
-                  {getTransportPageLinkLabel(line)}
-                </a>
-              </div>
+<div class="border-t border-gray-200 pt-6 mt-6 font-sans">
+  <h4 class="font-bold uppercase mb-5">Randonnées sur toute la ligne</h4>
+  <ul class="flex flex-col gap-4">
+    {
+      hikeLines.map((line) => (
+        <li>
+          <div class="flex items-center gap-2">
+            <TransportIcon line={line} size={24} />
+            <div class="text-sm text-stone-700">
+              <a href={getLinePageUrl(line)}>
+                {getTransportPageLinkLabel(line)}
+              </a>
             </div>
-          </li>
-        ))
-      }
-    </ul>
-  </div>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
 </div>
