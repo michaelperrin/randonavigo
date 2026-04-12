@@ -73,18 +73,68 @@ export async function onRequestGet(context: {
   return json({ comments });
 }
 
+type ExtendedEnv = Env & {
+  RESEND_API_KEY?: string;
+  NOTIFICATION_EMAIL?: string;
+  TURNSTILE_SECRET_KEY?: string;
+};
+
+async function notifyNewComment(
+  env: ExtendedEnv,
+  routeKey: string,
+  authorName: string,
+  content: string,
+) {
+  if (!env.RESEND_API_KEY || !env.NOTIFICATION_EMAIL) return;
+  try {
+    await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: "RandoNavigo <notifications@randonavigo.fr>",
+        to: [env.NOTIFICATION_EMAIL],
+        subject: `Nouveau commentaire — ${routeKey}`,
+        html: `<p><strong>Randonnée :</strong> ${routeKey}</p><p><strong>Auteur :</strong> ${authorName || "Anonyme"}</p><p><strong>Message :</strong></p><p>${content.replace(/\n/g, "<br>")}</p>`,
+      }),
+    });
+  } catch {
+    // Silently ignore — email notification is best-effort
+  }
+}
+
 export async function onRequestPost(context: {
   request: Request;
-  env: Env;
+  env: ExtendedEnv;
+  waitUntil: (promise: Promise<unknown>) => void;
 }): Promise<Response> {
   const url = new URL(context.request.url);
   const session = getSession(context.request, url);
 
-  let body: { routeKey?: string; authorName?: string; content?: string };
+  let body: { routeKey?: string; authorName?: string; content?: string; turnstileToken?: string };
   try {
     body = await context.request.json();
   } catch {
     return json({ error: "JSON invalide" }, { status: 400 });
+  }
+
+  if (context.env.TURNSTILE_SECRET_KEY) {
+    const token = typeof body.turnstileToken === "string" ? body.turnstileToken : "";
+    const verifyRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        secret: context.env.TURNSTILE_SECRET_KEY,
+        response: token,
+        remoteip: context.request.headers.get("CF-Connecting-IP") ?? "",
+      }),
+    });
+    const verifyJson = (await verifyRes.json()) as { success: boolean };
+    if (!verifyJson.success) {
+      return json({ error: "Vérification anti-spam échouée" }, { status: 403 });
+    }
   }
 
   const routeKey = typeof body.routeKey === "string" ? body.routeKey : "";
@@ -110,6 +160,10 @@ export async function onRequestPost(context: {
     content,
     isApproved: true,
   });
+
+  context.waitUntil(
+    notifyNewComment(context.env, routeKey, authorName, content),
+  );
 
   const headers = new Headers();
   if (session.setCookie) {

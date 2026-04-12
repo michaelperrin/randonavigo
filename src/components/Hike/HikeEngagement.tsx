@@ -1,4 +1,18 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+
+declare global {
+  interface Window {
+    turnstile?: {
+      render: (
+        el: HTMLElement,
+        opts: { sitekey: string; callback: (token: string) => void; "expired-callback": () => void },
+      ) => string;
+      reset: (widgetId: string) => void;
+    };
+  }
+}
+
+const TURNSTILE_SITE_KEY = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? "";
 
 type ReactionType = "inspire" | "prepare" | "done";
 
@@ -48,6 +62,27 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
   const [content, setContent] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [showThankYou, setShowThankYou] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState("");
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const widgetIdRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (!TURNSTILE_SITE_KEY || document.querySelector("script[src*='turnstile']")) return;
+    const script = document.createElement("script");
+    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+    script.async = true;
+    script.onload = () => {
+      if (turnstileRef.current && window.turnstile) {
+        widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
+          sitekey: TURNSTILE_SITE_KEY,
+          callback: (token: string) => setTurnstileToken(token),
+          "expired-callback": () => setTurnstileToken(""),
+        });
+      }
+    };
+    document.head.appendChild(script);
+  }, []);
 
   const q = encodeURIComponent(routeKey);
 
@@ -118,6 +153,7 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
           routeKey,
           authorName: authorName.trim() || undefined,
           content: content.trim(),
+          turnstileToken,
         }),
       });
       const j = await res.json().catch(() => ({}));
@@ -125,6 +161,11 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
         throw new Error((j as { error?: string }).error ?? res.statusText);
       }
       setContent("");
+      setShowThankYou(true);
+      setTurnstileToken("");
+      if (widgetIdRef.current && window.turnstile) {
+        window.turnstile.reset(widgetIdRef.current);
+      }
       await load();
     } catch (err) {
       setSubmitError(err instanceof Error ? err.message : "Erreur");
@@ -153,7 +194,7 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
               key={type}
               type="button"
               onClick={() => void toggleReaction(type)}
-              className={`inline-flex min-w-30 flex-col items-center gap-1 rounded-lg border px-3 py-2 text-sm transition ${
+              className={`inline-flex min-w-30 cursor-pointer flex-col items-center gap-1 rounded-lg border px-3 py-2 text-sm transition ${
                 on
                   ? "border-softblue bg-softblue/10 text-softblue-dark"
                   : "border-stone-200 bg-stone-50/80 text-stone-700 hover:border-stone-300"
@@ -196,47 +237,6 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
           </p>
         </div>
 
-        {loading && (
-          <p className="text-sm text-stone-500">Chargement…</p>
-        )}
-        {loadError && (
-          <p className="text-sm text-red-700" role="alert">
-            {loadError}
-          </p>
-        )}
-
-        {!loading && !loadError && comments.length === 0 && (
-          <p className="mb-4 text-sm text-stone-500">
-            Soyez la première personne à laisser un mot sur cette sortie.
-          </p>
-        )}
-
-        {!loading && comments.length > 0 && (
-          <ul className="mb-6 space-y-4">
-            {comments.map((c) => (
-              <li
-                key={c.id}
-                className="rounded-lg border border-stone-100 bg-stone-50/50 px-4 py-3"
-              >
-                <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
-                  <span className="font-semibold text-stone-900">
-                    {c.authorName}
-                  </span>
-                  <time
-                    className="text-xs text-stone-500"
-                    dateTime={c.createdAt}
-                  >
-                    {formatDate(c.createdAt)}
-                  </time>
-                </div>
-                <p className="mt-2 whitespace-pre-wrap text-sm leading-relaxed text-stone-800">
-                  {c.content}
-                </p>
-              </li>
-            ))}
-          </ul>
-        )}
-
         <form onSubmit={(e) => void sendComment(e)} className="space-y-3">
           <label className="block">
             <span className="sr-only">Pseudo</span>
@@ -264,6 +264,7 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
               className="w-full resize-y rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:border-softblue focus:outline-none focus:ring-1 focus:ring-softblue"
             />
           </label>
+          {TURNSTILE_SITE_KEY && <div ref={turnstileRef} className="mt-1" />}
           {submitError && (
             <p className="text-sm text-red-700" role="alert">
               {submitError}
@@ -272,13 +273,65 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
           <div className="flex justify-end">
             <button
               type="submit"
-              disabled={submitting || !content.trim()}
+              disabled={submitting || !content.trim() || (!!TURNSTILE_SITE_KEY && !turnstileToken)}
               className="rounded-lg bg-softblue px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
             >
               {submitting ? "Envoi…" : "Publier"}
             </button>
           </div>
         </form>
+
+        {showThankYou && (
+          <div className="mt-6 rounded-lg bg-stone-50 border border-stone-200 px-4 py-4 text-sm text-stone-700">
+            <p>
+              Merci pour votre retour ! RandoNavigo est 100% gratuit et sans pub.
+              Si cette randonnée vous a plu, vous pouvez soutenir le projet en m'offrant un café.
+            </p>
+            <a
+              href="https://ko-fi.com/W7W46TRZ2"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-stone-400 bg-stone-200 px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-300"
+            >
+              <span>☕</span> Soutenir sur Ko-fi
+            </a>
+          </div>
+        )}
+
+        {loading && (
+          <p className="mt-6 text-sm text-stone-500">Chargement…</p>
+        )}
+        {loadError && (
+          <p className="mt-6 text-sm text-red-700" role="alert">
+            {loadError}
+          </p>
+        )}
+
+        {!loading && comments.length > 0 && (
+          <ul className="mt-6 space-y-4">
+            {comments.map((c) => (
+              <li
+                key={c.id}
+                className="rounded-lg border border-stone-100 bg-stone-50/50 px-4 py-3"
+              >
+                <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
+                  <span className="font-semibold text-stone-900">
+                    {c.authorName}
+                  </span>
+                  <time
+                    className="text-xs text-stone-500"
+                    dateTime={c.createdAt}
+                  >
+                    {formatDate(c.createdAt)}
+                  </time>
+                </div>
+                <p className="mt-2 whitespace-pre-wrap text-sm leading-relaxed text-stone-800">
+                  {c.content}
+                </p>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );
