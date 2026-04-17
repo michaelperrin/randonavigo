@@ -12,6 +12,7 @@
     {
       "binding": "DB",
       "database_name": "randonavigo-engagement",
+      "database_id": "e724884a-9f73-4c46-acb0-86f6e3997127",
       "migrations_dir": "drizzle/migrations"
     }
   ]
