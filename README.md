@@ -36,17 +36,51 @@ Apply SQL migrations to local D1 when the schema changes:
 npm run db:migrate:local
 ```
 
-For production, create/bind the D1 database in the Cloudflare Pages project (binding name `DB`), add `database_id` to `wrangler.jsonc` if needed, then:
-
-```bash
-npm run db:migrate:remote
-```
-
 Generate new migration files after editing `src/db/schema.ts`:
 
 ```bash
 npm run db:generate
 ```
+
+### Local secrets (`.dev.vars`)
+
+Server-side secrets used by Pages Functions (e.g. `TURNSTILE_SECRET_KEY`, `RESEND_API_KEY` if applicable) go in `.dev.vars` at the repo root — **do not commit**:
+
+```
+TURNSTILE_SECRET_KEY=your_secret_here
+```
+
+Public variables exposed to the Astro/React client (prefixed `PUBLIC_`) go in `.env`:
+
+```
+PUBLIC_TURNSTILE_SITE_KEY=your_site_key_here
+```
+
+### First-time production setup
+
+One-off steps to wire up comments & reactions on Cloudflare Pages:
+
+1. **Create the D1 database** (once):
+
+   ```bash
+   npx wrangler d1 create randonavigo-engagement
+   ```
+
+   Copy the `database_id` from the output into `wrangler.jsonc` under `d1_databases[0].database_id`, then commit.
+
+2. **Apply migrations to production**:
+
+   ```bash
+   npm run db:migrate:remote
+   ```
+
+3. **Turnstile** — create a widget on the [Cloudflare Turnstile dashboard](https://dash.cloudflare.com/?to=/:account/turnstile) to get a site key and secret key.
+
+   In the Pages project → Settings → Environment variables, add:
+   - `PUBLIC_TURNSTILE_SITE_KEY` (plain variable, available at build time) for Production + Preview
+   - `TURNSTILE_SECRET_KEY` (encrypted secret) for Production + Preview
+
+4. **D1 binding** — because `d1_databases` is declared in `wrangler.jsonc` with a valid `database_id`, the `DB` binding is applied automatically on the next deployment. Double-check under Pages → Settings → Bindings after deploying.
 
 ## 🚀 Project Structure
 
