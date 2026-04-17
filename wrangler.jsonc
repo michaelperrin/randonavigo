@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "randonavigo",
+  "pages_build_output_dir": "dist",
+  "compatibility_date": "2026-04-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "vars": {
+    "NOTIFICATION_EMAIL": "contact@randonavigo.fr"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "randonavigo-engagement",
+      "database_id": "e724884a-9f73-4c46-acb0-86f6e3997127",
+      "migrations_dir": "drizzle/migrations"
+    }
+  ]
+}

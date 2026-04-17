@@ -30,6 +30,6 @@ const hike = Astro.props;
 const { Content } = await render(hike);
 ---
 
-<HikePost {...hike.data}>
+<HikePost {...hike.data} hikeEntryId={hike.id}>
   <Content components={components} />
 </HikePost>
