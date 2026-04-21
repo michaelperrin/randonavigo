@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 declare global {
   interface Window {
@@ -21,6 +21,8 @@ type CommentRow = {
   authorName: string;
   content: string;
   createdAt: string;
+  parentId: number | null;
+  isAuthor: boolean;
 };
 
 const REACTIONS: {
@@ -44,6 +46,163 @@ function formatDate(iso: string) {
   }
 }
 
+type CommentFormProps = {
+  routeKey: string;
+  parentId: number | null;
+  turnstileToken: string;
+  turnstileSiteKey: string;
+  turnstileRef: React.RefObject<HTMLDivElement | null> | null;
+  onSubmitted: () => void | Promise<void>;
+  onCancel?: () => void;
+  compact?: boolean;
+  submitLabel?: string;
+  placeholder?: string;
+};
+
+function CommentForm({
+  routeKey,
+  parentId,
+  turnstileToken,
+  turnstileSiteKey,
+  turnstileRef,
+  onSubmitted,
+  onCancel,
+  compact = false,
+  submitLabel = "Publier",
+  placeholder = "Votre message…",
+}: CommentFormProps) {
+  const [authorName, setAuthorName] = useState("");
+  const [content, setContent] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  async function send(e: React.FormEvent) {
+    e.preventDefault();
+    setSubmitError(null);
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/comments", {
+        method: "POST",
+        credentials: "same-origin",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          routeKey,
+          authorName: authorName.trim() || undefined,
+          content: content.trim(),
+          turnstileToken,
+          parentId: parentId ?? undefined,
+        }),
+      });
+      const j = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error((j as { error?: string }).error ?? res.statusText);
+      }
+      setContent("");
+      setAuthorName("");
+      await onSubmitted();
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Erreur");
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  const turnstileRequired = !!turnstileSiteKey;
+  const disabled = submitting || !content.trim() || (turnstileRequired && !turnstileToken);
+
+  return (
+    <form onSubmit={(e) => void send(e)} className="space-y-3">
+      <label className="block">
+        <span className="sr-only">Pseudo</span>
+        <input
+          type="text"
+          name="author"
+          placeholder="Votre prénom ou pseudo (optionnel)"
+          value={authorName}
+          onChange={(e) => setAuthorName(e.target.value)}
+          maxLength={80}
+          className="w-full rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:border-softblue focus:outline-none focus:ring-1 focus:ring-softblue"
+          autoComplete="nickname"
+        />
+      </label>
+      <label className="block">
+        <span className="sr-only">{parentId === null ? "Commentaire" : "Réponse"}</span>
+        <textarea
+          name="content"
+          required
+          rows={compact ? 3 : 4}
+          placeholder={placeholder}
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          maxLength={2000}
+          className="w-full resize-y rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:border-softblue focus:outline-none focus:ring-1 focus:ring-softblue"
+        />
+      </label>
+      {turnstileRef && turnstileSiteKey && <div ref={turnstileRef} className="mt-1" />}
+      {turnstileRequired && !turnstileRef && !turnstileToken && (
+        <p className="text-xs text-stone-500">
+          Validez le contrôle anti-spam dans le formulaire en haut de page pour publier.
+        </p>
+      )}
+      {submitError && (
+        <p className="text-sm text-red-700" role="alert">
+          {submitError}
+        </p>
+      )}
+      <div className="flex justify-end gap-2">
+        {onCancel && (
+          <button
+            type="button"
+            onClick={onCancel}
+            className="rounded-lg border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 transition hover:bg-stone-50"
+          >
+            Annuler
+          </button>
+        )}
+        <button
+          type="submit"
+          disabled={disabled}
+          className="rounded-lg bg-softblue px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          {submitting ? "Envoi…" : submitLabel}
+        </button>
+      </div>
+    </form>
+  );
+}
+
+function CommentBody({
+  comment,
+  compact = false,
+}: {
+  comment: CommentRow;
+  compact?: boolean;
+}) {
+  return (
+    <>
+      <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
+        {comment.isAuthor ? (
+          <span className="rounded-full bg-softblue/15 px-2.5 py-0.5 text-sm font-semibold text-softblue-dark">
+            {comment.authorName}
+          </span>
+        ) : (
+          <span className="font-semibold text-stone-900">{comment.authorName}</span>
+        )}
+        <time className="text-xs text-stone-500" dateTime={comment.createdAt}>
+          {formatDate(comment.createdAt)}
+        </time>
+      </div>
+      <p
+        className={`whitespace-pre-wrap leading-relaxed text-stone-800 ${
+          compact ? "mt-1.5 text-sm" : "mt-2 text-sm"
+        }`}
+      >
+        {comment.content}
+      </p>
+    </>
+  );
+}
+
 export default function HikeEngagement({ routeKey }: { routeKey: string }) {
   const [comments, setComments] = useState<CommentRow[]>([]);
   const [counts, setCounts] = useState<Record<ReactionType, number>>({
@@ -58,22 +217,17 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
   });
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [authorName, setAuthorName] = useState("");
-  const [content, setContent] = useState("");
-  const [submitting, setSubmitting] = useState(false);
-  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [reactionError, setReactionError] = useState<string | null>(null);
   const [showThankYou, setShowThankYou] = useState(false);
+  const [replyingTo, setReplyingTo] = useState<number | null>(null);
   const [turnstileToken, setTurnstileToken] = useState("");
-  const turnstileRef = useRef<HTMLDivElement>(null);
+  const turnstileRef = useRef<HTMLDivElement | null>(null);
   const widgetIdRef = useRef<string | null>(null);
 
   useEffect(() => {
-    if (!TURNSTILE_SITE_KEY || document.querySelector("script[src*='turnstile']")) return;
-    const script = document.createElement("script");
-    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
-    script.async = true;
-    script.onload = () => {
-      if (turnstileRef.current && window.turnstile) {
+    if (!TURNSTILE_SITE_KEY) return;
+    const renderWidget = () => {
+      if (turnstileRef.current && window.turnstile && !widgetIdRef.current) {
         widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
           sitekey: TURNSTILE_SITE_KEY,
           callback: (token: string) => setTurnstileToken(token),
@@ -81,7 +235,22 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
         });
       }
     };
+    if (document.querySelector("script[src*='turnstile']")) {
+      renderWidget();
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+    script.async = true;
+    script.onload = renderWidget;
     document.head.appendChild(script);
+  }, []);
+
+  const resetTurnstile = useCallback(() => {
+    setTurnstileToken("");
+    if (widgetIdRef.current && window.turnstile) {
+      window.turnstile.reset(widgetIdRef.current);
+    }
   }, []);
 
   const q = encodeURIComponent(routeKey);
@@ -121,7 +290,7 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
   }, [load]);
 
   async function toggleReaction(type: ReactionType) {
-    setSubmitError(null);
+    setReactionError(null);
     try {
       const res = await fetch("/api/reactions", {
         method: "POST",
@@ -136,43 +305,39 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
       setCounts((j as { counts: Record<ReactionType, number> }).counts);
       setActive((j as { active: Record<ReactionType, boolean> }).active);
     } catch (e) {
-      setSubmitError(e instanceof Error ? e.message : "Erreur");
+      setReactionError(e instanceof Error ? e.message : "Erreur");
     }
   }
 
-  async function sendComment(e: React.FormEvent) {
-    e.preventDefault();
-    setSubmitError(null);
-    setSubmitting(true);
-    try {
-      const res = await fetch("/api/comments", {
-        method: "POST",
-        credentials: "same-origin",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({
-          routeKey,
-          authorName: authorName.trim() || undefined,
-          content: content.trim(),
-          turnstileToken,
-        }),
-      });
-      const j = await res.json().catch(() => ({}));
-      if (!res.ok) {
-        throw new Error((j as { error?: string }).error ?? res.statusText);
+  const { rootComments, repliesByParent } = useMemo(() => {
+    const roots = comments.filter((c) => c.parentId === null);
+    const byParent = new Map<number, CommentRow[]>();
+    for (const c of comments) {
+      if (c.parentId !== null) {
+        const list = byParent.get(c.parentId) ?? [];
+        list.push(c);
+        byParent.set(c.parentId, list);
       }
-      setContent("");
-      setShowThankYou(true);
-      setTurnstileToken("");
-      if (widgetIdRef.current && window.turnstile) {
-        window.turnstile.reset(widgetIdRef.current);
-      }
-      await load();
-    } catch (err) {
-      setSubmitError(err instanceof Error ? err.message : "Erreur");
-    } finally {
-      setSubmitting(false);
     }
-  }
+    for (const list of byParent.values()) {
+      list.sort(
+        (a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime(),
+      );
+    }
+    return { rootComments: roots, repliesByParent: byParent };
+  }, [comments]);
+
+  const onRootSubmitted = useCallback(async () => {
+    setShowThankYou(true);
+    resetTurnstile();
+    await load();
+  }, [load, resetTurnstile]);
+
+  const onReplySubmitted = useCallback(async () => {
+    setReplyingTo(null);
+    resetTurnstile();
+    await load();
+  }, [load, resetTurnstile]);
 
   return (
     <section
@@ -186,7 +351,7 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
         Un mot sur cette randonnée ?
       </h2>
 
-<div className="mt-6 flex flex-wrap justify-center gap-3">
+      <div className="mt-6 flex flex-wrap justify-center gap-3">
         {REACTIONS.map(({ type, label, emoji }) => {
           const on = active[type];
           return (
@@ -211,6 +376,11 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
           );
         })}
       </div>
+      {reactionError && (
+        <p className="mt-2 text-center text-sm text-red-700" role="alert">
+          {reactionError}
+        </p>
+      )}
 
       <div className="mt-10">
         <div className="mb-4">
@@ -237,49 +407,14 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
           </p>
         </div>
 
-        <form onSubmit={(e) => void sendComment(e)} className="space-y-3">
-          <label className="block">
-            <span className="sr-only">Pseudo</span>
-            <input
-              type="text"
-              name="author"
-              placeholder="Votre prénom ou pseudo (optionnel)"
-              value={authorName}
-              onChange={(e) => setAuthorName(e.target.value)}
-              maxLength={80}
-              className="w-full rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:border-softblue focus:outline-none focus:ring-1 focus:ring-softblue"
-              autoComplete="nickname"
-            />
-          </label>
-          <label className="block">
-            <span className="sr-only">Commentaire</span>
-            <textarea
-              name="content"
-              required
-              rows={4}
-              placeholder="Votre message…"
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-              maxLength={2000}
-              className="w-full resize-y rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:border-softblue focus:outline-none focus:ring-1 focus:ring-softblue"
-            />
-          </label>
-          {TURNSTILE_SITE_KEY && <div ref={turnstileRef} className="mt-1" />}
-          {submitError && (
-            <p className="text-sm text-red-700" role="alert">
-              {submitError}
-            </p>
-          )}
-          <div className="flex justify-end">
-            <button
-              type="submit"
-              disabled={submitting || !content.trim() || (!!TURNSTILE_SITE_KEY && !turnstileToken)}
-              className="rounded-lg bg-softblue px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              {submitting ? "Envoi…" : "Publier"}
-            </button>
-          </div>
-        </form>
+        <CommentForm
+          routeKey={routeKey}
+          parentId={null}
+          turnstileToken={turnstileToken}
+          turnstileSiteKey={TURNSTILE_SITE_KEY}
+          turnstileRef={turnstileRef}
+          onSubmitted={onRootSubmitted}
+        />
 
         {showThankYou && (
           <div className="mt-6 rounded-lg bg-stone-50 border border-stone-200 px-4 py-4 text-sm text-stone-700">
@@ -307,29 +442,59 @@ export default function HikeEngagement({ routeKey }: { routeKey: string }) {
           </p>
         )}
 
-        {!loading && comments.length > 0 && (
+        {!loading && rootComments.length > 0 && (
           <ul className="mt-6 space-y-4">
-            {comments.map((c) => (
-              <li
-                key={c.id}
-                className="rounded-lg border border-stone-100 bg-stone-50/50 px-4 py-3"
-              >
-                <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
-                  <span className="font-semibold text-stone-900">
-                    {c.authorName}
-                  </span>
-                  <time
-                    className="text-xs text-stone-500"
-                    dateTime={c.createdAt}
-                  >
-                    {formatDate(c.createdAt)}
-                  </time>
-                </div>
-                <p className="mt-2 whitespace-pre-wrap text-sm leading-relaxed text-stone-800">
-                  {c.content}
-                </p>
-              </li>
-            ))}
+            {rootComments.map((c) => {
+              const replies = repliesByParent.get(c.id) ?? [];
+              const isReplying = replyingTo === c.id;
+              return (
+                <li
+                  key={c.id}
+                  className="rounded-lg border border-stone-100 bg-stone-50/50 px-4 py-3"
+                >
+                  <CommentBody comment={c} />
+                  <div className="mt-2 flex justify-end">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setReplyingTo((prev) => (prev === c.id ? null : c.id))
+                      }
+                      className="cursor-pointer text-xs font-medium text-softblue-dark hover:underline"
+                    >
+                      {isReplying ? "Fermer" : "Répondre"}
+                    </button>
+                  </div>
+                  {isReplying && (
+                    <div className="mt-3 rounded-lg border border-stone-200 bg-white px-3 py-3">
+                      <CommentForm
+                        routeKey={routeKey}
+                        parentId={c.id}
+                        turnstileToken={turnstileToken}
+                        turnstileSiteKey={TURNSTILE_SITE_KEY}
+                        turnstileRef={null}
+                        onSubmitted={onReplySubmitted}
+                        onCancel={() => setReplyingTo(null)}
+                        compact
+                        submitLabel="Répondre"
+                        placeholder="Votre réponse…"
+                      />
+                    </div>
+                  )}
+                  {replies.length > 0 && (
+                    <ul className="mt-4 space-y-3 border-l border-stone-200 pl-4">
+                      {replies.map((r) => (
+                        <li
+                          key={r.id}
+                          className="rounded-lg border border-stone-100 bg-white px-3 py-2"
+                        >
+                          <CommentBody comment={r} compact />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         )}
       </div>
