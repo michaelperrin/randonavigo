@@ -3,6 +3,7 @@ import { and, desc, eq, isNull } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/d1";
 import * as schema from "../../src/db/schema";
 import {
+  isReservedAuthorName,
   isValidRouteKey,
   sanitizeAuthor,
   sanitizeComment,
@@ -23,22 +24,6 @@ function resolveAuthorIdentity(
     };
   }
   return { authorName: sanitizeAuthor(rawName), isAuthor: false };
-}
-
-function normalizeAuthorName(name: string): string {
-  return name.trim().toLowerCase().replace(/[^a-z0-9]/g, "");
-}
-
-function isReservedAuthorName(
-  rawName: string,
-  displayName: string,
-): boolean {
-  const normalized = normalizeAuthorName(rawName);
-  if (!normalized) return false;
-  if (normalized === "randonavigo") return true;
-  const normDisplay = normalizeAuthorName(displayName);
-  if (normDisplay && normalized === normDisplay) return true;
-  return false;
 }
 
 function json(data: unknown, init?: ResponseInit) {
@@ -166,23 +151,6 @@ export async function onRequestPost(context: {
     return json({ error: "JSON invalide" }, { status: 400 });
   }
 
-  if (context.env.TURNSTILE_SECRET_KEY) {
-    const token = typeof body.turnstileToken === "string" ? body.turnstileToken : "";
-    const verifyRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({
-        secret: context.env.TURNSTILE_SECRET_KEY,
-        response: token,
-        remoteip: context.request.headers.get("CF-Connecting-IP") ?? "",
-      }),
-    });
-    const verifyJson = (await verifyRes.json()) as { success: boolean };
-    if (!verifyJson.success) {
-      return json({ error: "Vérification anti-spam échouée" }, { status: 403 });
-    }
-  }
-
   const routeKey = typeof body.routeKey === "string" ? body.routeKey : "";
   if (!isValidRouteKey(routeKey)) {
     return json({ error: "routeKey invalide" }, { status: 400 });
@@ -209,9 +177,7 @@ export async function onRequestPost(context: {
     }
   }
 
-  const db = drizzle(context.env.DB, { schema });
-
-  let parentId: number | null = null;
+  let parsedParentId: number | null = null;
   if (body.parentId !== undefined && body.parentId !== null) {
     if (
       typeof body.parentId !== "number" ||
@@ -220,15 +186,36 @@ export async function onRequestPost(context: {
     ) {
       return json({ error: "parentId invalide" }, { status: 400 });
     }
+    parsedParentId = body.parentId;
+  }
+
+  if (context.env.TURNSTILE_SECRET_KEY) {
+    const token = typeof body.turnstileToken === "string" ? body.turnstileToken : "";
+    const verifyRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        secret: context.env.TURNSTILE_SECRET_KEY,
+        response: token,
+        remoteip: context.request.headers.get("CF-Connecting-IP") ?? "",
+      }),
+    });
+    const verifyJson = (await verifyRes.json()) as { success: boolean };
+    if (!verifyJson.success) {
+      return json({ error: "Vérification anti-spam échouée" }, { status: 403 });
+    }
+  }
+
+  const db = drizzle(context.env.DB, { schema });
+
+  let parentId: number | null = null;
+  if (parsedParentId !== null) {
     const parentRows = await db
-      .select({
-        id: schema.comments.id,
-        parentId: schema.comments.parentId,
-      })
+      .select({ id: schema.comments.id })
       .from(schema.comments)
       .where(
         and(
-          eq(schema.comments.id, body.parentId),
+          eq(schema.comments.id, parsedParentId),
           eq(schema.comments.routeSlug, routeKey),
           eq(schema.comments.isApproved, true),
           isNull(schema.comments.parentId),
@@ -238,7 +225,7 @@ export async function onRequestPost(context: {
     if (parentRows.length === 0) {
       return json({ error: "Commentaire parent introuvable" }, { status: 400 });
     }
-    parentId = body.parentId;
+    parentId = parsedParentId;
   }
 
   await db.insert(schema.comments).values({
