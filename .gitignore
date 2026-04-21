@@ -28,4 +28,5 @@ pnpm-debug.log*
 .wrangler/
 
 # Claude Code local settings
-.claude/
+.claude/*
+!.claude/skills/
