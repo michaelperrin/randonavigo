@@ -20,6 +20,20 @@ export function sanitizeAuthor(name: string): string {
   return t.length > 0 ? t : "Randonneur";
 }
 
+export function normalizeAuthorName(name: string): string {
+  return name.trim().toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+export function isReservedAuthorName(
+  rawName: string,
+  displayName: string,
+): boolean {
+  const normalized = normalizeAuthorName(rawName);
+  if (!normalized) return false;
+  const normDisplay = normalizeAuthorName(displayName);
+  return !!normDisplay && normalized === normDisplay;
+}
+
 export function isReactionType(t: string): t is ReactionType {
   return (REACTION_TYPES as readonly string[]).includes(t);
 }
