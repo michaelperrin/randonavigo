@@ -1,0 +1,43 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Page introuvable — RandoNavigo"
+  description="La page que vous cherchez n'existe pas ou a été déplacée."
+>
+  <section
+    class="container mx-auto max-w-2xl px-4 py-24 md:py-32 text-center"
+  >
+    <p
+      class="font-condensed text-7xl md:text-8xl font-bold text-emerald-700 leading-none"
+    >
+      404
+    </p>
+    <h1
+      class="mt-6 font-condensed text-3xl md:text-4xl font-medium tracking-tight text-zinc-900"
+    >
+      Cette page s'est égarée en chemin
+    </h1>
+    <p class="mt-4 text-base md:text-lg text-stone-600 leading-relaxed">
+      La page que vous cherchez n'existe pas ou a été déplacée. Pas de panique,
+      revenez sur le sentier principal&nbsp;!
+    </p>
+
+    <div class="mt-10">
+      <a
+        href="/"
+        class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-emerald-700 text-white font-medium text-sm tracking-wide hover:bg-emerald-800 transition-colors"
+      >
+        Retour à l'accueil
+      </a>
+    </div>
+
+    <p class="mt-8 text-sm text-stone-500">
+      Un lien cassé&nbsp;? <a
+        href="/contact"
+        class="text-emerald-700 hover:underline">Signalez-le-moi</a
+      >.
+    </p>
+  </section>
+</BaseLayout>
