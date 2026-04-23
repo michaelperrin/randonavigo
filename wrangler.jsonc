@@ -6,7 +6,9 @@
   "compatibility_flags": ["nodejs_compat"],
   "observability": { "enabled": true },
   "vars": {
-    "NOTIFICATION_EMAIL": "contact@randonavigo.fr"
+    "NOTIFICATION_EMAIL": "contact@randonavigo.fr",
+    "GITHUB_REPO": "michaelperrin/randonavigo",
+    "GITHUB_BRANCH": "master"
   },
   "d1_databases": [
     {
