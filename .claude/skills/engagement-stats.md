@@ -11,13 +11,15 @@ Use this skill when the user asks for stats, a recap, or a summary of engagement
 
 ## Running queries
 
-Always use the local wrangler binary against **remote** prod (not local SQLite):
+Always query **remote** prod (not local SQLite). Either of these works:
 
 ```bash
 ./node_modules/.bin/wrangler d1 execute randonavigo-engagement --remote --command "SQL_HERE" --json
+# or, if the direct binary is unavailable:
+rtk proxy npx wrangler d1 execute randonavigo-engagement --remote --command="SQL_HERE"
 ```
 
-`npx wrangler` is intercepted by rtk and will fail — use the direct path above.
+Plain `npx wrangler …` will fail: the rtk hook rewrites it to `npm run wrangler`, which has no matching script. Use `rtk proxy` to bypass the hook, or call the direct binary above.
 
 ## Common queries
 
@@ -30,7 +32,17 @@ GROUP BY route_slug, type
 ORDER BY route_slug, type;
 ```
 
-Pivot the results into one row per hike with two columns (`inspire`, `done`) and a `total`. Sort by total desc. Enrich each row with the human title by reading the `title:` frontmatter of `src/content/hike/{final-slug}.mdx` (the last path segment of `route_slug`).
+Then, in this order:
+
+1. **Pivot** the rows into one row per hike with columns `inspire`, `done`, `total`. Sort by `total` desc.
+2. **Enrich with titles — mandatory.** For each row, extract the last path segment of `route_slug` and read the `title:` frontmatter of `src/content/hike/{slug}.mdx`. Display the title as the main column; keep the slug out of the table unless the user asks.
+3. If an `.mdx` file is missing (deleted/renamed hike), fall back to the slug and flag it inline.
+
+Do not ship a response that still shows raw `route_slug` values when titles were available — that is the most common failure mode for this skill.
+
+### Top N most reacted hikes
+
+Same query as above, but wrap the pivot/enrichment to keep only the top N (default: 10). Always include both `inspire` and `done` columns even if one is zero — readers want the breakdown.
 
 ### Recent comments
 
@@ -55,6 +67,5 @@ SELECT
 ## Presentation
 
 - Always present as a Markdown table. Include a bold **Total** row when a recap spans multiple hikes.
-- Use the hike title (not the slug) as the main column. Keep the slug out unless the user asks for it.
-- Mention the reaction breakdown in a one-line commentary (e.g. dominant button, share of hikes with at least one vote).
-- If a slug's `.mdx` file is missing (hike deleted/renamed), fall back to the slug and flag it.
+- Hike **title** (from `.mdx` frontmatter) is the main column — not the slug. See the enrichment step above.
+- End with a short commentary (2–4 bullets): overall totals, `inspire` vs `done` ratio, number of distinct hikes that got at least one reaction, any outlier (e.g. a hike with more `done` than `inspire`).
