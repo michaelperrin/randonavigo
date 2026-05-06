@@ -1,3 +1,8 @@
+---
+name: engagement-stats
+description: Statistiques d'engagement RandoNavigo (réactions et commentaires) depuis la base D1 prod. Pivote les réactions par rando, enrichit avec le titre depuis le frontmatter MDX, et présente en table Markdown. Utiliser quand l'utilisateur demande un récap, des stats, un bilan d'engagement, le top des randos, les commentaires récents, ou un overview global des réactions/commentaires.
+---
+
 # Engagement Stats
 
 Use this skill when the user asks for stats, a recap, or a summary of engagement data (reactions, comments) from the production D1 database.
