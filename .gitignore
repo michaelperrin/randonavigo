@@ -30,3 +30,4 @@ pnpm-debug.log*
 # Claude Code local settings
 .claude/*
 !.claude/skills/
+!.claude/commands/
