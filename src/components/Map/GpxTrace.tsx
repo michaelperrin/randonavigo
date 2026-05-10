@@ -50,6 +50,11 @@ const GpxTrace = ({ gpxFile }: GpxTraceProps) => {
             iconSize: [20, 20],
             iconAnchor: [20, 20],
           }),
+          "Scenic Area": L.icon({
+            iconUrl: "/images/map/panorama-pin.svg",
+            iconSize: [28, 28],
+            iconAnchor: [14, 28],
+          }),
         },
         shadowUrl: undefined,
       },
