@@ -26,7 +26,7 @@ Hikes live in `src/content/hike/` as `.mdx` files. Each file's frontmatter defin
 - `gpx_file` — filename stored under `public/hikes/YYYY/MM/slug/gpx/` (the `YYYY/MM/slug` segments come from `pubDate` and `slug`)
 - `hidden: true` — excludes the hike from all listings
 
-**French typography in prose:** use the typographic apostrophe `’` (U+2019) in body text (`l’étang`, `j’ai`, `c’est`). Reserve the straight apostrophe `'` for frontmatter strings and MDX component attributes (e.g. `caption="..."`, image paths) where it avoids any parsing risk.
+**French typography:** always use the typographic apostrophe `’` (U+2019) — in prose (`l’étang`, `j’ai`, `c’est`) **and** in frontmatter strings, MDX component attributes, and inline HTML inside MDX. The straight apostrophe `'` should not appear in user-visible French text. (Code, identifiers, URLs and file paths are unaffected.)
 
 ### Routing
 
