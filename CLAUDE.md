@@ -23,8 +23,10 @@ Hikes live in `src/content/hike/` as `.mdx` files. Each file's frontmatter defin
 - `slug` — used to build the URL and locate assets
 - `pubDate` — determines the URL path (`/YYYY/MM/DD/slug`) and the asset path (`src/assets/hikes/YYYY/MM/slug/pictures/`)
 - `starting_point.line` / `ending_point.line` — transport line identifier (e.g. `"R"`, `"A"`, `["B", "D"]`)
-- `gpx_file` — filename relative to `public/gpx/`
+- `gpx_file` — filename stored under `public/hikes/YYYY/MM/slug/gpx/` (the `YYYY/MM/slug` segments come from `pubDate` and `slug`)
 - `hidden: true` — excludes the hike from all listings
+
+**French typography in prose:** use the typographic apostrophe `’` (U+2019) in body text (`l’étang`, `j’ai`, `c’est`). Reserve the straight apostrophe `'` for frontmatter strings and MDX component attributes (e.g. `caption="..."`, image paths) where it avoids any parsing risk.
 
 ### Routing
 
