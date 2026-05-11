@@ -10,7 +10,7 @@ const image = getHikeImage(getHikeImagePath(pubDate, slug, main_picture));
 
 <header>
   <div
-    class="flex flex-col justify-center relative h-screen/3 md:h-hero-header"
+    class="flex flex-col justify-center relative h-screen/3 md:h-hero-header overflow-hidden bg-black"
     style={{ minHeight: "400px" }}
   >
     <div
@@ -41,16 +41,61 @@ const image = getHikeImage(getHikeImagePath(pubDate, slug, main_picture));
 
     {
       image && (
-        <div class="absolute inset-0 after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70">
-          <Image
-            src={image}
-            alt=""
-            width={2800}
-            height={1600}
-            class="w-full h-full object-cover"
-          />
-        </div>
+        <>
+          <div class="absolute inset-0 after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70">
+            <div class="banner-image-reveal absolute inset-0">
+              <Image
+                src={image}
+                alt=""
+                width={2800}
+                height={1600}
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div class="banner-reveal-veil absolute inset-0 z-10 bg-black pointer-events-none" />
+        </>
       )
     }
   </div>
 </header>
+
+<style>
+  @keyframes banner-zoom {
+    from {
+      transform: scale(1.05);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes banner-veil-fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .banner-image-reveal {
+    animation: banner-zoom 1.5s ease both;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  .banner-reveal-veil {
+    animation: banner-veil-fade 1.5s ease both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .banner-image-reveal,
+    .banner-reveal-veil {
+      animation: none;
+    }
+    .banner-reveal-veil {
+      opacity: 0;
+    }
+  }
+</style>

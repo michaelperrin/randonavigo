@@ -282,23 +282,29 @@ const navItems = [
   }
 
   .nav-link {
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
-    transition: text-decoration-color 0.2s ease, color 0.2s ease;
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
 
   .nav-link--editorial {
     font-family: var(--font-modern);
   }
 
-  .nav-link:hover {
-    text-decoration-color: currentColor;
-  }
-
-  .nav-link.is-active {
-    text-decoration-color: currentColor;
+  .nav-link:hover::after,
+  .nav-link.is-active::after {
+    opacity: 1;
   }
 
   #burger-btn.open #burger-top {

@@ -29,7 +29,7 @@ const contentClasses =
 ---
 
 <div
-  class="relative flex min-h-[35vh] md:min-h-[65vh] flex-col align-middle justify-center"
+  class="relative flex min-h-[35vh] md:min-h-[80vh] flex-col align-middle justify-center overflow-hidden bg-black"
 >
   <div
     class={contentClasses}
@@ -55,13 +55,59 @@ const contentClasses =
         class="w-full h-full object-cover absolute top-0 left-0"
       />
     ) : (
-      <Image
-        src={picture}
-        alt=""
-        width={1920}
-        height={1080}
-        class="w-full h-full object-cover absolute top-0 left-0"
-      />
+      <div class="banner-image-reveal absolute top-0 left-0 h-full w-full">
+        <Image
+          src={picture}
+          alt=""
+          width={1920}
+          height={1080}
+          class="w-full h-full object-cover"
+        />
+      </div>
     )}
   </div>
+
+  {!video && (
+    <div class="banner-reveal-veil absolute inset-0 z-10 bg-black pointer-events-none" />
+  )}
 </div>
+
+<style>
+  @keyframes banner-zoom {
+    from {
+      transform: scale(1.05);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes banner-veil-fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .banner-image-reveal {
+    animation: banner-zoom 1.5s ease both;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  .banner-reveal-veil {
+    animation: banner-veil-fade 1.5s ease both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .banner-image-reveal,
+    .banner-reveal-veil {
+      animation: none;
+    }
+    .banner-reveal-veil {
+      opacity: 0;
+    }
+  }
+</style>
