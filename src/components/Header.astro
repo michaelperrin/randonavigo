@@ -1,14 +1,25 @@
 ---
+const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
+const isActive = (href: string) => {
+  const path = href.replace(/\/+$/, "") || "/";
+  return currentPath === path || currentPath.startsWith(path + "/");
+};
 
+const navItems = [
+  { href: "/actualites", label: "Actualités", hasSubmenu: false },
+  { href: "/randonnees", label: "Randonnées", hasSubmenu: true },
+  { href: "/a-propos", label: "À propos", hasSubmenu: false },
+  { href: "/contact", label: "Contact", hasSubmenu: false },
+] as const;
 ---
 
 <header
-  class="sticky top-0 z-40 bg-white/50 backdrop-blur-[10px] border-b border-white/40"
+  class="sticky top-0 z-40 bg-white/50 backdrop-blur-[10px] border-b border-gray-200/60"
 >
   <div
-    class="container mx-auto px-4 flex items-center justify-between md:flex-col md:items-center md:justify-center header-stack"
+    class="container mx-auto px-4 flex items-center justify-between header-grid"
   >
-    <a href="/" class="header-logo-link flex items-center gap-4 my-4">
+    <a href="/" class="header-logo-link">
       <img
         src="/images/logo.svg"
         alt="RandoNavigo"
@@ -16,14 +27,14 @@
       />
       <div class="header-text">
         <h1
-          class="header-title text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-condensed font-medium tracking-wide"
+          class="header-title text-2xl sm:text-3xl md:text-4xl font-condensed font-medium tracking-wide"
         >
           RandoNavigo
         </h1>
         <p
           class="header-tagline text-sm md:text-base font-condensed text-gray-600"
         >
-          Randonnées en Ile-de-France accessibles en transport en commun.
+          Randonnées en Île-de-France accessibles en transport en commun.
         </p>
       </div>
     </a>
@@ -49,37 +60,66 @@
       </svg>
     </button>
 
-    <!-- Desktop nav -->
-    <nav
-      class="header-nav hidden md:flex items-center gap-x-6 pb-4"
-    >
-      <a href="/a-propos" class="whitespace-nowrap">A propos</a>
-      <a href="/contact" class="whitespace-nowrap">Contact</a>
-      <a
-        href="https://www.instagram.com/randonavigo"
-        title="RandoNavigo sur Instagram"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          src="/images/social/instagram.svg"
-          alt="Instagram"
-          class="w-6 h-6"
-        />
-      </a>
-      <a
-        href="https://www.facebook.com/randonavigo/"
-        title="RandoNavigo sur Facebook"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          src="/images/social/facebook.svg"
-          alt="Facebook"
-          class="w-6 h-6"
-        />
-      </a>
-    </nav>
+    <!-- Desktop right cluster : nav + socials -->
+    <div class="header-right hidden md:flex items-center gap-x-10">
+      <nav class="header-nav flex items-center gap-x-8">
+        {
+          navItems.map(({ href, label, hasSubmenu }) => (
+            <a
+              href={href}
+              class:list={[
+                "nav-link nav-link--editorial inline-flex items-center gap-1 whitespace-nowrap text-base font-medium text-gray-800",
+                { "is-active": isActive(href) },
+              ]}
+            >
+              {label}
+              {hasSubmenu && (
+                <svg
+                  class="w-3 h-3 shrink-0"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 4.5L6 7.5L9 4.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              )}
+            </a>
+          ))
+        }
+      </nav>
+      <div class="header-socials flex items-center gap-4">
+        <a
+          href="https://www.instagram.com/randonavigo"
+          title="RandoNavigo sur Instagram"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="/images/social/instagram.svg"
+            alt="Instagram"
+            class="w-6 h-6"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/randonavigo/"
+          title="RandoNavigo sur Facebook"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="/images/social/facebook.svg"
+            alt="Facebook"
+            class="w-6 h-6"
+          />
+        </a>
+      </div>
+    </div>
   </div>
 
   <!-- Mobile menu -->
@@ -90,8 +130,35 @@
   >
     <div class="overflow-hidden">
       <div class="container mx-auto flex flex-col gap-4 py-4 px-4">
-        <a href="/a-propos" class="text-lg">A propos</a>
-        <a href="/contact" class="text-lg">Contact</a>
+        {
+          navItems.map(({ href, label, hasSubmenu }) => (
+            <a
+              href={href}
+              class:list={[
+                "nav-link nav-link--editorial inline-flex items-center gap-1 text-base font-medium text-gray-800",
+                { "is-active": isActive(href) },
+              ]}
+            >
+              {label}
+              {hasSubmenu && (
+                <svg
+                  class="w-3 h-3 shrink-0"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 4.5L6 7.5L9 4.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              )}
+            </a>
+          ))
+        }
         <div class="flex gap-4 pt-2">
           <a
             href="https://www.instagram.com/randonavigo"
@@ -154,6 +221,26 @@
     transform-origin: 12px 12px;
   }
 
+  .nav-link {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    transition: text-decoration-color 0.2s ease, color 0.2s ease;
+  }
+
+  .nav-link--editorial {
+    font-family: var(--font-modern);
+  }
+
+  .nav-link:hover {
+    text-decoration-color: currentColor;
+  }
+
+  .nav-link.is-active {
+    text-decoration-color: currentColor;
+  }
+
   #burger-btn.open #burger-top {
     transform: rotate(45deg) translateY(6px);
   }
@@ -166,11 +253,22 @@
     transform: rotate(-45deg) translateY(-6px);
   }
 
+  .header-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    min-width: 0;
+  }
+
+  .header-logo-link .header-text {
+    min-width: 0;
+  }
+
   .header-logo,
   .header-title,
   .header-tagline,
-  .header-logo-link,
-  .header-nav {
+  .header-logo-link {
     transition:
       width 0.25s ease,
       height 0.25s ease,
@@ -178,21 +276,15 @@
       margin 0.25s ease,
       padding 0.25s ease,
       max-height 0.3s ease,
-      opacity 0.25s ease;
+      opacity 0.25s ease,
+      gap 0.25s ease;
   }
 
-  /* Scrolled state — desktop only */
+  /* Scrolled state — logo plus petit, tagline masquée */
   @media (min-width: 768px) {
-    :global(body.scrolled) .header-stack {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-
     :global(body.scrolled) .header-logo-link {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
       gap: 0.75rem;
+      padding: 0.5rem 0;
     }
 
     :global(body.scrolled) .header-logo {
@@ -210,10 +302,6 @@
       opacity: 0;
       overflow: hidden;
       margin: 0;
-    }
-
-    :global(body.scrolled) .header-nav {
-      padding-bottom: 0;
     }
   }
 </style>
