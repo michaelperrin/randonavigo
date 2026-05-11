@@ -10,6 +10,7 @@ import AboutTeaser from "~/components/Home/AboutTeaser.astro";
 import Testimonials from "~/components/Home/Testimonials.astro";
 import TopBanner from "~/components/TopBanner.astro";
 import banner from "~/assets/home-cover/cover-spring.jpeg";
+import coverVideo from "~/assets/IMG_6692.webm?url";
 
 const hikes = await getHikesSorted();
 ---
@@ -20,7 +21,12 @@ const hikes = await getHikesSorted();
   image={banner}
   hasHero
 >
-  <TopBanner overlay={true} overlayVariant="hero" picture={banner}>
+  <TopBanner
+    overlay={true}
+    overlayVariant="hero"
+    picture={banner}
+    video={coverVideo}
+  >
     <h1
       class="text-2xl md:text-3xl lg:text-4xl font-condensed font-medium leading-snug tracking-tight max-w-2xl"
     >

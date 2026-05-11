@@ -6,10 +6,12 @@ type OverlayVariant = "default" | "hero";
 
 const {
   picture = banner,
+  video,
   overlay = false,
   overlayVariant = "default",
 } = Astro.props as {
   picture?: typeof banner;
+  video?: string;
   overlay?: boolean;
   overlayVariant?: OverlayVariant;
 };
@@ -43,12 +45,23 @@ const contentClasses =
   </div>
 
   <div class={overlayClasses}>
-    <Image
-      src={picture}
-      alt=""
-      width={1920}
-      height={1080}
-      class="w-full h-full object-cover absolute top-0 left-0"
-    />
+    {video ? (
+      <video
+        src={video}
+        autoplay
+        muted
+        loop
+        playsinline
+        class="w-full h-full object-cover absolute top-0 left-0"
+      />
+    ) : (
+      <Image
+        src={picture}
+        alt=""
+        width={1920}
+        height={1080}
+        class="w-full h-full object-cover absolute top-0 left-0"
+      />
+    )}
   </div>
 </div>
