@@ -10,11 +10,11 @@ const image = getHikeImage(getHikeImagePath(pubDate, slug, main_picture));
 
 <header>
   <div
-    class="flex flex-col justify-center relative h-screen/3 md:h-hero-header overflow-hidden bg-black"
+    class="hike-hero flex flex-col justify-center md:justify-end relative h-screen/3 md:h-hero-header bg-black"
     style={{ minHeight: "400px" }}
   >
     <div
-      class="pt-32 px-4 md:px-48 z-30 text-white"
+      class="hike-hero-content pt-32 px-4 md:px-48 md:pb-10 z-30 text-white md:sticky md:bottom-[28vh]"
       style={{
         fontFamily: "Barlow",
         textShadow: "0 0 40px rgba(0, 0, 0, 0.9)",
@@ -42,7 +42,7 @@ const image = getHikeImage(getHikeImagePath(pubDate, slug, main_picture));
     {
       image && (
         <>
-          <div class="absolute inset-0 after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70">
+          <div class="absolute inset-0 overflow-hidden after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70">
             <div class="banner-image-reveal absolute inset-0">
               <Image
                 src={image}

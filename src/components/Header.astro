@@ -21,7 +21,7 @@ const navItems = [
       <img
         src="/images/logo.svg"
         alt="RandoNavigo"
-        class="header-logo w-16 h-16 shrink-0"
+        class="header-logo w-12 h-12 md:w-16 md:h-16 shrink-0"
       />
       <div class="header-text">
         <h1
@@ -123,7 +123,7 @@ const navItems = [
   <!-- Mobile menu -->
   <nav
     id="mobile-menu"
-    class="md:hidden grid bg-white/70 backdrop-blur-[10px] border-b border-gray-200 transition-[grid-template-rows] duration-300 ease-in-out"
+    class="md:hidden grid bg-white/85 backdrop-blur-[10px] transition-[grid-template-rows] duration-300 ease-in-out"
     style="grid-template-rows: 0fr;"
   >
     <div class="overflow-hidden">
@@ -220,7 +220,7 @@ const navItems = [
   }
 
   .header-bar {
-    background-color: rgb(255 255 255 / 0.5);
+    background-color: rgb(255 255 255 / 0.75);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgb(229 231 235 / 0.6);
@@ -246,16 +246,34 @@ const navItems = [
     border-bottom-color: transparent;
   }
 
+  /* Mobile en haut de page : pas de bordure sous le header */
+  @media (max-width: 767px) {
+    :global(body:not(.scrolled)) .header-bar {
+      border-bottom-color: transparent;
+    }
+  }
+
+  /* Mobile menu : liens toujours en noir sans ombre, même en mode hero overlay */
+  #mobile-menu .nav-link {
+    color: rgb(31 41 55);
+    text-shadow: none;
+  }
+
+
   /* Scrim : voile sombre dégradé pour garantir la lisibilité du texte blanc
      quelle que soit la teinte de l'image hero. */
   :global(body.has-hero-header:not(.scrolled)) .header-bar::before {
     content: "";
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -120px;
     background: linear-gradient(
       180deg,
-      rgb(0 0 0 / 0.45) 0%,
-      rgb(0 0 0 / 0.15) 60%,
+      rgb(0 0 0 / 0.55) 0%,
+      rgb(0 0 0 / 0.4) 50%,
+      rgb(0 0 0 / 0.15) 80%,
       rgb(0 0 0 / 0) 100%
     );
     pointer-events: none;
@@ -266,13 +284,14 @@ const navItems = [
   :global(body.has-hero-header:not(.scrolled)) .header-tagline,
   :global(body.has-hero-header:not(.scrolled)) .nav-link {
     color: white;
-    text-shadow: 0 1px 3px rgb(0 0 0 / 0.35);
+    text-shadow: 0 1px 2px rgb(0 0 0 / 0.55), 0 0 12px rgb(0 0 0 / 0.4);
   }
 
   :global(body.has-hero-header:not(.scrolled)) .header-socials img,
   :global(body.has-hero-header:not(.scrolled)) #burger-btn {
     filter: brightness(0) invert(1)
-      drop-shadow(0 1px 2px rgb(0 0 0 / 0.35));
+      drop-shadow(0 1px 2px rgb(0 0 0 / 0.55))
+      drop-shadow(0 0 6px rgb(0 0 0 / 0.4));
   }
 
   .header-title,
@@ -346,28 +365,26 @@ const navItems = [
       gap 0.25s ease;
   }
 
-  /* Scrolled state — logo plus petit, tagline masquée */
-  @media (min-width: 768px) {
-    :global(body.scrolled) .header-logo-link {
-      gap: 0.75rem;
-      padding: 0.5rem 0;
-    }
+  /* Scrolled state — logo plus petit, tagline masquée (mobile + desktop) */
+  :global(body.scrolled) .header-logo-link {
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+  }
 
-    :global(body.scrolled) .header-logo {
-      width: 2.25rem;
-      height: 2.25rem;
-    }
+  :global(body.scrolled) .header-logo {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
 
-    :global(body.scrolled) .header-title {
-      font-size: 1.5rem;
-      line-height: 1.75rem;
-    }
+  :global(body.scrolled) .header-title {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
 
-    :global(body.scrolled) .header-tagline {
-      max-height: 0;
-      opacity: 0;
-      overflow: hidden;
-      margin: 0;
-    }
+  :global(body.scrolled) .header-tagline {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
   }
 </style>
