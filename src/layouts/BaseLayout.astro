@@ -19,9 +19,10 @@ interface Props {
   title: string;
   description: string;
   image?: ImageMetadata;
+  hasHero?: boolean;
 }
 
-const { title, description, image } = Astro.props;
+const { title, description, image, hasHero = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -29,7 +30,7 @@ const { title, description, image } = Astro.props;
   <head>
     <BaseHead title={title} description={description} image={image} />
   </head>
-  <body>
+  <body class:list={{ "has-hero-header": hasHero }}>
     <Header />
     <main>
       <slot />

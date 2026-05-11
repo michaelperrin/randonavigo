@@ -13,9 +13,7 @@ const navItems = [
 ] as const;
 ---
 
-<header
-  class="sticky top-0 z-40 bg-white/50 backdrop-blur-[10px] border-b border-gray-200/60"
->
+<header class="sticky top-0 z-40 header-bar">
   <div
     class="container mx-auto px-4 flex items-center justify-between header-grid"
   >
@@ -219,6 +217,68 @@ const navItems = [
   #burger-btn line {
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform-origin: 12px 12px;
+  }
+
+  .header-bar {
+    background-color: rgb(255 255 255 / 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(229 231 235 / 0.6);
+    transition:
+      background-color 0.3s ease,
+      backdrop-filter 0.3s ease,
+      border-bottom-color 0.3s ease;
+  }
+
+  /* Sur les pages avec hero, le header sort du flux pour se superposer */
+  :global(body.has-hero-header) .header-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* Mode overlay : page avec hero + non scrollé → transparent, texte blanc */
+  :global(body.has-hero-header:not(.scrolled)) .header-bar {
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom-color: transparent;
+  }
+
+  /* Scrim : voile sombre dégradé pour garantir la lisibilité du texte blanc
+     quelle que soit la teinte de l'image hero. */
+  :global(body.has-hero-header:not(.scrolled)) .header-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgb(0 0 0 / 0.45) 0%,
+      rgb(0 0 0 / 0.15) 60%,
+      rgb(0 0 0 / 0) 100%
+    );
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  :global(body.has-hero-header:not(.scrolled)) .header-title,
+  :global(body.has-hero-header:not(.scrolled)) .header-tagline,
+  :global(body.has-hero-header:not(.scrolled)) .nav-link {
+    color: white;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 0.35);
+  }
+
+  :global(body.has-hero-header:not(.scrolled)) .header-socials img,
+  :global(body.has-hero-header:not(.scrolled)) #burger-btn {
+    filter: brightness(0) invert(1)
+      drop-shadow(0 1px 2px rgb(0 0 0 / 0.35));
+  }
+
+  .header-title,
+  .header-tagline,
+  .nav-link {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
   }
 
   .nav-link {
