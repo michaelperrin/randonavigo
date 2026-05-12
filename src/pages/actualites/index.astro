@@ -1,0 +1,37 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import ArticleCard from "~/components/Article/ArticleCard.astro";
+import { getArticlesSorted } from "~/lib/getArticles";
+
+const articles = await getArticlesSorted();
+---
+
+<BaseLayout
+  title="Actualités"
+  description="Les dernières nouvelles de RandoNavigo : annonces, mises à jour et coulisses du site."
+>
+  <section class="container mx-auto px-4 py-14 md:py-16">
+    <div class="text-center mb-10 md:mb-12">
+      <h1 class="text-4xl md:text-5xl font-condensed font-medium tracking-wide">
+        Actualités
+      </h1>
+      <p class="mt-3 text-zinc-600 font-condensed">
+        Les dernières nouvelles de RandoNavigo.
+      </p>
+    </div>
+
+    {
+      articles.length === 0 ? (
+        <p class="text-center text-zinc-600">
+          Aucune actualité pour le moment.
+        </p>
+      ) : (
+        <div class="max-w-3xl mx-auto">
+          {articles.map((article) => (
+            <ArticleCard article={article} />
+          ))}
+        </div>
+      )
+    }
+  </section>
+</BaseLayout>

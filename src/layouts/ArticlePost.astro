@@ -1,0 +1,54 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import TopBanner from "~/components/TopBanner.astro";
+import { getArticleImage } from "~/lib/getArticleImage";
+
+type Props = {
+  title: string;
+  description: string;
+  pubDate: Date;
+  slug: string;
+  thumbnail: string;
+};
+
+const { title, description, pubDate, slug, thumbnail } = Astro.props;
+const heroImage = getArticleImage(slug, thumbnail);
+const dateFormatted = pubDate.toLocaleDateString("fr-FR", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={heroImage || undefined}
+  hasHero
+>
+  <article>
+    <TopBanner
+      picture={heroImage || undefined}
+      overlay
+      overlayVariant="hero"
+    >
+      <h1 class="text-4xl md:text-6xl font-condensed font-medium tracking-wide">
+        {title}
+      </h1>
+      <p class="mt-4 text-base md:text-lg font-condensed">
+        {dateFormatted}
+      </p>
+    </TopBanner>
+
+    <div class="container mx-auto px-4 my-12 md:my-16">
+      <main class="max-w-[720px] mx-auto font-serif">
+        <p class="text-lg md:text-xl font-semibold italic mb-8 text-zinc-700">
+          {description}
+        </p>
+        <div class="prose max-w-none">
+          <slot />
+        </div>
+      </main>
+    </div>
+  </article>
+</BaseLayout>

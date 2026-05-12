@@ -43,4 +43,16 @@ const hike = defineCollection({
     }),
 });
 
-export const collections = { hike };
+const article = defineCollection({
+  loader: glob({ base: "./src/content/article", pattern: "**/*.{md,mdx}" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.coerce.date(),
+    slug: z.string(),
+    thumbnail: z.string(),
+    hidden: z.boolean().optional(),
+  }),
+});
+
+export const collections = { hike, article };
