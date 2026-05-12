@@ -47,25 +47,26 @@ const contentClasses =
   </div>
 
   <div class:list={["banner-overlay", overlayKind && `banner-overlay--${overlayKind}`]}>
-    {video ? (
+    <div class="banner-image-reveal absolute top-0 left-0 h-full w-full">
+      <Image
+        src={picture}
+        alt=""
+        width={1920}
+        height={1080}
+        class="w-full h-full object-cover"
+      />
+    </div>
+    {video && (
       <video
-        src={video}
+        data-src={video}
+        class="hero-video absolute top-0 left-0 w-full h-full object-cover"
         autoplay
         muted
         loop
         playsinline
-        class="w-full h-full object-cover absolute top-0 left-0"
+        preload="metadata"
+        aria-hidden="true"
       />
-    ) : (
-      <div class="banner-image-reveal absolute top-0 left-0 h-full w-full">
-        <Image
-          src={picture}
-          alt=""
-          width={1920}
-          height={1080}
-          class="w-full h-full object-cover"
-        />
-      </div>
     )}
   </div>
 
@@ -73,6 +74,26 @@ const contentClasses =
     <div class="banner-reveal-veil absolute inset-0 z-10 bg-black pointer-events-none" />
   )}
 </div>
+
+{video && (
+  <script>
+    const v = document.querySelector<HTMLVideoElement>(".hero-video");
+    if (v && v.dataset.src) {
+      const desktop = window.matchMedia("(min-width: 768px)");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      if (desktop.matches && !reducedMotion.matches) {
+        v.addEventListener(
+          "playing",
+          () => v.classList.add("is-playing"),
+          { once: true }
+        );
+        v.src = v.dataset.src;
+      } else {
+        v.remove();
+      }
+    }
+  </script>
+)}
 
 <style>
   @keyframes banner-zoom {
@@ -172,6 +193,15 @@ const contentClasses =
     animation: banner-veil-fade 1.5s ease both;
   }
 
+  .hero-video {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  .hero-video.is-playing {
+    opacity: 1;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .banner-image-reveal,
     .banner-reveal-veil {
@@ -179,6 +209,9 @@ const contentClasses =
     }
     .banner-reveal-veil {
       opacity: 0;
+    }
+    .hero-video {
+      transition: none;
     }
   }
 </style>
