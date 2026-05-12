@@ -26,12 +26,12 @@ const overlayKind = overlay
 
 const contentClasses =
   overlayVariant === "hero"
-    ? "pt-28 md:pt-32 pb-10 md:pb-14 px-4 max-w-3xl mx-auto text-center z-30 text-white flex flex-col items-center"
-    : "pt-32 px-4 md:px-48 z-30 text-white";
+    ? "relative pt-28 md:pt-32 pb-10 md:pb-14 px-4 max-w-3xl mx-auto text-center z-30 text-white flex flex-col items-center"
+    : "relative pt-32 px-4 md:px-48 z-30 text-white";
 ---
 
 <div
-  class="relative flex min-h-[35vh] md:min-h-[80vh] flex-col align-middle justify-center overflow-hidden bg-black"
+  class="relative isolate flex min-h-[35vh] md:min-h-[80vh] flex-col align-middle justify-center overflow-hidden bg-black"
 >
   <div
     class={contentClasses}
@@ -39,7 +39,7 @@ const contentClasses =
       fontFamily: "Barlow",
       textShadow:
         overlayVariant === "hero"
-          ? "0 1px 16px rgba(0, 0, 0, 0.35)"
+          ? "0 1px 3px rgba(0, 0, 0, 0.55), 0 0 24px rgba(0, 0, 0, 0.4)"
           : "0 0 40px rgba(0, 0, 0, 0.9)",
     }}
   >
