@@ -6,6 +6,8 @@ import "@fontsource/barlow/700.css";
 import "@fontsource/barlow-condensed/400.css";
 import "@fontsource/barlow-condensed/500.css";
 import "@fontsource/barlow-condensed/700.css";
+import "@fontsource/outfit/500.css";
+import "@fontsource/outfit/600.css";
 import "@fontsource-variable/lora";
 import "@fontsource-variable/lora/wght-italic.css";
 import BaseHead from "~/components/BaseHead.astro";
@@ -17,9 +19,10 @@ interface Props {
   title: string;
   description: string;
   image?: ImageMetadata;
+  hasHero?: boolean;
 }
 
-const { title, description, image } = Astro.props;
+const { title, description, image, hasHero = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,7 +30,7 @@ const { title, description, image } = Astro.props;
   <head>
     <BaseHead title={title} description={description} image={image} />
   </head>
-  <body>
+  <body class:list={{ "has-hero-header": hasHero }}>
     <Header />
     <main>
       <slot />

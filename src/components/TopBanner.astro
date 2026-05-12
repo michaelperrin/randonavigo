@@ -6,28 +6,32 @@ type OverlayVariant = "default" | "hero";
 
 const {
   picture = banner,
+  video,
   overlay = false,
   overlayVariant = "default",
 } = Astro.props as {
   picture?: typeof banner;
+  video?: string;
   overlay?: boolean;
   overlayVariant?: OverlayVariant;
 };
 
-const overlayClasses = overlay
+const overlayKind = overlay
   ? overlayVariant === "hero"
-    ? "after:absolute after:inset-0 after:z-20 after:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.22)_40%,rgba(0,0,0,0.58)_100%)]"
-    : "after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70"
-  : "";
+    ? video
+      ? "hero-video"
+      : "hero-image"
+    : "default"
+  : null;
 
 const contentClasses =
   overlayVariant === "hero"
-    ? "pt-28 md:pt-32 pb-10 md:pb-14 px-4 max-w-3xl mx-auto text-center z-30 text-white flex flex-col items-center"
-    : "pt-32 px-4 md:px-48 z-30 text-white";
+    ? "relative pt-28 md:pt-32 pb-10 md:pb-14 px-4 max-w-3xl mx-auto text-center z-30 text-white flex flex-col items-center"
+    : "relative pt-32 px-4 md:px-48 z-30 text-white";
 ---
 
 <div
-  class="relative flex min-h-[35vh] md:min-h-[65vh] flex-col align-middle justify-center"
+  class="relative isolate flex min-h-[35vh] md:min-h-[80vh] flex-col align-middle justify-center overflow-hidden bg-black"
 >
   <div
     class={contentClasses}
@@ -35,20 +39,179 @@ const contentClasses =
       fontFamily: "Barlow",
       textShadow:
         overlayVariant === "hero"
-          ? "0 1px 16px rgba(0, 0, 0, 0.35)"
+          ? "0 1px 3px rgba(0, 0, 0, 0.55), 0 0 24px rgba(0, 0, 0, 0.4)"
           : "0 0 40px rgba(0, 0, 0, 0.9)",
     }}
   >
     <slot />
   </div>
 
-  <div class={overlayClasses}>
-    <Image
-      src={picture}
-      alt=""
-      width={1920}
-      height={1080}
-      class="w-full h-full object-cover absolute top-0 left-0"
-    />
+  <div class:list={["banner-overlay", overlayKind && `banner-overlay--${overlayKind}`]}>
+    <div class="banner-image-reveal absolute top-0 left-0 h-full w-full">
+      <Image
+        src={picture}
+        alt=""
+        width={1920}
+        height={1080}
+        class="w-full h-full object-cover"
+      />
+    </div>
+    {video && (
+      <video
+        data-src={video}
+        class="hero-video absolute top-0 left-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+      />
+    )}
   </div>
+
+  {!video && (
+    <div class="banner-reveal-veil absolute inset-0 z-10 bg-black pointer-events-none" />
+  )}
 </div>
+
+{video && (
+  <script>
+    const v = document.querySelector<HTMLVideoElement>(".hero-video");
+    if (v && v.dataset.src) {
+      const desktop = window.matchMedia("(min-width: 768px)");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      if (desktop.matches && !reducedMotion.matches) {
+        v.addEventListener(
+          "playing",
+          () => v.classList.add("is-playing"),
+          { once: true }
+        );
+        v.src = v.dataset.src;
+      } else {
+        v.remove();
+      }
+    }
+  </script>
+)}
+
+<style>
+  @keyframes banner-zoom {
+    from {
+      transform: scale(1.05);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes banner-veil-fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .banner-image-reveal {
+    animation: banner-zoom 1.5s ease both;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  /* Overlay du hero — voile sombre rendu via ::after.
+     Sur mobile le hero fait 35vh, donc on adoucit le bas pour ne pas
+     comprimer la zone sombre du dégradé. */
+  .banner-overlay--default::after,
+  .banner-overlay--hero-image::after,
+  .banner-overlay--hero-video::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  .banner-overlay--default::after {
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 65%,
+      rgb(0 0 0 / 0.4) 100%
+    );
+  }
+
+  .banner-overlay--hero-image::after {
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgb(0 0 0 / 0.12) 55%,
+      rgb(0 0 0 / 0.32) 100%
+    );
+  }
+
+  .banner-overlay--hero-video::after {
+    background: linear-gradient(
+      180deg,
+      rgb(0 0 0 / 0.22) 0%,
+      rgb(0 0 0 / 0.08) 35%,
+      rgb(0 0 0 / 0.05) 100%
+    );
+  }
+
+  @media (min-width: 768px) {
+    .banner-overlay--default::after {
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        transparent 50%,
+        rgb(0 0 0 / 0.7) 100%
+      );
+    }
+
+    .banner-overlay--hero-image::after {
+      background: linear-gradient(
+        180deg,
+        rgb(0 0 0 / 0) 0%,
+        rgb(0 0 0 / 0.22) 40%,
+        rgb(0 0 0 / 0.58) 100%
+      );
+    }
+
+    .banner-overlay--hero-video::after {
+      background: linear-gradient(
+        180deg,
+        rgb(0 0 0 / 0.22) 0%,
+        rgb(0 0 0 / 0.1) 30%,
+        rgb(0 0 0 / 0.08) 100%
+      );
+    }
+  }
+
+  .banner-reveal-veil {
+    animation: banner-veil-fade 1.5s ease both;
+  }
+
+  .hero-video {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  .hero-video.is-playing {
+    opacity: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .banner-image-reveal,
+    .banner-reveal-veil {
+      animation: none;
+    }
+    .banner-reveal-veil {
+      opacity: 0;
+    }
+    .hero-video {
+      transition: none;
+    }
+  }
+</style>

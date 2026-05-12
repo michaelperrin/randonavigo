@@ -237,9 +237,11 @@ export async function onRequestPost(context: {
     isAuthor,
   });
 
-  context.waitUntil(
-    notifyNewComment(context.env, routeKey, authorName, content, parentId),
-  );
+  if (!isAuthor) {
+    context.waitUntil(
+      notifyNewComment(context.env, routeKey, authorName, content, parentId),
+    );
+  }
 
   const headers = new Headers();
   if (session.setCookie) {

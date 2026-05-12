@@ -1,108 +1,97 @@
 ---
+const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
+const isActive = (href: string) => {
+  const path = href.replace(/\/+$/, "") || "/";
+  return currentPath === path || currentPath.startsWith(path + "/");
+};
 
+const navItems = [
+  // { href: "/actualites", label: "Actualités", hasSubmenu: false },
+  // { href: "/randonnees", label: "Randonnées", hasSubmenu: true },
+  { href: "/a-propos", label: "À propos", hasSubmenu: false },
+  { href: "/contact", label: "Contact", hasSubmenu: false },
+] as const;
 ---
 
-<header
-  class="container mx-auto flex flex-row align-middle items-center"
->
-  <div class="hidden lg:block lg:flex-1"></div>
-  <div class="flex flex-col flex-1 my-5 flex-grow-2">
-    <div class="flex flex-col lg:items-center mr-2 sm:mr-4 lg:mr-0">
-      <div>
-        <a href="/">
-          <div class="flex items-center gap-6">
-            <img src="/images/logo.svg" alt="RandoNavigo" class="w-16 h-16" />
-            <div>
-              <h1
-                class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-condensed font-medium tracking-wide"
-              >
-                RandoNavigo
-              </h1>
-              <p class="text-sm md:text-base font-condensed text-gray-600">
-                Randonnées en Ile-de-France accessibles en transport en commun.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Desktop nav -->
-  <div class="hidden md:flex flex-wrap gap-x-4 gap-y-3 justify-end flex-1">
-    <div>
-      <a href="/a-propos" class="whitespace-nowrap">A propos</a>
-    </div>
-    <div>
-      <a href="/contact" class="whitespace-nowrap">Contact</a>
-    </div>
-    <div>
-      <ul class="flex ml-auto items-center">
-        <li class="mr-4">
-          <a
-            href="https://www.instagram.com/randonavigo"
-            title="RandoNavigo sur Instagram"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="/images/social/instagram.svg"
-              alt="Instagram"
-              class="w-6 h-6"
-            />
-          </a>
-        </li>
-        <li class="mr-4">
-          <a
-            href="https://www.facebook.com/randonavigo/"
-            title="RandoNavigo sur Facebook"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="/images/social/facebook.svg"
-              alt="Facebook"
-              class="w-6 h-6"
-            />
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Mobile burger button -->
-  <button
-    id="burger-btn"
-    class="md:hidden ml-auto p-2"
-    aria-label="Ouvrir le menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
+<header class="sticky top-0 z-40 header-bar">
+  <div
+    class="container mx-auto px-4 flex items-center justify-between header-grid"
   >
-    <svg
-      class="w-7 h-7"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      viewBox="0 0 24 24"
-    >
-      <line id="burger-top" x1="3" y1="6" x2="21" y2="6" />
-      <line id="burger-mid" x1="3" y1="12" x2="21" y2="12" />
-      <line id="burger-bot" x1="3" y1="18" x2="21" y2="18" />
-    </svg>
-  </button>
-</header>
+    <a href="/" class="header-logo-link">
+      <img
+        src="/images/logo.svg"
+        alt="RandoNavigo"
+        class="header-logo w-12 h-12 md:w-16 md:h-16 shrink-0"
+      />
+      <div class="header-text">
+        <h1
+          class="header-title text-2xl sm:text-3xl md:text-4xl font-condensed font-medium tracking-wide"
+        >
+          RandoNavigo
+        </h1>
+        <p
+          class="header-tagline text-sm md:text-base font-condensed text-gray-600"
+        >
+          Randonnées en Île-de-France accessibles en transport en commun.
+        </p>
+      </div>
+    </a>
 
-<!-- Mobile menu -->
-<nav
-  id="mobile-menu"
-  class="md:hidden grid bg-white border-b border-gray-200 transition-[grid-template-rows] duration-300 ease-in-out"
-  style="grid-template-rows: 0fr;"
->
-  <div class="overflow-hidden">
-    <div class="container mx-auto flex flex-col gap-4 py-4 px-4">
-      <a href="/a-propos" class="text-lg">A propos</a>
-      <a href="/contact" class="text-lg">Contact</a>
-      <div class="flex gap-4 pt-2">
+    <!-- Mobile burger button -->
+    <button
+      id="burger-btn"
+      class="md:hidden p-2"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg
+        class="w-7 h-7"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <line id="burger-top" x1="3" y1="6" x2="21" y2="6" />
+        <line id="burger-mid" x1="3" y1="12" x2="21" y2="12" />
+        <line id="burger-bot" x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+
+    <!-- Desktop right cluster : nav + socials -->
+    <div class="header-right hidden md:flex items-center gap-x-10">
+      <nav class="header-nav flex items-center gap-x-8">
+        {
+          navItems.map(({ href, label, hasSubmenu }) => (
+            <a
+              href={href}
+              class:list={[
+                "nav-link nav-link--editorial inline-flex items-center gap-1 whitespace-nowrap text-base font-medium text-gray-800",
+                { "is-active": isActive(href) },
+              ]}
+            >
+              {label}
+              {hasSubmenu && (
+                <svg
+                  class="w-3 h-3 shrink-0"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 4.5L6 7.5L9 4.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              )}
+            </a>
+          ))
+        }
+      </nav>
+      <div class="header-socials flex items-center gap-4">
         <a
           href="https://www.instagram.com/randonavigo"
           title="RandoNavigo sur Instagram"
@@ -130,7 +119,74 @@
       </div>
     </div>
   </div>
-</nav>
+
+  <!-- Mobile menu -->
+  <nav
+    id="mobile-menu"
+    class="md:hidden grid bg-white/85 backdrop-blur-[10px] transition-[grid-template-rows] duration-300 ease-in-out"
+    style="grid-template-rows: 0fr;"
+  >
+    <div class="overflow-hidden">
+      <div class="container mx-auto flex flex-col gap-4 py-4 px-4">
+        {
+          navItems.map(({ href, label, hasSubmenu }) => (
+            <a
+              href={href}
+              class:list={[
+                "nav-link nav-link--editorial inline-flex items-center gap-1 text-base font-medium text-gray-800",
+                { "is-active": isActive(href) },
+              ]}
+            >
+              {label}
+              {hasSubmenu && (
+                <svg
+                  class="w-3 h-3 shrink-0"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 4.5L6 7.5L9 4.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              )}
+            </a>
+          ))
+        }
+        <div class="flex gap-4 pt-2">
+          <a
+            href="https://www.instagram.com/randonavigo"
+            title="RandoNavigo sur Instagram"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="/images/social/instagram.svg"
+              alt="Instagram"
+              class="w-6 h-6"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/randonavigo/"
+            title="RandoNavigo sur Facebook"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="/images/social/facebook.svg"
+              alt="Facebook"
+              class="w-6 h-6"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
 
 <script>
   const btn = document.getElementById("burger-btn");
@@ -149,12 +205,124 @@
       );
     });
   }
+
+  const setScrolled = () => {
+    document.body.classList.toggle("scrolled", window.scrollY > 50);
+  };
+  setScrolled();
+  window.addEventListener("scroll", setScrolled, { passive: true });
 </script>
 
 <style>
   #burger-btn line {
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform-origin: 12px 12px;
+  }
+
+  .header-bar {
+    background-color: rgb(255 255 255 / 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(229 231 235 / 0.6);
+    transition:
+      background-color 0.3s ease,
+      backdrop-filter 0.3s ease,
+      border-bottom-color 0.3s ease;
+  }
+
+  /* Sur les pages avec hero, le header sort du flux pour se superposer */
+  :global(body.has-hero-header) .header-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* Mode overlay : page avec hero + non scrollé → transparent, texte blanc */
+  :global(body.has-hero-header:not(.scrolled)) .header-bar {
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom-color: transparent;
+  }
+
+  /* Mobile en haut de page : pas de bordure sous le header */
+  @media (max-width: 767px) {
+    :global(body:not(.scrolled)) .header-bar {
+      border-bottom-color: transparent;
+    }
+  }
+
+  /* Mobile menu : liens toujours en noir sans ombre, même en mode hero overlay */
+  #mobile-menu .nav-link {
+    color: rgb(31 41 55);
+    text-shadow: none;
+  }
+
+
+  /* Scrim : voile sombre dégradé pour garantir la lisibilité du texte blanc
+     quelle que soit la teinte de l'image hero. */
+  :global(body.has-hero-header:not(.scrolled)) .header-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -24px;
+    background: linear-gradient(
+      180deg,
+      rgb(0 0 0 / 0.55) 0%,
+      rgb(0 0 0 / 0.35) 60%,
+      rgb(0 0 0 / 0) 100%
+    );
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  :global(body.has-hero-header:not(.scrolled)) .header-title,
+  :global(body.has-hero-header:not(.scrolled)) .header-tagline,
+  :global(body.has-hero-header:not(.scrolled)) .nav-link {
+    color: white;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 0.55), 0 0 12px rgb(0 0 0 / 0.4);
+  }
+
+  :global(body.has-hero-header:not(.scrolled)) .header-socials img,
+  :global(body.has-hero-header:not(.scrolled)) #burger-btn {
+    filter: brightness(0) invert(1)
+      drop-shadow(0 1px 2px rgb(0 0 0 / 0.55))
+      drop-shadow(0 0 6px rgb(0 0 0 / 0.4));
+  }
+
+  .header-title,
+  .header-tagline,
+  .nav-link {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  .nav-link {
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .nav-link--editorial {
+    font-family: var(--font-modern);
+  }
+
+  .nav-link:hover::after,
+  .nav-link.is-active::after {
+    opacity: 1;
   }
 
   #burger-btn.open #burger-top {
@@ -167,5 +335,55 @@
 
   #burger-btn.open #burger-bot {
     transform: rotate(-45deg) translateY(-6px);
+  }
+
+  .header-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    min-width: 0;
+  }
+
+  .header-logo-link .header-text {
+    min-width: 0;
+  }
+
+  .header-logo,
+  .header-title,
+  .header-tagline,
+  .header-logo-link {
+    transition:
+      width 0.25s ease,
+      height 0.25s ease,
+      font-size 0.25s ease,
+      margin 0.25s ease,
+      padding 0.25s ease,
+      max-height 0.3s ease,
+      opacity 0.25s ease,
+      gap 0.25s ease;
+  }
+
+  /* Scrolled state — logo plus petit, tagline masquée (mobile + desktop) */
+  :global(body.scrolled) .header-logo-link {
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+  }
+
+  :global(body.scrolled) .header-logo {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  :global(body.scrolled) .header-title {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  :global(body.scrolled) .header-tagline {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
   }
 </style>
