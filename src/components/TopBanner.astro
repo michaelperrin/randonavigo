@@ -16,11 +16,13 @@ const {
   overlayVariant?: OverlayVariant;
 };
 
-const overlayClasses = overlay
+const overlayKind = overlay
   ? overlayVariant === "hero"
-    ? "after:absolute after:inset-0 after:z-20 after:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.22)_40%,rgba(0,0,0,0.58)_100%)]"
-    : "after:absolute after:inset-0 after:bg-linear-to-b after:from-transparent after:via-transparent after:to-black after:z-20 after:opacity-70"
-  : "";
+    ? video
+      ? "hero-video"
+      : "hero-image"
+    : "default"
+  : null;
 
 const contentClasses =
   overlayVariant === "hero"
@@ -44,7 +46,7 @@ const contentClasses =
     <slot />
   </div>
 
-  <div class={overlayClasses}>
+  <div class:list={["banner-overlay", overlayKind && `banner-overlay--${overlayKind}`]}>
     {video ? (
       <video
         src={video}
@@ -95,6 +97,75 @@ const contentClasses =
     animation: banner-zoom 1.5s ease both;
     transform-origin: center;
     will-change: transform;
+  }
+
+  /* Overlay du hero — voile sombre rendu via ::after.
+     Sur mobile le hero fait 35vh, donc on adoucit le bas pour ne pas
+     comprimer la zone sombre du dégradé. */
+  .banner-overlay--default::after,
+  .banner-overlay--hero-image::after,
+  .banner-overlay--hero-video::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  .banner-overlay--default::after {
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 65%,
+      rgb(0 0 0 / 0.4) 100%
+    );
+  }
+
+  .banner-overlay--hero-image::after {
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgb(0 0 0 / 0.12) 55%,
+      rgb(0 0 0 / 0.32) 100%
+    );
+  }
+
+  .banner-overlay--hero-video::after {
+    background: linear-gradient(
+      180deg,
+      rgb(0 0 0 / 0.22) 0%,
+      rgb(0 0 0 / 0.08) 35%,
+      rgb(0 0 0 / 0.05) 100%
+    );
+  }
+
+  @media (min-width: 768px) {
+    .banner-overlay--default::after {
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        transparent 50%,
+        rgb(0 0 0 / 0.7) 100%
+      );
+    }
+
+    .banner-overlay--hero-image::after {
+      background: linear-gradient(
+        180deg,
+        rgb(0 0 0 / 0) 0%,
+        rgb(0 0 0 / 0.22) 40%,
+        rgb(0 0 0 / 0.58) 100%
+      );
+    }
+
+    .banner-overlay--hero-video::after {
+      background: linear-gradient(
+        180deg,
+        rgb(0 0 0 / 0.22) 0%,
+        rgb(0 0 0 / 0.1) 30%,
+        rgb(0 0 0 / 0.08) 100%
+      );
+    }
   }
 
   .banner-reveal-veil {
