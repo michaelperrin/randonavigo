@@ -122,7 +122,7 @@ async function notifyNewComment(
         from: "RandoNavigo <notifications@randonavigo.fr>",
         to: [env.NOTIFICATION_EMAIL],
         subject: `${kind} — ${routeKey}`,
-        html: `<p><strong>Randonnée :</strong> ${routeKey}</p><p><strong>Auteur :</strong> ${authorName || "Anonyme"}</p>${parentId !== null ? `<p><strong>Réponse au commentaire #${parentId}</strong></p>` : ""}<p><strong>Message :</strong></p><p>${content.replace(/\n/g, "<br>")}</p>`,
+        html: `<p><strong>Randonnée :</strong> <a href="https://www.randonavigo.fr/${routeKey}">https://www.randonavigo.fr/${routeKey}</a></p><p><strong>Auteur :</strong> ${authorName || "Anonyme"}</p>${parentId !== null ? `<p><strong>Réponse au commentaire #${parentId}</strong></p>` : ""}<p><strong>Message :</strong></p><p>${content.replace(/\n/g, "<br>")}</p>`,
       }),
     });
   } catch {
