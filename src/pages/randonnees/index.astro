@@ -3,7 +3,7 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
 import List from "~/components/Hike/List.astro";
 import TopBanner from "~/components/TopBanner.astro";
 import { getHikesSorted } from "~/lib/getHikes";
-import { themes, themeKeys } from "~/data/themes";
+import ThemeFilterNav from "~/components/Theme/ThemeFilterNav.astro";
 
 const hikes = await getHikesSorted();
 ---
@@ -27,29 +27,10 @@ const hikes = await getHikesSorted();
 
   <section class="py-14 md:py-16">
     <div class="container mx-auto px-4">
-      <nav
-        class="mb-10 flex flex-wrap gap-2 md:mb-12"
-        aria-label="Filtrer par thème"
-      >
-        {
-          themeKeys.map((key) => (
-            <a
-              href={`/randonnees/${themes[key].slug}/`}
-              class="inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors hover:shadow-sm"
-              style={{
-                borderColor: `${themes[key].accent}40`,
-                color: themes[key].accent,
-              }}
-            >
-              <span
-                class="h-2 w-2 shrink-0 rounded-full"
-                style={{ backgroundColor: themes[key].accent }}
-              />
-              {themes[key].label}
-            </a>
-          ))
-        }
-      </nav>
+      {/* Rangée de filtre — d'autres suivront (difficulté, lignes…) sur le même modèle */}
+      <div class="mb-10 md:mb-12">
+        <ThemeFilterNav />
+      </div>
     </div>
 
     <List hikes={hikes} />

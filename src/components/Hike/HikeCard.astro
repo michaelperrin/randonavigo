@@ -4,8 +4,13 @@ import { type CollectionEntry } from "astro:content";
 import { getHikeImage, getHikeImagePath } from "~/lib/getHikeImage";
 import { getHikeUrl } from "~/lib/getHikeUrl";
 import TransportPoint from "~/components/transport/TransportPoint.astro";
+import { themes, type ThemeKey } from "~/data/themes";
 
 const { hike } = Astro.props;
+
+const hikeThemes = ((hike.data.themes ?? []) as ThemeKey[]).map(
+  (key) => themes[key]
+);
 
 const getHikeImageUrl = (hike: CollectionEntry<"hike">) => {
   return getHikeImage(
@@ -49,6 +54,32 @@ const hikeData = hike.data;
             alt=""
             class="w-full h-full object-cover"
           />
+        )
+      }
+
+      {
+        hikeThemes.length > 0 && (
+          <div class="absolute bottom-2.5 left-2.5 z-10 flex items-center gap-2 rounded-full bg-black/30 px-2.5 py-1.5 text-white shadow-sm ring-1 ring-white/30 backdrop-blur-md">
+            {hikeThemes.map((theme) => (
+              <span
+                class="flex items-center justify-center"
+                title={theme.label}
+              >
+                <svg
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  set:html={theme.icon}
+                />
+                <span class="sr-only">{theme.label}</span>
+              </span>
+            ))}
+          </div>
         )
       }
     </div>

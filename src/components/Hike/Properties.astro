@@ -8,6 +8,7 @@ import DownloadIcon from "~/components/Icon/DownloadIcon.astro";
 import Distance from "~/components/Hike/Distance.astro";
 import GpxAlternatives from "~/components/Hike/GpxAlternatives.astro";
 import About from "./About.astro";
+import { themes as themeConfigs, type ThemeKey } from "~/data/themes";
 
 type Props = CollectionEntry<"hike">["data"];
 
@@ -19,7 +20,12 @@ const {
   slug,
   pubDate,
   gpx_alternatives,
+  themes,
 } = Astro.props;
+
+const hikeThemes = ((themes ?? []) as ThemeKey[]).map(
+  (key) => themeConfigs[key]
+);
 
 const roundedButtonClasses = {
   rounded: gpx_alternatives === undefined,
@@ -32,20 +38,81 @@ const roundedButtonClasses = {
     <div
       class="md:p-5 md:border-t md:border-l md:border-r md:border-gray-100 md:rounded-t-xl bg-white"
     >
-      <div class="mb-6">
-        <h3 class="uppercase text-sm font-bold text-gray-500 mb-2">
-          Départ / arrivée
-        </h3>
+      <div class="mb-5">
+        <div class="mb-1.5 flex items-center justify-between gap-3">
+          <h3 class="uppercase text-xs tracking-[0.08em] font-bold text-stone-500">
+            Départ / arrivée
+          </h3>
+          {
+            hikeThemes.length > 0 && (
+              <div class="flex gap-1.5 md:hidden">
+                {hikeThemes.map((theme) => (
+                  <a
+                    href={`/randonnees/${theme.slug}/`}
+                    class="flex h-8 w-8 items-center justify-center rounded-full border border-stone-300 bg-white text-stone-500 transition hover:border-stone-400 hover:text-stone-700"
+                    aria-label={theme.label}
+                    title={theme.label}
+                  >
+                    <svg
+                      class="h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      set:html={theme.icon}
+                    />
+                  </a>
+                ))}
+              </div>
+            )
+          }
+        </div>
         <Access
           startingPoint={starting_point}
           endingPoint={ending_point}
           transportIconSize={26}
         />
       </div>
-      <div class="mb-4">
-        <h3 class="uppercase text-sm font-bold text-gray-500 mb-2">Distance</h3>
+      <div class="mb-5">
+        <h3 class="uppercase text-xs tracking-[0.08em] font-bold text-stone-500 mb-1.5">
+          Distance
+        </h3>
         <Distance distance={distance} isLoop={!ending_point} />
       </div>
+
+      {
+        hikeThemes.length > 0 && (
+          <div class="hidden md:block">
+            <h3 class="uppercase text-xs tracking-[0.08em] font-bold text-stone-500 mb-1.5">
+              Ambiance{hikeThemes.length > 1 ? "s" : ""}
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              {hikeThemes.map((theme) => (
+                <a
+                  href={`/randonnees/${theme.slug}/`}
+                  class="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white py-1.5 pl-2.5 pr-3.5 text-sm font-medium text-zinc-700 transition hover:border-stone-400 hover:text-zinc-900"
+                >
+                  <svg
+                    class="h-4 w-4 text-stone-500"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    set:html={theme.icon}
+                  />
+                  {theme.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        )
+      }
     </div>
 
     <!-- <div class="mb-4">
@@ -132,7 +199,7 @@ const roundedButtonClasses = {
           </div>
         </div>
       </div> -->
-    <div>
+    <div class="overflow-hidden rounded-lg md:rounded-none">
       <Map
         slug={slug}
         pubDate={pubDate}

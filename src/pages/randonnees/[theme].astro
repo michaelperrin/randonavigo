@@ -1,37 +1,68 @@
 ---
 import BaseLayout from "~/layouts/BaseLayout.astro";
 import HikeCard from "~/components/Hike/HikeCard.astro";
+import ThemeTile from "~/components/Theme/ThemeTile.astro";
+import ThemeFilterNav from "~/components/Theme/ThemeFilterNav.astro";
 import TopBanner from "~/components/TopBanner.astro";
-import { themes, themeKeys } from "~/data/themes";
+import { themeKeys } from "~/data/themes";
 import { getHikesForTheme } from "~/lib/getHikes";
+import { getThemesData } from "~/lib/getThemesData";
 
 export async function getStaticPaths() {
-  const paths = [];
-  for (const key of themeKeys) {
-    const config = themes[key];
-    const hikes = await getHikesForTheme(key);
-    paths.push({
-      params: { theme: config.slug },
-      props: { config, hikes },
-    });
-  }
-  return paths;
+  const themesData = await getThemesData();
+
+  return Promise.all(
+    themeKeys.map(async (key) => {
+      const themeData = themesData.find((theme) => theme.key === key)!;
+      const hikes = await getHikesForTheme(key);
+
+      return {
+        params: { theme: themeData.config.slug },
+        props: {
+          themeKey: key,
+          config: themeData.config,
+          coverImage: themeData.coverImage,
+          hikes,
+          otherThemes: themesData.filter((theme) => theme.key !== key),
+        },
+      };
+    }),
+  );
 }
 
-const { config, hikes } = Astro.props;
+const { themeKey, config, coverImage, hikes, otherThemes } = Astro.props;
 ---
 
 <BaseLayout
   title={`${config.label} — Randonnées en Île-de-France`}
   description={config.description}
+  image={coverImage ?? undefined}
 >
-  <TopBanner overlay={true}>
-    <h1
-      class="font-condensed text-2xl font-bold tracking-tight md:text-4xl"
-      style={{ textShadow: "0 1px 16px rgba(0,0,0,0.35)" }}
-    >
-      {config.label}
-    </h1>
+  <TopBanner overlay={true} picture={coverImage ?? undefined}>
+    <div class="flex items-center gap-3">
+      <span
+        class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white md:h-11 md:w-11"
+        style={{ backgroundColor: config.accent }}
+        aria-hidden="true"
+      >
+        <svg
+          class="h-5 w-5 md:h-6 md:w-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          set:html={config.icon}
+        />
+      </span>
+      <h1
+        class="font-condensed text-3xl font-black tracking-tight md:text-5xl"
+        style={{ textShadow: "0 1px 16px rgba(0,0,0,0.35)" }}
+      >
+        {config.label}
+      </h1>
+    </div>
     <p class="mt-3 max-w-xl text-base text-white/90 md:text-lg">
       {config.description}
     </p>
@@ -39,23 +70,12 @@ const { config, hikes } = Astro.props;
 
   <section class="py-14 md:py-16">
     <div class="container mx-auto px-4">
-      <div class="mb-10 flex flex-wrap items-center justify-between gap-4 md:mb-12">
-        <p class="text-sm text-stone-600 md:text-base">
-          {hikes.length} randonnée{hikes.length > 1 ? "s" : ""}
-        </p>
-        <a
-          href="/randonnees/"
-          class="text-sm font-medium transition-colors hover:underline"
-          style={{ color: config.accent }}
-        >
-          &larr; Toutes les randonnées
-        </a>
+      <div class="mb-10 md:mb-12">
+        <ThemeFilterNav current={themeKey} />
       </div>
 
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {hikes.map((hike) => (
-          <HikeCard hike={hike} />
-        ))}
+        {hikes.map((hike) => <HikeCard hike={hike} />)}
       </div>
 
       {
@@ -65,6 +85,27 @@ const { config, hikes } = Astro.props;
           </p>
         )
       }
+    </div>
+  </section>
+
+  <section
+    class="border-t border-stone-200 bg-stone-50 py-14 md:py-16"
+    aria-labelledby="autres-ambiances-heading"
+  >
+    <div class="container mx-auto px-4">
+      <h2
+        id="autres-ambiances-heading"
+        class="font-condensed mb-8 text-center text-2xl font-bold tracking-tight text-zinc-900 md:mb-10 md:text-3xl"
+      >
+        Envie d’une autre ambiance&nbsp;?
+      </h2>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-5">
+        {
+          otherThemes.map((theme) => (
+            <ThemeTile theme={theme} class="aspect-[5/3] sm:aspect-[4/3]" />
+          ))
+        }
+      </div>
     </div>
   </section>
 </BaseLayout>

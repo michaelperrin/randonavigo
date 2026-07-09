@@ -1,0 +1,82 @@
+---
+import { themes, themeKeys, type ThemeKey } from "~/data/themes";
+
+interface Props {
+  /** Thème actuellement sélectionné (absent sur la page « toutes les randonnées ») */
+  current?: ThemeKey;
+}
+
+const { current } = Astro.props;
+
+const basePill =
+  "inline-flex items-center gap-2 rounded-full border text-sm font-medium transition";
+const idlePill =
+  "border-stone-200 bg-white text-zinc-800 shadow-sm hover:border-stone-300 hover:shadow";
+---
+
+<div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
+  <p
+    class="shrink-0 text-xs font-semibold uppercase tracking-[0.1em] text-stone-700"
+  >
+    Choisir un thème
+  </p>
+  <nav class="flex flex-wrap gap-2" aria-label="Filtrer par thème">
+    <a
+      href="/randonnees/"
+      aria-current={current === undefined ? "page" : undefined}
+      class:list={[
+        basePill,
+        "px-4 py-1.5",
+        current === undefined
+          ? "border-transparent bg-zinc-900 text-white"
+          : idlePill,
+      ]}
+    >
+      Toutes
+    </a>
+    {
+      themeKeys.map((key) => {
+        const selected = current === key;
+        return (
+          <a
+            href={`/randonnees/${themes[key].slug}/`}
+            aria-current={selected ? "page" : undefined}
+            class:list={[
+              basePill,
+              "py-1.5 pl-1.5 pr-4",
+              selected ? "border-transparent text-white" : idlePill,
+            ]}
+            style={
+              selected ? { backgroundColor: themes[key].accent } : undefined
+            }
+          >
+            <span
+              class:list={[
+                "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white",
+                { "bg-white/25": selected },
+              ]}
+              style={
+                selected
+                  ? undefined
+                  : { backgroundColor: themes[key].accent }
+              }
+              aria-hidden="true"
+            >
+              <svg
+                class="h-3.5 w-3.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                set:html={themes[key].icon}
+              />
+            </span>
+            {themes[key].label}
+          </a>
+        );
+      })
+    }
+  </nav>
+</div>

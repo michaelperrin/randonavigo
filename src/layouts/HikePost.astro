@@ -41,11 +41,13 @@ const oldGalleryPictures = pictures?.map((picture) =>
         class="grid md:grid-cols-10 gap-0 md:gap-6 lg:gap-12 xl:gap-16 mb-12"
       >
         <main class="order-2 md:order-1 md:col-span-6 font-serif mt-0 md:mt-12">
-          <div class="text-lg font-semibold italic mb-8">
+          <div class="text-base md:text-lg font-semibold italic mb-8">
             {description}
           </div>
 
-          <div class="prose max-w-none">
+          <div
+            class="prose max-w-none text-[0.9375rem] md:text-base prose-headings:font-condensed prose-headings:font-semibold prose-h2:text-2xl md:prose-h2:text-3xl prose-h3:text-xl md:prose-h3:text-2xl"
+          >
             <slot />
           </div>
 
